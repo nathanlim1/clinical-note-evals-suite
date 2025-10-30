@@ -154,7 +154,7 @@ def per_item_error_df(df: pd.DataFrame) -> pd.DataFrame:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(add_help=False)
-    parser.add_argument("--evals-dir", required=True)
+    parser.add_argument("--evals-dir", default="results/batch-results")
     # Streamlit will pass many of its own flags; tolerate unknowns
     args, _ = parser.parse_known_args()
     return args
