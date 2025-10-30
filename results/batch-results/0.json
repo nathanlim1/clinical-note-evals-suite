@@ -1,0 +1,1103 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 1,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 42,
+    "failed_calls": 0,
+    "successful_calls": 42,
+    "total_input_tokens": 21611,
+    "total_output_tokens": 1838,
+    "total_tokens": 23449,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0115852
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals signs of bilateral ear inflammation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.4626748263835907,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4419681429862976,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4335663616657257,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3655030131340027,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33884379267692566,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains no explicit mention of physical examination findings or signs of bilateral ear inflammation. The information is limited to patient-reported symptoms and planned diagnostic steps, without any documented physical exam evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.30972909927368164,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25686877965927124,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2502601742744446,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2417047917842865,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2336650937795639,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not provide any explicit information about the patient's vital signs or whether they are within normal limits. There is mention of symptoms such as low-grade fever and ear issues, but no direct statement or data about vital signs.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Immunization status is up to date, with pending results for a colonoscopy.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.43235355615615845,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.36142611503601074,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2871546745300293,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27007538080215454,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25455808639526367,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates vaccines need to be updated and a colonoscopy is to be scheduled, implying immunization is not currently up to date and colonoscopy results are pending but not yet done.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "ENT specialist Dr. Robert Smith recommends a hearing test to monitor for potential hearing loss.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5440559387207031,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39034032821655273,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.38149121403694153,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34660202264785767,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3236926794052124,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows that a hearing test is recommended (E5[4]) and that Dr. Smith is the ENT specialist involved (E5[7], E6[2]), but it does not explicitly state that Dr. Robert Smith himself recommends the hearing test. The recommendation is made by the physician, with Dr. Smith to be consulted later. Therefore, the claim that Dr. Robert Smith recommends the hearing test is not explicitly supported.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T10",
+      "text": "It's been persistent for the past few weeks, and it's been getting worse.",
+      "sent_idx": 10,
+      "prev_text": "Patient: It's a dull, aching pain in both ears, but the left ear is worse.",
+      "next_text": "Physician: Okay.",
+      "severity": "medium"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Ivan Bailey reports feeling miserable due to constant ear pain that has been affecting his sleep and overall well-being.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6210057139396667,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4590940773487091,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.43097302317619324,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4119814932346344,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33242830634117126,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling miserable due to constant ear pain, which has been affecting his sleep and overall well-being.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He describes the pain as dull and aching, worse in the left ear, with associated hearing loss, ear plugging, drainage, and low-grade fever.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6574143171310425,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.6556556224822998,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5000999569892883,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43667811155319214,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34958982467651367,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly describes the pain as dull and aching, worse in the left ear (E1:4). Associated symptoms of hearing loss, ear plugging, drainage, and low-grade fever are all confirmed by the patient (E2:2,3,4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He notes that allergies exacerbate the symptoms, along with sinus pressure and congestion.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6033600568771362,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5906907320022583,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42329901456832886,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3861928880214691,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37432801723480225,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that allergies worsen the ear pain and mentions experiencing sinus pressure and congestion, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Over-the-counter pain relievers and decongestants have provided minimal relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5203725695610046,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31524986028671265,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31189173460006714,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2890779376029968,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2731553912162781,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that over-the-counter pain relievers and decongestants 'don't seem to be helping much,' indicating minimal relief.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Ivan Bailey presents with symptoms of chronic ear pain, hearing loss, drainage, and congestion.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5743951797485352,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5286974906921387,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4876585006713867,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4817262291908264,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45435941219329834,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports constant ear pain (E0:5), hearing loss and some drainage (E2:2-3), and congestion related to sinus pressure (E3:4), supporting the claim of chronic ear pain, hearing loss, drainage, and congestion.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals signs of bilateral ear inflammation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.4626748263835907,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4419681429862976,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4335663616657257,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3655030131340027,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33884379267692566,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains no explicit mention of physical examination findings or signs of bilateral ear inflammation. The information is limited to patient-reported symptoms and planned diagnostic steps, without any documented physical exam evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.30972909927368164,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25686877965927124,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2502601742744446,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2417047917842865,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2336650937795639,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not provide any explicit information about the patient's vital signs or whether they are within normal limits. There is mention of symptoms such as low-grade fever and ear issues, but no direct statement or data about vital signs.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Immunization status is up to date, with pending results for a colonoscopy.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.43235355615615845,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.36142611503601074,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2871546745300293,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27007538080215454,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25455808639526367,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates vaccines need to be updated and a colonoscopy is to be scheduled, implying immunization is not currently up to date and colonoscopy results are pending but not yet done.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "ENT specialist Dr. Robert Smith recommends a hearing test to monitor for potential hearing loss.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5440559387207031,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39034032821655273,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.38149121403694153,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34660202264785767,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3236926794052124,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows that a hearing test is recommended (E5[4]) and that Dr. Smith is the ENT specialist involved (E5[7], E6[2]), but it does not explicitly state that Dr. Robert Smith himself recommends the hearing test. The recommendation is made by the physician, with Dr. Smith to be consulted later. Therefore, the claim that Dr. Robert Smith recommends the hearing test is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Ivan Bailey is experiencing recurrent ear infections with complications related to allergies and sinus issues.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4644928574562073,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42703115940093994,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41994982957839966,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41711050271987915,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41406309604644775,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports ear pain worsened by allergies and sinus pressure, with symptoms including hearing loss, drainage, and low-grade fever, indicating recurrent ear infections. The physician explicitly mentions complications related to allergies and sinus issues.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further evaluation is needed to determine the extent of the infection and associated hearing loss.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4511231482028961,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4306676387786865,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3723624646663666,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36445385217666626,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3155130445957184,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              4,
+              7
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly mentions the patient's hearing loss and drainage symptoms (E2:1-4) and the physician's plan to perform a hearing test and consult an ENT specialist to evaluate the ear issues further (E5:4,7), indicating further evaluation is needed to determine the extent of infection and hearing loss.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Collaborative care with the ENT specialist is recommended to address the ear issues comprehensively.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5385112762451172,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4747880697250366,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4123007357120514,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3734736442565918,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3642160892486572,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will consult with the ENT specialist to get input on the ear issues, indicating collaborative care is planned to address the ear problems comprehensively.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Update vaccines for influenza and tetanus.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.39304548501968384,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25072798132896423,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22337894141674042,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.18540003895759583,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.168608158826828,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to update vaccines to ensure protection against influenza and other diseases, which supports the claim to update vaccines for influenza and tetanus.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Schedule a colonoscopy to rule out potential issues.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.43110060691833496,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2845925986766815,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27985048294067383,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.17546994984149933,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1728328913450241,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E5[3] that a colonoscopy will be scheduled to rule out any potential issues, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Perform a hearing test to assess hearing loss.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4187704026699066,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34030622243881226,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.261615127325058,
+          "text": "Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected? Patient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24965116381645203,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24773836135864258,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that a hearing test will be performed to assess hearing loss.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Prescribe medications to manage allergies and sinus pressure.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6192542314529419,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5444866418838501,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4419434368610382,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44042742252349854,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29984989762306213,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that they will consider prescribing medications to manage allergies and sinus pressure, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Consult with ENT specialist Dr. Robert Smith for further evaluation and treatment recommendations.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5343520641326904,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41826358437538147,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4144301414489746,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39641207456588745,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3369494080543518,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will consult with Dr. Smith, the ENT specialist, and coordinate with his office to schedule an appointment for further evaluation and treatment recommendations.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "6. Advise Ivan to avoid allergens and irritants to minimize symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5855082273483276,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4001947045326233,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38489729166030884,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.369976282119751,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2721419930458069,
+          "text": "Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure? Patient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately. Physician: That's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises Ivan to avoid known allergens and minimize exposure to irritants such as dust and pollen to reduce symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "7. Follow up with Ivan to discuss test results and develop a comprehensive treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5463802218437195,
+          "text": "Physician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants. Patient: Okay, I'll do that. Thank you, Dr. Cole. Physician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42952603101730347,
+          "text": "What do you recommend? Physician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action. Patient: Okay, that makes sense. Physician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3946176767349243,
+          "text": "Physician: Good morning, Ivan. How are you feeling today? Patient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34786197543144226,
+          "text": "Have you tried any treatments or medications for your symptoms? Patient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much. Physician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems. Patient: That sounds good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.232144296169281,
+          "text": "Have you experienced any other symptoms like fever, drainage, or difficulty hearing? Patient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up with Ivan to discuss test results and develop a comprehensive treatment plan.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Ivan. How are you feeling today?\n\nPatient: Hi, Dr. Cole. I've been feeling pretty miserable lately. I've had this constant ear pain, and it's been affecting my sleep and overall well-being.\n\nPhysician: I see. Can you tell me more about the ear pain? Is it sharp, dull, or throbbing? And which ear is affected?\n\nPatient: It's a dull, aching pain in both ears, but the left ear is worse. It's been persistent for the past few weeks, and it's been getting worse.\n\nPhysician: Okay. Have you experienced any other symptoms like fever, drainage, or difficulty hearing?\n\nPatient: Yes, I've had some hearing loss, and my ears feel plugged. I've also had some drainage, but it's not too much. And yes, I've had a low-grade fever on and off.\n\nPhysician: I understand. Have you noticed any triggers that make the ear pain worse, such as allergies or sinus pressure?\n\nPatient: Yes, definitely. Whenever I have allergies, my ear pain seems to worsen. And I've been having a lot of sinus pressure and congestion lately.\n\nPhysician: That's helpful to know. Have you tried any treatments or medications for your symptoms?\n\nPatient: I've been using over-the-counter pain relievers and decongestants, but they don't seem to be helping much.\n\nPhysician: I see. Based on what you've shared, it sounds like you might have developed a couple of complications related to your allergies and sinus issues. We'll need to address these issues and prevent them from becoming chronic problems.\n\nPatient: That sounds good. What do you recommend?\n\nPhysician: First, we'll need to update your vaccines to ensure you're protected against influenza and other diseases. We'll also schedule you for a colonoscopy to rule out any potential issues. In addition, we'll perform a hearing test to assess any hearing loss and determine the best course of action.\n\nPatient: Okay, that makes sense.\n\nPhysician: We'll also consider prescribing medications to manage your allergies and sinus pressure. And I'll consult with Dr. Smith, your ENT specialist, to get his input on your ear issues.\n\nPatient: That sounds like a good plan.\n\nPhysician: Great. We'll coordinate with Dr. Smith's office to schedule an appointment for you. In the meantime, I recommend that you avoid any known allergens and take steps to minimize your exposure to dust, pollen, and other irritants.\n\nPatient: Okay, I'll do that. Thank you, Dr. Cole.\n\nPhysician: You're welcome, Ivan. We'll follow up with you soon to discuss the results of your tests and develop a comprehensive treatment plan.",
+  "note_text": "Subjective:\nIvan Bailey reports feeling miserable due to constant ear pain that has been affecting his sleep and overall well-being. He describes the pain as dull and aching, worse in the left ear, with associated hearing loss, ear plugging, drainage, and low-grade fever. He notes that allergies exacerbate the symptoms, along with sinus pressure and congestion. Over-the-counter pain relievers and decongestants have provided minimal relief.\n\nObjective:\nIvan Bailey presents with symptoms of chronic ear pain, hearing loss, drainage, and congestion. Physical examination reveals signs of bilateral ear inflammation. Vital signs are within normal limits. Immunization status is up to date, with pending results for a colonoscopy. ENT specialist Dr. Robert Smith recommends a hearing test to monitor for potential hearing loss.\n\nAssessment:\nIvan Bailey is experiencing recurrent ear infections with complications related to allergies and sinus issues. Further evaluation is needed to determine the extent of the infection and associated hearing loss. Collaborative care with the ENT specialist is recommended to address the ear issues comprehensively.\n\nPlan:\n1. Update vaccines for influenza and tetanus.\n2. Schedule a colonoscopy to rule out potential issues.\n3. Perform a hearing test to assess hearing loss.\n4. Prescribe medications to manage allergies and sinus pressure.\n5. Consult with ENT specialist Dr. Robert Smith for further evaluation and treatment recommendations.\n6. Advise Ivan to avoid allergens and irritants to minimize symptoms.\n7. Follow up with Ivan to discuss test results and develop a comprehensive treatment plan."
+}

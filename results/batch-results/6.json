@@ -1,0 +1,731 @@
+{
+  "summary": {
+    "claims": 14,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 0,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 0,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 38,
+    "failed_calls": 0,
+    "successful_calls": 38,
+    "total_input_tokens": 16482,
+    "total_output_tokens": 1449,
+    "total_tokens": 17931,
+    "total cost w/ GPT-4.1-mini (in $)": 0.008911200000000001
+  },
+  "hallucinated": [],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Dolores reports feeling a bit better lately but still experiences intense pain, rated around a six or seven on a scale of one to ten, with occasional spikes to a nine or ten.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6003780364990234,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5936124920845032,
+          "text": "Can you tell me more about your pain? What's the intensity like on a scale of one to ten? Patient: It's usually around a six or seven, but it can spike to a nine or ten when I overdo it. Physician: And what activities trigger these flare-ups? Patient: Mainly bending or twisting, like when I'm cooking or trying to pick up something heavy. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5569709539413452,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5353706479072571,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43381381034851074,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "Dolores explicitly states she has been doing a bit better lately but still experiences intense pain. She rates her pain usually around six or seven, with spikes to nine or ten, matching the claim exactly.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She notes that bending or twisting triggers flare-ups, and she experiences weakness, numbness, and tingling in her legs and feet.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6322933435440063,
+          "text": "Have you noticed any other symptoms, such as weakness, numbness, or tingling in your limbs? Patient: Yes, sometimes my legs feel weak, and I get a tingling sensation in my feet. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5177176594734192,
+          "text": "Can you tell me more about your pain? What's the intensity like on a scale of one to ten? Patient: It's usually around a six or seven, but it can spike to a nine or ten when I overdo it. Physician: And what activities trigger these flare-ups? Patient: Mainly bending or twisting, like when I'm cooking or trying to pick up something heavy. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4409164786338806,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4286344051361084,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.34366264939308167,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that bending or twisting triggers flare-ups (E1:4-5) and confirms experiencing weakness and tingling in her legs and feet (E2:1-2).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Dolores has gained approximately five pounds and has trouble falling asleep, feeling restless at night.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5491539239883423,
+          "text": "Have you experienced any recent weight gain or loss? Patient: A little bit of weight gain, maybe five pounds or so. Physician: And how's your sleep been? Do you have trouble falling or staying asleep? Patient: I've been having trouble falling asleep lately. I'll lie awake for a bit, feeling restless. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5075762867927551,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4507116675376892,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4476097524166107,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40553849935531616,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "Dolores explicitly reports a weight gain of about five pounds and trouble falling asleep, including feeling restless at night, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She also mentions feeling fatigued and down, especially when her pain is worse.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5876537561416626,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4317505359649658,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.40162748098373413,
+          "text": "Can you tell me more about your pain? What's the intensity like on a scale of one to ten? Patient: It's usually around a six or seven, but it can spike to a nine or ten when I overdo it. Physician: And what activities trigger these flare-ups? Patient: Mainly bending or twisting, like when I'm cooking or trying to pick up something heavy. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39940163493156433,
+          "text": "Have you noticed any other symptoms, such as weakness, numbness, or tingling in your limbs? Patient: Yes, sometimes my legs feel weak, and I get a tingling sensation in my feet. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38053077459335327,
+          "text": "Have you experienced any recent weight gain or loss? Patient: A little bit of weight gain, maybe five pounds or so. Physician: And how's your sleep been? Do you have trouble falling or staying asleep? Patient: I've been having trouble falling asleep lately. I'll lie awake for a bit, feeling restless. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling 'a bit down and fatigued, especially when my pain is worse,' directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Upon examination, Dolores exhibits a limp and stiffness in her gait.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.7350631952285767,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5348630547523499,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41306257247924805,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.41234081983566284,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40540915727615356,
+          "text": "Have you noticed any other symptoms, such as weakness, numbness, or tingling in your limbs? Patient: Yes, sometimes my legs feel weak, and I get a tingling sensation in my feet. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states observing a limp and stiffness in Dolores's gait during examination.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She has been compliant with her physical therapy regimen, showing improvements in balance and endurance.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.7046819925308228,
+          "text": "Have you noticed any improvements since starting physical therapy? Patient: Yes, definitely. My balance has improved, and I can walk a bit further without getting tired. Physician: Excellent."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5624085664749146,
+          "text": "Can you tell me more about your physical therapy regimen? Patient: I've been seeing a physical therapist, Mr. Dunn, twice a week. We've been working on exercises to strengthen my core and legs, as well as some stretching. Physician: That's great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5116797089576721,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4934762716293335,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.41883546113967896,
+          "text": "Patient: Sounds good to me. Thank you, Dr. Butler. Physician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient confirms compliance with physical therapy twice a week and reports improvements in balance and endurance (walking further without fatigue).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "There are no apparent side effects from her pain medication.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5971422791481018,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38451364636421204,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3757733702659607,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3065188229084015,
+          "text": "Can you tell me more about your pain? What's the intensity like on a scale of one to ten? Patient: It's usually around a six or seven, but it can spike to a nine or ten when I overdo it. Physician: And what activities trigger these flare-ups? Patient: Mainly bending or twisting, like when I'm cooking or trying to pick up something heavy. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2930481433868408,
+          "text": "Patient: Sounds good to me. Thank you, Dr. Butler. Physician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has not experienced any side effects from her pain medication when asked directly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Dolores has been managing her pain well but continues to have occasional flare-ups.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6154659986495972,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5976639986038208,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5052989721298218,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.46871599555015564,
+          "text": "Patient: Sounds good to me. Thank you, Dr. Butler. Physician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4661146402359009,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "Dolores reports that her pain medication is helping and she has been taking it as directed, indicating good pain management. However, she also mentions having some days with intense pain, implying occasional flare-ups.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Dolores continues to experience chronic pain and osteoarthritis symptoms, with occasional flare-ups impacting her daily activities.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5511148571968079,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5292326807975769,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5288938879966736,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46143215894699097,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4371510148048401,
+          "text": "Can you tell me more about your pain? What's the intensity like on a scale of one to ten? Patient: It's usually around a six or seven, but it can spike to a nine or ten when I overdo it. Physician: And what activities trigger these flare-ups? Patient: Mainly bending or twisting, like when I'm cooking or trying to pick up something heavy. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              5
+            ]
+          }
+        ],
+        "rationale": "Dolores reports ongoing pain with intensity usually 6-7 and spikes to 9-10 during certain activities, indicating chronic pain with flare-ups. The activities triggering flare-ups impact daily tasks like cooking, supporting the claim of osteoarthritis symptoms affecting daily activities.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "She has shown improvement in mobility and balance with physical therapy.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.7147186994552612,
+          "text": "Have you noticed any improvements since starting physical therapy? Patient: Yes, definitely. My balance has improved, and I can walk a bit further without getting tired. Physician: Excellent."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5205007791519165,
+          "text": "Can you tell me more about your physical therapy regimen? Patient: I've been seeing a physical therapist, Mr. Dunn, twice a week. We've been working on exercises to strengthen my core and legs, as well as some stretching. Physician: That's great."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.49695661664009094,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.449817031621933,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3824966549873352,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that her balance has improved and she can walk further without getting tired since starting physical therapy, indicating improvement in mobility and balance.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Additional blood work will be ordered to rule out any underlying conditions contributing to her symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.390832781791687,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.32833346724510193,
+          "text": "Patient: Sounds good to me. Thank you, Dr. Butler. Physician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30842268466949463,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2558079659938812,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2530657947063446,
+          "text": "Have you noticed any other symptoms, such as weakness, numbness, or tingling in your limbs? Patient: Yes, sometimes my legs feel weak, and I get a tingling sensation in my feet. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that additional blood work will be ordered to rule out any underlying conditions contributing to the patient's symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Continue with the current treatment plan, including physical therapy sessions with Mr. Dunn and pain management strategies.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5907973647117615,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5601364374160767,
+          "text": "Can you tell me more about your physical therapy regimen? Patient: I've been seeing a physical therapist, Mr. Dunn, twice a week. We've been working on exercises to strengthen my core and legs, as well as some stretching. Physician: That's great."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.490162193775177,
+          "text": "Patient: Sounds good to me. Thank you, Dr. Butler. Physician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3943348526954651,
+          "text": "Have you noticed any improvements since starting physical therapy? Patient: Yes, definitely. My balance has improved, and I can walk a bit further without getting tired. Physician: Excellent."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3783484399318695,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states to continue physical therapy and pain management (E8:6-7), the patient is currently seeing Mr. Dunn for physical therapy (E6:2), and the patient agrees with continuing the plan (E9:1).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Monitor Dolores's progress closely and adjust the plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5884961485862732,
+          "text": "Patient: Sounds good to me. Thank you, Dr. Butler. Physician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4549899399280548,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4423787593841553,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38249510526657104,
+          "text": "Physician: Good morning, Dolores. How are you feeling today? Patient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36088335514068604,
+          "text": "Have you noticed any changes in your mood or energy levels? Patient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse. Physician: Dolores, I'm going to examine your joints and muscles now."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will monitor Dolores's progress and adjust the plan as needed, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Schedule a follow-up appointment in a few weeks to reassess her condition and discuss any further interventions.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5920785665512085,
+          "text": "Patient: Sounds good to me. Thank you, Dr. Butler. Physician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4363192021846771,
+          "text": "What about your pain medication? Have you experienced any side effects or concerns? Patient: No, not really. I've been taking them as directed, and they seem to be helping. Physician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.36595532298088074,
+          "text": "Can you tell me more about your physical therapy regimen? Patient: I've been seeing a physical therapist, Mr. Dunn, twice a week. We've been working on exercises to strengthen my core and legs, as well as some stretching. Physician: That's great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3271579444408417,
+          "text": "Have you noticed any improvements since starting physical therapy? Patient: Yes, definitely. My balance has improved, and I can walk a bit further without getting tired. Physician: Excellent."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3253313899040222,
+          "text": "Can you please stand up and walk around the room for me? Patient: Sure. Physician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will monitor progress and have the nurse schedule a follow-up appointment in a few weeks, directly supporting the claim.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Dolores. How are you feeling today?\n\nPatient: Hi, Dr. Butler. I've been doing a bit better lately, but I still have some days where my pain is pretty intense.\n\nPhysician: I see. Can you tell me more about your pain? What's the intensity like on a scale of one to ten?\n\nPatient: It's usually around a six or seven, but it can spike to a nine or ten when I overdo it.\n\nPhysician: And what activities trigger these flare-ups?\n\nPatient: Mainly bending or twisting, like when I'm cooking or trying to pick up something heavy.\n\nPhysician: I understand. Have you noticed any other symptoms, such as weakness, numbness, or tingling in your limbs?\n\nPatient: Yes, sometimes my legs feel weak, and I get a tingling sensation in my feet.\n\nPhysician: Okay. Have you experienced any recent weight gain or loss?\n\nPatient: A little bit of weight gain, maybe five pounds or so.\n\nPhysician: And how's your sleep been? Do you have trouble falling or staying asleep?\n\nPatient: I've been having trouble falling asleep lately. I'll lie awake for a bit, feeling restless.\n\nPhysician: I see. Have you noticed any changes in your mood or energy levels?\n\nPatient: Yes, I've been feeling a bit down and fatigued, especially when my pain is worse.\n\nPhysician: Dolores, I'm going to examine your joints and muscles now. Can you please stand up and walk around the room for me?\n\nPatient: Sure.\n\nPhysician: (After observing Dolores's movements) I notice you have a bit of a limp and some stiffness in your gait. Can you tell me more about your physical therapy regimen?\n\nPatient: I've been seeing a physical therapist, Mr. Dunn, twice a week. We've been working on exercises to strengthen my core and legs, as well as some stretching.\n\nPhysician: That's great. Have you noticed any improvements since starting physical therapy?\n\nPatient: Yes, definitely. My balance has improved, and I can walk a bit further without getting tired.\n\nPhysician: Excellent. What about your pain medication? Have you experienced any side effects or concerns?\n\nPatient: No, not really. I've been taking them as directed, and they seem to be helping.\n\nPhysician: I'm glad to hear that. Dolores, based on what you've shared with me today, it sounds like we're on the right track with your treatment plan. Let's continue with the physical therapy and pain management strategy for now. I'll also order some additional blood work to rule out any underlying conditions that may be contributing to your symptoms.\n\nPatient: Sounds good to me. Thank you, Dr. Butler.\n\nPhysician: Of course, Dolores. We'll monitor your progress and adjust your plan as needed. I'll have my nurse schedule a follow-up appointment for you in a few weeks.",
+  "note_text": "Subjective:\nDolores reports feeling a bit better lately but still experiences intense pain, rated around a six or seven on a scale of one to ten, with occasional spikes to a nine or ten. She notes that bending or twisting triggers flare-ups, and she experiences weakness, numbness, and tingling in her legs and feet. Dolores has gained approximately five pounds and has trouble falling asleep, feeling restless at night. She also mentions feeling fatigued and down, especially when her pain is worse.\n\nObjective:\nUpon examination, Dolores exhibits a limp and stiffness in her gait. She has been compliant with her physical therapy regimen, showing improvements in balance and endurance. There are no apparent side effects from her pain medication. Dolores has been managing her pain well but continues to have occasional flare-ups.\n\nAssessment:\nDolores continues to experience chronic pain and osteoarthritis symptoms, with occasional flare-ups impacting her daily activities. She has shown improvement in mobility and balance with physical therapy. Additional blood work will be ordered to rule out any underlying conditions contributing to her symptoms.\n\nPlan:\nContinue with the current treatment plan, including physical therapy sessions with Mr. Dunn and pain management strategies. Monitor Dolores's progress closely and adjust the plan as needed. Schedule a follow-up appointment in a few weeks to reassess her condition and discuss any further interventions."
+}

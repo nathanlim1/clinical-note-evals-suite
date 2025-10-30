@@ -1,0 +1,1173 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 6,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 6,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 2,
+    "missing_critical_low_severity": 2,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 55,
+    "failed_calls": 0,
+    "successful_calls": 55,
+    "total_input_tokens": 25461,
+    "total_output_tokens": 1761,
+    "total_tokens": 27222,
+    "total cost w/ GPT-4.1-mini (in $)": 0.013002000000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Holly appeared uncomfortable but cooperative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4868852496147156,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40462878346443176,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3126426935195923,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.307508647441864,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2651720345020294,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe Holly's demeanor during the examination as 'uncomfortable but cooperative.' While she reports discomfort, there is no direct observation or statement about her cooperation or overall appearance during the exam.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3232068717479706,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31219542026519775,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30673810839653015,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2744256854057312,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25283724069595337,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their normalcy is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Abdominal palpation revealed tenderness in the upper right quadrant.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5470255017280579,
+          "text": "Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache? And where exactly is it located? Patient: It's a dull ache, mostly in the upper right side of my abdomen. It's hard to pinpoint, but it's almost like a heavy feeling. And sometimes, I feel a little nauseous after eating. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4248964488506317,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38886716961860657,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3886917233467102,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36994868516921997,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports pain in the upper right abdomen, but there is no explicit mention of abdominal palpation or physical exam findings revealing tenderness in that area.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of acute distress were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.34153303503990173,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34118860960006714,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30425959825515747,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28788888454437256,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26993730664253235,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that no signs of acute distress were noted during the encounter. There is no mention of the physician's physical exam findings or any direct statement about the patient's distress level.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "An abdominal ultrasound or CT scan will be scheduled to visualize the internal structures and identify any abnormalities.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4918086528778076,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.40040937066078186,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.34519731998443604,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3088255822658539,
+          "text": "Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache? And where exactly is it located? Patient: It's a dull ache, mostly in the upper right side of my abdomen. It's hard to pinpoint, but it's almost like a heavy feeling. And sometimes, I feel a little nauseous after eating. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2768245041370392,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript states that an imaging study like a CT scan or ultrasound can be scheduled if necessary, but does not explicitly confirm that an abdominal ultrasound or CT scan will be scheduled. The claim that these will be scheduled to visualize internal structures and identify abnormalities is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "In the meantime, Holly is advised to avoid fatty foods and manage stress through relaxation techniques or counseling.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.41449815034866333,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.37368178367614746,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.33245471119880676,
+          "text": "Have you experienced any stress or anxiety lately? Sometimes, these can affect digestion and contribute to abdominal discomfort. Patient: Yeah, I have been feeling a bit stressed out. Work has been pretty hectic, and I've been trying to juggle a lot of responsibilities."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3201941251754761,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2643021047115326,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it hurt more after certain foods or drinks? Patient: Actually, yes. I've noticed that the pain seems to worsen after I eat fatty or greasy foods. And sometimes, even water can make me feel bloated and uncomfortable. Physician: Interesting."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates that fatty/greasy foods exacerbate symptoms and that stress may contribute to abdominal discomfort, but there is no explicit advice given to Holly to avoid fatty foods or to manage stress through relaxation techniques or counseling.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Referral to a gastroenterologist may be considered depending on the findings of the diagnostic workup.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4291347861289978,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.41538190841674805,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3977992832660675,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.298973947763443,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28811773657798767,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or imply that a referral to a gastroenterologist may be considered depending on diagnostic findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Holly will be encouraged to maintain open communication with her healthcare team and report any changes in her symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.44930776953697205,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.44502049684524536,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3784884214401245,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2974727153778076,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27803269028663635,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging Holly to maintain open communication with her healthcare team or to report any changes in her symptoms.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T6",
+      "text": "It's been going on for a few days now, and I thought it was just something I ate, but it's not going away.",
+      "sent_idx": 6,
+      "prev_text": "I've been experiencing some abdominal pain and discomfort, especially after meals.",
+      "next_text": "Physician: I see.",
+      "severity": "low"
+    },
+    {
+      "sent_id": "T28",
+      "text": "And sometimes, even water can make me feel bloated and uncomfortable.",
+      "sent_idx": 28,
+      "prev_text": "I've noticed that the pain seems to worsen after I eat fatty or greasy foods.",
+      "next_text": "Physician: Interesting.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Holly Sanchez presents with complaints of abdominal pain and discomfort, particularly in the upper right side of her abdomen.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5696539282798767,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5144270062446594,
+          "text": "Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache? And where exactly is it located? Patient: It's a dull ache, mostly in the upper right side of my abdomen. It's hard to pinpoint, but it's almost like a heavy feeling. And sometimes, I feel a little nauseous after eating. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.49715089797973633,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44724926352500916,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42046475410461426,
+          "text": "Have you experienced any stress or anxiety lately? Sometimes, these can affect digestion and contribute to abdominal discomfort. Patient: Yeah, I have been feeling a bit stressed out. Work has been pretty hectic, and I've been trying to juggle a lot of responsibilities."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports abdominal pain and discomfort, with the pain described as a dull ache mostly in the upper right side of the abdomen.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She reports feeling a dull ache, nausea after meals, and bloating.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6038490533828735,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5478495359420776,
+          "text": "Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache? And where exactly is it located? Patient: It's a dull ache, mostly in the upper right side of my abdomen. It's hard to pinpoint, but it's almost like a heavy feeling. And sometimes, I feel a little nauseous after eating. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.545296847820282,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it hurt more after certain foods or drinks? Patient: Actually, yes. I've noticed that the pain seems to worsen after I eat fatty or greasy foods. And sometimes, even water can make me feel bloated and uncomfortable. Physician: Interesting."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4821280539035797,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4570837616920471,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              6
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports a dull ache (E1:4), nausea after meals (E1:6), and bloating (E2:5).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Holly notes that the pain worsens after consuming fatty or greasy foods and mentions feeling stressed due to work responsibilities.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5521134734153748,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it hurt more after certain foods or drinks? Patient: Actually, yes. I've noticed that the pain seems to worsen after I eat fatty or greasy foods. And sometimes, even water can make me feel bloated and uncomfortable. Physician: Interesting."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.520463228225708,
+          "text": "Have you experienced any stress or anxiety lately? Sometimes, these can affect digestion and contribute to abdominal discomfort. Patient: Yeah, I have been feeling a bit stressed out. Work has been pretty hectic, and I've been trying to juggle a lot of responsibilities."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5097944736480713,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5077182054519653,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45316803455352783,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the pain worsens after eating fatty or greasy foods (E4:3-4) and mentions feeling stressed due to work responsibilities (E5:3-4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Holly appeared uncomfortable but cooperative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4868852496147156,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40462878346443176,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3126426935195923,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.307508647441864,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2651720345020294,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe Holly's demeanor during the examination as 'uncomfortable but cooperative.' While she reports discomfort, there is no direct observation or statement about her cooperation or overall appearance during the exam.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3232068717479706,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31219542026519775,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30673810839653015,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2744256854057312,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25283724069595337,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their normalcy is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Abdominal palpation revealed tenderness in the upper right quadrant.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5470255017280579,
+          "text": "Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache? And where exactly is it located? Patient: It's a dull ache, mostly in the upper right side of my abdomen. It's hard to pinpoint, but it's almost like a heavy feeling. And sometimes, I feel a little nauseous after eating. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4248964488506317,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38886716961860657,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3886917233467102,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36994868516921997,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports pain in the upper right abdomen, but there is no explicit mention of abdominal palpation or physical exam findings revealing tenderness in that area.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of acute distress were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.34153303503990173,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34118860960006714,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30425959825515747,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28788888454437256,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26993730664253235,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that no signs of acute distress were noted during the encounter. There is no mention of the physician's physical exam findings or any direct statement about the patient's distress level.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Further diagnostic tests, including blood work and imaging studies, have been ordered to investigate potential causes of her symptoms.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5190025568008423,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4781669080257416,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40043529868125916,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3445371091365814,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33387717604637146,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order blood tests and mentions the possibility of scheduling imaging studies like CT scan or ultrasound for further evaluation, confirming that further diagnostic tests including blood work and imaging studies have been ordered or planned.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Based on the clinical presentation and history provided by the patient, Holly's symptoms are suggestive of a possible gastrointestinal issue, such as gallstones or pancreatitis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5971329808235168,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5793730020523071,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4897446632385254,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.372500479221344,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.358879953622818,
+          "text": "Have you experienced any stress or anxiety lately? Sometimes, these can affect digestion and contribute to abdominal discomfort. Patient: Yeah, I have been feeling a bit stressed out. Work has been pretty hectic, and I've been trying to juggle a lot of responsibilities."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly mentions the patient's symptoms (abdominal pain, discomfort, nausea, bloating) and the physician considering gallstones or pancreatitis as possible causes based on clinical presentation and history.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Stress and dietary factors may be exacerbating her condition.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4733746647834778,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43318384885787964,
+          "text": "Have you experienced any stress or anxiety lately? Sometimes, these can affect digestion and contribute to abdominal discomfort. Patient: Yeah, I have been feeling a bit stressed out. Work has been pretty hectic, and I've been trying to juggle a lot of responsibilities."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3567390739917755,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32805413007736206,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it hurt more after certain foods or drinks? Patient: Actually, yes. I've noticed that the pain seems to worsen after I eat fatty or greasy foods. And sometimes, even water can make me feel bloated and uncomfortable. Physician: Interesting."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32040005922317505,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states that stress and anxiety can impact digestion and contribute to symptoms, and the patient confirms experiencing stress. Additionally, fatty/greasy foods are noted as exacerbating factors. The summary in E8 confirms these as potential contributing/exacerbating factors.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further evaluation is needed to confirm the diagnosis and determine the appropriate treatment plan.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5320184826850891,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.33582043647766113,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3064015507698059,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2538359761238098,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2195563018321991,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions scheduling imaging studies for further evaluation and developing an appropriate treatment plan, along with follow-up to monitor progress. Additionally, ordering tests and physical examination to better understand the condition supports the need for further evaluation and treatment planning.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Holly will undergo blood tests to assess liver function and pancreatic enzymes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.45169878005981445,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40960633754730225,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3607211112976074,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33423471450805664,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23336713016033173,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will order blood tests to check for possible gallstones, pancreatitis, or other issues, which implies assessing liver function and pancreatic enzymes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "An abdominal ultrasound or CT scan will be scheduled to visualize the internal structures and identify any abnormalities.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4918086528778076,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.40040937066078186,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.34519731998443604,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3088255822658539,
+          "text": "Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache? And where exactly is it located? Patient: It's a dull ache, mostly in the upper right side of my abdomen. It's hard to pinpoint, but it's almost like a heavy feeling. And sometimes, I feel a little nauseous after eating. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2768245041370392,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript states that an imaging study like a CT scan or ultrasound can be scheduled if necessary, but does not explicitly confirm that an abdominal ultrasound or CT scan will be scheduled. The claim that these will be scheduled to visualize internal structures and identify abnormalities is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "In the meantime, Holly is advised to avoid fatty foods and manage stress through relaxation techniques or counseling.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.41449815034866333,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.37368178367614746,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.33245471119880676,
+          "text": "Have you experienced any stress or anxiety lately? Sometimes, these can affect digestion and contribute to abdominal discomfort. Patient: Yeah, I have been feeling a bit stressed out. Work has been pretty hectic, and I've been trying to juggle a lot of responsibilities."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3201941251754761,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2643021047115326,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it hurt more after certain foods or drinks? Patient: Actually, yes. I've noticed that the pain seems to worsen after I eat fatty or greasy foods. And sometimes, even water can make me feel bloated and uncomfortable. Physician: Interesting."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates that fatty/greasy foods exacerbate symptoms and that stress may contribute to abdominal discomfort, but there is no explicit advice given to Holly to avoid fatty foods or to manage stress through relaxation techniques or counseling.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Follow-up appointments will be scheduled to review test results and discuss the next steps in her care.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5405387878417969,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3445271849632263,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24679170548915863,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24452653527259827,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23616239428520203,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up closely to monitor the patient's progress, implying follow-up appointments to review test results and discuss next steps.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Referral to a gastroenterologist may be considered depending on the findings of the diagnostic workup.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4291347861289978,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.41538190841674805,
+          "text": "Could that be a factor? Physician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain. Patient: That makes sense. I never thought about that. Physician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3977992832660675,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.298973947763443,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28811773657798767,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or imply that a referral to a gastroenterologist may be considered depending on diagnostic findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Holly will be encouraged to maintain open communication with her healthcare team and report any changes in her symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.44930776953697205,
+          "text": "Physician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.44502049684524536,
+          "text": "Physician: No problem, Holly. We'll work together to get you feeling better soon. The conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3784884214401245,
+          "text": "If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation. Patient: That sounds good. I just want to figure out what's going on and feel better. Physician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress. Patient: Thank you, Dr. Brown. I appreciate your help."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2974727153778076,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms. Physician: That's good to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27803269028663635,
+          "text": "Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements? Patient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging Holly to maintain open communication with her healthcare team or to report any changes in her symptoms.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Holly. It's a pleasure to meet you. How are you feeling today?\n\nPatient: Hi, Dr. Brown. I'm not feeling too great, to be honest. I've been experiencing some abdominal pain and discomfort, especially after meals. It's been going on for a few days now, and I thought it was just something I ate, but it's not going away.\n\nPhysician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or more of a dull ache? And where exactly is it located?\n\nPatient: It's a dull ache, mostly in the upper right side of my abdomen. It's hard to pinpoint, but it's almost like a heavy feeling. And sometimes, I feel a little nauseous after eating.\n\nPhysician: Okay. Have you noticed any other symptoms? Fever, vomiting, changes in your bowel movements?\n\nPatient: No, I don't think so. Just the pain and discomfort. Oh, and sometimes I feel bloated.\n\nPhysician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't think anyone in my household is experiencing the same symptoms.\n\nPhysician: That's good to know. Have you noticed any triggers that make the pain worse or better? For example, does it hurt more after certain foods or drinks?\n\nPatient: Actually, yes. I've noticed that the pain seems to worsen after I eat fatty or greasy foods. And sometimes, even water can make me feel bloated and uncomfortable.\n\nPhysician: Interesting. Have you experienced any stress or anxiety lately? Sometimes, these can affect digestion and contribute to abdominal discomfort.\n\nPatient: Yeah, I have been feeling a bit stressed out. Work has been pretty hectic, and I've been trying to juggle a lot of responsibilities. Could that be a factor?\n\nPhysician: Absolutely. Stress and anxiety can definitely impact digestion and contribute to symptoms like abdominal pain.\n\nPatient: That makes sense. I never thought about that.\n\nPhysician: Of course. Now, I'd like to perform a physical examination and order some tests to help us better understand what's going on. We'll start with a thorough abdominal exam, and then I'll order some blood tests to check for possible gallstones, pancreatitis, or other issues that may be causing your symptoms. If necessary, we can also schedule an imaging study like a CT scan or ultrasound for further evaluation.\n\nPatient: That sounds good. I just want to figure out what's going on and feel better.\n\nPhysician: I completely understand. We'll do our best to get to the bottom of this and develop an appropriate treatment plan. I'll also make sure to follow up with you closely to monitor your progress.\n\nPatient: Thank you, Dr. Brown. I appreciate your help.\n\nPhysician: No problem, Holly. We'll work together to get you feeling better soon.\n\nThe conversation above captures essential details that form the basis of subsequent documentation, such as the patient's symptoms (abdominal pain and discomfort, nausea, bloating), location of pain (upper right abdomen), exacerbating factors (fatty/greasy foods), and potential contributing factors (stress, anxiety). The physician's questions and comments also demonstrate their thought process in evaluating the patient's condition, considering possibilities such as gallstones, pancreatitis, or other digestive issues. The resulting clinical dialogue serves as a precursor to the SOAP notes, providing a comprehensive understanding of the patient's subjective experiences that will inform the assessment, diagnosis, and treatment plan.",
+  "note_text": "Subjective:\nHolly Sanchez presents with complaints of abdominal pain and discomfort, particularly in the upper right side of her abdomen. She reports feeling a dull ache, nausea after meals, and bloating. Holly notes that the pain worsens after consuming fatty or greasy foods and mentions feeling stressed due to work responsibilities.\n\nObjective:\nDuring the examination, Holly appeared uncomfortable but cooperative. Vital signs were within normal limits. Abdominal palpation revealed tenderness in the upper right quadrant. No signs of acute distress were noted. Further diagnostic tests, including blood work and imaging studies, have been ordered to investigate potential causes of her symptoms.\n\nAssessment:\nBased on the clinical presentation and history provided by the patient, Holly's symptoms are suggestive of a possible gastrointestinal issue, such as gallstones or pancreatitis. Stress and dietary factors may be exacerbating her condition. Further evaluation is needed to confirm the diagnosis and determine the appropriate treatment plan.\n\nPlan:\nHolly will undergo blood tests to assess liver function and pancreatic enzymes. An abdominal ultrasound or CT scan will be scheduled to visualize the internal structures and identify any abnormalities. In the meantime, Holly is advised to avoid fatty foods and manage stress through relaxation techniques or counseling. Follow-up appointments will be scheduled to review test results and discuss the next steps in her care. Referral to a gastroenterologist may be considered depending on the findings of the diagnostic workup. Holly will be encouraged to maintain open communication with her healthcare team and report any changes in her symptoms."
+}

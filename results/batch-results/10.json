@@ -1,0 +1,996 @@
+{
+  "summary": {
+    "claims": 16,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 40,
+    "failed_calls": 0,
+    "successful_calls": 40,
+    "total_input_tokens": 20144,
+    "total_output_tokens": 1832,
+    "total_tokens": 21976,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0109888
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.27429521083831787,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2513737678527832,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.24416574835777283,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23929725587368011,
+          "text": "Have you had any recent upper respiratory infections or illnesses that could be exacerbating your symptoms? Patient: Actually, yes. I had a pretty bad cold a few weeks ago that seemed to linger for a while."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22854065895080566,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or data about vital signs or their normality is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Patient demonstrates proper use of albuterol inhaler during the visit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.513042688369751,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.47096818685531616,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3494061529636383,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3457539975643158,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30965477228164673,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or demonstrate that the patient used the albuterol inhaler properly during the visit. The patient mentions using the inhaler regularly but feeling it is less effective, and the physician expresses a desire to observe proper inhaler use, implying it was not confirmed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals nasal congestion and mild wheezing upon auscultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5167353749275208,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5124908685684204,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4385310411453247,
+          "text": "Have you had any recent upper respiratory infections or illnesses that could be exacerbating your symptoms? Patient: Actually, yes. I had a pretty bad cold a few weeks ago that seemed to linger for a while."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4202273190021515,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.40695664286613464,
+          "text": "Could that be contributing to my symptoms? Physician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient experiencing nasal congestion and wheezing, but there is no explicit mention of physical examination findings such as nasal congestion or mild wheezing upon auscultation by the physician.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Patient's weight and height remain stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.31599026918411255,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31095969676971436,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2769101858139038,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2641323208808899,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2259202003479004,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention the patient's weight or height, nor do they indicate stability or change in these parameters.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Patient, Carter Spencer, reports experiencing worsening allergy symptoms including congestion, sneezing, itchy and watery eyes, as well as exacerbation of asthma symptoms with persistent wheezing and coughing, especially at night.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6747869849205017,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.6462765336036682,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5403944849967957,
+          "text": "Have you noticed any specific patterns or triggers that make your symptoms worse? Patient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5055013298988342,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.49947425723075867,
+          "text": "Could that be contributing to my symptoms? Physician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports worsening allergy symptoms including congestion, sneezing, itchy and watery eyes (E0:4-5), and exacerbation of asthma symptoms with persistent wheezing and coughing, especially at night (E0:6, E1:4-5). The physician confirms that viral infections can worsen asthma and allergies (E4:3), and the patient notes symptom worsening with allergen exposure (E5:3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He attributes the worsening of his asthma to exposure to dust and pollen, as well as recent upper respiratory infection.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6441768407821655,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.6005412340164185,
+          "text": "Have you noticed any specific patterns or triggers that make your symptoms worse? Patient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.6001430749893188,
+          "text": "Could that be contributing to my symptoms? Physician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5848815441131592,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5819377899169922,
+          "text": "Have you had any recent upper respiratory infections or illnesses that could be exacerbating your symptoms? Patient: Actually, yes. I had a pretty bad cold a few weeks ago that seemed to linger for a while."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that exposure to dust and pollen worsens his asthma symptoms (E1:6, E5:3). He also confirms having a recent upper respiratory infection (a cold) that lingered (E3:2,3), and the physician acknowledges that viral infections can exacerbate asthma (E4:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Patient also expresses concerns about the effectiveness of his albuterol inhaler and mentions considering allergy shots for management of seasonal allergies.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.7155007123947144,
+          "text": "Have you considered allergy shots or immunotherapy to help manage your allergies? Patient: I've thought about it, but I'm not sure if it's worth it. I've heard it can be pretty expensive and time-consuming. Physician: I understand your concerns, but allergy shots can be very effective in managing seasonal allergies and reducing symptoms. It's definitely worth considering, especially if your symptoms continue to be problematic. Patient: Okay, I'll think about it."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.611241340637207,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5885738134384155,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5367640852928162,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5359426736831665,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the albuterol inhaler is not working as well as it used to (E2:4). The patient also mentions having thought about allergy shots but is unsure if it's worth it (E6:1-2), indicating consideration of allergy shots for seasonal allergy management.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Patient presents with signs of allergic rhinitis and asthma exacerbation, with wheezing and coughing noted during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6293256282806396,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.621401309967041,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5210473537445068,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5041120052337646,
+          "text": "Could that be contributing to my symptoms? Physician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4843531847000122,
+          "text": "Have you noticed any specific patterns or triggers that make your symptoms worse? Patient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him. Physician: That's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports allergy symptoms (congestion, sneezing, itchy watery eyes) and asthma symptoms (wheezing and coughing). The patient also notes wheezing and coughing several times a week and worsening symptoms with allergen exposure, supporting allergic rhinitis and asthma exacerbation with wheezing and coughing during examination.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.27429521083831787,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2513737678527832,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.24416574835777283,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23929725587368011,
+          "text": "Have you had any recent upper respiratory infections or illnesses that could be exacerbating your symptoms? Patient: Actually, yes. I had a pretty bad cold a few weeks ago that seemed to linger for a while."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22854065895080566,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or data about vital signs or their normality is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Patient demonstrates proper use of albuterol inhaler during the visit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.513042688369751,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.47096818685531616,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3494061529636383,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3457539975643158,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30965477228164673,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or demonstrate that the patient used the albuterol inhaler properly during the visit. The patient mentions using the inhaler regularly but feeling it is less effective, and the physician expresses a desire to observe proper inhaler use, implying it was not confirmed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals nasal congestion and mild wheezing upon auscultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5167353749275208,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5124908685684204,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4385310411453247,
+          "text": "Have you had any recent upper respiratory infections or illnesses that could be exacerbating your symptoms? Patient: Actually, yes. I had a pretty bad cold a few weeks ago that seemed to linger for a while."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4202273190021515,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.40695664286613464,
+          "text": "Could that be contributing to my symptoms? Physician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient experiencing nasal congestion and wheezing, but there is no explicit mention of physical examination findings such as nasal congestion or mild wheezing upon auscultation by the physician.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Patient's weight and height remain stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.31599026918411255,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31095969676971436,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2769101858139038,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2641323208808899,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2259202003479004,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention the patient's weight or height, nor do they indicate stability or change in these parameters.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Carter Spencer is experiencing worsening allergy symptoms and asthma exacerbation likely triggered by exposure to dust, pollen, and recent upper respiratory infection.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5725483298301697,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5474827289581299,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5435946583747864,
+          "text": "Have you noticed any specific patterns or triggers that make your symptoms worse? Patient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5052371621131897,
+          "text": "Could that be contributing to my symptoms? Physician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.47123920917510986,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports worsening allergy symptoms (E0:4-6) and persistent asthma symptoms with wheezing and coughing (E1:4-6). The patient identifies dust and pollen as triggers worsening symptoms (E1:6, E5:3). The physician confirms that a viral infection can exacerbate asthma and allergies (E4:3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Consideration of allergy shots for seasonal allergies is noted.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6779674291610718,
+          "text": "Have you considered allergy shots or immunotherapy to help manage your allergies? Patient: I've thought about it, but I'm not sure if it's worth it. I've heard it can be pretty expensive and time-consuming. Physician: I understand your concerns, but allergy shots can be very effective in managing seasonal allergies and reducing symptoms. It's definitely worth considering, especially if your symptoms continue to be problematic. Patient: Okay, I'll think about it."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4264083504676819,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3794405460357666,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3735862970352173,
+          "text": "Have you noticed any specific patterns or triggers that make your symptoms worse? Patient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36574459075927734,
+          "text": "Could that be contributing to my symptoms? Physician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly asks if allergy shots or immunotherapy have been considered and states that allergy shots can be very effective and worth considering for managing seasonal allergies.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Patient's asthma control needs to be optimized to prevent further exacerbations.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5728375315666199,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4739762246608734,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.47158849239349365,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41530030965805054,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38096681237220764,
+          "text": "Have you noticed any specific patterns or triggers that make your symptoms worse? Patient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him. Physician: That's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports persistent asthma symptoms and decreased effectiveness of current inhaler use (E1:4-6, E2:4). The physician suggests ensuring correct medication use and considering dosage adjustment or medication changes (E7:2-3), indicating a need to optimize asthma control to prevent exacerbations.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Review and optimize inhaler technique for albuterol.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.45978859066963196,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.41766804456710815,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.29488036036491394,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29424846172332764,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2593355178833008,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to ensure correct medication use and to observe inhaler technique, which supports the claim to review and optimize inhaler technique for albuterol.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Consider adjusting asthma medication dosage or switching medications if needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6075083017349243,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.468561589717865,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4462793171405792,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4289301633834839,
+          "text": "Have you considered allergy shots or immunotherapy to help manage your allergies? Patient: I've thought about it, but I'm not sure if it's worth it. I've heard it can be pretty expensive and time-consuming. Physician: I understand your concerns, but allergy shots can be very effective in managing seasonal allergies and reducing symptoms. It's definitely worth considering, especially if your symptoms continue to be problematic. Patient: Okay, I'll think about it."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41895753145217896,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions discussing adjusting the dosage or switching medications if needed, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Discuss over-the-counter medications for symptom management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.46091973781585693,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37994635105133057,
+          "text": "Have you considered allergy shots or immunotherapy to help manage your allergies? Patient: I've thought about it, but I'm not sure if it's worth it. I've heard it can be pretty expensive and time-consuming. Physician: I understand your concerns, but allergy shots can be very effective in managing seasonal allergies and reducing symptoms. It's definitely worth considering, especially if your symptoms continue to be problematic. Patient: Okay, I'll think about it."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3136001527309418,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3049032688140869,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30476289987564087,
+          "text": "Have you had any recent upper respiratory infections or illnesses that could be exacerbating your symptoms? Patient: Actually, yes. I had a pretty bad cold a few weeks ago that seemed to linger for a while."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they can discuss over-the-counter medications to help with symptoms, directly supporting the claim about discussing OTC medications for symptom management.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Educate patient on lifestyle modifications to reduce exposure to allergens.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6008117198944092,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4431374669075012,
+          "text": "Have you considered allergy shots or immunotherapy to help manage your allergies? Patient: I've thought about it, but I'm not sure if it's worth it. I've heard it can be pretty expensive and time-consuming. Physician: I understand your concerns, but allergy shots can be very effective in managing seasonal allergies and reducing symptoms. It's definitely worth considering, especially if your symptoms continue to be problematic. Patient: Okay, I'll think about it."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4351222515106201,
+          "text": "Physician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma? Patient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4123303294181824,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4106413722038269,
+          "text": "Have you noticed any specific patterns or triggers that make your symptoms worse? Patient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him. Physician: That's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly educates the patient on lifestyle changes to manage allergies and asthma, including avoiding exposure to dust and pollen and keeping the home clean, which aligns with reducing exposure to allergens.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Schedule a follow-up appointment in two weeks to assess treatment response and adjust the management plan accordingly.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.7612401247024536,
+          "text": "Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3926704525947571,
+          "text": "What can I do in the meantime to manage my symptoms? Physician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free. Patient: Okay, that sounds good. I'll do my best to make those changes and see if they help. Physician: Great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.29412221908569336,
+          "text": "Have you considered allergy shots or immunotherapy to help manage your allergies? Patient: I've thought about it, but I'm not sure if it's worth it. I've heard it can be pretty expensive and time-consuming. Physician: I understand your concerns, but allergy shots can be very effective in managing seasonal allergies and reducing symptoms. It's definitely worth considering, especially if your symptoms continue to be problematic. Patient: Okay, I'll think about it."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2408340871334076,
+          "text": "Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed? Patient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21523067355155945,
+          "text": "Physician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse? Patient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse. Physician: That makes sense."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states scheduling a follow-up appointment in a few weeks to check progress and adjust the treatment plan as needed, which aligns with scheduling a follow-up in two weeks to assess treatment response and adjust management.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Hi, I'm Dr. Duncan. I've reviewed your medical history and current symptoms. Can you tell me more about your allergies and asthma?\n\nPatient: Sure, I've been experiencing some pretty bad allergy symptoms lately. I've been congested, sneezing, and my eyes have been itchy and watery. My asthma has also been acting up, I've been wheezing and coughing a lot, especially at night.\n\nPhysician: Okay, can you tell me more about your asthma symptoms? How often do you experience wheezing and coughing? Have you noticed any triggers that make your symptoms worse?\n\nPatient: My asthma symptoms have been pretty persistent lately. I'd say I experience wheezing and coughing at least a few times a week, sometimes more often. I've noticed that my symptoms tend to worsen when I'm exposed to dust and pollen, which is why I think my allergies are making my asthma worse.\n\nPhysician: That makes sense. Have you noticed any other triggers, such as exercise or stress? And have you been using your albuterol inhaler as prescribed?\n\nPatient: Yeah, I've noticed that my symptoms can get worse when I'm stressed or when I exercise. I've been using my inhaler pretty regularly, but I feel like it's not working as well as it used to.\n\nPhysician: I see. Have you had any recent upper respiratory infections or illnesses that could be exacerbating your symptoms?\n\nPatient: Actually, yes. I had a pretty bad cold a few weeks ago that seemed to linger for a while. Could that be contributing to my symptoms?\n\nPhysician: Absolutely. A viral infection like a cold can definitely make your asthma and allergies worse. Let's talk about your allergies for a minute. Have you noticed any specific patterns or triggers that make your symptoms worse?\n\nPatient: Yeah, definitely. Like I said, I've been noticing that my symptoms tend to worsen when I'm exposed to dust and pollen. I also have a cat, and I've noticed that my symptoms tend to be worse when I'm around him.\n\nPhysician: That's helpful to know. Have you considered allergy shots or immunotherapy to help manage your allergies?\n\nPatient: I've thought about it, but I'm not sure if it's worth it. I've heard it can be pretty expensive and time-consuming.\n\nPhysician: I understand your concerns, but allergy shots can be very effective in managing seasonal allergies and reducing symptoms. It's definitely worth considering, especially if your symptoms continue to be problematic.\n\nPatient: Okay, I'll think about it. What can I do in the meantime to manage my symptoms?\n\nPhysician: Well, let's start by making sure you're using your medications correctly. I'd like to see you using your inhaler correctly, and we can also discuss adjusting your dosage or switching medications if needed. We can also talk about over-the-counter medications that might help with your symptoms. Additionally, there are some lifestyle changes you can make to help manage your allergies and asthma, such as avoiding exposure to dust and pollen, using a HEPA air purifier, and keeping your home clean and dust-free.\n\nPatient: Okay, that sounds good. I'll do my best to make those changes and see if they help.\n\nPhysician: Great. Let's schedule a follow-up appointment in a few weeks to check in on your progress and adjust your treatment plan as needed.",
+  "note_text": "Subjective:\nPatient, Carter Spencer, reports experiencing worsening allergy symptoms including congestion, sneezing, itchy and watery eyes, as well as exacerbation of asthma symptoms with persistent wheezing and coughing, especially at night. He attributes the worsening of his asthma to exposure to dust and pollen, as well as recent upper respiratory infection. Patient also expresses concerns about the effectiveness of his albuterol inhaler and mentions considering allergy shots for management of seasonal allergies.\n\nObjective:\nPatient presents with signs of allergic rhinitis and asthma exacerbation, with wheezing and coughing noted during the examination. Vital signs are within normal limits. Patient demonstrates proper use of albuterol inhaler during the visit. Physical examination reveals nasal congestion and mild wheezing upon auscultation. Patient's weight and height remain stable.\n\nAssessment:\nCarter Spencer is experiencing worsening allergy symptoms and asthma exacerbation likely triggered by exposure to dust, pollen, and recent upper respiratory infection. Consideration of allergy shots for seasonal allergies is noted. Patient's asthma control needs to be optimized to prevent further exacerbations.\n\nPlan:\n1. Review and optimize inhaler technique for albuterol.\n2. Consider adjusting asthma medication dosage or switching medications if needed.\n3. Discuss over-the-counter medications for symptom management.\n4. Educate patient on lifestyle modifications to reduce exposure to allergens.\n5. Schedule a follow-up appointment in two weeks to assess treatment response and adjust the management plan accordingly."
+}

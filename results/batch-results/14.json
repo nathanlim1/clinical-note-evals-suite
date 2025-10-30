@@ -1,0 +1,794 @@
+{
+  "summary": {
+    "claims": 13,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 42,
+    "failed_calls": 0,
+    "successful_calls": 42,
+    "total_input_tokens": 18405,
+    "total_output_tokens": 1376,
+    "total_tokens": 19781,
+    "total cost w/ GPT-4.1-mini (in $)": 0.009563599999999998
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "During the examination, Mr. Baker displayed no signs of swelling, redness, or warmth in the knees and hips.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5566238760948181,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5559732913970947,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5462454557418823,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.43567779660224915,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4139961004257202,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The transcript only shows the patient denying swelling, redness, or warmth in the joints (E2:1-2), but there is no explicit mention of the physician's examination findings confirming the absence of these signs in the knees and hips. The claim about the physician's examination findings is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Range of motion in the affected joints was slightly limited due to pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.520810067653656,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.47359514236450195,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44869476556777954,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42753908038139343,
+          "text": "How long have you been experiencing this joint pain? Patient: Like I said, it's been a few weeks now. It started gradually, but it's been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3773554563522339,
+          "text": "Have you recently experienced any changes in your work or daily activities that might be contributing to the pain? Patient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions pain and stiffness in the joints but does not explicitly state that range of motion is limited or that the limitation is due to pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No other abnormalities were noted during the physical examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.36368972063064575,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31689658761024475,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.280246376991272,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2759345769882202,
+          "text": "Have you tried any treatments or remedies for the pain, such as over-the-counter medications or physical therapy? Patient: I've been taking some acetaminophen when the pain gets really bad, but that's about it. I haven't tried anything else yet. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2702479362487793,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that no other abnormalities were noted during the physical examination; it mainly covers patient symptoms, plans for tests, and treatment without mentioning physical exam findings or absence of abnormalities.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Baker presents with complaints of joint pain in his knees and hips, describing it as a dull ache that is worse in the mornings and after prolonged sitting.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7491928339004517,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.6595258712768555,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.6041950583457947,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5457114577293396,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5008466243743896,
+          "text": "How long have you been experiencing this joint pain? Patient: Like I said, it's been a few weeks now. It started gradually, but it's been getting worse over time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports joint pain in knees and hips (E0:4), describes it as a dull ache (E1:4), and notes it is worse in the mornings and after prolonged sitting (E2:3).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He notes no swelling, redness, or warmth in the affected joints.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.7314709424972534,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48043370246887207,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4740111231803894,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3699778616428375,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3606971502304077,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any swelling, redness, or warmth in the affected joints when asked directly.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "The pain has been ongoing for a few weeks and has been gradually worsening.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.7222963571548462,
+          "text": "How long have you been experiencing this joint pain? Patient: Like I said, it's been a few weeks now. It started gradually, but it's been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4890650808811188,
+          "text": "Have you recently experienced any changes in your work or daily activities that might be contributing to the pain? Patient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4697796106338501,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.45397108793258667,
+          "text": "Have you tried any treatments or remedies for the pain, such as over-the-counter medications or physical therapy? Patient: I've been taking some acetaminophen when the pain gets really bad, but that's about it. I haven't tried anything else yet. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4071102738380432,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the pain has been ongoing for a few weeks (E3:2, E0:5) and that it started gradually but has been worsening over time (E3:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Baker attributes the pain to his desk job and reports taking acetaminophen for symptom relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5261147022247314,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5226612687110901,
+          "text": "Have you tried any treatments or remedies for the pain, such as over-the-counter medications or physical therapy? Patient: I've been taking some acetaminophen when the pain gets really bad, but that's about it. I haven't tried anything else yet. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.518601655960083,
+          "text": "Have you recently experienced any changes in your work or daily activities that might be contributing to the pain? Patient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5096174478530884,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.43617790937423706,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states he has been working a desk job for years and reports taking acetaminophen when the pain worsens, directly supporting both parts of the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "During the examination, Mr. Baker displayed no signs of swelling, redness, or warmth in the knees and hips.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5566238760948181,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5559732913970947,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5462454557418823,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.43567779660224915,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4139961004257202,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The transcript only shows the patient denying swelling, redness, or warmth in the joints (E2:1-2), but there is no explicit mention of the physician's examination findings confirming the absence of these signs in the knees and hips. The claim about the physician's examination findings is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Range of motion in the affected joints was slightly limited due to pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.520810067653656,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.47359514236450195,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44869476556777954,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42753908038139343,
+          "text": "How long have you been experiencing this joint pain? Patient: Like I said, it's been a few weeks now. It started gradually, but it's been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3773554563522339,
+          "text": "Have you recently experienced any changes in your work or daily activities that might be contributing to the pain? Patient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions pain and stiffness in the joints but does not explicitly state that range of motion is limited or that the limitation is due to pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No other abnormalities were noted during the physical examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.36368972063064575,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31689658761024475,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.280246376991272,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2759345769882202,
+          "text": "Have you tried any treatments or remedies for the pain, such as over-the-counter medications or physical therapy? Patient: I've been taking some acetaminophen when the pain gets really bad, but that's about it. I haven't tried anything else yet. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2702479362487793,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that no other abnormalities were noted during the physical examination; it mainly covers patient symptoms, plans for tests, and treatment without mentioning physical exam findings or absence of abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Based on Mr. Baker's history and clinical presentation, the likely diagnosis is osteoarthritis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6459835767745972,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5470902919769287,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4461041986942291,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4015715718269348,
+          "text": "How long have you been experiencing this joint pain? Patient: Like I said, it's been a few weeks now. It started gradually, but it's been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39289936423301697,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that Mr. Baker might be experiencing symptoms of osteoarthritis based on his history and presentation, including joint pain and stiffness localized to knees and hips, with grinding sensations, which are typical features of osteoarthritis.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Further investigations, including blood work to check for inflammatory markers, are warranted to confirm the diagnosis and rule out other potential causes of joint pain.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5563455820083618,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5534478425979614,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.463310569524765,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints? Patient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4447217583656311,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected joints? Patient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.430900514125824,
+          "text": "Have you recently experienced any changes in your work or daily activities that might be contributing to the pain? Patient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need for blood work to check inflammatory markers and to rule out other causes, and mentions running tests to confirm diagnosis and exclude other potential causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "1. Schedule a follow-up appointment with physical therapist Michael Adams for exercises and stretches to manage pain and improve mobility.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5787109732627869,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4821802079677582,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4482326805591583,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.422184556722641,
+          "text": "Have you tried any treatments or remedies for the pain, such as over-the-counter medications or physical therapy? Patient: I've been taking some acetaminophen when the pain gets really bad, but that's about it. I haven't tried anything else yet. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.40813106298446655,
+          "text": "Have you recently experienced any changes in your work or daily activities that might be contributing to the pain? Patient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states scheduling a follow-up appointment with physical therapist Michael Adams for exercises and stretches to manage pain and improve mobility.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "2. Order blood work to check for inflammatory markers and rule out other potential causes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5577447414398193,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3822922110557556,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.32646822929382324,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30835992097854614,
+          "text": "Have you tried any treatments or remedies for the pain, such as over-the-counter medications or physical therapy? Patient: I've been taking some acetaminophen when the pain gets really bad, but that's about it. I haven't tried anything else yet. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29888230562210083,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to schedule blood work to check for inflammatory markers and rule out other potential causes, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "3. Instruct Mr. Baker to keep a pain journal to track symptoms and any changes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5752123594284058,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5329564809799194,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5287994742393494,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5251560211181641,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45086514949798584,
+          "text": "Have you recently experienced any changes in your work or daily activities that might be contributing to the pain? Patient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly instructs the patient to keep track of pain levels and any changes in symptoms, which aligns with keeping a pain journal to track symptoms and changes.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "4. Follow up with Mr. Baker in two weeks to review test results and adjust the treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6454941630363464,
+          "text": "Physician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4974155128002167,
+          "text": "Patient: That sounds good. Thank you, Doc. Physician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed. Patient: Okay, will do. Thanks again."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.43030235171318054,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or loss of appetite? Patient: No, nothing like that. Just the joint pain and stiffness. Physician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38429296016693115,
+          "text": "Physician: Good morning, Mr. Baker. How can I assist you today? Patient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2889355719089508,
+          "text": "How long have you been experiencing this joint pain? Patient: Like I said, it's been a few weeks now. It started gradually, but it's been getting worse over time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a follow-up appointment in a couple of weeks to review results and discuss next steps, which aligns with reviewing test results and adjusting the treatment plan as needed.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Mr. Baker. How can I assist you today?\n\nPatient: Hi, Doc. I've been experiencing some joint pain in my knees and hips, especially in the mornings. It's been going on for a few weeks now, and I thought it was time to get it checked out.\n\nPhysician: I see. Can you tell me more about the pain? Is it sharp, dull, or achy? Does it radiate to other areas, or is it localized in the joints?\n\nPatient: It's a dull ache, mostly in my knees and hips. Sometimes it feels like my joints are grinding against each other. It doesn't really radiate anywhere else, just in the joints themselves.\n\nPhysician: I understand. Have you noticed any swelling, redness, or warmth in the affected joints?\n\nPatient: No, nothing like that. Just the pain and stiffness, especially when I wake up in the morning or after I've been sitting for a while.\n\nPhysician: Okay. How long have you been experiencing this joint pain?\n\nPatient: Like I said, it's been a few weeks now. It started gradually, but it's been getting worse over time.\n\nPhysician: I see. Have you recently experienced any changes in your work or daily activities that might be contributing to the pain?\n\nPatient: Well, I've been working at a desk job for the past few years, and I've noticed that I've been getting more tired and experiencing more pain in my joints at the end of the day.\n\nPhysician: That's helpful information. Have you tried any treatments or remedies for the pain, such as over-the-counter medications or physical therapy?\n\nPatient: I've been taking some acetaminophen when the pain gets really bad, but that's about it. I haven't tried anything else yet.\n\nPhysician: I understand. Have you experienced any other symptoms, such as fever, chills, or loss of appetite?\n\nPatient: No, nothing like that. Just the joint pain and stiffness.\n\nPhysician: Okay, Mr. Baker. Based on what you've shared with me, it sounds like you might be experiencing some symptoms of osteoarthritis. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I'd like to schedule you for a follow-up appointment with our physical therapist, Michael Adams. He can help you with some exercises and stretches to manage the pain and improve your mobility.\n\nPatient: That sounds good. Thank you, Doc.\n\nPhysician: Of course. We'll also need to schedule you for some blood work to check for inflammatory markers and to rule out any other potential causes of your symptoms. In the meantime, I'd like you to keep track of your pain levels and any changes in your symptoms. We'll use that information to adjust your treatment plan as needed.\n\nPatient: Okay, will do. Thanks again.\n\nPhysician: You're welcome, Mr. Baker. We'll get you all set up with the physical therapist and blood work. I'll see you back here in a couple of weeks to review the results and discuss the next steps. Take care.",
+  "note_text": "Subjective:\nMr. Baker presents with complaints of joint pain in his knees and hips, describing it as a dull ache that is worse in the mornings and after prolonged sitting. He notes no swelling, redness, or warmth in the affected joints. The pain has been ongoing for a few weeks and has been gradually worsening. Mr. Baker attributes the pain to his desk job and reports taking acetaminophen for symptom relief.\n\nObjective:\nDuring the examination, Mr. Baker displayed no signs of swelling, redness, or warmth in the knees and hips. Range of motion in the affected joints was slightly limited due to pain. No other abnormalities were noted during the physical examination.\n\nAssessment:\nBased on Mr. Baker's history and clinical presentation, the likely diagnosis is osteoarthritis. Further investigations, including blood work to check for inflammatory markers, are warranted to confirm the diagnosis and rule out other potential causes of joint pain.\n\nPlan:\n1. Schedule a follow-up appointment with physical therapist Michael Adams for exercises and stretches to manage pain and improve mobility.\n2. Order blood work to check for inflammatory markers and rule out other potential causes.\n3. Instruct Mr. Baker to keep a pain journal to track symptoms and any changes.\n4. Follow up with Mr. Baker in two weeks to review test results and adjust the treatment plan as needed."
+}

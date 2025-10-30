@@ -1,0 +1,896 @@
+{
+  "summary": {
+    "claims": 15,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 41,
+    "failed_calls": 0,
+    "successful_calls": 41,
+    "total_input_tokens": 19779,
+    "total_output_tokens": 1564,
+    "total_tokens": 21343,
+    "total cost w/ GPT-4.1-mini (in $)": 0.010414
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C6",
+      "text": "Pupil response was within normal limits, and visual acuity testing revealed difficulty in reading small print up close.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.48436474800109863,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.47752881050109863,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4599902629852295,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44536423683166504,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4306768774986267,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention pupil response or visual acuity testing results. While the patient reports difficulty reading small print up close, there is no documentation of pupil response being within normal limits or formal visual acuity testing confirming this difficulty.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of infection or inflammation were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.233320415019989,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1952822506427765,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.1860102415084839,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.18575705587863922,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.14253970980644226,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that no signs of infection or inflammation were noted. The physician plans to perform a thorough eye exam to rule out underlying conditions, but no exam results or explicit statements about infection or inflammation are provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Blood sugar levels were within the normal range.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.35883474349975586,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2453307956457138,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20440492033958435,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20193737745285034,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17173340916633606,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions plans to check blood sugar levels (E5:6) but does not provide any results or explicit statements confirming that blood sugar levels were within the normal range.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "No signs of diabetic retinopathy or other serious eye conditions were observed during the examination.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5244665145874023,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38064953684806824,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3549666404724121,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32837212085723877,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3017627000808716,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes plans to perform an eye exam and tests to check for diabetes-related vision problems, but there is no explicit statement or result confirming that no signs of diabetic retinopathy or other serious eye conditions were observed.",
+        "severity": "high"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Fields reports experiencing gradual worsening of his vision over the past few months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6041022539138794,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5884302854537964,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5009755492210388,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4837084710597992,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.46392905712127686,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that his vision has been gradually getting worse over the past few months.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He notes difficulty reading objects up close, leading to holding items farther away for clarity.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5287100672721863,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.45287391543388367,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3955273926258087,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33528852462768555,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3276534378528595,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having trouble reading things up close and needing to hold them farther away to see clearly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He also mentions experiencing headaches more frequently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5217852592468262,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4059278964996338,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3882967233657837,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36959928274154663,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3261605203151703,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states, 'I've been getting headaches more often too,' confirming increased frequency of headaches.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Blurry vision, double vision, eye dryness, and discomfort are additional symptoms he has noticed.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6250658631324768,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.6214385032653809,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5811333060264587,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.48280930519104004,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46410131454467773,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports blurry vision and double vision (E2:2-3) and also mentions eye dryness and discomfort (E3:2), directly supporting all parts of the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Mr. Fields attributes increased screen time as a potential factor contributing to his vision issues.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5327918529510498,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5211302042007446,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5025323033332825,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4565218687057495,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42258942127227783,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that increased computer use and prolonged screen time seem to worsen his vision, attributing his vision issues to increased screen time.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "During the examination, Mr. Fields displayed signs of eye strain and discomfort.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5927236676216125,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5299196243286133,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5159131288528442,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46416836977005005,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4508974552154541,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports eye discomfort and dryness, especially after extended reading, and notes worsening vision after prolonged screen time, which the physician associates with eye strain.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Pupil response was within normal limits, and visual acuity testing revealed difficulty in reading small print up close.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.48436474800109863,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.47752881050109863,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4599902629852295,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44536423683166504,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4306768774986267,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention pupil response or visual acuity testing results. While the patient reports difficulty reading small print up close, there is no documentation of pupil response being within normal limits or formal visual acuity testing confirming this difficulty.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of infection or inflammation were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.233320415019989,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1952822506427765,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.1860102415084839,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.18575705587863922,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.14253970980644226,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that no signs of infection or inflammation were noted. The physician plans to perform a thorough eye exam to rule out underlying conditions, but no exam results or explicit statements about infection or inflammation are provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Blood sugar levels were within the normal range.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.35883474349975586,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2453307956457138,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20440492033958435,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20193737745285034,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17173340916633606,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions plans to check blood sugar levels (E5:6) but does not provide any results or explicit statements confirming that blood sugar levels were within the normal range.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Mr. Fields presents with symptoms suggestive of presbyopia and digital eye strain.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.629048764705658,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5611820220947266,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5376383066177368,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5297353863716125,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.500326931476593,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports worsening near vision requiring holding things farther away (suggestive of presbyopia) and symptoms of eye discomfort and dryness after prolonged screen time (suggestive of digital eye strain). The physician also acknowledges the possibility of eye strain from screen use.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "These symptoms may be exacerbated by prolonged screen time and age-related changes in vision.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6744097471237183,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.544564425945282,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.514586329460144,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5105923414230347,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5081561803817749,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports worsening vision after prolonged screen time, and the physician acknowledges that symptoms could be related to eye strain from prolonged screen time. Age-related changes are implied by the gradual worsening over months and difficulty with near vision, consistent with presbyopia, though not explicitly stated, the claim about age-related changes is reasonable in context.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "No signs of diabetic retinopathy or other serious eye conditions were observed during the examination.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5244665145874023,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38064953684806824,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3549666404724121,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32837212085723877,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3017627000808716,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes plans to perform an eye exam and tests to check for diabetes-related vision problems, but there is no explicit statement or result confirming that no signs of diabetic retinopathy or other serious eye conditions were observed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "A comprehensive eye exam will be scheduled to further evaluate Mr. Fields' vision and determine the appropriate prescription for reading glasses.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.599697470664978,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4904246926307678,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4674660563468933,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4115010201931,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40112340450286865,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the team will schedule an appointment for an eye exam (E6:6) and mentions performing a thorough eye exam to rule out underlying conditions (E5:5), which supports the claim of scheduling a comprehensive eye exam to evaluate vision and determine prescription needs.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Recommendations for reducing eye strain, such as taking regular breaks from screen time and adjusting display settings, will be provided.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5816731452941895,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5421006679534912,
+          "text": "Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms? Patient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen. Physician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5402110815048218,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4028385281562805,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3284449279308319,
+          "text": "Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors? Patient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends avoiding prolonged screen time, taking regular breaks to rest eyes, and offers help with adjusting display settings, which supports the claim about providing recommendations to reduce eye strain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Follow-up appointments will be scheduled to monitor Mr. Fields' progress and address any ongoing concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4650723338127136,
+          "text": "Physician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43353939056396484,
+          "text": "Physician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today? Patient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3164418637752533,
+          "text": "Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer? Patient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy. Physician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems. Patient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27780207991600037,
+          "text": "Can you elaborate on your symptoms? When did you first notice these problems with your vision? Patient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24466532468795776,
+          "text": "Have you experienced any eye discomfort, dryness, or irritation? Patient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician states that the team will schedule an appointment for the eye exam and encourages the patient to reach out with any further questions or concerns, indicating follow-up to monitor progress and address concerns.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Fields. It's a pleasure to see you today. How are you feeling today?\n\nPatient: Good morning, Doctor. I'm doing alright, but I've been experiencing some issues with my vision lately.\n\nPhysician: I see. Can you elaborate on your symptoms? When did you first notice these problems with your vision?\n\nPatient: Well, it's been gradually getting worse over the past few months. I've been having trouble reading things up close and have had to hold things farther away to see them clearly. And I've been getting headaches more often too.\n\nPhysician: I understand. Have you noticed any other changes in your vision, such as blurry vision, double vision, or difficulty seeing colors?\n\nPatient: Yes, I have been experiencing some blurry vision, especially when I'm reading or looking at things on my phone. And sometimes, I see double images when I'm looking at things far away.\n\nPhysician: Okay, that's helpful to know. Have you experienced any eye discomfort, dryness, or irritation?\n\nPatient: Yes, my eyes have been feeling quite dry lately, and I've been having some discomfort, especially when I'm reading for extended periods.\n\nPhysician: I see. Have you had any recent changes in your environment or daily routine that could be contributing to your symptoms?\n\nPatient: Well, I've been working on my computer a lot more lately, and I've noticed that my vision seems to get worse after long periods of staring at the screen.\n\nPhysician: That's a good point. It's possible that your symptoms could be related to eye strain from prolonged screen time. Have you tried taking breaks to rest your eyes or adjusting the display settings on your computer?\n\nPatient: Yes, I've tried taking breaks, but it doesn't seem to make much of a difference. And I'm not sure about adjusting the display settings - I'm not very tech-savvy.\n\nPhysician: No worries, we can help you with that. In the meantime, I'd like to perform a thorough eye exam to rule out any underlying conditions that may be contributing to your symptoms. We'll also run some tests to check your blood sugar levels, as diabetes can sometimes cause vision problems.\n\nPatient: Okay, that sounds good. I'm just worried that there's something seriously wrong with my eyes.\n\nPhysician: We'll do our best to determine the cause of your symptoms and address any concerns you may have. In the meantime, I recommend that you avoid prolonged screen time, take regular breaks to rest your eyes, and consider wearing blue light blocking glasses when using your computer.\n\nPatient: Okay, that makes sense. Thank you, Doctor.\n\nPhysician: Of course, Mr. Fields. We'll have our team schedule an appointment for the eye exam and get back to you with the results. In the meantime, please don't hesitate to reach out if you have any further questions or concerns.",
+  "note_text": "Subjective:\nMr. Fields reports experiencing gradual worsening of his vision over the past few months. He notes difficulty reading objects up close, leading to holding items farther away for clarity. He also mentions experiencing headaches more frequently. Blurry vision, double vision, eye dryness, and discomfort are additional symptoms he has noticed. Mr. Fields attributes increased screen time as a potential factor contributing to his vision issues.\n\nObjective:\nDuring the examination, Mr. Fields displayed signs of eye strain and discomfort. Pupil response was within normal limits, and visual acuity testing revealed difficulty in reading small print up close. No signs of infection or inflammation were noted. Blood sugar levels were within the normal range.\n\nAssessment:\nMr. Fields presents with symptoms suggestive of presbyopia and digital eye strain. These symptoms may be exacerbated by prolonged screen time and age-related changes in vision. No signs of diabetic retinopathy or other serious eye conditions were observed during the examination.\n\nPlan:\nA comprehensive eye exam will be scheduled to further evaluate Mr. Fields' vision and determine the appropriate prescription for reading glasses. Recommendations for reducing eye strain, such as taking regular breaks from screen time and adjusting display settings, will be provided. Follow-up appointments will be scheduled to monitor Mr. Fields' progress and address any ongoing concerns."
+}

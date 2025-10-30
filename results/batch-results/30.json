@@ -1,0 +1,1044 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 2,
+    "missing_critical_low_severity": 2,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 51,
+    "failed_calls": 0,
+    "successful_calls": 51,
+    "total_input_tokens": 24082,
+    "total_output_tokens": 1778,
+    "total_tokens": 25860,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0124776
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C2",
+      "text": "Mrs. Marshall appears alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.5561054944992065,
+          "text": "Patient: (nodding) Thank you, Doctor. I feel a bit better knowing you're on my side. Physician: (smiling) Of course, Mrs. Marshall. That's what we're here for. We'll get through this together."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5248040556907654,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5034960508346558,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5019146800041199,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35763853788375854,
+          "text": "Have you experienced any memory issues or confusion? Patient: (hesitantly) Yes...I've been forgetting things, like where I put my keys or what I was supposed to do. It's like my mind just goes blank. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Mrs. Marshall appears alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Physical examination reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.39866510033607483,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31781476736068726,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2883661389350891,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28359895944595337,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2622750997543335,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit statement or detailed description of physical examination findings is provided in the transcript to confirm that the physical examination reveals no abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Urinalysis results are positive for a UTI.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3419632017612457,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3327404260635376,
+          "text": "Can you tell me more about your urination habits? How often do you need to go, and are there any other symptoms you've noticed? Patient: Well, I've been going at least eight times a day, sometimes more. It's like my bladder can't hold anything anymore. And yes, there's this burning sensation when I pee, and sometimes blood in my urine. It's really worrying me. Physician: I understand your concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3020520508289337,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28872227668762207,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24727514386177063,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions that a urinalysis will be performed to check for infections (E6[6]), but there are no results provided indicating a positive urinalysis or diagnosis of UTI.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Initiate treatment for UTI with appropriate antibiotics based on urinalysis results.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.314219206571579,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2919737994670868,
+          "text": "Can you tell me more about your urination habits? How often do you need to go, and are there any other symptoms you've noticed? Patient: Well, I've been going at least eight times a day, sometimes more. It's like my bladder can't hold anything anymore. And yes, there's this burning sensation when I pee, and sometimes blood in my urine. It's really worrying me. Physician: I understand your concerns."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2586771547794342,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.24897223711013794,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24092426896095276,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows plans to perform a urinalysis to check for infections (E6[6]) but does not explicitly state initiating treatment for UTI or starting antibiotics based on urinalysis results.",
+        "severity": "high"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T16",
+      "text": "And sometimes, I feel like I can't fully empty my bladder.",
+      "sent_idx": 16,
+      "prev_text": "Just a feeling of needing to go all the time.",
+      "next_text": "Physician: I see.",
+      "severity": "low"
+    },
+    {
+      "sent_id": "T45",
+      "text": "In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling.",
+      "sent_idx": 45,
+      "prev_text": "We'll discuss the results once we have them, and we'll work together to address any issues that may arise.",
+      "next_text": "Can your son, John, help you with daily tasks and provide support?",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mrs. Marshall reports feeling unwell lately with a constant urge to urinate, difficulty controlling her bladder, burning sensation, blood in urine, increased frequency of urination, loose bowel movements, memory issues, dizziness, lightheadedness, and metallic taste in her mouth.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6963313817977905,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.674847424030304,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5354934930801392,
+          "text": "Can you tell me more about your urination habits? How often do you need to go, and are there any other symptoms you've noticed? Patient: Well, I've been going at least eight times a day, sometimes more. It's like my bladder can't hold anything anymore. And yes, there's this burning sensation when I pee, and sometimes blood in my urine. It's really worrying me. Physician: I understand your concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4846981167793274,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.39923760294914246,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling unwell with a constant urge to urinate, difficulty controlling her bladder, burning sensation, blood in urine, increased frequency of urination, dizziness, lightheadedness, and metallic taste in her mouth. Memory issues are implied by the referral to a neurologist to address memory concerns.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She has also experienced recent falls and her son, John, has expressed concern about her memory problems.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5439351797103882,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4731558561325073,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4610704779624939,
+          "text": "Have you experienced any memory issues or confusion? Patient: (hesitantly) Yes...I've been forgetting things, like where I put my keys or what I was supposed to do. It's like my mind just goes blank. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39732012152671814,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.29978784918785095,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly confirms having had recent falls (E4:2-3) and states that her son has been worried about her (E4:4), which supports the claim about recent falls and her son's concern about memory problems.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Mrs. Marshall appears alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.5561054944992065,
+          "text": "Patient: (nodding) Thank you, Doctor. I feel a bit better knowing you're on my side. Physician: (smiling) Of course, Mrs. Marshall. That's what we're here for. We'll get through this together."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5248040556907654,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5034960508346558,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5019146800041199,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35763853788375854,
+          "text": "Have you experienced any memory issues or confusion? Patient: (hesitantly) Yes...I've been forgetting things, like where I put my keys or what I was supposed to do. It's like my mind just goes blank. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Mrs. Marshall appears alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She reports no abdominal pain or lower back discomfort.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5978668332099915,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33553174138069153,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2835092842578888,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25846147537231445,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2488248646259308,
+          "text": "Have you noticed any changes in your bowel movements? Patient: Yes, Doctor. My bowel movements have become more frequent and loose. It's like my body can't decide what it wants to do. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any abdominal pain or lower back discomfort when asked directly.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Physical examination reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.39866510033607483,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31781476736068726,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2883661389350891,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28359895944595337,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2622750997543335,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit statement or detailed description of physical examination findings is provided in the transcript to confirm that the physical examination reveals no abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Urinalysis results are positive for a UTI.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3419632017612457,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3327404260635376,
+          "text": "Can you tell me more about your urination habits? How often do you need to go, and are there any other symptoms you've noticed? Patient: Well, I've been going at least eight times a day, sometimes more. It's like my bladder can't hold anything anymore. And yes, there's this burning sensation when I pee, and sometimes blood in my urine. It's really worrying me. Physician: I understand your concerns."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3020520508289337,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28872227668762207,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24727514386177063,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions that a urinalysis will be performed to check for infections (E6[6]), but there are no results provided indicating a positive urinalysis or diagnosis of UTI.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Blood tests are pending.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.35731005668640137,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3372739255428314,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23619617521762848,
+          "text": "Can you tell me more about your urination habits? How often do you need to go, and are there any other symptoms you've noticed? Patient: Well, I've been going at least eight times a day, sometimes more. It's like my bladder can't hold anything anymore. And yes, there's this burning sensation when I pee, and sometimes blood in my urine. It's really worrying me. Physician: I understand your concerns."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.22087782621383667,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2199210375547409,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that they need to run tests including a blood test, indicating that blood tests are pending.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Mrs. Marshall's son, John, is actively involved in her care and provides support.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5652831792831421,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.5051639080047607,
+          "text": "Patient: (nodding) Thank you, Doctor. I feel a bit better knowing you're on my side. Physician: (smiling) Of course, Mrs. Marshall. That's what we're here for. We'll get through this together."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.44640496373176575,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.365554541349411,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28809884190559387,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly shows that John, Mrs. Marshall's son, is asked if he can help with daily tasks and provide support, and Mrs. Marshall confirms that he is already a big help.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mrs. Marshall presents with symptoms suggestive of a UTI, memory issues, falls, and possible neurological concerns.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6860733032226562,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5734073519706726,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4618298411369324,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4431357979774475,
+          "text": "Have you experienced any memory issues or confusion? Patient: (hesitantly) Yes...I've been forgetting things, like where I put my keys or what I was supposed to do. It's like my mind just goes blank. Physician: I see."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4161287248134613,
+          "text": "Patient: (nodding) Thank you, Doctor. I feel a bit better knowing you're on my side. Physician: (smiling) Of course, Mrs. Marshall. That's what we're here for. We'll get through this together."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient reports urinary symptoms suggestive of UTI (E0:3-5), memory issues (E5:1-3), falls and neurological concerns are implied by the planned referral to a neurologist to address memory concerns and falls (E6:8).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Further investigations are needed to rule out underlying conditions.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4148251414299011,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39338475465774536,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.32241737842559814,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.26588937640190125,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2569570243358612,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to run tests to rule out conditions and mentions being thorough to cover all bases, indicating further investigations are planned to rule out underlying conditions.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Close monitoring and coordination with a neurologist are recommended to address her memory problems and falls.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4919709861278534,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4454270005226135,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4301542341709137,
+          "text": "Have you experienced any memory issues or confusion? Patient: (hesitantly) Yes...I've been forgetting things, like where I put my keys or what I was supposed to do. It's like my mind just goes blank. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.42882275581359863,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.38541489839553833,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a referral to a neurologist to address memory concerns and falls, indicating close monitoring and coordination with neurology is recommended.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Initiate treatment for UTI with appropriate antibiotics based on urinalysis results.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.314219206571579,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2919737994670868,
+          "text": "Can you tell me more about your urination habits? How often do you need to go, and are there any other symptoms you've noticed? Patient: Well, I've been going at least eight times a day, sometimes more. It's like my bladder can't hold anything anymore. And yes, there's this burning sensation when I pee, and sometimes blood in my urine. It's really worrying me. Physician: I understand your concerns."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2586771547794342,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.24897223711013794,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24092426896095276,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows plans to perform a urinalysis to check for infections (E6[6]) but does not explicitly state initiating treatment for UTI or starting antibiotics based on urinalysis results.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Schedule colonoscopy to investigate bowel movement issues.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.484346479177475,
+          "text": "Have you noticed any changes in your bowel movements? Patient: Yes, Doctor. My bowel movements have become more frequent and loose. It's like my body can't decide what it wants to do. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3663650155067444,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3281848728656769,
+          "text": "Have you experienced any abdominal pain or discomfort in your lower back? Patient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.29959720373153687,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.29535117745399475,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E6[7] that a colonoscopy will be scheduled to investigate possible bowel movement issues, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Refer Mrs. Marshall to a neurologist for further evaluation of memory problems and falls.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.583221971988678,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42667505145072937,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.42044687271118164,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4011372923851013,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39464080333709717,
+          "text": "Have you experienced any memory issues or confusion? Patient: (hesitantly) Yes...I've been forgetting things, like where I put my keys or what I was supposed to do. It's like my mind just goes blank. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              8
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states a referral to a neurologist for memory concerns and falls (E8:8). The patient reports recent falls (E4:1,3) and memory issues (E5:1,2), supporting the need for neurologic evaluation.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Coordinate with John Marshall to ensure support and assistance with daily tasks.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5592080354690552,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3439621329307556,
+          "text": "Patient: (nodding) Thank you, Doctor. I feel a bit better knowing you're on my side. Physician: (smiling) Of course, Mrs. Marshall. That's what we're here for. We'll get through this together."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.322304904460907,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2507900595664978,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23965783417224884,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2,
+              3,
+              5
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly mentions coordinating with John to ensure he is aware of the patient's condition and necessary steps, and the patient confirms John helps with daily tasks and provides support.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Schedule follow-up appointments to monitor progress and discuss test results.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4215582013130188,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3417278528213501,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33538028597831726,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3280367851257324,
+          "text": "Patient: (concerned) Does this mean I have something serious? Physician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25048044323921204,
+          "text": "Have you had any recent falls or injuries? Patient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me. Physician: I'm not surprised. We'll need to address that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The claim about scheduling follow-up appointments to monitor progress is explicitly stated in E8 sentence 6.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "6. Provide reassurance and emotional support to Mrs. Marshall throughout the diagnostic process.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.5970821380615234,
+          "text": "Patient: (nodding) Thank you, Doctor. I feel a bit better knowing you're on my side. Physician: (smiling) Of course, Mrs. Marshall. That's what we're here for. We'll get through this together."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5858017206192017,
+          "text": "Is there anything else you'd like to discuss or any concerns you have? Patient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'? Physician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4409559369087219,
+          "text": "Have you noticed any other symptoms, such as dizziness, nausea, or headaches? Patient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something. Physician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4035888612270355,
+          "text": "Can your son, John, help you with daily tasks and provide support? Patient: (nodding) Yes, of course. He's been a big help already. Physician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40011128783226013,
+          "text": "Physician: Good morning, Mrs. Marshall. How are you feeling today? Patient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              1,
+              4,
+              6,
+              8
+            ]
+          },
+          {
+            "span_id": "E10",
+            "sentences": [
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly provides emotional support and reassurance to Mrs. Marshall, acknowledging her worries empathetically and emphasizing teamwork and support throughout the diagnostic process.",
+        "severity": "none"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mrs. Marshall. How are you feeling today?\n\nPatient: (sighs) I've been feeling unwell lately, Doctor. I've had this constant urge to urinate, and it's becoming increasingly difficult to control. Sometimes, I feel like I'm going to wet myself.\n\nPhysician: I see. Can you tell me more about your urination habits? How often do you need to go, and are there any other symptoms you've noticed?\n\nPatient: Well, I've been going at least eight times a day, sometimes more. It's like my bladder can't hold anything anymore. And yes, there's this burning sensation when I pee, and sometimes blood in my urine. It's really worrying me.\n\nPhysician: I understand your concerns. Have you experienced any abdominal pain or discomfort in your lower back?\n\nPatient: No, nothing like that. Just a feeling of needing to go all the time. And sometimes, I feel like I can't fully empty my bladder.\n\nPhysician: I see. Have you noticed any changes in your bowel movements?\n\nPatient: Yes, Doctor. My bowel movements have become more frequent and loose. It's like my body can't decide what it wants to do.\n\nPhysician: I understand. Have you had any recent falls or injuries?\n\nPatient: (nervously) Yes, Doctor. I've had a few falls recently. My son's been worried sick about me.\n\nPhysician: I'm not surprised. We'll need to address that. Have you experienced any memory issues or confusion?\n\nPatient: (hesitantly) Yes...I've been forgetting things, like where I put my keys or what I was supposed to do. It's like my mind just goes blank.\n\nPhysician: I see. Have you noticed any other symptoms, such as dizziness, nausea, or headaches?\n\nPatient: (thoughtfully) Now that you mention it, I have been feeling a bit dizzy and lightheaded. And sometimes, I get this weird taste in my mouth, like metal or something.\n\nPhysician: I understand. Mrs. Marshall, based on what you've shared, we need to run some tests to rule out a few things. We'll start with a urinalysis and a blood test to check for any infections or abnormalities. We'll also schedule you for a colonoscopy to investigate any possible issues with your bowel movements. Additionally, we'll refer you to a neurologist to address your memory concerns and falls.\n\nPatient: (concerned) Does this mean I have something serious?\n\nPhysician: (reassuringly) We won't jump to conclusions just yet. We want to be thorough and make sure we cover all bases. We'll discuss the results once we have them, and we'll work together to address any issues that may arise. In the meantime, I recommend you avoid any strenuous activities that may increase your risk of falling. Can your son, John, help you with daily tasks and provide support?\n\nPatient: (nodding) Yes, of course. He's been a big help already.\n\nPhysician: Great. We'll coordinate with John to ensure he's aware of your condition and the necessary steps to take. We'll also schedule you for follow-up appointments to monitor your progress. Is there anything else you'd like to discuss or any concerns you have?\n\nPatient: (hesitantly) Just...what if it's something serious? What if I have...you know, 'the big C'?\n\nPhysician: (empathetically) I understand your worries, Mrs. Marshall. But let's not get ahead of ourselves. We'll deal with whatever comes up, and we'll tackle it together. Our focus now is to get you feeling better and address any underlying issues. We'll work as a team, and we'll support each other throughout this process.\n\nPatient: (nodding) Thank you, Doctor. I feel a bit better knowing you're on my side.\n\nPhysician: (smiling) Of course, Mrs. Marshall. That's what we're here for. We'll get through this together.",
+  "note_text": "Subjective:\nMrs. Marshall reports feeling unwell lately with a constant urge to urinate, difficulty controlling her bladder, burning sensation, blood in urine, increased frequency of urination, loose bowel movements, memory issues, dizziness, lightheadedness, and metallic taste in her mouth. She has also experienced recent falls and her son, John, has expressed concern about her memory problems.\n\nObjective:\nMrs. Marshall appears alert and oriented during the consultation. She reports no abdominal pain or lower back discomfort. Physical examination reveals no abnormalities. Urinalysis results are positive for a UTI. Blood tests are pending. Mrs. Marshall's son, John, is actively involved in her care and provides support.\n\nAssessment:\nMrs. Marshall presents with symptoms suggestive of a UTI, memory issues, falls, and possible neurological concerns. Further investigations are needed to rule out underlying conditions. Close monitoring and coordination with a neurologist are recommended to address her memory problems and falls.\n\nPlan:\n1. Initiate treatment for UTI with appropriate antibiotics based on urinalysis results.\n2. Schedule colonoscopy to investigate bowel movement issues.\n3. Refer Mrs. Marshall to a neurologist for further evaluation of memory problems and falls.\n4. Coordinate with John Marshall to ensure support and assistance with daily tasks.\n5. Schedule follow-up appointments to monitor progress and discuss test results.\n6. Provide reassurance and emotional support to Mrs. Marshall throughout the diagnostic process."
+}

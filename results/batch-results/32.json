@@ -1,0 +1,1221 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 5,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 5,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 2,
+    "missing_critical_low_severity": 2,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 42,
+    "failed_calls": 0,
+    "successful_calls": 42,
+    "total_input_tokens": 21109,
+    "total_output_tokens": 2004,
+    "total_tokens": 23113,
+    "total cost w/ GPT-4.1-mini (in $)": 0.01165
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.30654674768447876,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3035593032836914,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29016557335853577,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25843319296836853,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20069369673728943,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals signs of respiratory distress, including wheezing and decreased breath sounds.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.44148796796798706,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3861580789089203,
+          "text": "Have you noticed any triggers that make your asthma worse, such as allergies or environmental factors? Patient: Well, I've noticed that my symptoms tend to flare up when I'm around dust or pollen. And I've also been under a lot of stress lately, which I've read can exacerbate asthma. Physician: Absolutely. Stress can definitely impact asthma symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37402623891830444,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3542080521583557,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35387489199638367,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of physical examination findings such as wheezing or decreased breath sounds. The information is limited to patient-reported symptoms and history without documented physical exam signs of respiratory distress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No abnormalities are noted in the abdominal examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3724304735660553,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.32433032989501953,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22400088608264923,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21876247227191925,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.19272281229496002,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit mention or findings from an abdominal examination, nor does it state that no abnormalities were noted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "The nail fungus is visible on multiple nails, with signs of discoloration and thickening.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5102263689041138,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42351892590522766,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.22242802381515503,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.14830869436264038,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.14575690031051636,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The transcript only explicitly states that the nail fungus started with one nail and has spread to a few others, indicating multiple nails are affected. However, there is no mention of visible signs such as discoloration or thickening of the nails.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Initiate treatment for GERD symptoms, including lifestyle modifications and medication.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.46600341796875,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4647296071052551,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4267604351043701,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2935298681259155,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2928774952888489,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported GERD symptoms and physician acknowledgment but does not explicitly mention initiating treatment, lifestyle modifications, or medication for GERD.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Refer to a dermatologist for evaluation and management of the nail fungus.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.500407338142395,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37809985876083374,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22869254648685455,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.19205139577388763,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1820688545703888,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions discussing the nail fungus and wanting to take a closer look and discuss treatment options (E6:7), but there is no explicit mention of referring to a dermatologist for evaluation and management.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Follow up with Crystal regularly to monitor progress, adjust treatment as needed, and address any new symptoms or concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.40280377864837646,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3458389639854431,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31537288427352905,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.28986793756484985,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28121039271354675,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention a plan to follow up with Crystal regularly to monitor progress, adjust treatment, or address new symptoms or concerns. While the physician expresses intent to investigate symptoms and schedule tests, there is no clear statement about regular follow-up or ongoing monitoring.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T11",
+      "text": "It feels like food gets stuck in my throat.",
+      "sent_idx": 11,
+      "prev_text": "And actually, I have been having some trouble swallowing too.",
+      "next_text": "Physician: I understand.",
+      "severity": "low"
+    },
+    {
+      "sent_id": "T32",
+      "text": "It's like there's a lump in my throat that I can't get rid of.",
+      "sent_idx": 32,
+      "prev_text": "Patient: Yes, I've had both of those symptoms, especially in the mornings.",
+      "next_text": "Physician: Okay, that's helpful.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Crystal Arnold reports feeling unwell lately, experiencing a persistent cough, tightness in her chest, sharp chest pains, low-grade fever, fatigue, and difficulty swallowing.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6050360202789307,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5868455767631531,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.40799009799957275,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3916601836681366,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.37291762232780457,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling unwell with a persistent cough, chest tightness, sharp chest pains (E0:4-6), low-grade fever, fatigue, and difficulty swallowing (E1:3-4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She notes an increase in asthma symptoms, particularly at night, despite using her inhaler regularly.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6743303537368774,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5659346580505371,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5269213318824768,
+          "text": "Have you noticed any triggers that make your asthma worse, such as allergies or environmental factors? Patient: Well, I've noticed that my symptoms tend to flare up when I'm around dust or pollen. And I've also been under a lot of stress lately, which I've read can exacerbate asthma. Physician: Absolutely. Stress can definitely impact asthma symptoms."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3563866913318634,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35598230361938477,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been using her inhaler more often than usual and that her symptoms have been worsening at night, causing trouble sleeping.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Additionally, she mentions frequent heartburn, regurgitation, difficulty swallowing, and a sour taste in her throat related to GERD.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6617896556854248,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.6288329362869263,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4937090277671814,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4845670163631439,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3365693688392639,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly confirms frequent heartburn and regurgitation (E4:1-3), difficulty swallowing and a sour taste in the throat (E5:1-2), and difficulty swallowing again (E1:2,4). These symptoms are related to GERD as queried by the physician.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Crystal also discloses a nail fungus issue that has spread over a few months and abdominal pain that has been present on and off for a few weeks, expressing concern due to her family history of colon cancer.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.44985008239746094,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4244202673435211,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4212311804294586,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.39565330743789673,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3952423632144928,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the nail fungus has spread over a few months (E6:3,4), reports abdominal pain on and off for a few weeks (E7:3,4), and expresses concern due to family history of colon cancer (E8:1).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "During the examination, Crystal appears fatigued but is cooperative and engaged in the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4807445704936981,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3204860985279083,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3105471134185791,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2899671196937561,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.22593021392822266,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling 'really tired all the time,' indicating fatigue. The transcript does not mention any lack of cooperation or engagement, implying the patient is cooperative and engaged during the conversation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.30654674768447876,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3035593032836914,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29016557335853577,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25843319296836853,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20069369673728943,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals signs of respiratory distress, including wheezing and decreased breath sounds.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.44148796796798706,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3861580789089203,
+          "text": "Have you noticed any triggers that make your asthma worse, such as allergies or environmental factors? Patient: Well, I've noticed that my symptoms tend to flare up when I'm around dust or pollen. And I've also been under a lot of stress lately, which I've read can exacerbate asthma. Physician: Absolutely. Stress can definitely impact asthma symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37402623891830444,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3542080521583557,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35387489199638367,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of physical examination findings such as wheezing or decreased breath sounds. The information is limited to patient-reported symptoms and history without documented physical exam signs of respiratory distress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No abnormalities are noted in the abdominal examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3724304735660553,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.32433032989501953,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22400088608264923,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21876247227191925,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.19272281229496002,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit mention or findings from an abdominal examination, nor does it state that no abnormalities were noted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "The nail fungus is visible on multiple nails, with signs of discoloration and thickening.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5102263689041138,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42351892590522766,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.22242802381515503,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.14830869436264038,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.14575690031051636,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The transcript only explicitly states that the nail fungus started with one nail and has spread to a few others, indicating multiple nails are affected. However, there is no mention of visible signs such as discoloration or thickening of the nails.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Crystal Arnold presents with exacerbation of asthma symptoms, likely triggered by environmental factors and stress.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6386801600456238,
+          "text": "Have you noticed any triggers that make your asthma worse, such as allergies or environmental factors? Patient: Well, I've noticed that my symptoms tend to flare up when I'm around dust or pollen. And I've also been under a lot of stress lately, which I've read can exacerbate asthma. Physician: Absolutely. Stress can definitely impact asthma symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4541720151901245,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4191630482673645,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3987458050251007,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33139291405677795,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports worsening asthma symptoms with increased inhaler use and nighttime symptoms (E2:4-5), along with cough, chest tightness, and shortness of breath (E0:4-6). The patient identifies environmental triggers such as dust and pollen and acknowledges stress as a factor exacerbating asthma (E3:1-5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Her GERD symptoms are prominent, impacting her sleep and daily activities.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6246556043624878,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5216027498245239,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.42730391025543213,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41148871183395386,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3661866784095764,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports frequent heartburn especially at night, which wakes her up and makes it hard to fall back asleep, indicating prominent GERD symptoms impacting her sleep. The impact on daily activities is implied by the sleep disturbance.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "The nail fungus requires further evaluation and treatment.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5404959321022034,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3810999095439911,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2645229697227478,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.19069668650627136,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.18211105465888977,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              4,
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient reports nail fungus spreading to multiple nails and ineffective over-the-counter treatments. The physician states they will take a closer look and discuss treatment options, indicating further evaluation and treatment are needed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "The abdominal pain raises concerns due to her family history of colon cancer, necessitating diagnostic tests to rule out any serious underlying conditions.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5717605948448181,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.49846673011779785,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27658936381340027,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26660847663879395,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2597735524177551,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient expresses concern about abdominal pain and family history of colon cancer (E8:1). The physician acknowledges the need to rule out serious conditions and plans diagnostic tests (E8:3, E7:7).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Adjust asthma management plan to address nighttime symptoms and potential triggers.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5386422872543335,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.45516571402549744,
+          "text": "Have you noticed any triggers that make your asthma worse, such as allergies or environmental factors? Patient: Well, I've noticed that my symptoms tend to flare up when I'm around dust or pollen. And I've also been under a lot of stress lately, which I've read can exacerbate asthma. Physician: Absolutely. Stress can definitely impact asthma symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43969956040382385,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.267306387424469,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26052963733673096,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports worsening nighttime asthma symptoms and increased inhaler use (E2:4,5). The patient identifies triggers such as dust and pollen (E3:1,2). Nighttime GERD symptoms that could exacerbate asthma are also noted (E4:3). These details support adjusting the asthma management plan to address nighttime symptoms and potential triggers.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Initiate treatment for GERD symptoms, including lifestyle modifications and medication.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.46600341796875,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4647296071052551,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4267604351043701,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2935298681259155,
+          "text": "Can you tell me about your asthma? When were you diagnosed, and how have you been managing it? Patient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2928774952888489,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported GERD symptoms and physician acknowledgment but does not explicitly mention initiating treatment, lifestyle modifications, or medication for GERD.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Refer to a dermatologist for evaluation and management of the nail fungus.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.500407338142395,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37809985876083374,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22869254648685455,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.19205139577388763,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1820688545703888,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions discussing the nail fungus and wanting to take a closer look and discuss treatment options (E6:7), but there is no explicit mention of referring to a dermatologist for evaluation and management.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Schedule diagnostic tests, such as imaging and possibly a colonoscopy, to investigate the cause of abdominal pain and address any potential concerns related to family history.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5205471515655518,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.45446276664733887,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27480655908584595,
+          "text": "Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat? Patient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of. Physician: Okay, that's helpful. Let's move on to your nail fungus."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24224233627319336,
+          "text": "Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma? Patient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23663246631622314,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              4,
+              5,
+              7
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports abdominal pain of unclear cause (E7:3-4), and the physician agrees to schedule tests to investigate (E7:5,7). The patient expresses concern about family history of colon cancer (E8:1), and the physician acknowledges the need to rule out serious conditions (E8:2-3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Follow up with Crystal regularly to monitor progress, adjust treatment as needed, and address any new symptoms or concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.40280377864837646,
+          "text": "Physician: Good morning, Crystal. How are you feeling today? Patient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3458389639854431,
+          "text": "Can you tell me a bit more about that? How long have you had it, and have you tried any treatments? Patient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much. Physician: I see. We'll definitely want to take a closer look at that and discuss some treatment options."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31537288427352905,
+          "text": "Before we wrap up, is there anything else you'd like to mention or any questions you have for me? Patient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now. Physician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it. Patient: Okay, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.28986793756484985,
+          "text": "I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms. Physician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28121039271354675,
+          "text": "Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing? Patient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat. Physician: I understand. Let's take a closer look at your respiratory system."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention a plan to follow up with Crystal regularly to monitor progress, adjust treatment, or address new symptoms or concerns. While the physician expresses intent to investigate symptoms and schedule tests, there is no clear statement about regular follow-up or ongoing monitoring.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Crystal. How are you feeling today?\n\nPatient: Hi, Dr. Tucker. I've been feeling pretty bad lately. I've had this nasty cough that won't go away, and I've been getting winded easily. My chest feels tight, and I've had some sharp pains in my chest too.\n\nPhysician: I see. Have you noticed any other symptoms? Fever, fatigue, or difficulty swallowing?\n\nPatient: Yes, I've had a low-grade fever on and off for the past week, and I've been feeling really tired all the time. And actually, I have been having some trouble swallowing too. It feels like food gets stuck in my throat.\n\nPhysician: I understand. Let's take a closer look at your respiratory system. Can you tell me about your asthma? When were you diagnosed, and how have you been managing it?\n\nPatient: I was diagnosed with asthma when I was a kid. I've been using an inhaler ever since, but lately, I've had to use it more often than usual. I've also noticed that my symptoms have been getting worse at night, which is why I've been having trouble sleeping.\n\nPhysician: That's helpful information. Have you noticed any triggers that make your asthma worse, such as allergies or environmental factors?\n\nPatient: Well, I've noticed that my symptoms tend to flare up when I'm around dust or pollen. And I've also been under a lot of stress lately, which I've read can exacerbate asthma.\n\nPhysician: Absolutely. Stress can definitely impact asthma symptoms. Have you experienced any GERD symptoms, such as heartburn or regurgitation, in addition to your asthma?\n\nPatient: Yes, actually. I've been getting heartburn pretty frequently, especially at night. It's been waking me up and making it hard to fall back asleep.\n\nPhysician: I see. Have you noticed any other symptoms that might be related to GERD, such as difficulty swallowing or a sour taste in the back of your throat?\n\nPatient: Yes, I've had both of those symptoms, especially in the mornings. It's like there's a lump in my throat that I can't get rid of.\n\nPhysician: Okay, that's helpful. Let's move on to your nail fungus. Can you tell me a bit more about that? How long have you had it, and have you tried any treatments?\n\nPatient: I've had it for a few months now. It started with one nail, but now it's spread to a few others. I've tried over-the-counter creams and ointments, but they don't seem to be doing much.\n\nPhysician: I see. We'll definitely want to take a closer look at that and discuss some treatment options. Before we wrap up, is there anything else you'd like to mention or any questions you have for me?\n\nPatient: Actually, yes. I've been having some abdominal pain lately, and I'm not sure what's causing it. It's been on and off for a few weeks now.\n\nPhysician: Okay, we'll definitely want to look into that further. It could be related to your GERD, or it could be something else entirely. We'll make sure to schedule some tests to get to the bottom of it.\n\nPatient: Okay, thank you. I'm just worried because my mom had colon cancer, so I'm a little paranoid about any stomach symptoms.\n\nPhysician: I completely understand. We'll make sure to rule out anything serious and get you feeling better as soon as possible.",
+  "note_text": "Subjective:\nCrystal Arnold reports feeling unwell lately, experiencing a persistent cough, tightness in her chest, sharp chest pains, low-grade fever, fatigue, and difficulty swallowing. She notes an increase in asthma symptoms, particularly at night, despite using her inhaler regularly. Additionally, she mentions frequent heartburn, regurgitation, difficulty swallowing, and a sour taste in her throat related to GERD. Crystal also discloses a nail fungus issue that has spread over a few months and abdominal pain that has been present on and off for a few weeks, expressing concern due to her family history of colon cancer.\n\nObjective:\nDuring the examination, Crystal appears fatigued but is cooperative and engaged in the conversation. Vital signs are within normal limits. Physical examination reveals signs of respiratory distress, including wheezing and decreased breath sounds. No abnormalities are noted in the abdominal examination. The nail fungus is visible on multiple nails, with signs of discoloration and thickening.\n\nAssessment:\nCrystal Arnold presents with exacerbation of asthma symptoms, likely triggered by environmental factors and stress. Her GERD symptoms are prominent, impacting her sleep and daily activities. The nail fungus requires further evaluation and treatment. The abdominal pain raises concerns due to her family history of colon cancer, necessitating diagnostic tests to rule out any serious underlying conditions.\n\nPlan:\n1. Adjust asthma management plan to address nighttime symptoms and potential triggers.\n2. Initiate treatment for GERD symptoms, including lifestyle modifications and medication.\n3. Refer to a dermatologist for evaluation and management of the nail fungus.\n4. Schedule diagnostic tests, such as imaging and possibly a colonoscopy, to investigate the cause of abdominal pain and address any potential concerns related to family history.\n5. Follow up with Crystal regularly to monitor progress, adjust treatment as needed, and address any new symptoms or concerns."
+}

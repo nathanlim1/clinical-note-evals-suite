@@ -1,0 +1,859 @@
+{
+  "summary": {
+    "claims": 14,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 47,
+    "failed_calls": 0,
+    "successful_calls": 47,
+    "total_input_tokens": 20101,
+    "total_output_tokens": 1387,
+    "total_tokens": 21488,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0102596
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Mr. Moore appears alert and oriented during the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5214653015136719,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5203112959861755,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4499046504497528,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.36630865931510925,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3158777058124542,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mr. Moore appears alert and oriented during the conversation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.37514784932136536,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3643032908439636,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3579542636871338,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3435596525669098,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34055227041244507,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of distress or acute issues observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4288542866706848,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3662527799606323,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.36090904474258423,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34344482421875,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3056083619594574,
+          "text": "Patient: No, nothing recent. But I did have a cold a few months ago that seemed to linger for a while. Physician: I understand. Have you noticed any changes in your urination habits or bowel movements? Patient: Yes, actually. My bowel movements have been a bit more frequent lately, and sometimes I feel like I can't fully empty my bladder. Physician: Interesting."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient reports of shortness of breath, fatigue, decreased appetite, weight loss, bloating, and urinary symptoms, which suggest some ongoing issues. There is no explicit statement that the patient shows no signs of distress or acute issues.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.41865259408950806,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39259999990463257,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3587942123413086,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35709309577941895,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34602320194244385,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit statements or findings from a physical examination, nor does it mention the presence or absence of abnormalities on physical exam.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Moore reports experiencing shortness of breath, fatigue, and swelling in his legs.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6037500500679016,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5457279086112976,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.500527560710907,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4852164387702942,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.47776174545288086,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports shortness of breath (E1:2), swelling in his legs (E1:3), and fatigue (E2:3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He also mentions changes in his bowel movements and urination habits, as well as decreased appetite and unintentional weight loss.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5584050416946411,
+          "text": "Patient: No, nothing recent. But I did have a cold a few months ago that seemed to linger for a while. Physician: I understand. Have you noticed any changes in your urination habits or bowel movements? Patient: Yes, actually. My bowel movements have been a bit more frequent lately, and sometimes I feel like I can't fully empty my bladder. Physician: Interesting."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5100604295730591,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4938662052154541,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.472758948802948,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39592230319976807,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly mentions changes in bowel movements and urination habits (E3:4-6), decreased appetite and unintentional weight loss (E5:1), and the physician queries about appetite and weight changes (E4:4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "No chest pain, dizziness, or recent illnesses noted.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6931037902832031,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5882430076599121,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.515289306640625,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4632657468318939,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4530026316642761,
+          "text": "Patient: No, nothing recent. But I did have a cold a few months ago that seemed to linger for a while. Physician: I understand. Have you noticed any changes in your urination habits or bowel movements? Patient: Yes, actually. My bowel movements have been a bit more frequent lately, and sometimes I feel like I can't fully empty my bladder. Physician: Interesting."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies chest pain (E2:1-2), dizziness (E4:1-2), and recent illnesses (E6:1-2).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Moore appears alert and oriented during the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5214653015136719,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5203112959861755,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4499046504497528,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.36630865931510925,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3158777058124542,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mr. Moore appears alert and oriented during the conversation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.37514784932136536,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3643032908439636,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3579542636871338,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3435596525669098,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34055227041244507,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of distress or acute issues observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4288542866706848,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3662527799606323,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.36090904474258423,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34344482421875,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3056083619594574,
+          "text": "Patient: No, nothing recent. But I did have a cold a few months ago that seemed to linger for a while. Physician: I understand. Have you noticed any changes in your urination habits or bowel movements? Patient: Yes, actually. My bowel movements have been a bit more frequent lately, and sometimes I feel like I can't fully empty my bladder. Physician: Interesting."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient reports of shortness of breath, fatigue, decreased appetite, weight loss, bloating, and urinary symptoms, which suggest some ongoing issues. There is no explicit statement that the patient shows no signs of distress or acute issues.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.41865259408950806,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39259999990463257,
+          "text": "Patient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying. Physician: I see. Have you experienced any abdominal pain or discomfort? Patient: No, nothing significant. Just a bit of bloating sometimes. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3587942123413086,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35709309577941895,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34602320194244385,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit statements or findings from a physical examination, nor does it mention the presence or absence of abnormalities on physical exam.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Concern for cardiovascular issues based on Mr. Moore's symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6518692970275879,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.542436420917511,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5316048860549927,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5115742087364197,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.42169204354286194,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states concern for cardiovascular issues based on Mr. Moore's symptoms, which include shortness of breath and leg swelling, both relevant cardiovascular symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Plan to order an ECG, stress test, and blood tests to assess heart function, lipid levels, blood sugar, and kidney function.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.678108274936676,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4653657376766205,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32915592193603516,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3272881507873535,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29347118735313416,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the plan to order an ECG and stress test to assess heart function, as well as blood tests to check lipid levels, blood sugar, and kidney function.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Referral to a cardiologist for further evaluation and management.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5095855593681335,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.38239872455596924,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34812870621681213,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31918424367904663,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3119310438632965,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the physician's intention to refer the patient to a cardiologist for further evaluation and management.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "1. Order ECG, stress test, and blood tests.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6536893844604492,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4447762370109558,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.33063435554504395,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31855911016464233,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, not really. Just the shortness of breath and fatigue. Physician: I see. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2862483263015747,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering an ECG, a stress test, and blood tests in E7 sentences 1 and 2.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "2. Refer Mr. Moore to a cardiologist for specialist evaluation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5957930088043213,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5521239638328552,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5173251032829285,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4431579113006592,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3362680673599243,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to refer Mr. Moore to a cardiologist for further evaluation and management in sentence 3 of span E7.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "3. Encourage continued medication adherence and lifestyle modifications.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.37894850969314575,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3073885440826416,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2736247181892395,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25980621576309204,
+          "text": "Patient: No, nothing recent. But I did have a cold a few months ago that seemed to linger for a while. Physician: I understand. Have you noticed any changes in your urination habits or bowel movements? Patient: Yes, actually. My bowel movements have been a bit more frequent lately, and sometimes I feel like I can't fully empty my bladder. Physician: Interesting."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2551020383834839,
+          "text": "Have you experienced any dizziness or lightheadedness? Patient: No, not that I can recall. Physician: Okay. Have you noticed any changes in your appetite or weight recently?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "Sentence 8 in E7 explicitly states the importance of continuing medications as prescribed and making lifestyle modifications, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "4. Follow up with test results and specialist recommendations.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5232619047164917,
+          "text": "I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition. Patient: That sounds good. Thank you, Dr. Gardner. Physician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.48642605543136597,
+          "text": "Patient: Okay, I'll do my best. Thank you again. Physician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42655497789382935,
+          "text": "Have you had any recent travel or exposures to illnesses? Patient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it. Physician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on. Patient: Sure, whatever it takes to get to the bottom of this. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3131312131881714,
+          "text": "What kind of changes have you noticed? Patient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen. Physician: Okay, that's definitely worth exploring further."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3056538701057434,
+          "text": "Physician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately? Patient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me. Physician: Please elaborate."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              7
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states referral to a specialist and follow-up with test results and specialist recommendations.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Moore. I'm your primary care physician, Dr. Gardner. I see that you've been due for your annual physical exam. How have you been feeling lately?\n\nPatient: Good morning, Dr. Gardner. I've been doing alright, but I have noticed some changes in my body that concern me.\n\nPhysician: Please elaborate. What kind of changes have you noticed?\n\nPatient: Well, I've been experiencing some shortness of breath lately, especially when I'm doing simple tasks like walking upstairs or mowing the lawn. And my legs have been feeling a bit swollen.\n\nPhysician: Okay, that's definitely worth exploring further. Have you noticed any chest pain or tightness?\n\nPatient: No, not really. Just the shortness of breath and fatigue.\n\nPhysician: I see. Have you had any recent illnesses or infections?\n\nPatient: No, nothing recent. But I did have a cold a few months ago that seemed to linger for a while.\n\nPhysician: I understand. Have you noticed any changes in your urination habits or bowel movements?\n\nPatient: Yes, actually. My bowel movements have been a bit more frequent lately, and sometimes I feel like I can't fully empty my bladder.\n\nPhysician: Interesting. Have you experienced any dizziness or lightheadedness?\n\nPatient: No, not that I can recall.\n\nPhysician: Okay. Have you noticed any changes in your appetite or weight recently?\n\nPatient: Yes, I've been feeling less hungry lately, and I think I've lost a few pounds without really trying.\n\nPhysician: I see. Have you experienced any abdominal pain or discomfort?\n\nPatient: No, nothing significant. Just a bit of bloating sometimes.\n\nPhysician: Okay. Have you had any recent travel or exposures to illnesses?\n\nPatient: No, nothing recent. I did go on a trip to visit my grandkids a few months ago, but that's about it.\n\nPhysician: I understand. Mr. Moore, based on what you've shared with me today, I'm concerned that you might be experiencing some cardiovascular issues. I'd like to order some tests to get a better understanding of what's going on.\n\nPatient: Sure, whatever it takes to get to the bottom of this.\n\nPhysician: Great. I'm going to order an electrocardiogram (ECG) to check your heart rhythm and a stress test to assess your heart function. I'll also order some blood tests to check your lipid levels, blood sugar, and kidney function. And I'd like to refer you to a specialist, a cardiologist, for further evaluation and management of your condition.\n\nPatient: That sounds good. Thank you, Dr. Gardner.\n\nPhysician: You're welcome, Mr. Moore. We'll get you scheduled for these tests as soon as possible and follow up with the specialist's recommendations. And in the meantime, it's important that you continue taking your medications as prescribed and make some lifestyle modifications to help manage your risk factors.\n\nPatient: Okay, I'll do my best. Thank you again.\n\nPhysician: You're welcome, Mr. Moore. We'll be in touch soon with the test results and next steps.",
+  "note_text": "Subjective:\nMr. Moore reports experiencing shortness of breath, fatigue, and swelling in his legs. He also mentions changes in his bowel movements and urination habits, as well as decreased appetite and unintentional weight loss. No chest pain, dizziness, or recent illnesses noted.\n\nObjective:\nMr. Moore appears alert and oriented during the conversation. Vital signs are within normal limits. No signs of distress or acute issues observed. Physical examination reveals no abnormalities.\n\nAssessment:\nConcern for cardiovascular issues based on Mr. Moore's symptoms. Plan to order an ECG, stress test, and blood tests to assess heart function, lipid levels, blood sugar, and kidney function. Referral to a cardiologist for further evaluation and management.\n\nPlan:\n1. Order ECG, stress test, and blood tests.\n2. Refer Mr. Moore to a cardiologist for specialist evaluation.\n3. Encourage continued medication adherence and lifestyle modifications.\n4. Follow up with test results and specialist recommendations."
+}

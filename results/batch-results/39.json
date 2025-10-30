@@ -1,0 +1,1198 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 1,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 50,
+    "failed_calls": 0,
+    "successful_calls": 50,
+    "total_input_tokens": 21701,
+    "total_output_tokens": 2021,
+    "total_tokens": 23722,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011914000000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C7",
+      "text": "Further examination reveals no acute distress, and vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.41814374923706055,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3593691289424896,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.31847429275512695,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31255871057510376,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3069068491458893,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention any findings related to acute distress or vital signs being within normal limits. There is no direct evidence supporting the claim of no acute distress or normal vital signs.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mr. Gray's medical history includes asthma, and a urinalysis confirmed a UTI.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.5576454401016235,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.5318312644958496,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4513293504714966,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4395495653152466,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.43697187304496765,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript confirms Mr. Gray has a history of asthma (E8[3]) and that a UTI is suspected and tests are planned (E11[4], E12[2]), but there is no confirmation that a urinalysis has confirmed a UTI.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate Mr. Gray on medication use, symptom monitoring, and when to seek medical attention if symptoms worsen.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5008167028427124,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.4581926465034485,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.33959394693374634,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3337392210960388,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.3216797411441803,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention educating Mr. Gray on medication use, symptom monitoring, or when to seek medical attention if symptoms worsen.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "6. Encourage adequate rest, hydration, and symptom management strategies to support recovery.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E13",
+          "sim": 0.2845727205276489,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2791808247566223,
+          "text": "Have you noticed any patterns or triggers that make your shortness of breath worse? Patient: Yes, it seems to get worse when I'm under stress or exposed to dust. I've also been waking up with a dry cough in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24709954857826233,
+          "text": "Fatigue, dizziness, or headaches? Patient: Yes, I have been feeling a bit more tired than usual lately. And sometimes I feel like I'm going to pass out, especially when I stand up too quickly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23324567079544067,
+          "text": "Have you had any recent respiratory infections or illnesses that could be contributing to your symptoms? Patient: As a matter of fact, I had a bad cold a few weeks ago. It started with a sore throat and then developed into a cough and congestion."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.23309583961963654,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging adequate rest, hydration, or symptom management strategies to support recovery.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C6",
+      "text": "No signs of respiratory distress are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.43080011010169983,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35381513833999634,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3466320037841797,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31963998079299927,
+          "text": "Any wheezing or whistling sounds when you breathe? Patient: Yes, I have noticed some wheezing, especially when I breathe out. And sometimes my chest feels tight, like there's a band around it. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3044666349887848,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports wheezing and chest tightness, which are signs of respiratory distress, contradicting the claim that no signs of respiratory distress are noted.",
+        "severity": "high"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Gray reports experiencing shortness of breath, especially during exertion, which has been worsening over the past few months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6479316353797913,
+          "text": "Can you tell me more about your symptoms? When did they start, and how have they been affecting you? Patient: Well, I've been experiencing some shortness of breath, especially when I exert myself. It's been happening on and off for the past few months, but it's become more frequent lately. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5547663569450378,
+          "text": "Have you noticed any patterns or triggers that make your shortness of breath worse? Patient: Yes, it seems to get worse when I'm under stress or exposed to dust. I've also been waking up with a dry cough in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5336738228797913,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.482112318277359,
+          "text": "Any wheezing or whistling sounds when you breathe? Patient: Yes, I have noticed some wheezing, especially when I breathe out. And sometimes my chest feels tight, like there's a band around it. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4566052258014679,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports experiencing shortness of breath especially during exertion and notes it has become more frequent over the past few months.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He also mentions a dry cough in the mornings, fatigue, dizziness upon standing quickly, and wheezing when breathing out.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6258213520050049,
+          "text": "Have you noticed any patterns or triggers that make your shortness of breath worse? Patient: Yes, it seems to get worse when I'm under stress or exposed to dust. I've also been waking up with a dry cough in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5535145401954651,
+          "text": "Any wheezing or whistling sounds when you breathe? Patient: Yes, I have noticed some wheezing, especially when I breathe out. And sometimes my chest feels tight, like there's a band around it. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5141034126281738,
+          "text": "Fatigue, dizziness, or headaches? Patient: Yes, I have been feeling a bit more tired than usual lately. And sometimes I feel like I'm going to pass out, especially when I stand up too quickly. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5085827112197876,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5037741661071777,
+          "text": "Can you tell me more about your symptoms? When did they start, and how have they been affecting you? Patient: Well, I've been experiencing some shortness of breath, especially when I exert myself. It's been happening on and off for the past few months, but it's become more frequent lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly mentions a dry cough in the mornings (E2:3), fatigue and dizziness upon standing quickly (E4:2-3), and wheezing when breathing out (E7:2).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He had a recent cold with sore throat, cough, and congestion.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6938584446907043,
+          "text": "Have you had any recent respiratory infections or illnesses that could be contributing to your symptoms? Patient: As a matter of fact, I had a bad cold a few weeks ago. It started with a sore throat and then developed into a cough and congestion."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5366412401199341,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4060867726802826,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3816699981689453,
+          "text": "Have you noticed any patterns or triggers that make your shortness of breath worse? Patient: Yes, it seems to get worse when I'm under stress or exposed to dust. I've also been waking up with a dry cough in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36877864599227905,
+          "text": "Can you tell me more about your symptoms? When did they start, and how have they been affecting you? Patient: Well, I've been experiencing some shortness of breath, especially when I exert myself. It's been happening on and off for the past few months, but it's become more frequent lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having had a bad cold a few weeks ago that started with a sore throat and then developed into a cough and congestion.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Gray also notes increased urination frequency and delayed start, prompting discussion about a possible UTI.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.6293838024139404,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.605584442615509,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42086759209632874,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.41448140144348145,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.3727862238883972,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E10",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E10",
+            "sentences": [
+              8
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly notes increased urination frequency and delayed start (E10:5,6). The physician links these symptoms to a possible UTI (E10:8) and discusses confirming the diagnosis (E11:2,4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Mr. Gray appears alert and engaged during the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5882998108863831,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.47027263045310974,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.23265260457992554,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.23110711574554443,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.22374361753463745,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              1,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E13",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              2,
+              5
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              1,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient, Mr. Gray, responds appropriately and engages in the conversation with the physician, indicating alertness and engagement.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "He denies chest pain or tightness but reports wheezing and tightness in the chest.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6592683792114258,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.657074511051178,
+          "text": "Any wheezing or whistling sounds when you breathe? Patient: Yes, I have noticed some wheezing, especially when I breathe out. And sometimes my chest feels tight, like there's a band around it. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5015315413475037,
+          "text": "Have you noticed any patterns or triggers that make your shortness of breath worse? Patient: Yes, it seems to get worse when I'm under stress or exposed to dust. I've also been waking up with a dry cough in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4914547801017761,
+          "text": "Can you tell me more about your symptoms? When did they start, and how have they been affecting you? Patient: Well, I've been experiencing some shortness of breath, especially when I exert myself. It's been happening on and off for the past few months, but it's become more frequent lately. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4722588062286377,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies chest pain or tightness (E3:1-2) but reports wheezing and chest tightness (E7:2-3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of respiratory distress are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.43080011010169983,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35381513833999634,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3466320037841797,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31963998079299927,
+          "text": "Any wheezing or whistling sounds when you breathe? Patient: Yes, I have noticed some wheezing, especially when I breathe out. And sometimes my chest feels tight, like there's a band around it. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3044666349887848,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports wheezing and chest tightness, which are signs of respiratory distress, contradicting the claim that no signs of respiratory distress are noted.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Further examination reveals no acute distress, and vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.41814374923706055,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and the cough. Physician: All right. Have you noticed any other symptoms?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3593691289424896,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.31847429275512695,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31255871057510376,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3069068491458893,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention any findings related to acute distress or vital signs being within normal limits. There is no direct evidence supporting the claim of no acute distress or normal vital signs.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mr. Gray's medical history includes asthma, and a urinalysis confirmed a UTI.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.5576454401016235,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.5318312644958496,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4513293504714966,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4395495653152466,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.43697187304496765,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript confirms Mr. Gray has a history of asthma (E8[3]) and that a UTI is suspected and tests are planned (E11[4], E12[2]), but there is no confirmation that a urinalysis has confirmed a UTI.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Mr. Gray presents with symptoms suggestive of asthma exacerbation and a UTI.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.5481808185577393,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.514239490032196,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4660625755786896,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4533974230289459,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4490048587322235,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E10",
+            "sentences": [
+              3,
+              4,
+              5,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician discusses ordering tests to confirm UTI and assess asthma (E12:2), prescribes antibiotic and inhaler (E12:4), and notes symptoms possibly related to UTI (E11:4). Asthma exacerbation is considered due to symptom flare-up (E9:2,3). Patient reports urinary symptoms consistent with UTI (E10:3-5,8).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further evaluation is needed to confirm the diagnoses and rule out other potential causes.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.4563972055912018,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.38313907384872437,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.35675039887428284,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.35650333762168884,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.31260669231414795,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tests to confirm the UTI diagnosis and to rule out other potential causes, indicating further evaluation is needed to confirm diagnoses and exclude other causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Treatment with antibiotics for the UTI and an inhaler for asthma is initiated.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.7110023498535156,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.4056955873966217,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4056568145751953,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3988279402256012,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3681001663208008,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E12[4] that they would prescribe an antibiotic for the UTI and an inhaler for asthma, confirming initiation of treatment for both conditions.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Follow-up testing and monitoring are planned to assess response to treatment and address any additional concerns.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.40191933512687683,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3875407576560974,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.3699495792388916,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.35607844591140747,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3088473379611969,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              2,
+              3,
+              5
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E13",
+            "sentences": [
+              4,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician plans to order tests to confirm UTI and assess asthma, including blood tests, and will follow up after results to guide further management. The patient expresses reassurance about ongoing monitoring and treatment, indicating planned follow-up testing and monitoring to assess response and address concerns.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Order tests to confirm UTI and assess asthma exacerbation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.7214058041572571,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.523766040802002,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4055030345916748,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3883666396141052,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3611403703689575,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tests to confirm UTI and assess asthma (E12:2). Confirmation of UTI with urinalysis and urine culture is mentioned (E11:4). The need to check on asthma related to symptoms is also noted (E9:3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Prescribe antibiotics for UTI and an inhaler for asthma.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.6932163238525391,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.386585533618927,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3679195046424866,
+          "text": "Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms? Patient: No, nothing like that. But I do have a history of asthma."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.34928637742996216,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.32472115755081177,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states prescribing an antibiotic for the UTI and an inhaler for asthma in sentence 4 of E12.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Conduct blood tests to evaluate kidney function and rule out other causes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.4285756051540375,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.4242676794528961,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3317154049873352,
+          "text": "Is there anything else you need to know? Physician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine? Patient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing. Physician: I see. That could be related to your urinary tract infection."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.23219811916351318,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2249898761510849,
+          "text": "I thought it was just a regular cold, but maybe it's related? Physician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that a blood test will be done to check kidney function and rule out other potential causes, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Schedule follow-up appointment in a few days to review test results and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.40943294763565063,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.3363376259803772,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.32496896386146545,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.31801652908325195,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29474300146102905,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up in a few days once test results are available and adjust the plan accordingly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate Mr. Gray on medication use, symptom monitoring, and when to seek medical attention if symptoms worsen.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5008167028427124,
+          "text": "Physician: Good morning, Mr. Gray. How are you feeling today? Patient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you. Physician: Of course."
+        },
+        {
+          "span_id": "E13",
+          "sim": 0.4581926465034485,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.33959394693374634,
+          "text": "What's the plan, then? Physician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3337392210960388,
+          "text": "I haven't had any issues with it in years, but maybe it's flared up again? Physician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms. Patient: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.3216797411441803,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention educating Mr. Gray on medication use, symptom monitoring, or when to seek medical attention if symptoms worsen.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "6. Encourage adequate rest, hydration, and symptom management strategies to support recovery.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E13",
+          "sim": 0.2845727205276489,
+          "text": "Does that sound good to you? Patient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this. Physician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2791808247566223,
+          "text": "Have you noticed any patterns or triggers that make your shortness of breath worse? Patient: Yes, it seems to get worse when I'm under stress or exposed to dust. I've also been waking up with a dry cough in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24709954857826233,
+          "text": "Fatigue, dizziness, or headaches? Patient: Yes, I have been feeling a bit more tired than usual lately. And sometimes I feel like I'm going to pass out, especially when I stand up too quickly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23324567079544067,
+          "text": "Have you had any recent respiratory infections or illnesses that could be contributing to your symptoms? Patient: As a matter of fact, I had a bad cold a few weeks ago. It started with a sore throat and then developed into a cough and congestion."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.23309583961963654,
+          "text": "We'll want to check that out as well. Patient: UTI? I didn't know that. Physician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI. Patient: Okay, that makes sense."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging adequate rest, hydration, or symptom management strategies to support recovery.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Mr. Gray. How are you feeling today?\n\nPatient: Hi, Dr. Stone. I'm feeling okay, but I've been experiencing some issues that I wanted to discuss with you.\n\nPhysician: Of course. Can you tell me more about your symptoms? When did they start, and how have they been affecting you?\n\nPatient: Well, I've been experiencing some shortness of breath, especially when I exert myself. It's been happening on and off for the past few months, but it's become more frequent lately.\n\nPhysician: I see. Have you noticed any patterns or triggers that make your shortness of breath worse?\n\nPatient: Yes, it seems to get worse when I'm under stress or exposed to dust. I've also been waking up with a dry cough in the mornings.\n\nPhysician: Okay. Have you experienced any chest pain or tightness?\n\nPatient: No, nothing like that. Just the shortness of breath and the cough.\n\nPhysician: All right. Have you noticed any other symptoms? Fatigue, dizziness, or headaches?\n\nPatient: Yes, I have been feeling a bit more tired than usual lately. And sometimes I feel like I'm going to pass out, especially when I stand up too quickly.\n\nPhysician: I understand. Have you had any recent respiratory infections or illnesses that could be contributing to your symptoms?\n\nPatient: As a matter of fact, I had a bad cold a few weeks ago. It started with a sore throat and then developed into a cough and congestion. I thought it was just a regular cold, but maybe it's related?\n\nPhysician: It's possible. We'll definitely want to consider that. Have you noticed any other changes in your respiratory system? Any wheezing or whistling sounds when you breathe?\n\nPatient: Yes, I have noticed some wheezing, especially when I breathe out. And sometimes my chest feels tight, like there's a band around it.\n\nPhysician: I see. Have you had any allergic reactions or exposure to irritants that could be contributing to your symptoms?\n\nPatient: No, nothing like that. But I do have a history of asthma. I haven't had any issues with it in years, but maybe it's flared up again?\n\nPhysician: That's definitely possible. We'll want to check on your asthma and see if it's related to your current symptoms.\n\nPatient: Okay. Is there anything else you need to know?\n\nPhysician: Actually, yes. Have you noticed any changes in your urination habits? Frequency, pain, or blood in your urine?\n\nPatient: Now that you mention it, I have been needing to urinate more often lately. And sometimes it feels like it takes longer to start flowing.\n\nPhysician: I see. That could be related to your urinary tract infection. We'll want to check that out as well.\n\nPatient: UTI? I didn't know that.\n\nPhysician: Yes, we'll want to confirm it with a urinalysis and a urine culture, but it's possible that your frequent urination and other symptoms are related to a UTI.\n\nPatient: Okay, that makes sense. What's the plan, then?\n\nPhysician: We'll start by ordering some tests to confirm the UTI and assess your asthma. We'll also do a blood test to check your kidney function and rule out any other potential causes of your symptoms. In the meantime, I'd like to prescribe you an antibiotic to treat the UTI and an inhaler to help with your asthma. We'll follow up in a few days once we have the results of the tests, and we'll go from there. Does that sound good to you?\n\nPatient: Yes, that sounds good. Thank you, Dr. Stone. I feel better knowing that we're on top of this.\n\nPhysician: Of course, Mr. Gray. We'll get to the bottom of this and get you feeling better in no time.",
+  "note_text": "Subjective:\nMr. Gray reports experiencing shortness of breath, especially during exertion, which has been worsening over the past few months. He also mentions a dry cough in the mornings, fatigue, dizziness upon standing quickly, and wheezing when breathing out. He had a recent cold with sore throat, cough, and congestion. Mr. Gray also notes increased urination frequency and delayed start, prompting discussion about a possible UTI.\n\nObjective:\nMr. Gray appears alert and engaged during the conversation. He denies chest pain or tightness but reports wheezing and tightness in the chest. No signs of respiratory distress are noted. Further examination reveals no acute distress, and vital signs are within normal limits. Mr. Gray's medical history includes asthma, and a urinalysis confirmed a UTI.\n\nAssessment:\nMr. Gray presents with symptoms suggestive of asthma exacerbation and a UTI. Further evaluation is needed to confirm the diagnoses and rule out other potential causes. Treatment with antibiotics for the UTI and an inhaler for asthma is initiated. Follow-up testing and monitoring are planned to assess response to treatment and address any additional concerns.\n\nPlan:\n1. Order tests to confirm UTI and assess asthma exacerbation.\n2. Prescribe antibiotics for UTI and an inhaler for asthma.\n3. Conduct blood tests to evaluate kidney function and rule out other causes.\n4. Schedule follow-up appointment in a few days to review test results and adjust treatment as needed.\n5. Educate Mr. Gray on medication use, symptom monitoring, and when to seek medical attention if symptoms worsen.\n6. Encourage adequate rest, hydration, and symptom management strategies to support recovery."
+}

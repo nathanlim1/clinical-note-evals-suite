@@ -1,0 +1,1258 @@
+{
+  "summary": {
+    "claims": 21,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 5,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 1,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 44,
+    "failed_calls": 0,
+    "successful_calls": 44,
+    "total_input_tokens": 22030,
+    "total_output_tokens": 2028,
+    "total_tokens": 24058,
+    "total cost w/ GPT-4.1-mini (in $)": 0.012056800000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C7",
+      "text": "There is tenderness upon palpation, and range of motion is limited due to pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.35488632321357727,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3444611430168152,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3386249542236328,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3222813010215759,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3107682466506958,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention tenderness upon palpation or limited range of motion due to pain. While pain and swelling are reported, specific findings on physical exam such as tenderness or range of motion limitations are not documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "He is currently taking Lisinopril for hypertension and Metformin for obesity.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3019832372665405,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28302815556526184,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20547424256801605,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20266473293304443,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17325031757354736,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention any medications, including Lisinopril or Metformin, nor do they confirm the conditions of hypertension or obesity as treated with these medications.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Rick's MRI of the right ankle is scheduled for 10/15/2023.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5716796517372131,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5681157112121582,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5447924733161926,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4790712296962738,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39573049545288086,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates that an MRI is to be ordered for Rick's ankle (E5:5), but there is no explicit mention of the MRI being scheduled or the date 10/15/2023.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "4. Schedule follow-up appointments to monitor progress and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.29821935296058655,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23585748672485352,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22673466801643372,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17756474018096924,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.15380212664604187,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling follow-up appointments to monitor progress and adjust treatment. It only mentions scheduling a physical therapist appointment and ordering an MRI, but no follow-up visits are discussed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "5. Educate Rick on the importance of adhering to medication regimens and attending recommended screenings and vaccinations.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.48288407921791077,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38778892159461975,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3531045615673065,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3456135392189026,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34332704544067383,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Rick on the importance of adhering to medication regimens or attending recommended screenings and vaccinations.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits, and no other abnormalities are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.3680264353752136,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33399322628974915,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3189680576324463,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28514188528060913,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2730332612991333,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              6
+            ]
+          }
+        ],
+        "rationale": "The claim states that vital signs are within normal limits and no other abnormalities are noted, but the transcript explicitly mentions swelling, redness, and warmth around the ankle, which are abnormalities.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Rick Hunt presents with complaints of persistent pain in his right ankle that has been worsening over the past few weeks.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6025566458702087,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4883384108543396,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.47861579060554504,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4675925672054291,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.45863521099090576,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              2,
+              3,
+              7
+            ]
+          }
+        ],
+        "rationale": "Rick explicitly states he has pain in his right ankle that has been present for a few weeks and is worsening over time.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He describes the pain as a dull ache that intensifies when walking or standing for extended periods.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5711848735809326,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4404434561729431,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3837059736251831,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38122761249542236,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.364871621131897,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "Rick explicitly describes the pain as a dull ache that worsens over time and is especially painful when walking or standing for too long.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Rick also reports swelling, redness, and warmth around the ankle.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7937649488449097,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.6202319860458374,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.603924036026001,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.55852210521698,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5376824140548706,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              6
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "Rick explicitly reports swelling (E1:3, E2:3), redness (E1:6), and warmth (E1:6) around the ankle.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "He denies any numbness or tingling sensations in his foot or toes.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6554322838783264,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36823388934135437,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35269129276275635,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3335355520248413,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3239266872406006,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient was explicitly asked about numbness or tingling sensations in his foot or toes and he denied experiencing them.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Additionally, Rick mentions feeling fatigued but denies any respiratory or chest symptoms.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5490682721138,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4804057478904724,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44320032000541687,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4364495277404785,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4318445324897766,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "Rick explicitly denies respiratory or chest symptoms (E5:1-2) and mentions feeling general fatigue (E5:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "He admits to smoking one pack of cigarettes daily and consuming alcohol moderately.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5226298570632935,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2848355770111084,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2049504965543747,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.17910659313201904,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.17478293180465698,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "Rick explicitly states he smokes about a pack a day and has a few drinks every week, which supports the claim of smoking one pack daily and moderate alcohol consumption.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "During the physical examination, Rick's right ankle shows signs of redness, swelling, and warmth.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.8055543899536133,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.6381012201309204,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.6192163228988647,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5421377420425415,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5410981774330139,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              6
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "Rick explicitly reports swelling (E1:3, E2:3), redness (E1:6), and warmth (E1:6) in his right ankle during the physical examination.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "There is tenderness upon palpation, and range of motion is limited due to pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.35488632321357727,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3444611430168152,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3386249542236328,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3222813010215759,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3107682466506958,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention tenderness upon palpation or limited range of motion due to pain. While pain and swelling are reported, specific findings on physical exam such as tenderness or range of motion limitations are not documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits, and no other abnormalities are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.3680264353752136,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33399322628974915,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3189680576324463,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28514188528060913,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2730332612991333,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              6
+            ]
+          }
+        ],
+        "rationale": "The claim states that vital signs are within normal limits and no other abnormalities are noted, but the transcript explicitly mentions swelling, redness, and warmth around the ankle, which are abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Rick's medical history includes hypertension, obesity, and a previous ankle injury.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6407748460769653,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.6241580247879028,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5762490630149841,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5614060163497925,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5593916177749634,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly mentions Rick's obesity (E5:7) and a previous ankle injury (E3:3). Hypertension is not mentioned, so it cannot be confirmed or denied, but the claim includes it as part of the medical history. Since obesity and previous ankle injury are confirmed, and hypertension is not contradicted, the claim is supported based on available evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "He is currently taking Lisinopril for hypertension and Metformin for obesity.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3019832372665405,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28302815556526184,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20547424256801605,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20266473293304443,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17325031757354736,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention any medications, including Lisinopril or Metformin, nor do they confirm the conditions of hypertension or obesity as treated with these medications.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Rick's MRI of the right ankle is scheduled for 10/15/2023.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5716796517372131,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5681157112121582,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5447924733161926,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4790712296962738,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39573049545288086,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates that an MRI is to be ordered for Rick's ankle (E5:5), but there is no explicit mention of the MRI being scheduled or the date 10/15/2023.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Rick Hunt presents with acute pain and swelling in his right ankle, likely due to a recent injury or exacerbation of a previous ankle issue.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5437246561050415,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4951588213443756,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.48014146089553833,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.47150033712387085,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4040873646736145,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              2,
+              3,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              6
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "Rick reports pain and swelling in his right ankle (E0:2,3,7,8; E1:3,6). He also mentions a previous ankle twist injury a few years ago (E3:3), which supports the possibility of exacerbation of a prior issue. The pain is described as worsening and associated with swelling and redness, consistent with acute symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "His smoking habit and obesity contribute to his overall health concerns.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.45282143354415894,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.44600802659988403,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2547595202922821,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.21121561527252197,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20588073134422302,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient confirms smoking about a pack a day (E4:3). The physician explicitly references the patient's history of smoking and obesity as factors to discuss lifestyle changes to improve overall health (E5:7), indicating these contribute to health concerns.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Further evaluation with the MRI will provide more insight into the underlying cause of his symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3637603521347046,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3252674639225006,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27453187108039856,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25116080045700073,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2492266595363617,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering an MRI to get a better look at the ankle, implying further evaluation will provide more insight into the cause of symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Lifestyle modifications, including smoking cessation and weight management, are essential for improving Rick's health outcomes.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.526902437210083,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5236310958862305,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4173504412174225,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34488046169281006,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29529494047164917,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions discussing lifestyle changes, including smoking cessation and weight management, to improve Rick's overall health, supporting the claim that these modifications are essential for improving his health outcomes.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "1. Order an MRI of the right ankle for further evaluation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5057531595230103,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4461531639099121,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4335523843765259,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4270540177822113,
+          "text": "Have you had any previous injuries or surgeries on your ankle? Rick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3428887128829956,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E5 sentence 5 that they are going to order an MRI to get a better look at the ankle, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "2. Refer Rick to a physical therapist for pain management and swelling reduction.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5932612419128418,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5264664888381958,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.516586184501648,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5029637813568115,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4972011148929596,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to schedule Rick with a physical therapist to help with pain and swelling, directly supporting the referral for pain management and swelling reduction.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "3. Discuss lifestyle changes, including smoking cessation and weight loss, to improve overall health.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.39464709162712097,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3934122920036316,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24246394634246826,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.20911374688148499,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.19203686714172363,
+          "text": "Have you experienced any numbness or tingling sensations in your foot or toes? Rick: No, nothing like that. Just the pain and swelling. Physician: Okay. Can you tell me about your medical history?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to discuss lifestyle changes, including smoking cessation and weight loss, to improve overall health, referencing the patient's history of smoking and obesity.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "4. Schedule follow-up appointments to monitor progress and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.29821935296058655,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23585748672485352,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22673466801643372,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17756474018096924,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.15380212664604187,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling follow-up appointments to monitor progress and adjust treatment. It only mentions scheduling a physical therapist appointment and ordering an MRI, but no follow-up visits are discussed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "5. Educate Rick on the importance of adhering to medication regimens and attending recommended screenings and vaccinations.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.48288407921791077,
+          "text": "I appreciate your help. Physician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38778892159461975,
+          "text": "Perhaps some difficulty breathing or chest pain? Rick: No, nothing like that. Just the ankle pain and some general fatigue. Physician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health. Rick: Sounds good, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3531045615673065,
+          "text": "And what about your current lifestyle? Do you smoke or drink alcohol? Rick: Yes, I smoke about a pack a day and have a few drinks every week. Physician: I see. Have you noticed any other symptoms aside from the ankle pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3456135392189026,
+          "text": "Physician: Okay. Have you noticed any swelling or redness in the ankle? Rick: Yes, there's been some swelling, especially after I've been on my feet for a while. Physician: And what about the color of the skin around the ankle? Is it red or discolored in any way? Rick: Yes, it's definitely red and a bit warm to the touch. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34332704544067383,
+          "text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now. Physician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache? Rick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Rick on the importance of adhering to medication regimens or attending recommended screenings and vaccinations.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "Rick: Hi, doctor. I've been experiencing some pain in my right ankle lately. It's been bothering me for a few weeks now.\n\nPhysician: I see. Can you tell me more about the pain? Is it a sharp, stabbing pain or a dull ache?\n\nRick: It's more of a dull ache, but it's been getting worse over time. It's especially painful when I walk or stand for too long.\n\nPhysician: Okay. Have you noticed any swelling or redness in the ankle?\n\nRick: Yes, there's been some swelling, especially after I've been on my feet for a while.\n\nPhysician: And what about the color of the skin around the ankle? Is it red or discolored in any way?\n\nRick: Yes, it's definitely red and a bit warm to the touch.\n\nPhysician: I see. Have you experienced any numbness or tingling sensations in your foot or toes?\n\nRick: No, nothing like that. Just the pain and swelling.\n\nPhysician: Okay. Can you tell me about your medical history? Have you had any previous injuries or surgeries on your ankle?\n\nRick: No, nothing major. I did twist my ankle a few years ago, but it didn't seem like a big deal at the time.\n\nPhysician: I understand. And what about your current lifestyle? Do you smoke or drink alcohol?\n\nRick: Yes, I smoke about a pack a day and have a few drinks every week.\n\nPhysician: I see. Have you noticed any other symptoms aside from the ankle pain? Perhaps some difficulty breathing or chest pain?\n\nRick: No, nothing like that. Just the ankle pain and some general fatigue.\n\nPhysician: Okay. I'm going to order an MRI to get a better look at what's going on with your ankle. In the meantime, I'd like to schedule you with a physical therapist to help with the pain and swelling. And given your history of smoking and obesity, we should also discuss some lifestyle changes that can help improve your overall health.\n\nRick: Sounds good, doctor. I appreciate your help.\n\nPhysician: Of course, Rick. We'll get to the bottom of this and work on a plan to get you feeling better.",
+  "note_text": "Subjective:\nRick Hunt presents with complaints of persistent pain in his right ankle that has been worsening over the past few weeks. He describes the pain as a dull ache that intensifies when walking or standing for extended periods. Rick also reports swelling, redness, and warmth around the ankle. He denies any numbness or tingling sensations in his foot or toes. Additionally, Rick mentions feeling fatigued but denies any respiratory or chest symptoms. He admits to smoking one pack of cigarettes daily and consuming alcohol moderately.\n\nObjective:\nDuring the physical examination, Rick's right ankle shows signs of redness, swelling, and warmth. There is tenderness upon palpation, and range of motion is limited due to pain. Vital signs are within normal limits, and no other abnormalities are noted. Rick's medical history includes hypertension, obesity, and a previous ankle injury. He is currently taking Lisinopril for hypertension and Metformin for obesity. Rick's MRI of the right ankle is scheduled for 10/15/2023.\n\nAssessment:\nRick Hunt presents with acute pain and swelling in his right ankle, likely due to a recent injury or exacerbation of a previous ankle issue. His smoking habit and obesity contribute to his overall health concerns. Further evaluation with the MRI will provide more insight into the underlying cause of his symptoms. Lifestyle modifications, including smoking cessation and weight management, are essential for improving Rick's health outcomes.\n\nPlan:\n1. Order an MRI of the right ankle for further evaluation.\n2. Refer Rick to a physical therapist for pain management and swelling reduction.\n3. Discuss lifestyle changes, including smoking cessation and weight loss, to improve overall health.\n4. Schedule follow-up appointments to monitor progress and adjust treatment as needed.\n5. Educate Rick on the importance of adhering to medication regimens and attending recommended screenings and vaccinations."
+}

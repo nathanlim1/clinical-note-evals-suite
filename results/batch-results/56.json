@@ -1,0 +1,968 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 62,
+    "failed_calls": 0,
+    "successful_calls": 62,
+    "total_input_tokens": 25774,
+    "total_output_tokens": 1822,
+    "total_tokens": 27596,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0132248
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Ms. Ramos appears uncomfortable during the conversation but is cooperative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3860451579093933,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.37332165241241455,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.24693013727664948,
+          "text": "Physician: Can you tell me a little bit more about your allergies? You have a mild allergy to penicillin, correct? Patient: Yes, that's right. I get a rash when I take it. Physician: Okay. We'll keep that in mind when choosing your medications. Patient: Thanks. Physician: Of course."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.23475795984268188,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2331833392381668,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Ms. Ramos appears uncomfortable during the conversation or that she is cooperative. There is no direct or indirect evidence describing her demeanor or cooperation level.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.40626248717308044,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.36207616329193115,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35387858748435974,
+          "text": "Patient: No, I haven't noticed anything like that. Physician: Good. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere, and I don't think anyone in my household has the same symptoms. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33769455552101135,
+          "text": "Have you experienced any other symptoms, such as abdominal pain, nausea, or fever? Patient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33466094732284546,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or confirmation of vital signs being within normal limits is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physical examination reveals tenderness in the lower abdomen.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.46590328216552734,
+          "text": "Have you experienced any other symptoms, such as abdominal pain, nausea, or fever? Patient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31063327193260193,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2887299060821533,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2883366644382477,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.284317284822464,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains no explicit mention of a physical examination or findings of tenderness in the lower abdomen. The patient's symptoms are described, but no physical exam findings are documented.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Ms. Ramos reports feeling miserable lately with a constant burning sensation when urinating, lower abdominal discomfort, and a mild fever on and off for the past week.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7053592205047607,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5582112073898315,
+          "text": "Have you experienced any other symptoms, such as abdominal pain, nausea, or fever? Patient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days. Physician: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.5047876834869385,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4137817323207855,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4081438183784485,
+          "text": "Can you tell me when these symptoms started? Patient: It's been about a week now. I thought it was just a minor issue at first, but it's not getting any better. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling miserable lately with a constant burning sensation when urinating (E0:4-5), lower abdominal discomfort and a mild fever on and off for the past few days (E1:2), and states these symptoms have been present for about a week (E2:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She also feels the need to urinate frequently but only passes a small amount each time.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.462215781211853,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3735741376876831,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.3498407006263733,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.317928671836853,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31761687994003296,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she feels the need to urinate frequently but only passes a small amount each time, matching the claim exactly.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Ms. Ramos denies any recent changes in sexual activity, travel, or exposure to individuals with similar symptoms.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.519141674041748,
+          "text": "Patient: No, I haven't noticed anything like that. Physician: Good. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere, and I don't think anyone in my household has the same symptoms. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.456283837556839,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.42185795307159424,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4040490388870239,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3750873804092407,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent changes in sexual activity (E3:1-2) and denies recent travel or exposure to individuals with similar symptoms (E4:3-4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She mentions her mother's history of recurrent UTIs and her own assumption of being prone to them.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6894040703773499,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.4621102511882782,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3999043107032776,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3687889873981476,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3044244647026062,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that her mother gets UTIs frequently and she assumes she is prone to them, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Ms. Ramos states she is currently taking Nitrofurantoin and Ibuprofen for her UTI symptoms but does not feel significant improvement yet.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.5845127701759338,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5702582597732544,
+          "text": "Physician: Can you tell me about your current medications and dosages? Patient: Sure. I'm taking Nitrofurantoin, 100 mg, twice daily for 5 days, and Ibuprofen, 200 mg, as needed for pain and fever. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5202929973602295,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.44693148136138916,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.414340078830719,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she is taking Nitrofurantoin and Ibuprofen for her UTI symptoms (E8[3]) and reports not feeling significant improvement yet (E9[2]).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Ms. Ramos appears uncomfortable during the conversation but is cooperative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3860451579093933,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.37332165241241455,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.24693013727664948,
+          "text": "Physician: Can you tell me a little bit more about your allergies? You have a mild allergy to penicillin, correct? Patient: Yes, that's right. I get a rash when I take it. Physician: Okay. We'll keep that in mind when choosing your medications. Patient: Thanks. Physician: Of course."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.23475795984268188,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2331833392381668,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Ms. Ramos appears uncomfortable during the conversation or that she is cooperative. There is no direct or indirect evidence describing her demeanor or cooperation level.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.40626248717308044,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.36207616329193115,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35387858748435974,
+          "text": "Patient: No, I haven't noticed anything like that. Physician: Good. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere, and I don't think anyone in my household has the same symptoms. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33769455552101135,
+          "text": "Have you experienced any other symptoms, such as abdominal pain, nausea, or fever? Patient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33466094732284546,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or confirmation of vital signs being within normal limits is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physical examination reveals tenderness in the lower abdomen.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.46590328216552734,
+          "text": "Have you experienced any other symptoms, such as abdominal pain, nausea, or fever? Patient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31063327193260193,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2887299060821533,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2883366644382477,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.284317284822464,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains no explicit mention of a physical examination or findings of tenderness in the lower abdomen. The patient's symptoms are described, but no physical exam findings are documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Urine sample collection is pending for further testing.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.4861140847206116,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.39642608165740967,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37722694873809814,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3201678991317749,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2811473608016968,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E11",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the nurse will collect a urine sample, indicating that urine sample collection is planned and pending for further testing.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Ms. Ramos presents with symptoms consistent with a UTI, including dysuria, frequency, and lower abdominal discomfort.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.5927820205688477,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5660942792892456,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4487727880477905,
+          "text": "Have you experienced any other symptoms, such as abdominal pain, nausea, or fever? Patient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4262620210647583,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3852176070213318,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports dysuria (burning sensation when urinating), frequency (feeling the need to urinate often but passing little urine), and lower abdominal discomfort, which are symptoms consistent with a UTI.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "She has a family history of recurrent UTIs, suggesting a potential genetic predisposition.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.7423542737960815,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.4098662734031677,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34027034044265747,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28829678893089294,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2794003486633301,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports that her mother frequently gets UTIs, implying a family history of recurrent UTIs. The physician explicitly states that there may be a genetic component, supporting the claim of a potential genetic predisposition.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Current treatment with Nitrofurantoin and Ibuprofen may require adjustment based on symptom response and test results.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6540889739990234,
+          "text": "Physician: Can you tell me about your current medications and dosages? Patient: Sure. I'm taking Nitrofurantoin, 100 mg, twice daily for 5 days, and Ibuprofen, 200 mg, as needed for pain and fever. Physician: Great."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4468230903148651,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.39442676305770874,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3622373938560486,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3461441993713379,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              2,
+              3,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient is currently taking Nitrofurantoin and Ibuprofen as stated in E8[3]. The patient reports persistent symptoms indicating the medication may not be effective yet (E9[2,3]). The physician explicitly mentions the possibility of adjusting medication or treatment duration based on symptom response and test results (E9[5,6]).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Order urine tests to confirm UTI and assess for any other underlying issues.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.5890564322471619,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.47196006774902344,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4461689591407776,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.39285051822662354,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2979589104652405,
+          "text": "Physician: Can you tell me about your current medications and dosages? Patient: Sure. I'm taking Nitrofurantoin, 100 mg, twice daily for 5 days, and Ibuprofen, 200 mg, as needed for pain and fever. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E11",
+            "sentences": [
+              4,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will order tests to confirm the UTI and check for other potential issues, and the nurse will collect a urine sample, which supports ordering urine tests for confirmation and assessment.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Discuss family history of UTIs and potential genetic factors.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.7465344667434692,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.47257864475250244,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3992078900337219,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3492649793624878,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2657542824745178,
+          "text": "Patient: No, I haven't noticed anything like that. Physician: Good. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere, and I don't think anyone in my household has the same symptoms. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly includes discussion of family history of UTIs (E7:2, E11:5) and mentions the possibility of a genetic component (E7:4). The physician also states they will discuss family history in more detail (E7:5) and later (E11:5).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Recommend lifestyle changes, including increased water intake and avoidance of sugary drinks.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.539739727973938,
+          "text": "Can you tell me about your water intake? Do you drink enough water throughout the day? Patient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though. Physician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda. Patient: Okay, I'll try to do that."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.28963178396224976,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23947326838970184,
+          "text": "Have you had any recent changes in your sexual activity or new sexual partners? Patient: No, nothing has changed in that regard. Physician: Okay. Have you noticed any blood in your urine or cloudy urine?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23557455837726593,
+          "text": "Physician: Great. Have you had any recent changes in your bowel movements or experienced any constipation? Patient: No, my bowel movements have been normal. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22567223012447357,
+          "text": "Have you had any history of UTIs or other medical conditions that may be related to this issue? Patient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to. Physician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later. Patient: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends drinking at least eight glasses of water a day and avoiding sugary drinks like soda, which supports the claim of recommending lifestyle changes including increased water intake and avoidance of sugary drinks.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Consider adjusting medication regimen based on test results and symptom response.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4649014472961426,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.39389073848724365,
+          "text": "Physician: Can you tell me a little bit more about your allergies? You have a mild allergy to penicillin, correct? Patient: Yes, that's right. I get a rash when I take it. Physician: Okay. We'll keep that in mind when choosing your medications. Patient: Thanks. Physician: Of course."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.36429083347320557,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3443300724029541,
+          "text": "Physician: Can you tell me about your current medications and dosages? Patient: Sure. I'm taking Nitrofurantoin, 100 mg, twice daily for 5 days, and Ibuprofen, 200 mg, as needed for pain and fever. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3403966724872589,
+          "text": "Have you experienced any other symptoms, such as abdominal pain, nausea, or fever? Patient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the possibility of adjusting medication or treatment duration based on the patient's response and test results, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Follow up with Ms. Ramos after test results are available to determine next steps in treatment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.5478528141975403,
+          "text": "Is there anything else you'd like to discuss or any questions you have for me? Patient: No, I think that covers everything. Physician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.37686672806739807,
+          "text": "How have you been feeling since starting the medication? Patient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time. Physician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back. Patient: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3561641573905945,
+          "text": "Physician: Good morning, Ms. Ramos. How are you feeling today? Patient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.30933356285095215,
+          "text": "Can you tell me when these symptoms started? Patient: It's been about a week now. I thought it was just a minor issue at first, but it's not getting any better. Physician: I understand."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.28608548641204834,
+          "text": "Physician: Can you tell me a little bit more about your allergies? You have a mild allergy to penicillin, correct? Patient: Yes, that's right. I get a rash when I take it. Physician: Okay. We'll keep that in mind when choosing your medications. Patient: Thanks. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that they will discuss medication adjustments after test results are back, implying follow-up with Ms. Ramos to determine next steps in treatment.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Ms. Ramos. How are you feeling today?\n\nPatient: Hi, Dr. Mason. I've been feeling pretty miserable lately. I've had this constant burning sensation when I pee, and it's been really painful. I also feel like I need to go all the time, but when I do, only a little bit comes out.\n\nPhysician: I see. Have you experienced any other symptoms, such as abdominal pain, nausea, or fever?\n\nPatient: Yes, I've had some lower abdominal discomfort and a mild fever on and off for the past few days.\n\nPhysician: Okay. Can you tell me when these symptoms started?\n\nPatient: It's been about a week now. I thought it was just a minor issue at first, but it's not getting any better.\n\nPhysician: I understand. Have you had any recent changes in your sexual activity or new sexual partners?\n\nPatient: No, nothing has changed in that regard.\n\nPhysician: Okay. Have you noticed any blood in your urine or cloudy urine?\n\nPatient: No, I haven't noticed anything like that.\n\nPhysician: Good. Have you recently traveled or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled anywhere, and I don't think anyone in my household has the same symptoms.\n\nPhysician: Okay. Can you tell me about your water intake? Do you drink enough water throughout the day?\n\nPatient: I try to drink a decent amount of water, but I'm not sure if it's enough. I do drink a lot of soda, though.\n\nPhysician: I see. It's important to stay hydrated, especially when you have a UTI. I recommend you drink at least eight glasses of water a day and avoid sugary drinks like soda.\n\nPatient: Okay, I'll try to do that.\n\nPhysician: Great. Have you had any recent changes in your bowel movements or experienced any constipation?\n\nPatient: No, my bowel movements have been normal.\n\nPhysician: Okay. Have you had any history of UTIs or other medical conditions that may be related to this issue?\n\nPatient: My mom gets UTIs a lot, so I'm assuming it's just something I'm prone to.\n\nPhysician: I see. It's possible that there may be a genetic component to this. We'll discuss your family history in more detail later.\n\nPatient: Okay.\n\nPhysician: Can you tell me about your current medications and dosages?\n\nPatient: Sure. I'm taking Nitrofurantoin, 100 mg, twice daily for 5 days, and Ibuprofen, 200 mg, as needed for pain and fever.\n\nPhysician: Great. How have you been feeling since starting the medication?\n\nPatient: Honestly, I don't feel like it's working yet. The burning sensation is still there, and I still feel like I need to go all the time.\n\nPhysician: I see. It's possible that we may need to adjust your medication or duration of treatment. We'll discuss that further after we get your test results back.\n\nPatient: Okay.\n\nPhysician: Can you tell me a little bit more about your allergies? You have a mild allergy to penicillin, correct?\n\nPatient: Yes, that's right. I get a rash when I take it.\n\nPhysician: Okay. We'll keep that in mind when choosing your medications.\n\nPatient: Thanks.\n\nPhysician: Of course. Is there anything else you'd like to discuss or any questions you have for me?\n\nPatient: No, I think that covers everything.\n\nPhysician: Alright, Ms. Ramos. I'm going to order some tests to confirm the UTI and check for any other potential issues. We'll also discuss your family history and any necessary lifestyle changes to help prevent future UTIs. I'll have the nurse come in to take your vitals and collect a urine sample. We'll get you feeling better soon.",
+  "note_text": "Subjective:\nMs. Ramos reports feeling miserable lately with a constant burning sensation when urinating, lower abdominal discomfort, and a mild fever on and off for the past week. She also feels the need to urinate frequently but only passes a small amount each time. Ms. Ramos denies any recent changes in sexual activity, travel, or exposure to individuals with similar symptoms. She mentions her mother's history of recurrent UTIs and her own assumption of being prone to them. Ms. Ramos states she is currently taking Nitrofurantoin and Ibuprofen for her UTI symptoms but does not feel significant improvement yet.\n\nObjective:\nMs. Ramos appears uncomfortable during the conversation but is cooperative. Vital signs are within normal limits. Physical examination reveals tenderness in the lower abdomen. Urine sample collection is pending for further testing.\n\nAssessment:\nMs. Ramos presents with symptoms consistent with a UTI, including dysuria, frequency, and lower abdominal discomfort. She has a family history of recurrent UTIs, suggesting a potential genetic predisposition. Current treatment with Nitrofurantoin and Ibuprofen may require adjustment based on symptom response and test results.\n\nPlan:\n1. Order urine tests to confirm UTI and assess for any other underlying issues.\n2. Discuss family history of UTIs and potential genetic factors.\n3. Recommend lifestyle changes, including increased water intake and avoidance of sugary drinks.\n4. Consider adjusting medication regimen based on test results and symptom response.\n5. Follow up with Ms. Ramos after test results are available to determine next steps in treatment."
+}

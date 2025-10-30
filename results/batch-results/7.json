@@ -1,0 +1,1091 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 50,
+    "failed_calls": 0,
+    "successful_calls": 50,
+    "total_input_tokens": 22423,
+    "total_output_tokens": 1812,
+    "total_tokens": 24235,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011868400000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Mr. Webb appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.507163941860199,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49931755661964417,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41352859139442444,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3795744776725769,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3583870530128479,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Mr. Webb appears fatigued but alert during the examination. While the patient reports feeling tired, there is no direct observation or comment on his alertness or appearance during the exam.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.36895275115966797,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3021866977214813,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2926342487335205,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28037601709365845,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2799757719039917,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or assessment of vital signs stability is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Respiratory exam reveals decreased breath sounds and mild wheezing.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4560384750366211,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4049030542373657,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37260526418685913,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.325992226600647,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3254338502883911,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of respiratory exam findings such as decreased breath sounds or mild wheezing.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate patient on smoking cessation and lifestyle modifications to improve respiratory health.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4606174826622009,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40548551082611084,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37544146180152893,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32293134927749634,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3189263939857483,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating the patient on smoking cessation or lifestyle modifications to improve respiratory health.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T24",
+      "text": "It's been on and off for a few weeks, but it's been getting worse lately.",
+      "sent_idx": 24,
+      "prev_text": "Patient: It's a dull ache, mostly.",
+      "next_text": "Physician: I see.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Webb presents with a persistent dry cough, worsening at night, accompanied by shortness of breath, chest tightness, low-grade fever, and feeling cold.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6876703500747681,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.517009973526001,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.49762511253356934,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4617682695388794,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.44169121980667114,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports a persistent dry cough worsening at night (E0:6,7; E2:4), shortness of breath (E0:8), chest tightness (E1:1), low-grade fever and feeling cold (E1:4,5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He reports fatigue, muscle weakness, and a dull ache in his chest.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5689111948013306,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5574629306793213,
+          "text": "How long have you been experiencing this tightness in your chest? Is it a sharp pain or more of a dull ache? Patient: It's a dull ache, mostly. It's been on and off for a few weeks, but it's been getting worse lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5056673288345337,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44366365671157837,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3605983853340149,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports fatigue and muscle weakness in E4 sentences 2 and 3, and a dull ache in his chest in E3 sentence 3.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Denies blood in mucus, swelling in legs or feet.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5035948753356934,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.44161558151245117,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36930686235427856,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3004293441772461,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2944852113723755,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies swelling in legs or feet (E5:1-2) and denies blood in mucus (E2:3,6).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Smoking history includes one pack per day for 35 years, and social alcohol use on weekends.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5946416854858398,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3755471706390381,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.21069249510765076,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.1888771951198578,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.152452290058136,
+          "text": "How long have you been experiencing this tightness in your chest? Is it a sharp pain or more of a dull ache? Patient: It's a dull ache, mostly. It's been on and off for a few weeks, but it's been getting worse lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states smoking about a pack a day for 35 years and describes social drinking with a few beers on weekends.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Mr. Webb appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.507163941860199,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49931755661964417,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41352859139442444,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3795744776725769,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3583870530128479,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Mr. Webb appears fatigued but alert during the examination. While the patient reports feeling tired, there is no direct observation or comment on his alertness or appearance during the exam.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.36895275115966797,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3021866977214813,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2926342487335205,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28037601709365845,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2799757719039917,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or assessment of vital signs stability is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Respiratory exam reveals decreased breath sounds and mild wheezing.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4560384750366211,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4049030542373657,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37260526418685913,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.325992226600647,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3254338502883911,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of respiratory exam findings such as decreased breath sounds or mild wheezing.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No swelling noted in legs or feet.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5863928198814392,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3969522714614868,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3002595901489258,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2889716625213623,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2321547120809555,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies noticing any swelling in legs or feet in response to the physician's direct question.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Chest X-ray ordered to rule out pneumonia.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5885696411132812,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3846651017665863,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3312256932258606,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3028028607368469,
+          "text": "How long have you been experiencing this tightness in your chest? Is it a sharp pain or more of a dull ache? Patient: It's a dull ache, mostly. It's been on and off for a few weeks, but it's been getting worse lately. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2889978289604187,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The claim is explicitly stated in E7 sentence 1: 'I'd like to order a chest X-ray to rule out pneumonia.'",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Mr. Webb likely has a respiratory infection based on symptoms and history.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6183820962905884,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5380791425704956,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5372825860977173,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3795897364616394,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36727893352508545,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              3,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician notes respiratory issues and symptoms including cough, worsening shortness of breath, chest tightness, and low-grade fever. The physician explicitly states the patient might have a respiratory infection and prescribes antibiotics, orders a chest X-ray, and plans follow-up, indicating a likely respiratory infection based on symptoms and history.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Chest X-ray ordered for further evaluation.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5149875283241272,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3815839886665344,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32661643624305725,
+          "text": "How long have you been experiencing this tightness in your chest? Is it a sharp pain or more of a dull ache? Patient: It's a dull ache, mostly. It's been on and off for a few weeks, but it's been getting worse lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2788560390472412,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27049538493156433,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order a chest X-ray to rule out pneumonia and confirms that the X-ray will be done today.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Antibiotic prescribed to address the infection.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4248408377170563,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3762568235397339,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.22064931690692902,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.20442111790180206,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.19991354644298553,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states prescribing an antibiotic to help clear up the infection and the nurse is preparing the patient to receive the antibiotic.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Follow-up appointment scheduled for next week to monitor response to treatment.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4821261167526245,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4055492579936981,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29230862855911255,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24810314178466797,
+          "text": "How long have you been experiencing this tightness in your chest? Is it a sharp pain or more of a dull ache? Patient: It's a dull ache, mostly. It's been on and off for a few weeks, but it's been getting worse lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23664383590221405,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states a follow-up appointment is scheduled for next week to reassess symptoms and monitor response to medication.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Order chest X-ray to rule out pneumonia.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.573915958404541,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35561496019363403,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3489621579647064,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31623542308807373,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3117566406726837,
+          "text": "How long have you been experiencing this tightness in your chest? Is it a sharp pain or more of a dull ache? Patient: It's a dull ache, mostly. It's been on and off for a few weeks, but it's been getting worse lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order a chest X-ray to rule out pneumonia and confirms the X-ray will be done today.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Prescribe antibiotic for respiratory infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4562499225139618,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35383743047714233,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34577518701553345,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3233649730682373,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2527771592140198,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states prescribing an antibiotic to help clear up the infection and mentions setting the patient up with the antibiotic.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Schedule follow-up appointment for next week.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.44349661469459534,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3650856614112854,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2699148952960968,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.20832988619804382,
+          "text": "And I've had this tightness in my chest that won't go away. Physician: I see. Have you experienced any fever or chills? Patient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.20306694507598877,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to schedule a follow-up appointment for next week to reassess symptoms and medication response.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Monitor response to treatment and adjust plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3442957103252411,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.26636022329330444,
+          "text": "I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb. Patient: Thank you, doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22998523712158203,
+          "text": "Have you had any other symptoms, like fatigue or muscle weakness? Patient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.21566450595855713,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2043590396642685,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician schedules a follow-up appointment to reassess symptoms and see how the patient is responding to medication, which implies monitoring response to treatment and adjusting the plan as needed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate patient on smoking cessation and lifestyle modifications to improve respiratory health.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4606174826622009,
+          "text": "Patient: I smoke about a pack a day, and I've been smoking for about 35 years now. Physician: I see. And do you drink alcohol? Patient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends. Physician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40548551082611084,
+          "text": "Physician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms? Patient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37544146180152893,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, doctor. Not that I've noticed. Physician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32293134927749634,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus? Patient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood. Physician: All right."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3189263939857483,
+          "text": "I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you? Patient: Yes, doctor. That sounds good. Thank you. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating the patient on smoking cessation or lifestyle modifications to improve respiratory health.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Webb. I'm Dr. Thompson, your primary care provider. I see that you've been experiencing some respiratory issues lately. Can you tell me more about your symptoms?\n\nPatient: Yes, doctor. I've had this cough for a few weeks now, and it just won't go away. It's been getting worse, especially at night. I've also noticed I've been feeling really short of breath, even when I'm just sitting still. And I've had this tightness in my chest that won't go away.\n\nPhysician: I see. Have you experienced any fever or chills?\n\nPatient: Yes, doctor. I've had a low-grade fever for the past few days, and I've been feeling cold all the time.\n\nPhysician: Okay. Can you tell me more about your cough? Is it dry or productive? Have you noticed any blood in your mucus?\n\nPatient: It's a dry cough, mostly. Sometimes I do bring up some mucus, but it's not much. And no, I haven't seen any blood.\n\nPhysician: All right. How long have you been experiencing this tightness in your chest? Is it a sharp pain or more of a dull ache?\n\nPatient: It's a dull ache, mostly. It's been on and off for a few weeks, but it's been getting worse lately.\n\nPhysician: I see. Have you had any other symptoms, like fatigue or muscle weakness?\n\nPatient: Yes, doctor. I've been feeling really tired all the time, and my muscles have been feeling weak. Especially in my legs.\n\nPhysician: Okay. Have you noticed any swelling in your legs or feet?\n\nPatient: No, doctor. Not that I've noticed.\n\nPhysician: All right. Can you tell me about your smoking history? How much do you smoke, and how long have you been smoking?\n\nPatient: I smoke about a pack a day, and I've been smoking for about 35 years now.\n\nPhysician: I see. And do you drink alcohol?\n\nPatient: Yes, doctor. I'm a social drinker. I have a few beers with friends on the weekends.\n\nPhysician: Okay. Mr. Webb, based on what you've told me, it sounds like you might have developed a respiratory infection. I'd like to order a chest X-ray to rule out pneumonia. In the meantime, I'm going to prescribe you an antibiotic to help clear up the infection. I also want to schedule a follow-up appointment for next week to reassess your symptoms and see how you're responding to the medication. Does that sound good to you?\n\nPatient: Yes, doctor. That sounds good. Thank you.\n\nPhysician: Great. I'm going to have my nurse come in and take your vital signs and get you set up with the antibiotic. We'll have the X-ray done today, and I'll call you with the results as soon as they're available. Thanks for coming in today, Mr. Webb.\n\nPatient: Thank you, doctor.",
+  "note_text": "Subjective:\nMr. Webb presents with a persistent dry cough, worsening at night, accompanied by shortness of breath, chest tightness, low-grade fever, and feeling cold. He reports fatigue, muscle weakness, and a dull ache in his chest. Denies blood in mucus, swelling in legs or feet. Smoking history includes one pack per day for 35 years, and social alcohol use on weekends.\n\nObjective:\nMr. Webb appears fatigued but alert during the examination. Vital signs are stable. Respiratory exam reveals decreased breath sounds and mild wheezing. No swelling noted in legs or feet. Chest X-ray ordered to rule out pneumonia.\n\nAssessment:\nMr. Webb likely has a respiratory infection based on symptoms and history. Chest X-ray ordered for further evaluation. Antibiotic prescribed to address the infection. Follow-up appointment scheduled for next week to monitor response to treatment.\n\nPlan:\n1. Order chest X-ray to rule out pneumonia.\n2. Prescribe antibiotic for respiratory infection.\n3. Schedule follow-up appointment for next week.\n4. Monitor response to treatment and adjust plan as needed.\n5. Educate patient on smoking cessation and lifestyle modifications to improve respiratory health."
+}

@@ -1,0 +1,972 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 1,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 54,
+    "failed_calls": 0,
+    "successful_calls": 54,
+    "total_input_tokens": 24166,
+    "total_output_tokens": 1669,
+    "total_tokens": 25835,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0123368
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Mrs. Stanley appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5825479626655579,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5168606042861938,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5067640542984009,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4572848677635193,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3899615705013275,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Mrs. Stanley reports feeling tired and weak (E6[3]) and low energy noted by her son (E7[3]), but there is no explicit mention that she appears fatigued or alert during the examination. The claim about her appearance during the exam is not explicitly stated.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.354262113571167,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3207324743270874,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31849950551986694,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31711405515670776,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3036876916885376,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently. And as far as I know, no one in my family or friends has been sick. Physician: That's good to know. Let's talk about your medical history. You have hypertension and diabetes."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their stability is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Chest auscultation reveals crackles in the lower lobes.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.364922434091568,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32996153831481934,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29644182324409485,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27749496698379517,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20344315469264984,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention chest auscultation findings or specifically note crackles in the lower lobes.",
+        "severity": "high"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T11",
+      "text": "But sometimes, I feel like I'm going to pass out because of the shortness of breath.",
+      "sent_idx": 11,
+      "prev_text": "Patient: No, no chest pain.",
+      "next_text": "And my energy levels have been really low lately.",
+      "severity": "medium"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mrs. Stanley reports feeling short of breath, experiencing productive cough with mucus, low energy levels, sore throat, nausea, weight loss, weakness, and internal trembling.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6907616853713989,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5492579340934753,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5382716655731201,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5209496021270752,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.45230555534362793,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports shortness of breath (E0:6), productive cough with mucus (E0:7), low energy levels (E7:3, E1:5), sore throat (E1:6), weakness (E6:3), and internal trembling (E6:4). Weight loss and nausea are not mentioned in the transcript.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She denies chest pain, recent travel, or exposure to sick individuals.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5464752912521362,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently. And as far as I know, no one in my family or friends has been sick. Physician: That's good to know. Let's talk about your medical history. You have hypertension and diabetes."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.43887823820114136,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38474011421203613,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3829387426376343,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35077378153800964,
+          "text": "Have you had any recent changes in your diet or appetite? Patient: Well, I've been feeling a bit nauseous lately, especially in the mornings. And I've lost a little weight because I haven't been eating as much. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent travel (E2:2) and exposure to sick individuals (E2:3). She also denies chest pain (E1:3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She mentions being forgetful but compliant with her medications.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6086992025375366,
+          "text": "Have you noticed any issues with your medications, such as side effects or difficulty taking them? Patient: No, I haven't had any problems with the medications. But I have been a bit forgetful lately. My son has been helping me remember to take them. Physician: That's helpful. I'm glad to hear that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4080554246902466,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3509979248046875,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2957760691642761,
+          "text": "Have you had any recent changes in your diet or appetite? Patient: Well, I've been feeling a bit nauseous lately, especially in the mornings. And I've lost a little weight because I haven't been eating as much. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.278102844953537,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been forgetful (E4:3) but reports no problems with medications (E4:2) and confirms taking medications as prescribed (E3:1-2), indicating compliance.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mrs. Stanley appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5825479626655579,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5168606042861938,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5067640542984009,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4572848677635193,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3899615705013275,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Mrs. Stanley reports feeling tired and weak (E6[3]) and low energy noted by her son (E7[3]), but there is no explicit mention that she appears fatigued or alert during the examination. The claim about her appearance during the exam is not explicitly stated.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.354262113571167,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3207324743270874,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31849950551986694,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31711405515670776,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3036876916885376,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently. And as far as I know, no one in my family or friends has been sick. Physician: That's good to know. Let's talk about your medical history. You have hypertension and diabetes."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their stability is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She has no swelling in her legs or feet.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4763283133506775,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3034716248512268,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently. And as far as I know, no one in my family or friends has been sick. Physician: That's good to know. Let's talk about your medical history. You have hypertension and diabetes."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.27764856815338135,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26108911633491516,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23757648468017578,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any swelling in her legs or feet when asked directly.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "She is using her albuterol inhaler more frequently.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5620728731155396,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41912245750427246,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.339205265045166,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31804534792900085,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2814749479293823,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that she has been using her albuterol inhaler more often due to shortness of breath.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Chest auscultation reveals crackles in the lower lobes.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.364922434091568,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32996153831481934,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29644182324409485,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27749496698379517,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20344315469264984,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention chest auscultation findings or specifically note crackles in the lower lobes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "She has lost weight since her last visit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4978235960006714,
+          "text": "Have you had any recent changes in your diet or appetite? Patient: Well, I've been feeling a bit nauseous lately, especially in the mornings. And I've lost a little weight because I haven't been eating as much. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29209333658218384,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2883123755455017,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28779539465904236,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2818939983844757,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that she has lost a little weight because she hasn't been eating as much.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Based on Mrs. Stanley's symptoms and physical exam findings, she likely has a respiratory infection, possibly pneumonia.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6412909030914307,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.6240208745002747,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.46724775433540344,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3855871856212616,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.38317352533340454,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that Mrs. Stanley might have a respiratory infection, possibly pneumonia, based on her symptoms. The symptoms described include shortness of breath and productive cough, which support this clinical impression.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further tests, including a chest X-ray and blood work, are needed for confirmation.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4188157618045807,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3091283440589905,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3036927282810211,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2934969663619995,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently. And as far as I know, no one in my family or friends has been sick. Physician: That's good to know. Let's talk about your medical history. You have hypertension and diabetes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2911868095397949,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that tests are needed to confirm the diagnosis and mentions ordering a chest X-ray and blood work to better understand the patient's condition.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Antibiotic therapy is indicated to manage her symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3419956862926483,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3113793730735779,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2815644443035126,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27786681056022644,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.20372536778450012,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician suspects a respiratory infection possibly pneumonia and explicitly states the intention to prescribe an antibiotic to help manage the patient's symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Prescribe an antibiotic for the suspected respiratory infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.458329439163208,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32431456446647644,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2900111675262451,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2682366371154785,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2528446316719055,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician suspects a respiratory infection and explicitly states the intention to prescribe an antibiotic to manage symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Order a chest X-ray and blood work.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4508938789367676,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3171653747558594,
+          "text": "Physician: I see. Have you noticed any other symptoms, such as chest pain or tightness? Patient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30426138639450073,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2973567545413971,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently. And as far as I know, no one in my family or friends has been sick. Physician: That's good to know. Let's talk about your medical history. You have hypertension and diabetes."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2865941524505615,
+          "text": "Have you experienced any other symptoms, such as fever, night sweats, or fatigue? Patient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E7[8] that they will order a chest X-ray and some blood work to better understand the patient's condition.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Schedule a follow-up appointment for next week to monitor progress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.47269392013549805,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33252090215682983,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.31367117166519165,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24817748367786407,
+          "text": "Have you noticed any issues with your medications, such as side effects or difficulty taking them? Patient: No, I haven't had any problems with the medications. But I have been a bit forgetful lately. My son has been helping me remember to take them. Physician: That's helpful. I'm glad to hear that."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2458953559398651,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E8 sentence 8 that a follow-up appointment will be scheduled for next week to check on the patient's progress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Provide medication instructions and educate Mrs. Stanley on the importance of completing the antibiotic course.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5462949872016907,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.49786120653152466,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4454609751701355,
+          "text": "Physician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on? Patient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.42417722940444946,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38748040795326233,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the nurse will go over the medication instructions with Mrs. Stanley, which implies providing medication instructions and education about the antibiotic course.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Ensure proper communication with her son for support and assistance.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3301272690296173,
+          "text": "Have you noticed any issues with your medications, such as side effects or difficulty taking them? Patient: No, I haven't had any problems with the medications. But I have been a bit forgetful lately. My son has been helping me remember to take them. Physician: That's helpful. I'm glad to hear that."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2989288568496704,
+          "text": "Does that sound good to you? Patient: Yes, doctor. I appreciate your help. I just want to feel better. Physician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.24553591012954712,
+          "text": "Is there anything else you'd like to discuss or ask me before we wrap up today's visit? Patient: No, doctor. I think that covers everything. Thank you so much for your help. Physician: You're welcome, Mrs. Stanley. We'll take good care of you."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.20775799453258514,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately. Physician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.17986823618412018,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that her son has been helping her remember to take her medications, indicating communication and support from her son.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mrs. Stanley. It's a pleasure to meet you. I understand you've been experiencing some concerning symptoms lately. Can you tell me more about what's been going on?\n\nPatient: Yes, doctor. For the past few days, I've been feeling really short of breath, even when I'm just sitting still. And when I cough, it's been producing a lot of mucus. It's been getting worse every day.\n\nPhysician: I see. Have you noticed any other symptoms, such as chest pain or tightness?\n\nPatient: No, no chest pain. But sometimes, I feel like I'm going to pass out because of the shortness of breath. And my energy levels have been really low lately. I've also had a bit of a sore throat.\n\nPhysician: I understand. Have you had any recent travel or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled anywhere recently. And as far as I know, no one in my family or friends has been sick.\n\nPhysician: That's good to know. Let's talk about your medical history. You have hypertension and diabetes. Are you taking your medications as prescribed?\n\nPatient: Yes, doctor. I take my lisinopril and metformin every day. And I've been using my albuterol inhaler more often because of the shortness of breath.\n\nPhysician: Great. Have you noticed any issues with your medications, such as side effects or difficulty taking them?\n\nPatient: No, I haven't had any problems with the medications. But I have been a bit forgetful lately. My son has been helping me remember to take them.\n\nPhysician: That's helpful. I'm glad to hear that. Have you had any recent changes in your diet or appetite?\n\nPatient: Well, I've been feeling a bit nauseous lately, especially in the mornings. And I've lost a little weight because I haven't been eating as much.\n\nPhysician: I see. Have you experienced any other symptoms, such as fever, night sweats, or fatigue?\n\nPatient: Yes, doctor. I've been feeling really tired and weak, even after resting. And sometimes, I feel like I'm shaking or trembling inside.\n\nPhysician: I understand. Have you noticed any swelling in your legs or feet?\n\nPatient: No, I haven't noticed any swelling. But my son has been telling me that my energy levels have been really low lately.\n\nPhysician: I see. Mrs. Stanley, based on what you've shared with me today, it sounds like you might have a respiratory infection, possibly pneumonia. We'll need to run some tests to confirm that. In the meantime, I'd like to prescribe you an antibiotic to help manage your symptoms. I'll also order a chest X-ray and some blood work to help us better understand what's going on. Does that sound good to you?\n\nPatient: Yes, doctor. I appreciate your help. I just want to feel better.\n\nPhysician: Of course, Mrs. Stanley. We'll do everything we can to help you feel better. I'll have my nurse come in to take your vital signs and go over the medication instructions with you. We'll also schedule a follow-up appointment for next week to check on your progress. Is there anything else you'd like to discuss or ask me before we wrap up today's visit?\n\nPatient: No, doctor. I think that covers everything. Thank you so much for your help.\n\nPhysician: You're welcome, Mrs. Stanley. We'll take good care of you.",
+  "note_text": "Subjective:\nMrs. Stanley reports feeling short of breath, experiencing productive cough with mucus, low energy levels, sore throat, nausea, weight loss, weakness, and internal trembling. She denies chest pain, recent travel, or exposure to sick individuals. She mentions being forgetful but compliant with her medications.\n\nObjective:\nMrs. Stanley appears fatigued but alert during the examination. Vital signs are stable. She has no swelling in her legs or feet. She is using her albuterol inhaler more frequently. Chest auscultation reveals crackles in the lower lobes. She has lost weight since her last visit.\n\nAssessment:\nBased on Mrs. Stanley's symptoms and physical exam findings, she likely has a respiratory infection, possibly pneumonia. Further tests, including a chest X-ray and blood work, are needed for confirmation. Antibiotic therapy is indicated to manage her symptoms.\n\nPlan:\nPrescribe an antibiotic for the suspected respiratory infection. Order a chest X-ray and blood work. Schedule a follow-up appointment for next week to monitor progress. Provide medication instructions and educate Mrs. Stanley on the importance of completing the antibiotic course. Ensure proper communication with her son for support and assistance."
+}

@@ -1,0 +1,1163 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 3,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 3,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 1,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 51,
+    "failed_calls": 0,
+    "successful_calls": 51,
+    "total_input_tokens": 23529,
+    "total_output_tokens": 1797,
+    "total_tokens": 25326,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0122868
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "During the clinical encounter, Charlotte appeared alert and engaged.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.48434388637542725,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4823920726776123,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40024232864379883,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3818765878677368,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34015417098999023,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly state or describe Charlotte's level of alertness or engagement during the clinical encounter. While she responds to questions, there is no direct mention or clear implication of her being alert and engaged.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She did not exhibit signs of distress or discomfort.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.31071552634239197,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2830595374107361,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.17749245464801788,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.1570942997932434,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1536954939365387,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention whether the patient exhibited signs of distress or discomfort; it only discusses symptoms and treatments related to headaches without describing her emotional or physical state during the encounter.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.2945321798324585,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26824164390563965,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25381413102149963,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25332802534103394,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.20039115846157074,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or data about vital signs or their normality is present in the provided transcript spans.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physical examination did not reveal any focal neurological deficits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3638274669647217,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2502603828907013,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23522016406059265,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.23254461586475372,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23177750408649445,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any mention or description of a physical examination or its findings, including whether any focal neurological deficits were assessed or found.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Recommend lifestyle modifications to manage stress, including relaxation techniques and adequate sleep hygiene.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3450170159339905,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3425668478012085,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33067095279693604,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25641533732414246,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24454611539840698,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions stress and lack of sleep as headache triggers and references lifestyle changes recommended by a specialist, but it does not explicitly recommend lifestyle modifications to manage stress, relaxation techniques, or adequate sleep hygiene.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Advise Charlotte to reduce caffeine intake and monitor the impact on headache frequency and severity.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6668341159820557,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5800237059593201,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5348855257034302,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5238825082778931,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5006823539733887,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The transcript suggests caffeine can trigger headaches and recommends tracking headache frequency and severity, but there is no explicit advice to reduce caffeine intake or monitor its impact on headaches.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T34",
+      "text": "She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot.",
+      "sent_idx": 34,
+      "prev_text": "Charlotte: Yes, she did.",
+      "next_text": "Physician: That's good to know.",
+      "severity": "medium"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Charlotte Thompson, a 52-year-old female, presents with chronic headaches that have been worsening over the past year.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5285560488700867,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5132590532302856,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.49701547622680664,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.48583751916885376,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.48269036412239075,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "Charlotte explicitly states she has headaches that have been worsening over the past year, confirming chronicity and progression. Her age and gender are given in the claim but not contradicted or unsupported by the transcript.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She reports experiencing throbbing pain on both sides of her head, lasting 4-6 hours, with an average of 3-4 headaches per week.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6187969446182251,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4907693862915039,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4379191994667053,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4301900565624237,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42726442217826843,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "Charlotte explicitly reports throbbing pain on both sides of her head lasting 4-6 hours. The frequency of 3-4 headaches per week is implied by the context but not contradicted and the main components of the claim are directly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She notes that stress at work and lack of sleep may exacerbate the headaches.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6286805272102356,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5860443115234375,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.48148372769355774,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.46319466829299927,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3627464175224304,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "Charlotte explicitly states she has been under a lot of stress at work and that lack of sleep makes the headaches worse, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Charlotte has tried ibuprofen with limited relief and has increased her coffee intake recently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5837686657905579,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5385791659355164,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5140328407287598,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4708208739757538,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4326372742652893,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "Charlotte explicitly states she has tried ibuprofen with limited relief (E3:2-3) and mentions recently increasing her coffee intake (E6:4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "During the clinical encounter, Charlotte appeared alert and engaged.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.48434388637542725,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4823920726776123,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40024232864379883,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3818765878677368,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34015417098999023,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly state or describe Charlotte's level of alertness or engagement during the clinical encounter. While she responds to questions, there is no direct mention or clear implication of her being alert and engaged.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She did not exhibit signs of distress or discomfort.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.31071552634239197,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2830595374107361,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.17749245464801788,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.1570942997932434,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1536954939365387,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention whether the patient exhibited signs of distress or discomfort; it only discusses symptoms and treatments related to headaches without describing her emotional or physical state during the encounter.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.2945321798324585,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26824164390563965,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25381413102149963,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25332802534103394,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.20039115846157074,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or data about vital signs or their normality is present in the provided transcript spans.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physical examination did not reveal any focal neurological deficits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3638274669647217,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2502603828907013,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23522016406059265,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.23254461586475372,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23177750408649445,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any mention or description of a physical examination or its findings, including whether any focal neurological deficits were assessed or found.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "No other symptoms such as nausea or sensitivity to light were reported.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5360545516014099,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2868541181087494,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2594410181045532,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.24882590770721436,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22954979538917542,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies other symptoms such as nausea or sensitivity to light when asked.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Charlotte presents with chronic headaches likely triggered by stress and caffeine consumption.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6808918714523315,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.6222335696220398,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.59125816822052,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5504175424575806,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.527190089225769,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "Charlotte explicitly states she has been under a lot of stress at work and recently increased coffee consumption. The physician acknowledges caffeine can sometimes trigger headaches and considers stress a relevant factor.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "The headaches impact her daily life and require further evaluation and management.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4977099895477295,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.48503053188323975,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4829387068748474,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.47553837299346924,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4683239459991455,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports frustration due to headaches impacting her ability to function (E1:7). The physician plans further evaluation including a headache diary and follow-up (E7:4,5; E8:1), and commits to management to help her return to normal life (E8:6).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Given the frequency and severity of the headaches, a comprehensive treatment plan is warranted to address her symptoms effectively.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.519153892993927,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5005844831466675,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.48763078451156616,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4683810770511627,
+          "text": "Physician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go? Charlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4599257707595825,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient experiences frequent, severe headaches lasting hours with limited relief from ibuprofen. The physician suggests tracking headaches and scheduling follow-up to adjust treatment, indicating a comprehensive plan is warranted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Recommend lifestyle modifications to manage stress, including relaxation techniques and adequate sleep hygiene.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3450170159339905,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3425668478012085,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33067095279693604,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25641533732414246,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24454611539840698,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions stress and lack of sleep as headache triggers and references lifestyle changes recommended by a specialist, but it does not explicitly recommend lifestyle modifications to manage stress, relaxation techniques, or adequate sleep hygiene.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Advise Charlotte to reduce caffeine intake and monitor the impact on headache frequency and severity.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6668341159820557,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5800237059593201,
+          "text": "Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet? Charlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5348855257034302,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5238825082778931,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5006823539733887,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The transcript suggests caffeine can trigger headaches and recommends tracking headache frequency and severity, but there is no explicit advice to reduce caffeine intake or monitor its impact on headaches.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Prescribe a headache diary for Charlotte to track headache patterns, triggers, and response to treatments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6638091802597046,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5418561100959778,
+          "text": "Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep? Charlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5387868881225586,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5164213180541992,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49285614490509033,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6,
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends starting a headache diary to track occurrence, severity, and potential triggers, and Charlotte agrees, indicating the prescription of a headache diary.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Schedule a follow-up appointment in two weeks to assess treatment efficacy and make necessary adjustments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5424137115478516,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31108880043029785,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.29747429490089417,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24382007122039795,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22210808098316193,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states scheduling a follow-up appointment in a couple of weeks to assess progress and adjust treatment as needed, matching the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Educate Charlotte on the importance of regular follow-up and prompt communication if symptoms worsen or new concerns arise.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5460487604141235,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.482148677110672,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46604087948799133,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3756100535392761,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37177854776382446,
+          "text": "And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light? Charlotte: No, nothing like that. Just the headaches. Physician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states scheduling a follow-up appointment and instructs Charlotte to promptly reach out if symptoms worsen or new concerns arise, matching the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Follow-up care will focus on optimizing Charlotte's headache management and improving her quality of life.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6421689391136169,
+          "text": "We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us. Charlotte: Thank you, Dr. Sutton. I really appreciate your help. Physician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.6111732721328735,
+          "text": "Did she have any luck in managing them? Charlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot. Physician: That's good to know. We'll definitely want to explore those options for you as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.550070583820343,
+          "text": "Physician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on? Charlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5125697255134583,
+          "text": "Could that be a factor? Physician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered. Charlotte: Okay, that sounds like a good idea. Physician: Great. I think that's a good starting point for now."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5073837041854858,
+          "text": "Have you tried any treatments or medications for the headaches yet? Charlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up to check on treatment adjustments and commits to helping manage headaches and improve quality of life.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Charlotte. It's a pleasure to meet you. I'm Dr. Sutton, and I'll be your primary care physician today. I understand that you've been experiencing some health concerns that you'd like to discuss. Can you tell me a little bit about what's been going on?\n\nCharlotte: Yes, of course. I've been having these headaches that just won't go away. They've been getting worse over the past year, and it's really affecting my daily life.\n\nPhysician: I see. Can you describe the headaches for me? What does the pain feel like? Is it constant or does it come and go?\n\nCharlotte: The pain is throbbing, like someone is squeezing my head on both sides. It's not constant, but it can last for 4-6 hours at a time. It's really frustrating because I can't seem to do anything to make it go away.\n\nPhysician: I understand. Have you noticed any triggers that seem to set off the headaches? Maybe certain foods, stress, or lack of sleep?\n\nCharlotte: Well, I have been under a lot of stress at work lately. And I do notice that if I don't get enough sleep, the headaches tend to be worse. But other than that, I can't really pinpoint anything specific that triggers them.\n\nPhysician: Okay, that's helpful to know. Have you tried any treatments or medications for the headaches yet?\n\nCharlotte: Yes, I've tried ibuprofen, but it only seems to help a little bit. Sometimes it doesn't even touch the pain.\n\nPhysician: I see. And have you noticed any other symptoms besides the headaches? Maybe some nausea or sensitivity to light?\n\nCharlotte: No, nothing like that. Just the headaches.\n\nPhysician: Okay. Now, I know you mentioned that your mother also experienced chronic headaches. Did she have any luck in managing them?\n\nCharlotte: Yes, she did. She saw a specialist who recommended some lifestyle changes and medication, and it seemed to help her a lot.\n\nPhysician: That's good to know. We'll definitely want to explore those options for you as well. Have you had any recent changes in your life that could be contributing to the headaches? Maybe a change in your job or diet?\n\nCharlotte: Well, like I said, I have been under a lot of stress at work lately. And I did recently start drinking a bit more coffee to try and keep up with the demands of my job. Could that be a factor?\n\nPhysician: It's possible. Caffeine can sometimes trigger headaches in people. We'll definitely want to look into that further. And I'll also recommend that you start keeping a headache diary to track when the headaches occur, how severe they are, and any potential triggers you might have encountered.\n\nCharlotte: Okay, that sounds like a good idea.\n\nPhysician: Great. I think that's a good starting point for now. We'll also schedule you for a follow-up appointment in a couple of weeks to check in on how you're doing and see if we need to make any adjustments to your treatment plan. And of course, if the headaches get worse or you experience any other concerning symptoms, don't hesitate to reach out to us.\n\nCharlotte: Thank you, Dr. Sutton. I really appreciate your help.\n\nPhysician: Of course, Charlotte. We'll do everything we can to help you manage these headaches and get back to your normal life.",
+  "note_text": "Subjective:\nCharlotte Thompson, a 52-year-old female, presents with chronic headaches that have been worsening over the past year. She reports experiencing throbbing pain on both sides of her head, lasting 4-6 hours, with an average of 3-4 headaches per week. She notes that stress at work and lack of sleep may exacerbate the headaches. Charlotte has tried ibuprofen with limited relief and has increased her coffee intake recently.\n\nObjective:\nDuring the clinical encounter, Charlotte appeared alert and engaged. She did not exhibit signs of distress or discomfort. Vital signs were within normal limits. Physical examination did not reveal any focal neurological deficits. No other symptoms such as nausea or sensitivity to light were reported.\n\nAssessment:\nCharlotte presents with chronic headaches likely triggered by stress and caffeine consumption. The headaches impact her daily life and require further evaluation and management. Given the frequency and severity of the headaches, a comprehensive treatment plan is warranted to address her symptoms effectively.\n\nPlan:\n1. Recommend lifestyle modifications to manage stress, including relaxation techniques and adequate sleep hygiene.\n2. Advise Charlotte to reduce caffeine intake and monitor the impact on headache frequency and severity.\n3. Prescribe a headache diary for Charlotte to track headache patterns, triggers, and response to treatments.\n4. Schedule a follow-up appointment in two weeks to assess treatment efficacy and make necessary adjustments.\n5. Educate Charlotte on the importance of regular follow-up and prompt communication if symptoms worsen or new concerns arise.\n\nFollow-up care will focus on optimizing Charlotte's headache management and improving her quality of life."
+}

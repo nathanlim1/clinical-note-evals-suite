@@ -1,0 +1,1251 @@
+{
+  "summary": {
+    "claims": 21,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 5,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 5,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 60,
+    "failed_calls": 0,
+    "successful_calls": 60,
+    "total_input_tokens": 27612,
+    "total_output_tokens": 1757,
+    "total_tokens": 29369,
+    "total cost w/ GPT-4.1-mini (in $)": 0.013856
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Patient appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3910198509693146,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38811779022216797,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3627626895904541,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3545014560222626,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34137800335884094,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the patient appears fatigued but alert during the examination. While the patient reports low energy levels, there is no direct observation or mention of the patient's alertness or fatigue by the physician.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3727297782897949,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3458091616630554,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3434771001338959,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.33439862728118896,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31210240721702576,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or provide any vital signs or state that vital signs are stable.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of respiratory distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.36950182914733887,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3577776849269867,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2888736128807068,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24337375164031982,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2345137894153595,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes the patient reporting feeling 'a bit winded when I exert myself' (E1:5), which suggests some respiratory distress on exertion. There is no explicit statement confirming 'no signs of respiratory distress.'",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Lungs clear to auscultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.3951004147529602,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27933987975120544,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27187496423721313,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2697412073612213,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2611023783683777,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention lung auscultation findings or state that the lungs are clear to auscultation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "No edema noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.38060247898101807,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31171056628227234,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30622559785842896,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.30403760075569153,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3006625175476074,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention or address the presence or absence of edema.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Blood pressure and blood sugar levels monitored closely due to recent changes.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5697643756866455,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4923255741596222,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45015743374824524,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28310126066207886,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.23977386951446533,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions recent changes in blood sugar and blood pressure (E6[1]) but does not explicitly state that these parameters are being monitored closely. The physician orders tests related to infection and schedules a follow-up but does not specify close monitoring of blood pressure or blood sugar levels.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "Advise patient to rest, stay hydrated, and monitor blood pressure and blood sugar levels closely.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4517501890659332,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.44648176431655884,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43252015113830566,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4216981530189514,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.34744760394096375,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript explicitly advises the patient to rest and stay hydrated (E7[8]) but does not mention monitoring blood pressure or blood sugar levels closely.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mrs. Taylor presents with a persistent dry cough and low energy levels for the past three weeks.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6117399334907532,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.48389601707458496,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.48107486963272095,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45661652088165283,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4503477215766907,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports a persistent cough and low energy levels (E0:6). The cough is described as dry (E1:4). The duration of symptoms is about three weeks (E3:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She reports bringing up mucus occasionally and feeling winded with exertion.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.608940601348877,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4089030623435974,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35626527667045593,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3521425127983093,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3162286877632141,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she sometimes brings up mucus and feels winded with exertion in sentences 4 and 5 of E1.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Denies chest pain, recent travel, or exposure to sick individuals.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.621275007724762,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.407968670129776,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3832629323005676,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3765619397163391,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3515077233314514,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent travel and exposure to sick individuals (E2:2) and denies chest pain (E1:5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Reports a low-grade fever that has since resolved.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.552037239074707,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.39449378848075867,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3909321129322052,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37938034534454346,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3674841523170471,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having had a low-grade fever a few days ago that has since resolved.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "No night sweats or weight loss noted.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5818619728088379,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.368805855512619,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3674256503582001,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.35856664180755615,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3319541811943054,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states no night sweats or weight loss in E4 sentence 3.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Patient appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3910198509693146,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38811779022216797,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3627626895904541,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3545014560222626,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34137800335884094,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the patient appears fatigued but alert during the examination. While the patient reports low energy levels, there is no direct observation or mention of the patient's alertness or fatigue by the physician.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3727297782897949,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3458091616630554,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3434771001338959,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.33439862728118896,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31210240721702576,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or provide any vital signs or state that vital signs are stable.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of respiratory distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.36950182914733887,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3577776849269867,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2888736128807068,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24337375164031982,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2345137894153595,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes the patient reporting feeling 'a bit winded when I exert myself' (E1:5), which suggests some respiratory distress on exertion. There is no explicit statement confirming 'no signs of respiratory distress.'",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Lungs clear to auscultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.3951004147529602,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27933987975120544,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27187496423721313,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2697412073612213,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2611023783683777,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention lung auscultation findings or state that the lungs are clear to auscultation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "No edema noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.38060247898101807,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31171056628227234,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30622559785842896,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.30403760075569153,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3006625175476074,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention or address the presence or absence of edema.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Blood pressure slightly lower than usual.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.47664502263069153,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41969650983810425,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3871047794818878,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3179369270801544,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3154928684234619,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that their blood pressure has been a bit lower than usual.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Blood sugar levels slightly elevated.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.47953006625175476,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43392860889434814,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4170492887496948,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2540751099586487,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25336888432502747,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that their blood sugar has been a bit higher than usual, indicating slightly elevated blood sugar levels.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Likely viral respiratory infection causing Mrs. Taylor's symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4893924295902252,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44565996527671814,
+          "text": "Physician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today? Patient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.42333704233169556,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3801739513874054,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.36207759380340576,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that it is possible Mrs. Taylor has a viral infection causing her symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Blood work and respiratory viral panel ordered to confirm diagnosis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6164401769638062,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4166380763053894,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34098300337791443,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33649665117263794,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3355899453163147,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering a complete blood count and a respiratory viral panel to confirm diagnosis and rule out other causes, indicating blood work and respiratory viral panel were ordered for diagnostic confirmation.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Antiviral medication prescribed.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5003253221511841,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3114479184150696,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2934417724609375,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.262651264667511,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2527289092540741,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe a course of antiviral medication in sentence 4 of E7.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Blood pressure and blood sugar levels monitored closely due to recent changes.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5697643756866455,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4923255741596222,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45015743374824524,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28310126066207886,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.23977386951446533,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions recent changes in blood sugar and blood pressure (E6[1]) but does not explicitly state that these parameters are being monitored closely. The physician orders tests related to infection and schedules a follow-up but does not specify close monitoring of blood pressure or blood sugar levels.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Order complete blood count, respiratory viral panel, and electrolyte panel.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6612879037857056,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.36282455921173096,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3363243341445923,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3039468824863434,
+          "text": "Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath? Patient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29895564913749695,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order a complete blood count, a respiratory viral panel, and an electrolyte panel in sentence 3 of span E7.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Prescribe antiviral medication.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5092059373855591,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28319770097732544,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2484837770462036,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23457232117652893,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.22595438361167908,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E7 sentence 4 that they will prescribe a course of antiviral medication.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "Schedule follow-up appointment in one week to review test results and assess progress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4651128649711609,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.32525545358657837,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3026273846626282,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3021111488342285,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24741823971271515,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in one week to review test results and assess progress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "Advise patient to rest, stay hydrated, and monitor blood pressure and blood sugar levels closely.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4517501890659332,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.44648176431655884,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43252015113830566,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4216981530189514,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.34744760394096375,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript explicitly advises the patient to rest and stay hydrated (E7[8]) but does not mention monitoring blood pressure or blood sugar levels closely.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "Nurse to take blood samples and address any patient questions.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5507747530937195,
+          "text": "Patient: Thank you, Dr. Rhodes. I appreciate your help. Physician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.436252623796463,
+          "text": "Patient: Sure, that makes sense. What kind of tests do you need to run? Physician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection. Patient: Okay, that sounds good. Physician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39106351137161255,
+          "text": "Patient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower. Physician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision? Patient: No, I haven't. Physician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3631401062011719,
+          "text": "Are you taking your medications as prescribed? Patient: Yes, I am. I take my lisinopril and metformin every day. Physician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3358967900276184,
+          "text": "Have you noticed any other symptoms, such as fever, night sweats, or weight loss? Patient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss. Physician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the nurse will come in to take blood samples and answer any patient questions, directly supporting the claim.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mrs. Taylor. I'm Dr. Rhodes, your primary care physician. How are you feeling today?\n\nPatient: Good morning, Dr. Rhodes. I'm not feeling too well, to be honest. I've been experiencing a persistent cough and my energy levels have been low lately.\n\nPhysician: I see. Can you tell me more about your cough? Is it dry or productive? Have you noticed any chest pain or shortness of breath?\n\nPatient: It's a dry cough, mostly, but sometimes I do bring up some mucus. I haven't had any chest pain, but I do feel a bit winded when I exert myself.\n\nPhysician: Okay. Have you had any recent travel or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't believe anyone in my household has been sick.\n\nPhysician: Alright. How long have you been experiencing these symptoms?\n\nPatient: It started about three weeks ago. At first, I thought it was just a cold, but it's persisted longer than I expected.\n\nPhysician: I understand. Have you noticed any other symptoms, such as fever, night sweats, or weight loss?\n\nPatient: I did have a low-grade fever a few days ago, but it's since resolved. And no, I haven't experienced any night sweats or weight loss.\n\nPhysician: Thank you for letting me know. Now, I'd like to discuss your medical history. You have hypertension and type 2 diabetes mellitus. Are you taking your medications as prescribed?\n\nPatient: Yes, I am. I take my lisinopril and metformin every day.\n\nPhysician: Excellent. Have you noticed any changes in your blood sugar control or blood pressure recently?\n\nPatient: Actually, my blood sugar has been a bit higher than usual, and my blood pressure has been a bit lower.\n\nPhysician: I see. That's good to know. Have you experienced any other symptoms related to your diabetes or hypertension, such as numbness in your extremities or blurred vision?\n\nPatient: No, I haven't.\n\nPhysician: Okay. Mrs. Taylor, based on what you've shared, it's possible that you have a viral infection that's causing your symptoms. I'd like to order a few tests to confirm this and rule out any other potential causes.\n\nPatient: Sure, that makes sense. What kind of tests do you need to run?\n\nPhysician: I'd like to order a complete blood count, a respiratory viral panel, and an electrolyte panel. And I'll also prescribe you a course of antiviral medication, just in case it is a viral infection.\n\nPatient: Okay, that sounds good.\n\nPhysician: Great. I'll also schedule you for a follow-up appointment in a week's time to review your test results and assess your progress. In the meantime, make sure to drink plenty of fluids and rest as much as possible.\n\nPatient: Thank you, Dr. Rhodes. I appreciate your help.\n\nPhysician: You're welcome, Mrs. Taylor. I'll have my nurse come in to take your blood samples and answer any questions you may have. We'll get you feeling better in no time.",
+  "note_text": "SOAP Note:\n\nSubjective:\nMrs. Taylor presents with a persistent dry cough and low energy levels for the past three weeks. She reports bringing up mucus occasionally and feeling winded with exertion. Denies chest pain, recent travel, or exposure to sick individuals. Reports a low-grade fever that has since resolved. No night sweats or weight loss noted.\n\nObjective:\nPatient appears fatigued but alert during the examination. Vital signs stable. No signs of respiratory distress. Lungs clear to auscultation. No edema noted. Blood pressure slightly lower than usual. Blood sugar levels slightly elevated.\n\nAssessment:\nLikely viral respiratory infection causing Mrs. Taylor's symptoms. Blood work and respiratory viral panel ordered to confirm diagnosis. Antiviral medication prescribed. Blood pressure and blood sugar levels monitored closely due to recent changes.\n\nPlan:\nOrder complete blood count, respiratory viral panel, and electrolyte panel. Prescribe antiviral medication. Schedule follow-up appointment in one week to review test results and assess progress. Advise patient to rest, stay hydrated, and monitor blood pressure and blood sugar levels closely. Nurse to take blood samples and address any patient questions."
+}

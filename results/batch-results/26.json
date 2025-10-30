@@ -1,0 +1,980 @@
+{
+  "summary": {
+    "claims": 16,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 1,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 39,
+    "failed_calls": 0,
+    "successful_calls": 39,
+    "total_input_tokens": 16771,
+    "total_output_tokens": 1361,
+    "total_tokens": 18132,
+    "total cost w/ GPT-4.1-mini (in $)": 0.008886000000000002
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Mr. Hanson presents as alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5296347141265869,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4610729217529297,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40159615874290466,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3653842806816101,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35142552852630615,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mr. Hanson is alert and oriented during the consultation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He appears fatigued but otherwise in good spirits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.37572765350341797,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30445796251296997,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2746412456035614,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24276098608970642,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2328774780035019,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient feels more tired than usual, but there is no explicit mention that he appears fatigued or that he is otherwise in good spirits.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of distress or acute pain are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3017433285713196,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2970788776874542,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29113397002220154,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2654254734516144,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24639055132865906,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that there are no signs of distress or acute pain. The patient groans and reports significant headache discomfort, which implies distress or pain, but no explicit clinical assessment of distress or acute pain is documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.33789950609207153,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3342643082141876,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30791041254997253,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2870990037918091,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27275508642196655,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their status is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C8",
+      "text": "Mr. Hanson's headaches are likely tension-type headaches based on the description provided.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5926833748817444,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5450047850608826,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5364329218864441,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.49430033564567566,
+          "text": "Can you tell me more about your headaches? When did they start, and what do they feel like? Patient: They started a few months ago, and they're mostly occipital and throbbing. They last about 3-4 hours and happen 2-3 times a week. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.48656654357910156,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient's headaches are described as throbbing and occipital, lasting 3-4 hours, with sensitivity to light. These features are more consistent with migraine rather than tension-type headaches, which are typically described as pressing or tightening and not associated with photophobia.",
+        "severity": "high"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Hanson reports experiencing occipital and throbbing headaches that last 3-4 hours and occur 2-3 times per week.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6790666580200195,
+          "text": "Can you tell me more about your headaches? When did they start, and what do they feel like? Patient: They started a few months ago, and they're mostly occipital and throbbing. They last about 3-4 hours and happen 2-3 times a week. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5810355544090271,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5339236259460449,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5176515579223633,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48890870809555054,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the headaches are occipital and throbbing, last 3-4 hours, and occur 2-3 times per week.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He mentions sensitivity to light during these episodes and feeling more tired than usual recently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.567969560623169,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4796719551086426,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42307713627815247,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.409828782081604,
+          "text": "Can you tell me more about your headaches? When did they start, and what do they feel like? Patient: They started a few months ago, and they're mostly occipital and throbbing. They last about 3-4 hours and happen 2-3 times a week. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3701108694076538,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states sensitivity to light during headaches (E3:2) and feeling more tired than usual recently (E5:2).",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He has tried ibuprofen and acetaminophen for relief but with limited success.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6204317808151245,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3196762204170227,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2822641432285309,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.278911828994751,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2631601095199585,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having tried ibuprofen and acetaminophen with limited effect, matching the claim exactly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Hanson presents as alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5296347141265869,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4610729217529297,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40159615874290466,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3653842806816101,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35142552852630615,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mr. Hanson is alert and oriented during the consultation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He appears fatigued but otherwise in good spirits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.37572765350341797,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30445796251296997,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2746412456035614,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24276098608970642,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2328774780035019,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient feels more tired than usual, but there is no explicit mention that he appears fatigued or that he is otherwise in good spirits.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of distress or acute pain are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3017433285713196,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2970788776874542,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29113397002220154,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2654254734516144,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24639055132865906,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that there are no signs of distress or acute pain. The patient groans and reports significant headache discomfort, which implies distress or pain, but no explicit clinical assessment of distress or acute pain is documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.33789950609207153,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3342643082141876,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30791041254997253,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2870990037918091,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27275508642196655,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their status is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Lab tests have been ordered to investigate underlying causes of the headaches.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5978168249130249,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.49746882915496826,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.49286961555480957,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4294986128807068,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4224441945552826,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering lab tests to rule out underlying conditions contributing to symptoms, which include headaches.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mr. Hanson's headaches are likely tension-type headaches based on the description provided.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5926833748817444,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5450047850608826,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5364329218864441,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.49430033564567566,
+          "text": "Can you tell me more about your headaches? When did they start, and what do they feel like? Patient: They started a few months ago, and they're mostly occipital and throbbing. They last about 3-4 hours and happen 2-3 times a week. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.48656654357910156,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient's headaches are described as throbbing and occipital, lasting 3-4 hours, with sensitivity to light. These features are more consistent with migraine rather than tension-type headaches, which are typically described as pressing or tightening and not associated with photophobia.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Further evaluation through lab tests will help rule out any secondary causes.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.42046576738357544,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3959706723690033,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28726616501808167,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27874067425727844,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2582765221595764,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering lab tests to rule out underlying conditions, which aligns with further evaluation to rule out secondary causes.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Medication for headache prevention is recommended, along with lifestyle modifications to manage triggers and stress.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6014311909675598,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.49333879351615906,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.458310067653656,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.42958974838256836,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35159555077552795,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends lifestyle changes to avoid triggers like stress and mentions starting medication for headache prevention.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Initiate medication for headache prevention.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4982399642467499,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.48271235823631287,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4680825471878052,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.44653546810150146,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3942461907863617,
+          "text": "Can you tell me more about your headaches? When did they start, and what do they feel like? Patient: They started a few months ago, and they're mostly occipital and throbbing. They last about 3-4 hours and happen 2-3 times a week. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to start medication for headache prevention (E5:5) and the patient agrees to it (E6:1-3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Await lab results to guide further management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5419042110443115,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38472387194633484,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3268507122993469,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2452581375837326,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.21530649065971375,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The statement 'We'll follow up in a few days once the lab results are back' explicitly supports awaiting lab results to guide further management.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Recommend lifestyle changes to avoid triggers and stress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5583539605140686,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37158268690109253,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3076551556587219,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21980132162570953,
+          "text": "Have you tried any over-the-counter medications or remedies for the headaches? Patient: I've tried ibuprofen and acetaminophen, but they don't seem to do much. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21644406020641327,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends lifestyle changes including avoiding triggers like stress, which directly supports the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Schedule a follow-up appointment to discuss stress management techniques.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5225613713264465,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.38880079984664917,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3252487778663635,
+          "text": "Have you noticed any other health changes or symptoms? Patient: Well, I have been feeling a bit more tired than usual lately. Physician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3250015676021576,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25737956166267395,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "Sentence E6[5] explicitly states that stress management techniques will be discussed at the next appointment, indicating a scheduled follow-up to discuss these techniques.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Encourage Mr. Hanson to contact the office with any questions or concerns in the meantime.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5133005380630493,
+          "text": "We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns. Patient: Will do. Thanks again."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.35193145275115967,
+          "text": "Would you be open to that? Patient: Sure, anything to get rid of these headaches. Physician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment. Patient: Sounds good. Thank you, doctor. Physician: You're welcome, Mr. Hanson."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3373197913169861,
+          "text": "Physician: Good morning, Mr. Hanson. How are you feeling today? Patient: ( groans ) I've been better, doctor. These headaches are really getting to me. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23854005336761475,
+          "text": "Have you noticed any triggers that might be causing the headaches? Patient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related. Physician: That's a good point."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21949346363544464,
+          "text": "Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting? Patient: Yes, I do get sensitive to light during the headaches. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states, 'In the meantime, feel free to contact my office if you have any questions or concerns,' which directly supports the claim to encourage the patient to contact the office with any questions or concerns.",
+        "severity": "none"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Hanson. How are you feeling today?\n\nPatient: ( groans ) I've been better, doctor. These headaches are really getting to me.\n\nPhysician: I understand. Can you tell me more about your headaches? When did they start, and what do they feel like?\n\nPatient: They started a few months ago, and they're mostly occipital and throbbing. They last about 3-4 hours and happen 2-3 times a week.\n\nPhysician: I see. Have you noticed any triggers that might be causing the headaches?\n\nPatient: Not really. I did have a change in my work schedule a few months ago, but I don't know if that's related.\n\nPhysician: That's a good point. Have you experienced any other symptoms, such as sensitivity to light or sound, nausea, or vomiting?\n\nPatient: Yes, I do get sensitive to light during the headaches.\n\nPhysician: Okay. Have you tried any over-the-counter medications or remedies for the headaches?\n\nPatient: I've tried ibuprofen and acetaminophen, but they don't seem to do much.\n\nPhysician: I see. Have you noticed any other health changes or symptoms?\n\nPatient: Well, I have been feeling a bit more tired than usual lately.\n\nPhysician: Okay. I'm going to order some lab tests to rule out any underlying conditions that might be contributing to your symptoms. In the meantime, I'd like to start you on a medication that can help prevent headaches. Would you be open to that?\n\nPatient: Sure, anything to get rid of these headaches.\n\nPhysician: Great. I'm also going to recommend some lifestyle changes, such as avoiding triggers like stress and getting regular exercise. We'll also discuss stress management techniques at your next appointment.\n\nPatient: Sounds good. Thank you, doctor.\n\nPhysician: You're welcome, Mr. Hanson. We'll follow up in a few days once the lab results are back. In the meantime, feel free to contact my office if you have any questions or concerns.\n\nPatient: Will do. Thanks again.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "note_text": "Subjective:\nMr. Hanson reports experiencing occipital and throbbing headaches that last 3-4 hours and occur 2-3 times per week. He mentions sensitivity to light during these episodes and feeling more tired than usual recently. He has tried ibuprofen and acetaminophen for relief but with limited success.\n\nObjective:\nMr. Hanson presents as alert and oriented during the consultation. He appears fatigued but otherwise in good spirits. No signs of distress or acute pain are noted. Vital signs are within normal limits. Lab tests have been ordered to investigate underlying causes of the headaches.\n\nAssessment:\nMr. Hanson's headaches are likely tension-type headaches based on the description provided. Further evaluation through lab tests will help rule out any secondary causes. Medication for headache prevention is recommended, along with lifestyle modifications to manage triggers and stress.\n\nPlan:\n1. Initiate medication for headache prevention.\n2. Await lab results to guide further management.\n3. Recommend lifestyle changes to avoid triggers and stress.\n4. Schedule a follow-up appointment to discuss stress management techniques.\n5. Encourage Mr. Hanson to contact the office with any questions or concerns in the meantime."
+}

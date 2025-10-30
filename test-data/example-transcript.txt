@@ -1,0 +1,31 @@
+Physician: Good morning, Zack. How are you feeling today?
+
+Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing.
+
+Physician: I see. Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around?
+
+Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much.
+
+Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas?
+
+Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything.
+
+Physician: Got it. And how long have you been experiencing this pain?
+
+Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time.
+
+Physician: I understand. Have you noticed any triggers that make the pain better or worse?
+
+Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit.
+
+Physician: Okay, that's helpful. And have you tried any treatments or medications so far to help manage the pain?
+
+Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it.
+
+Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints. Does that sound good to you?
+
+Patient: Yeah, that sounds like a plan. Thanks, Doc.
+
+Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there. Sound good?
+
+Patient: Sounds good to me. Thanks again.

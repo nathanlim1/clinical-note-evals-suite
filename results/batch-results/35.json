@@ -1,0 +1,1073 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 5,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 5,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 1,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 42,
+    "failed_calls": 0,
+    "successful_calls": 42,
+    "total_input_tokens": 19862,
+    "total_output_tokens": 1485,
+    "total_tokens": 21347,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0103208
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Megan appears alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4554362893104553,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4238237142562866,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39350855350494385,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2761439085006714,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24125035107135773,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Megan appears alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.35051417350769043,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3204159140586853,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3051835298538208,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2630816698074341,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26059073209762573,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention or provide information about the patient's vital signs or whether they are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals tenderness in the lower abdomen.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.545244574546814,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32225263118743896,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30516135692596436,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3012045621871948,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27767062187194824,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains patient-reported lower abdominal discomfort but does not include any explicit mention of physical examination findings such as tenderness in the lower abdomen.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Urine sample shows cloudiness and a strong odor.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4688694477081299,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4272997975349426,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.35607773065567017,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3411113917827606,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3275469243526459,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The patient reports that their urine has been cloudy and has a strong smell, but this is a subjective symptom rather than an objective finding from a urine sample analysis. There is no explicit mention of a urine sample showing cloudiness and a strong odor in the transcript.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Educate Megan on UTI prevention strategies and the importance of completing the full course of antibiotics.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5993350744247437,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5841413736343384,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4167996644973755,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3010214567184448,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27410632371902466,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion of prescribing antibiotics and follow-up testing for UTI, but there is no explicit mention of educating Megan on UTI prevention strategies or the importance of completing the full course of antibiotics.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "6. Schedule a follow-up appointment to monitor Megan's progress and address any concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3823304772377014,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37777069211006165,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31084513664245605,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.19293782114982605,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1853131353855133,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment to monitor Megan's progress and address any concerns. While follow-up testing (urinalysis and urine culture) is mentioned, no specific follow-up appointment is scheduled or discussed.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T18",
+      "text": "And sometimes, I feel like I can't fully empty my bladder.",
+      "sent_idx": 18,
+      "prev_text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell.",
+      "next_text": "Physician: Okay, that's helpful.",
+      "severity": "medium"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Megan Ward reports feeling unwell lately with a constant urge to urinate, experiencing pain and burning sensations during urination.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6773488521575928,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5661931037902832,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5068832039833069,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.47741517424583435,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4701400101184845,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling unwell with a constant urge to urinate and describes pain and burning sensations during urination.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She also mentions lower abdominal discomfort, fatigue, and occasional nausea.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6326448321342468,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3495813012123108,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3391440510749817,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3207061290740967,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30971693992614746,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly mentions lower abdominal discomfort and feeling quite tired (fatigue) in sentence 3, and occasional nausea is implied by 'sometimes, I feel like I'm going to vomit' in sentence 4.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Megan denies recent sexual activity, blood in urine or stool, recent travel, or exposure to individuals with similar symptoms.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5712153315544128,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5377728939056396,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42986002564430237,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.396583616733551,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3962501883506775,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies blood in urine or stool (E4:1-2), recent travel or exposure to individuals with similar symptoms (E4:4; E5:1), and recent sexual activity (E3:4-6).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Megan appears alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4554362893104553,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4238237142562866,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39350855350494385,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2761439085006714,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24125035107135773,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Megan appears alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.35051417350769043,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3204159140586853,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3051835298538208,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2630816698074341,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26059073209762573,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention or provide information about the patient's vital signs or whether they are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals tenderness in the lower abdomen.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.545244574546814,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32225263118743896,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30516135692596436,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3012045621871948,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27767062187194824,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains patient-reported lower abdominal discomfort but does not include any explicit mention of physical examination findings such as tenderness in the lower abdomen.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of fever or chills are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.4134286046028137,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3819589912891388,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2566531300544739,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24303781986236572,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22768539190292358,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly asks about fever and chills, but the patient does not report having them, implying no signs of fever or chills are noted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Urine sample shows cloudiness and a strong odor.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4688694477081299,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4272997975349426,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.35607773065567017,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3411113917827606,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3275469243526459,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The patient reports that their urine has been cloudy and has a strong smell, but this is a subjective symptom rather than an objective finding from a urine sample analysis. There is no explicit mention of a urine sample showing cloudiness and a strong odor in the transcript.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Based on Megan's symptoms and physical examination findings, she is likely experiencing a urinary tract infection (UTI).",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6050152778625488,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5708934664726257,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5192148685455322,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.35765519738197327,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34348824620246887,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports classic UTI symptoms including painful urination, lower abdominal discomfort, and burning sensations. The physician explicitly states the likelihood of a UTI based on symptoms and examination.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Further tests, including urinalysis and urine culture, are recommended to confirm the diagnosis and identify the causative bacteria.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5804043412208557,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46561235189437866,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33596575260162354,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31417012214660645,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2993681728839874,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that they will follow up with urinalysis and urine culture to confirm the diagnosis and identify the specific bacteria causing the infection.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Antibiotics will be prescribed to manage the infection, along with over-the-counter pain medication.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5143435001373291,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.36414408683776855,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.22821663320064545,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22198854386806488,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1799832284450531,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states prescribing antibiotics to manage symptoms (E5:5) and recommends over-the-counter medication for pain (E6:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Prescribe antibiotics for the UTI.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5323370695114136,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4632776975631714,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27566292881965637,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24241554737091064,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21882876753807068,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to prescribe antibiotics to help manage symptoms of the suspected UTI before test confirmation.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Recommend over-the-counter pain medication for symptom management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4061177372932434,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31558549404144287,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2816058397293091,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25858259201049805,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2132064402103424,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states recommending over-the-counter medication for pain in sentence 2 of E6, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Order urinalysis and urine culture to confirm diagnosis and guide treatment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5853089094161987,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4429698586463928,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3217063546180725,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31836479902267456,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31284359097480774,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up with urinalysis and urine culture to confirm diagnosis and guide treatment adjustments if UTI is confirmed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Follow up with Megan to adjust medication based on test results.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4939645528793335,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46032005548477173,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.352027952671051,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23430055379867554,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2260173261165619,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up with test results (urinalysis and urine culture) and adjust medication accordingly, addressing Megan by name.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Educate Megan on UTI prevention strategies and the importance of completing the full course of antibiotics.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5993350744247437,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5841413736343384,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4167996644973755,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3010214567184448,
+          "text": "Patient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder. Physician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this? Patient: No, Doctor. I haven't been sexually active for a while now. Physician: Alright."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27410632371902466,
+          "text": "Have you experienced any burning sensations while urinating? Patient: Yes, that's the worst part. It feels like my urethra is on fire. Physician: I see. Have you had any recent changes in your urine output or color?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion of prescribing antibiotics and follow-up testing for UTI, but there is no explicit mention of educating Megan on UTI prevention strategies or the importance of completing the full course of antibiotics.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "6. Schedule a follow-up appointment to monitor Megan's progress and address any concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3823304772377014,
+          "text": "Physician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly. Patient: Okay, that makes sense. Thank you, Doctor. Physician: Of course, Megan. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37777069211006165,
+          "text": "Patient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this. Physician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you? Patient: Yes, that sounds good. Thank you, Doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31084513664245605,
+          "text": "Physician: Good morning, Megan. How are you feeling today? Patient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.19293782114982605,
+          "text": "Have you noticed any blood in your urine or stool? Patient: No, I don't think so. Physician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1853131353855133,
+          "text": "Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen? Patient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment to monitor Megan's progress and address any concerns. While follow-up testing (urinalysis and urine culture) is mentioned, no specific follow-up appointment is scheduled or discussed.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Megan. How are you feeling today?\n\nPatient: Hi, Doctor. I've been feeling a bit unwell lately. I've had this constant urge to urinate, and it's been really painful. It feels like there's a razor blade down there.\n\nPhysician: I see. Have you noticed any other symptoms? Fever, chills, or discomfort in your abdomen?\n\nPatient: Yes, I've had some lower abdominal discomfort, and I've been feeling quite tired. And sometimes, I feel like I'm going to vomit when I pee.\n\nPhysician: I understand. Have you experienced any burning sensations while urinating?\n\nPatient: Yes, that's the worst part. It feels like my urethra is on fire.\n\nPhysician: I see. Have you had any recent changes in your urine output or color?\n\nPatient: Well, it's been a bit cloudy, and there's been a strong smell. And sometimes, I feel like I can't fully empty my bladder.\n\nPhysician: Okay, that's helpful. Have you had any recent sexual activity that may have triggered this?\n\nPatient: No, Doctor. I haven't been sexually active for a while now.\n\nPhysician: Alright. Have you noticed any blood in your urine or stool?\n\nPatient: No, I don't think so.\n\nPhysician: Okay. Have you recently traveled or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled much lately, and I don't think anyone in my household has been experiencing this.\n\nPhysician: Alright, Megan. Based on what you've shared, it sounds like you may have a urinary tract infection (UTI). I'd like to run some tests to confirm this and rule out any other potential causes. In the meantime, I'd like to prescribe some antibiotics to help manage your symptoms. Does that sound good to you?\n\nPatient: Yes, that sounds good. Thank you, Doctor.\n\nPhysician: Great. I'll also recommend some over-the-counter medication for the pain. We'll follow up with a urinalysis and a urine culture to confirm the diagnosis and identify the specific bacteria causing the infection. If the UTI is confirmed, we'll adjust your medication accordingly.\n\nPatient: Okay, that makes sense. Thank you, Doctor.\n\nPhysician: Of course, Megan. We'll get you feeling better soon.",
+  "note_text": "Subjective:\nMegan Ward reports feeling unwell lately with a constant urge to urinate, experiencing pain and burning sensations during urination. She also mentions lower abdominal discomfort, fatigue, and occasional nausea. Megan denies recent sexual activity, blood in urine or stool, recent travel, or exposure to individuals with similar symptoms.\n\nObjective:\nMegan appears alert and oriented during the consultation. Vital signs are within normal limits. Physical examination reveals tenderness in the lower abdomen. No signs of fever or chills are noted. Urine sample shows cloudiness and a strong odor.\n\nAssessment:\nBased on Megan's symptoms and physical examination findings, she is likely experiencing a urinary tract infection (UTI). Further tests, including urinalysis and urine culture, are recommended to confirm the diagnosis and identify the causative bacteria. Antibiotics will be prescribed to manage the infection, along with over-the-counter pain medication.\n\nPlan:\n1. Prescribe antibiotics for the UTI.\n2. Recommend over-the-counter pain medication for symptom management.\n3. Order urinalysis and urine culture to confirm diagnosis and guide treatment.\n4. Follow up with Megan to adjust medication based on test results.\n5. Educate Megan on UTI prevention strategies and the importance of completing the full course of antibiotics.\n6. Schedule a follow-up appointment to monitor Megan's progress and address any concerns."
+}

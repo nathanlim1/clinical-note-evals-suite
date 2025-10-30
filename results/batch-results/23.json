@@ -1,0 +1,1049 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 1,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 43,
+    "failed_calls": 0,
+    "successful_calls": 43,
+    "total_input_tokens": 21837,
+    "total_output_tokens": 1639,
+    "total_tokens": 23476,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011357200000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Anita appears alert and engaged during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5135283470153809,
+          "text": "Thanks for coming in today, Anita. Patient: Thank you, Dr. Ross. I appreciate your help."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4680050313472748,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3161424994468689,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30051344633102417,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2719251215457916,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Anita appears alert and engaged during the consultation. While she responds to questions and participates in the conversation, there is no direct mention of her alertness or engagement level.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.28546595573425293,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27398553490638733,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.264453649520874,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.256146639585495,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25537702441215515,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their normality is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physical examination reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.25025418400764465,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23124822974205017,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22802604734897614,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2164795696735382,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.1859353631734848,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit mention or description of a physical examination or its findings, so the claim that the physical examination reveals no abnormalities is not supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Follow up with Anita to discuss test results and next steps in her treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.45759308338165283,
+          "text": "Thanks for coming in today, Anita. Patient: Thank you, Dr. Ross. I appreciate your help."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4054734408855438,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38576650619506836,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32976076006889343,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.19518272578716278,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention a follow-up appointment with Anita to discuss test results and next steps in her treatment plan. While there is mention of setting up blood work and a referral to a neurologist, and that 'we'll be in touch soon,' there is no clear statement about a follow-up visit specifically for discussing results and treatment plan.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C5",
+      "text": "She reports no other symptoms associated with the headaches.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5319117307662964,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4494898021221161,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.44837576150894165,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.44082677364349365,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3790268003940582,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports associated symptoms with the headaches, including nausea and dizziness, which contradicts the claim of no other symptoms.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Anita Armstrong reports experiencing severe headaches that have been increasing in frequency and severity over the past year.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5787761211395264,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5439300537109375,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.45893725752830505,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.44566625356674194,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40717577934265137,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports severe headaches (E0:4) that have been increasing in frequency over the past year, starting about a year ago and becoming more frequent in recent months (E1:3,4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes the headaches as occurring on both sides of her head, sometimes daily or a few times a week.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7397727966308594,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5379007458686829,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4685418903827667,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4644879996776581,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4381023347377777,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the headaches have become more frequent, occurring sometimes daily or a few times a week, and that they are usually on both sides of the head.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Anita notes feeling nauseous and dizzy at times, with no specific triggers identified.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.49523845314979553,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4420149028301239,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43768274784088135,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36050528287887573,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34156161546707153,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling nauseous and dizzy sometimes, and also notes no specific triggers identified for the headaches.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She has been taking ibuprofen for relief but has found it to be ineffective.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.478458434343338,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35388869047164917,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2826228439807892,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.238787442445755,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23251380026340485,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that she has been taking ibuprofen for headaches but sometimes it doesn't seem to do much, indicating it is ineffective at times.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Anita appears alert and engaged during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5135283470153809,
+          "text": "Thanks for coming in today, Anita. Patient: Thank you, Dr. Ross. I appreciate your help."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4680050313472748,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3161424994468689,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30051344633102417,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2719251215457916,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Anita appears alert and engaged during the consultation. While she responds to questions and participates in the conversation, there is no direct mention of her alertness or engagement level.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She reports no other symptoms associated with the headaches.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5319117307662964,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4494898021221161,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.44837576150894165,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.44082677364349365,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3790268003940582,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports associated symptoms with the headaches, including nausea and dizziness, which contradicts the claim of no other symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.28546595573425293,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27398553490638733,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.264453649520874,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.256146639585495,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25537702441215515,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their normality is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physical examination reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.25025418400764465,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23124822974205017,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22802604734897614,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2164795696735382,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.1859353631734848,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit mention or description of a physical examination or its findings, so the claim that the physical examination reveals no abnormalities is not supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Anita presents with chronic headaches that have been escalating in intensity and frequency.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6155298948287964,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5653728246688843,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5172389149665833,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4860183298587799,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4837113320827484,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient reports headaches starting about a year ago, initially occasional, now more frequent and severe. The patient explicitly states headaches have been happening more often and are severe, indicating escalation in intensity and frequency.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Further evaluation is warranted to determine the underlying cause.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.41542068123817444,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31832852959632874,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2910988926887512,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.20270276069641113,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2002628892660141,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that further evaluation is needed to understand the cause of the headaches, including ordering blood work and referring to a neurologist, which supports the claim that further evaluation is warranted to determine the underlying cause.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Differential diagnoses include tension headaches, migraines, or other potential neurological conditions.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5412776470184326,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5273905992507935,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4719966650009155,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4527818560600281,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38731080293655396,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions tension headaches and migraines as possible diagnoses and refers to a neurologist to explore other potential causes, implying other neurological conditions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Blood work will be ordered to rule out underlying conditions, and a referral to a neurologist will be made for further assessment.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5437376499176025,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5293709635734558,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2952398955821991,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28702059388160706,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2567659616470337,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering blood work to rule out underlying conditions and making a referral to a neurologist for further assessment.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Order blood work to investigate potential underlying conditions.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4934832453727722,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39463987946510315,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3123058080673218,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3084317445755005,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2218230664730072,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to order blood work to rule out underlying conditions and confirms the nurse will set up the blood work.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Refer Anita to a neurologist for further evaluation and consultation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4614808261394501,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4539705514907837,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42149490118026733,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34652411937713623,
+          "text": "Thanks for coming in today, Anita. Patient: Thank you, Dr. Ross. I appreciate your help."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27171459794044495,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "Both E4:7 and E5:7 explicitly mention referring Anita to a neurologist for further evaluation and consultation.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Increase ibuprofen dosage for improved symptom management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.47897791862487793,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4050794839859009,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27594420313835144,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2588841915130615,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21876126527786255,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to increase the ibuprofen dose to see if it helps with the headaches.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Consider other medications such as triptans or preventative medications if needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5943633913993835,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4748212993144989,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3869623839855194,
+          "text": "Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting? Patient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35104188323020935,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33462458848953247,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side. Physician: That sounds like it could be a tension headache or a migraine."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states considering other medications such as triptans or preventative medications if headaches persist, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Follow up with Anita to discuss test results and next steps in her treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.45759308338165283,
+          "text": "Thanks for coming in today, Anita. Patient: Thank you, Dr. Ross. I appreciate your help."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4054734408855438,
+          "text": "If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you? Patient: Yes, that sounds great. I just want to get to the bottom of this and feel better. Physician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38576650619506836,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious. Physician: I understand your concern."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32976076006889343,
+          "text": "Have you tried any treatments or medications for the headaches yet? Patient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either. Physician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.19518272578716278,
+          "text": "Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors? Patient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention a follow-up appointment with Anita to discuss test results and next steps in her treatment plan. While there is mention of setting up blood work and a referral to a neurologist, and that 'we'll be in touch soon,' there is no clear statement about a follow-up visit specifically for discussing results and treatment plan.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Anita. How are you feeling today?\n\nPatient: Hi, Dr. Ross. I've been experiencing some pretty severe headaches lately. They've been happening more often, and I'm worried they might be related to something serious.\n\nPhysician: I understand your concern. Can you tell me more about these headaches? When did they start, and how often do you get them?\n\nPatient: They started about a year ago, and at first, they were just occasional. But over the past few months, they've become more frequent - sometimes daily, sometimes a few times a week. They're usually on both sides of my head, but sometimes they're just on one side.\n\nPhysician: That sounds like it could be a tension headache or a migraine. Have you noticed any triggers that might set them off? Stress, certain foods, or environmental factors?\n\nPatient: I've been trying to pay attention to that, but it doesn't seem like there's anything specific that sets them off. Sometimes I'll get one after working on the computer for a while, but other times, it'll just come out of nowhere.\n\nPhysician: Okay. Have you noticed any other symptoms associated with the headaches? Blurred vision, sensitivity to light, nausea, or vomiting?\n\nPatient: Yes, sometimes I'll feel a little nauseous or dizzy, especially if the headache is really bad. But most of the time, it's just a steady ache that won't go away.\n\nPhysician: That's helpful information. Have you tried any treatments or medications for the headaches yet?\n\nPatient: Yes, I've been taking ibuprofen when they come on, but sometimes it doesn't seem to do much. I've also tried some over-the-counter pain relievers, but they don't seem to work either.\n\nPhysician: I see. It sounds like we should consider some further evaluation to help us better understand what might be causing these headaches. We can start by ordering some blood work to rule out any underlying conditions like a thyroid disorder or anemia. We'll also refer you to a neurologist for a consultation to explore other potential causes, such as a migraine or tension headache disorder. In the meantime, I'd like to increase your ibuprofen dose to see if that helps. If the headaches persist, we can also consider other medications like a triptan or a preventative medication. Does that sound like a good plan to you?\n\nPatient: Yes, that sounds great. I just want to get to the bottom of this and feel better.\n\nPhysician: Of course. We'll work together to figure this out and find a solution that works for you. I'll have my nurse set up the blood work and referral to the neurologist. We'll be in touch soon. Thanks for coming in today, Anita.\n\nPatient: Thank you, Dr. Ross. I appreciate your help.",
+  "note_text": "Subjective:\nAnita Armstrong reports experiencing severe headaches that have been increasing in frequency and severity over the past year. She describes the headaches as occurring on both sides of her head, sometimes daily or a few times a week. Anita notes feeling nauseous and dizzy at times, with no specific triggers identified. She has been taking ibuprofen for relief but has found it to be ineffective.\n\nObjective:\nAnita appears alert and engaged during the consultation. She reports no other symptoms associated with the headaches. Vital signs are within normal limits. Physical examination reveals no abnormalities.\n\nAssessment:\nAnita presents with chronic headaches that have been escalating in intensity and frequency. Further evaluation is warranted to determine the underlying cause. Differential diagnoses include tension headaches, migraines, or other potential neurological conditions. Blood work will be ordered to rule out underlying conditions, and a referral to a neurologist will be made for further assessment.\n\nPlan:\n1. Order blood work to investigate potential underlying conditions.\n2. Refer Anita to a neurologist for further evaluation and consultation.\n3. Increase ibuprofen dosage for improved symptom management.\n4. Consider other medications such as triptans or preventative medications if needed.\n5. Follow up with Anita to discuss test results and next steps in her treatment plan."
+}

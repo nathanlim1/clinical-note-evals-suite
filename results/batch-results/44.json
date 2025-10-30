@@ -1,0 +1,902 @@
+{
+  "summary": {
+    "claims": 15,
+    "hallucination_low_severity": 4,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 4,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 49,
+    "failed_calls": 0,
+    "successful_calls": 49,
+    "total_input_tokens": 20866,
+    "total_output_tokens": 1410,
+    "total_tokens": 22276,
+    "total cost w/ GPT-4.1-mini (in $)": 0.010602400000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Mr. Cook appeared uncomfortable due to his headaches but was cooperative and engaged in the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.569190263748169,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5326703190803528,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.47559404373168945,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4131377339363098,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39863866567611694,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe Mr. Cook's demeanor during the examination as uncomfortable due to headaches, nor does it state that he was cooperative and engaged in the conversation. While the patient expresses discomfort verbally, there is no direct evidence about his cooperation or engagement.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "No signs of acute distress were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.30533117055892944,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25623664259910583,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2549484968185425,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.24101585149765015,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.22409901022911072,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or note the presence or absence of signs of acute distress.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Mr. Cook's overall demeanor was calm and receptive to the physician's recommendations.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5730206966400146,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49629637598991394,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39497077465057373,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37688174843788147,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3433874845504761,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe Mr. Cook's overall demeanor as calm and receptive to the physician's recommendations. While the patient agrees to the plan and responds politely, there is no direct statement or clear evidence about his demeanor being calm and receptive.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "4. Educate Mr. Cook on relaxation techniques and stress management strategies to help alleviate migraine symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6038072109222412,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5071649551391602,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46549713611602783,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42584213614463806,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.39368945360183716,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Mr. Cook on relaxation techniques or stress management strategies to alleviate migraine symptoms. While relaxation techniques are mentioned as a potential relief method (E5[1],[3]), there is no evidence that the physician actually provided education on these techniques.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "5. Encourage Mr. Cook to maintain regular communication with the care team and report any changes or concerns promptly.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4270631670951843,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3626691699028015,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3439318537712097,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30391937494277954,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2283957600593567,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging Mr. Cook to maintain regular communication with the care team or to report any changes or concerns promptly.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Cook reports experiencing constant throbbing headaches for the past six weeks, often accompanied by nausea and sensitivity to light.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6707722544670105,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about six weeks ago, and I've been getting them almost every day since then. It's like a constant throbbing pain in the back of my head, sometimes it's accompanied by nausea and sensitivity to light. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.6394291520118713,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.6023388504981995,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5148611068725586,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.47421351075172424,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the headaches started about six weeks ago and occur almost daily, described as constant throbbing pain with nausea and sensitivity to light. This directly supports the full claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He notes that stress and lack of sleep seem to exacerbate the headaches.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5911917686462402,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5059640407562256,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4428386092185974,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44235241413116455,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about six weeks ago, and I've been getting them almost every day since then. It's like a constant throbbing pain in the back of my head, sometimes it's accompanied by nausea and sensitivity to light. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4310566484928131,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that headaches seem to get worse when under stress or lacking sleep, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Additionally, he mentions elevated blood pressure and cholesterol levels as other health concerns.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6110098958015442,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33877772092819214,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32613199949264526,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3227120339870453,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3133932650089264,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that his blood pressure has been a bit high lately and his cholesterol levels have always been a bit elevated, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Mr. Cook appeared uncomfortable due to his headaches but was cooperative and engaged in the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.569190263748169,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5326703190803528,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.47559404373168945,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4131377339363098,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39863866567611694,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe Mr. Cook's demeanor during the examination as uncomfortable due to headaches, nor does it state that he was cooperative and engaged in the conversation. While the patient expresses discomfort verbally, there is no direct evidence about his cooperation or engagement.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "No signs of acute distress were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.30533117055892944,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25623664259910583,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2549484968185425,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.24101585149765015,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.22409901022911072,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or note the presence or absence of signs of acute distress.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "His blood pressure was slightly elevated, and his cholesterol levels were within the elevated range.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6121829748153687,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3010904788970947,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2862168252468109,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2531825304031372,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2515513598918915,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that his blood pressure has been 'a bit high' and his cholesterol levels have 'always been a bit elevated,' directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Mr. Cook's overall demeanor was calm and receptive to the physician's recommendations.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5730206966400146,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49629637598991394,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39497077465057373,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37688174843788147,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3433874845504761,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe Mr. Cook's overall demeanor as calm and receptive to the physician's recommendations. While the patient agrees to the plan and responds politely, there is no direct statement or clear evidence about his demeanor being calm and receptive.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Based on Mr. Cook's symptoms and history, it is likely that he is experiencing migraines.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6346195340156555,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.537002682685852,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44980669021606445,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about six weeks ago, and I've been getting them almost every day since then. It's like a constant throbbing pain in the back of my head, sometimes it's accompanied by nausea and sensitivity to light. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4246867299079895,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38644343614578247,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that Mr. Cook might be experiencing migraines (E6:5). Additionally, Mr. Cook's symptoms such as throbbing pain, nausea, and sensitivity to light are consistent with migraine symptoms (E1:4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Further evaluation and testing will be necessary to confirm this diagnosis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.32102206349372864,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29352888464927673,
+          "text": "Have you experienced any other symptoms aside from the headaches? Patient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.27149704098701477,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23220062255859375,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2237977385520935,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that further testing is needed to confirm the diagnosis and refers the patient for further evaluation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "The plan includes starting Mr. Cook on a medication regimen to prevent migraines and referring him to a neurologist for additional assessment and management.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6462445259094238,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49918144941329956,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4492442011833191,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.44336384534835815,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3908863067626953,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to start Mr. Cook on a medication to prevent headaches (migraines) and to refer him to a neurologist for further evaluation, confirming both parts of the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "1. Initiate medication for migraine prevention.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.42966529726982117,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.40123677253723145,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.36126837134361267,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3149479627609253,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3113175332546234,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about six weeks ago, and I've been getting them almost every day since then. It's like a constant throbbing pain in the back of my head, sometimes it's accompanied by nausea and sensitivity to light. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to start the patient on a medication to help prevent headaches, which aligns with initiating medication for migraine prevention.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "2. Refer Mr. Cook to a neurologist for further evaluation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.504509687423706,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4084542989730835,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3803952932357788,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31591612100601196,
+          "text": "Can you tell me more about these headaches? When did they start, and how often do you get them? Patient: They started about six weeks ago, and I've been getting them almost every day since then. It's like a constant throbbing pain in the back of my head, sometimes it's accompanied by nausea and sensitivity to light. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3050270080566406,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E6[7] that Mr. Cook will be referred to a neurologist for further evaluation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "3. Schedule a follow-up appointment in a few weeks to monitor progress and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5598374009132385,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.29847222566604614,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26538747549057007,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25287318229675293,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23986776173114777,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will schedule a follow-up appointment in a few weeks to check on progress, which aligns with the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "4. Educate Mr. Cook on relaxation techniques and stress management strategies to help alleviate migraine symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6038072109222412,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5071649551391602,
+          "text": "Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques? Patient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point. Physician: That's good to hear."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46549713611602783,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42584213614463806,
+          "text": "Have you noticed any triggers that make the headaches worse or better? Patient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.39368945360183716,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Mr. Cook on relaxation techniques or stress management strategies to alleviate migraine symptoms. While relaxation techniques are mentioned as a potential relief method (E5[1],[3]), there is no evidence that the physician actually provided education on these techniques.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "5. Encourage Mr. Cook to maintain regular communication with the care team and report any changes or concerns promptly.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4270631670951843,
+          "text": "Is there anything else you'd like to discuss or ask about before we wrap up today's appointment? Patient: No, that covers everything. Thank you, doctor. Physician: You're welcome, Mr. Cook. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3626691699028015,
+          "text": "Physician: Good morning, Mr. Cook. How are you feeling today? Patient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3439318537712097,
+          "text": "Have you had any recent changes in your work or home life that may be contributing to your stress levels? Patient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches. Physician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30391937494277954,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. I just want to get rid of these headaches. Physician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2283957600593567,
+          "text": "Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision? Patient: No, nothing like that. Just the headaches and occasional nausea. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging Mr. Cook to maintain regular communication with the care team or to report any changes or concerns promptly.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Cook. How are you feeling today?\n\nPatient: ( groans) Not great, doctor. I've been experiencing these headaches for weeks now, and they're really starting to affect my daily life.\n\nPhysician: Sorry to hear that. Can you tell me more about these headaches? When did they start, and how often do you get them?\n\nPatient: They started about six weeks ago, and I've been getting them almost every day since then. It's like a constant throbbing pain in the back of my head, sometimes it's accompanied by nausea and sensitivity to light.\n\nPhysician: I see. Have you noticed any triggers that make the headaches worse or better?\n\nPatient: Well, I've noticed that they seem to get worse when I'm under stress or haven't slept well. Sometimes, bending down or coughing can make them worse too.\n\nPhysician: That's helpful information. Have you experienced any other symptoms aside from the headaches?\n\nPatient: Yes, my blood pressure has been a bit high lately, and my cholesterol levels have always been a bit elevated.\n\nPhysician: I see. Have you noticed any changes in your vision, such as blurry vision, double vision, or loss of vision?\n\nPatient: No, nothing like that. Just the headaches and occasional nausea.\n\nPhysician: Okay. Have you tried anything to relieve the headaches, such as over-the-counter pain medication or relaxation techniques?\n\nPatient: Yes, I've tried ibuprofen, and it seems to help a bit, but only temporarily. I haven't tried any relaxation techniques, but I'm willing to give anything a shot at this point.\n\nPhysician: That's good to hear. Have you had any recent changes in your work or home life that may be contributing to your stress levels?\n\nPatient: Well, I did recently retire from my job, and my wife and I moved to a new house, so there's been a bit of adjusting going on. But I wouldn't say that's causing my headaches.\n\nPhysician: I understand. Mr. Cook, based on what you've shared with me, it sounds like you might be experiencing migraines. We'll need to do some further testing to confirm that, but in the meantime, I'd like to start you on a medication that can help prevent these headaches. I'll also refer you to a neurologist for further evaluation. Does that sound good to you?\n\nPatient: Yes, that sounds great. I just want to get rid of these headaches.\n\nPhysician: Of course. We'll also schedule you for a follow-up appointment in a few weeks to check in on your progress. Is there anything else you'd like to discuss or ask about before we wrap up today's appointment?\n\nPatient: No, that covers everything. Thank you, doctor.\n\nPhysician: You're welcome, Mr. Cook. We'll get you feeling better in no time.",
+  "note_text": "Subjective:\nMr. Cook reports experiencing constant throbbing headaches for the past six weeks, often accompanied by nausea and sensitivity to light. He notes that stress and lack of sleep seem to exacerbate the headaches. Additionally, he mentions elevated blood pressure and cholesterol levels as other health concerns.\n\nObjective:\nDuring the examination, Mr. Cook appeared uncomfortable due to his headaches but was cooperative and engaged in the conversation. No signs of acute distress were noted. His blood pressure was slightly elevated, and his cholesterol levels were within the elevated range. Mr. Cook's overall demeanor was calm and receptive to the physician's recommendations.\n\nAssessment:\nBased on Mr. Cook's symptoms and history, it is likely that he is experiencing migraines. Further evaluation and testing will be necessary to confirm this diagnosis. The plan includes starting Mr. Cook on a medication regimen to prevent migraines and referring him to a neurologist for additional assessment and management.\n\nPlan:\n1. Initiate medication for migraine prevention.\n2. Refer Mr. Cook to a neurologist for further evaluation.\n3. Schedule a follow-up appointment in a few weeks to monitor progress and adjust treatment as needed.\n4. Educate Mr. Cook on relaxation techniques and stress management strategies to help alleviate migraine symptoms.\n5. Encourage Mr. Cook to maintain regular communication with the care team and report any changes or concerns promptly."
+}

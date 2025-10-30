@@ -1,0 +1,1490 @@
+{
+  "summary": {
+    "claims": 24,
+    "hallucination_low_severity": 3,
+    "hallucination_medium_severity": 5,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 3,
+    "unsupported_claim_medium_severity": 5,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 41,
+    "failed_calls": 0,
+    "successful_calls": 41,
+    "total_input_tokens": 21961,
+    "total_output_tokens": 2001,
+    "total_tokens": 23962,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011986
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C7",
+      "text": "Patient appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.43488413095474243,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40042728185653687,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.353801965713501,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3462677597999573,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3055168390274048,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript documents the patient's report of fatigue but does not include any physician observation or statement that the patient appears fatigued or alert during the examination. The claim about the patient's appearance is not explicitly supported by the provided evidence.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs show a temperature of 101.5 degrees Fahrenheit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5613250136375427,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37347349524497986,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34306037425994873,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31588467955589294,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28631263971328735,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only provides the patient's report of a fever around 101 or 102 degrees Fahrenheit, but does not document an actual measured vital sign temperature of 101.5 degrees Fahrenheit.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Lungs clear to auscultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.34570997953414917,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2730481028556824,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25331810116767883,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2327386736869812,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21912962198257446,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention lung auscultation findings or state that the lungs are clear to auscultation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "No abnormal heart sounds.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.37924277782440186,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3568081259727478,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3388407230377197,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3130605220794678,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23408886790275574,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention heart sounds or any cardiac examination findings, so the claim about no abnormal heart sounds is not supported by the evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Abdomen soft and non-tender.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.28101545572280884,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.250965416431427,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21744585037231445,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2134094536304474,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21121981739997864,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention the physical exam findings related to the abdomen, including whether it is soft or non-tender. The claim is not explicitly supported or contradicted by the available evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Patient's skin warm to touch.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.37361907958984375,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36963555216789246,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3166930377483368,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31115585565567017,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.290644109249115,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or imply that the patient's skin is warm to the touch. The patient reports fever and body aches, but no physical exam findings about skin temperature are provided.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "No rash or lesions noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4230049252510071,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3633701801300049,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3540371060371399,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26057925820350647,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23082014918327332,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention any examination findings related to rash or lesions, nor do they explicitly state that no rash or lesions were noted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C22",
+      "text": "Patient's daughter, Emily, informed of the situation and will provide support.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.26695799827575684,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2643412947654724,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2502500116825104,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23739200830459595,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1906472146511078,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "There is no mention in the provided transcript spans that the patient's daughter, Emily, was informed of the situation or that she will provide support.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C23",
+      "text": "Follow-up appointment scheduled for one week to reassess symptoms and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4588031768798828,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30685415863990784,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28981953859329224,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2822697162628174,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27364784479141235,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment for one week to reassess symptoms and adjust treatment. The closest related statement is an instruction to follow up if symptoms worsen or persist beyond a week, but no specific appointment is scheduled.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Jean Elliott, a 59-year-old female, presents with symptoms of fever, chills, body aches, and fatigue for the past week.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5190807580947876,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4858378767967224,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4611930847167969,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44857123494148254,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35415446758270264,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient, Jean Elliott, reports fever, chills, body aches, and fatigue explicitly in E0 and E2. The duration of about a week is confirmed in E1. The patient's age and gender are assumed correct as per the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She reports a fever ranging from 101-102 degrees Fahrenheit and feeling weak and tired.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.630168080329895,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5897490978240967,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5130778551101685,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.46227699518203735,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35379916429519653,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports a fever of 101-102 degrees Fahrenheit (E1:3) and feeling weak and tired (E2:4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Denies cough, sore throat, or congestion.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4420596957206726,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4392576217651367,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.36361634731292725,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31009864807128906,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.302992045879364,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies cough, sore throat, or congestion in E2 sentences 1 and 2.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "No recent travel or exposure to sick individuals.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.7160259485244751,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39451536536216736,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36214855313301086,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3295513391494751,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2619418799877167,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent travel and exposure to sick individuals in E3 sentences 1 and 2.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Denies shortness of breath or chest pain.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6029050350189209,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38728395104408264,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3714904189109802,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3684248924255371,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2470809817314148,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies shortness of breath or chest pain in response to the physician's direct question.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Reports taking Lisinopril, Metformin, and Atorvastatin for hypertension, diabetes, and high cholesterol, respectively.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5707113742828369,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3175354599952698,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22273027896881104,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20607057213783264,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20226088166236877,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states taking Lisinopril for hypertension, Metformin for diabetes, and Atorvastatin for high cholesterol in E5 sentence 1.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No significant recent stressors noted.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.48657840490341187,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4226561188697815,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3967338800430298,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3127441108226776,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.20820914208889008,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any significant recent stress, only mentioning usual work and family stress, which supports the claim of no significant recent stressors.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Patient appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.43488413095474243,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40042728185653687,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.353801965713501,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3462677597999573,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3055168390274048,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript documents the patient's report of fatigue but does not include any physician observation or statement that the patient appears fatigued or alert during the examination. The claim about the patient's appearance is not explicitly supported by the provided evidence.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs show a temperature of 101.5 degrees Fahrenheit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5613250136375427,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37347349524497986,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34306037425994873,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31588467955589294,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28631263971328735,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only provides the patient's report of a fever around 101 or 102 degrees Fahrenheit, but does not document an actual measured vital sign temperature of 101.5 degrees Fahrenheit.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "No signs of respiratory distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4066723585128784,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.36478468775749207,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2875884771347046,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2758907377719879,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1951429843902588,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies shortness of breath or cough, which are key signs of respiratory distress, indicating no signs of respiratory distress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Lungs clear to auscultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.34570997953414917,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2730481028556824,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25331810116767883,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2327386736869812,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21912962198257446,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention lung auscultation findings or state that the lungs are clear to auscultation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "No abnormal heart sounds.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.37924277782440186,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3568081259727478,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3388407230377197,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3130605220794678,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23408886790275574,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention heart sounds or any cardiac examination findings, so the claim about no abnormal heart sounds is not supported by the evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Abdomen soft and non-tender.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.28101545572280884,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.250965416431427,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21744585037231445,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2134094536304474,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21121981739997864,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention the physical exam findings related to the abdomen, including whether it is soft or non-tender. The claim is not explicitly supported or contradicted by the available evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Patient's skin warm to touch.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.37361907958984375,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36963555216789246,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3166930377483368,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31115585565567017,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.290644109249115,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or imply that the patient's skin is warm to the touch. The patient reports fever and body aches, but no physical exam findings about skin temperature are provided.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "No rash or lesions noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4230049252510071,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3633701801300049,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3540371060371399,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26057925820350647,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23082014918327332,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention any examination findings related to rash or lesions, nor do they explicitly state that no rash or lesions were noted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Patient's overall appearance consistent with flu-like symptoms.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5362259149551392,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.51982581615448,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4975038766860962,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.48580700159072876,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4378906488418579,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports fever, chills, body aches, and fatigue, which are flu-like symptoms, and the patient also refers to their symptoms as flu-like.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Based on the patient's symptoms and physical examination findings, Jean Elliott likely has influenza.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4710521101951599,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46758753061294556,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4451437294483185,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.42259538173675537,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3842834234237671,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient reports fever, chills, body aches, and fatigue (E0:4-5), described as flu-like symptoms (E4:3). The physician explicitly states that the patient might have influenza based on symptoms and examination (E5:7).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Further testing is recommended to confirm the diagnosis and rule out other possibilities.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.35574713349342346,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3024778366088867,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2897755205631256,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26099857687950134,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.24439319968223572,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to run tests to confirm the diagnosis and rule out other possibilities.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "Patient's chronic conditions of hypertension, diabetes, and high cholesterol are stable and not contributing to current symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5876221060752869,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.48726552724838257,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4378228187561035,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37229472398757935,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3523653745651245,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient confirms taking medications for hypertension, diabetes, and high cholesterol. The physician states these medications should not be causing the current symptoms, and the patient denies symptoms like shortness of breath or chest pain that might indicate instability of these conditions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "Order influenza testing to confirm diagnosis.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.46839043498039246,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3670474886894226,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35634541511535645,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3412624001502991,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3067532479763031,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a suspicion of influenza and expresses intent to run tests to confirm the diagnosis and rule out other possibilities.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "Recommend rest, hydration, and over-the-counter medications for fever and body aches.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.607223391532898,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.47760647535324097,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4434281289577484,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38745325803756714,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31981411576271057,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The recommendation to rest, drink plenty of fluids, and take over-the-counter medications for fever and body aches is explicitly stated in E6 sentence 1.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C21",
+      "text": "Advise patient to monitor symptoms and follow up if they worsen or persist beyond one week.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4791712760925293,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34423795342445374,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.308341920375824,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3073049783706665,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.29823338985443115,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly advises the patient to follow up if symptoms worsen or persist beyond one week, matching the claim exactly.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C22",
+      "text": "Patient's daughter, Emily, informed of the situation and will provide support.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.26695799827575684,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2643412947654724,
+          "text": "Physician: Good morning, Jean. How are you feeling today? Patient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2502500116825104,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23739200830459595,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1906472146511078,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "There is no mention in the provided transcript spans that the patient's daughter, Emily, was informed of the situation or that she will provide support.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C23",
+      "text": "Follow-up appointment scheduled for one week to reassess symptoms and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4588031768798828,
+          "text": "In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you? Patient: Yes, that makes sense. Thank you, Dr. Wood. Physician: You're welcome, Jean. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30685415863990784,
+          "text": "Patient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol. Physician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health? Patient: No, nothing significant. Just the usual work and family stress, I guess. Physician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28981953859329224,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. Just the flu-like symptoms. Physician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2822697162628174,
+          "text": "Have you experienced any other symptoms, such as a cough, sore throat, or congestion? Patient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27364784479141235,
+          "text": "Can you tell me more about your fever? How high has it been, and how long have you had it? Patient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment for one week to reassess symptoms and adjust treatment. The closest related statement is an instruction to follow up if symptoms worsen or persist beyond a week, but no specific appointment is scheduled.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Jean. How are you feeling today?\n\nPatient: Hi, Dr. Wood. I've been feeling pretty terrible. I've had a fever, chills, body aches, and a lot of fatigue.\n\nPhysician: I see. Can you tell me more about your fever? How high has it been, and how long have you had it?\n\nPatient: It's been around 101 or 102 degrees Fahrenheit for the past few days. It started about a week ago, and it's been pretty consistent since then.\n\nPhysician: Okay. Have you experienced any other symptoms, such as a cough, sore throat, or congestion?\n\nPatient: No, nothing like that. Just the fever and body aches. Oh, and I've been feeling really tired and weak.\n\nPhysician: I understand. Have you had any recent travel or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled anywhere recently, and I don't think anyone in my household has been sick.\n\nPhysician: Okay. Have you noticed any shortness of breath or chest pain?\n\nPatient: No, nothing like that. Just the flu-like symptoms.\n\nPhysician: I see. Have you been taking any medications or supplements that could be contributing to your symptoms?\n\nPatient: Well, I take Lisinopril for my hypertension, Metformin for my diabetes, and Atorvastatin for my high cholesterol.\n\nPhysician: Okay, those medications shouldn't be causing your symptoms. Have you experienced any recent stress or emotional changes that could be affecting your health?\n\nPatient: No, nothing significant. Just the usual work and family stress, I guess.\n\nPhysician: Alright. Based on what you've told me, it sounds like you might have influenza. I'd like to run a few tests to confirm that and rule out any other possibilities. In the meantime, I recommend that you rest, drink plenty of fluids, and take over-the-counter medications for your fever and body aches. If your symptoms worsen or persist for more than a week, be sure to follow up with us. Does that sound good to you?\n\nPatient: Yes, that makes sense. Thank you, Dr. Wood.\n\nPhysician: You're welcome, Jean. We'll get you feeling better soon.",
+  "note_text": "SOAP Note:\n\nSubjective:\nJean Elliott, a 59-year-old female, presents with symptoms of fever, chills, body aches, and fatigue for the past week. She reports a fever ranging from 101-102 degrees Fahrenheit and feeling weak and tired. Denies cough, sore throat, or congestion. No recent travel or exposure to sick individuals. Denies shortness of breath or chest pain. Reports taking Lisinopril, Metformin, and Atorvastatin for hypertension, diabetes, and high cholesterol, respectively. No significant recent stressors noted.\n\nObjective:\nPatient appears fatigued but alert during the examination. Vital signs show a temperature of 101.5 degrees Fahrenheit. No signs of respiratory distress. Lungs clear to auscultation. No abnormal heart sounds. Abdomen soft and non-tender. Patient's skin warm to touch. No rash or lesions noted. Patient's overall appearance consistent with flu-like symptoms.\n\nAssessment:\nBased on the patient's symptoms and physical examination findings, Jean Elliott likely has influenza. Further testing is recommended to confirm the diagnosis and rule out other possibilities. Patient's chronic conditions of hypertension, diabetes, and high cholesterol are stable and not contributing to current symptoms.\n\nPlan:\nOrder influenza testing to confirm diagnosis. Recommend rest, hydration, and over-the-counter medications for fever and body aches. Advise patient to monitor symptoms and follow up if they worsen or persist beyond one week. Patient's daughter, Emily, informed of the situation and will provide support. Follow-up appointment scheduled for one week to reassess symptoms and adjust treatment as needed."
+}

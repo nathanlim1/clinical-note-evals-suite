@@ -1,0 +1,52 @@
+{
+  "num_items": 62,
+  "totals": {
+    "claims": 1092,
+    "hallucination_low_severity": 67,
+    "hallucination_medium_severity": 202,
+    "hallucination_high_severity": 39,
+    "hallucination_total": 308,
+    "unsupported_claim_low_severity": 67,
+    "unsupported_claim_medium_severity": 196,
+    "unsupported_claim_high_severity": 34,
+    "unsupported_total": 297,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 6,
+    "contradicted_claim_high_severity": 5,
+    "contradicted_total": 11,
+    "missing_critical_count": 26,
+    "missing_critical_low_severity": 17,
+    "missing_critical_medium_severity": 8,
+    "missing_critical_high_severity": 1
+  },
+  "rates_per_claim": {
+    "hallucination_low_severity_rate": 0.06135531135531135,
+    "hallucination_medium_severity_rate": 0.184981684981685,
+    "hallucination_high_severity_rate": 0.03571428571428571,
+    "hallucination_rate": 0.28205128205128205,
+    "unsupported_low_severity_rate": 0.06135531135531135,
+    "unsupported_medium_severity_rate": 0.1794871794871795,
+    "unsupported_high_severity_rate": 0.031135531135531136,
+    "unsupported_rate": 0.27197802197802196,
+    "contradicted_low_severity_rate": 0.0,
+    "contradicted_medium_severity_rate": 0.005494505494505495,
+    "contradicted_high_severity_rate": 0.004578754578754579,
+    "contradicted_rate": 0.010073260073260074
+  },
+  "averages_per_item": {
+    "claims_per_item": 17.612903225806452,
+    "missing_critical_per_item": 0.41935483870967744,
+    "hallucinations_per_item": 4.967741935483871,
+    "unsupported_per_item": 4.790322580645161,
+    "contradicted_per_item": 0.1774193548387097
+  },
+  "token_usage": {
+    "total_calls": 2882,
+    "failed_calls": 0,
+    "successful_calls": 2882,
+    "total_input_tokens": 1355405,
+    "total_output_tokens": 106405,
+    "total_tokens": 1461810,
+    "total cost w/ GPT-4.1-mini (in $)": 0.71241
+  }
+}

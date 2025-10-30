@@ -1,0 +1,868 @@
+{
+  "summary": {
+    "claims": 14,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 39,
+    "failed_calls": 0,
+    "successful_calls": 39,
+    "total_input_tokens": 17455,
+    "total_output_tokens": 1251,
+    "total_tokens": 18706,
+    "total cost w/ GPT-4.1-mini (in $)": 0.008983600000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Steve appeared alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4583507776260376,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.457876980304718,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44666510820388794,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3601836562156677,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26031187176704407,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Steve appeared alert and oriented during the examination. There is no direct mention of his mental status or orientation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.2991723418235779,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28356921672821045,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.259253591299057,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25434809923171997,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23821936547756195,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any mention or documentation of vital signs or their status.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of distress were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.2878241539001465,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22179679572582245,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21878451108932495,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.19801706075668335,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.1843711882829666,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that no signs of distress were noted. The patient reports discomfort during urination and sexual health concerns, which suggests some distress.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination revealed no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3949587643146515,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2986752688884735,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28846031427383423,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2635197937488556,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23242324590682983,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains no explicit statement or description of a physical examination or its findings. The dialogue focuses on patient symptoms and history without mention of examination results or absence of abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "His erectile dysfunction and decreased libido may be related to underlying urological issues.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5434468388557434,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5409069061279297,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40617820620536804,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36695751547813416,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3623468577861786,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient has erectile dysfunction and decreased libido and also urinary symptoms, with the physician recommending follow-up with a urologist for urinary symptoms and sexual health concerns. However, there is no explicit statement or clear evidence linking the erectile dysfunction and decreased libido to underlying urological issues. The relationship is implied but not confirmed or stated explicitly.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Steve Andrews, a 79-year-old male, presented with concerns regarding difficulty with urination, including hesitancy, incomplete emptying, and discomfort.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5201908349990845,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5012469291687012,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4539628028869629,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.43545621633529663,
+          "text": "Have you had any issues with urinary frequency or urgency? Patient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4145558774471283,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports difficulty with urination, including hesitancy ('taking me longer to start') and incomplete emptying ('can't fully empty my bladder'), as well as discomfort ('a bit uncomfortable, especially when I start to urinate').",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He also reported increased urinary frequency and urgency, especially at night.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6624810695648193,
+          "text": "Have you had any issues with urinary frequency or urgency? Patient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41970300674438477,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.41017481684684753,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4051472842693329,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.39944446086883545,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports needing to urinate more often, especially at night, and feeling urgency even shortly after urinating, which directly supports increased urinary frequency and urgency, especially at night.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Additionally, Steve mentioned experiencing erectile dysfunction and a decrease in libido without pain during sexual activity.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.596140444278717,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5486444234848022,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5227823257446289,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42231136560440063,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39726632833480835,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states difficulty getting and keeping an erection (erectile dysfunction) and a decrease in libido (loss of sexual interest). The patient denies pain during sexual activity.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Steve appeared alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4583507776260376,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.457876980304718,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44666510820388794,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3601836562156677,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26031187176704407,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Steve appeared alert and oriented during the examination. There is no direct mention of his mental status or orientation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.2991723418235779,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28356921672821045,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.259253591299057,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25434809923171997,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23821936547756195,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any mention or documentation of vital signs or their status.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of distress were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.2878241539001465,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22179679572582245,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21878451108932495,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.19801706075668335,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.1843711882829666,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that no signs of distress were noted. The patient reports discomfort during urination and sexual health concerns, which suggests some distress.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination revealed no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3949587643146515,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2986752688884735,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28846031427383423,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2635197937488556,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23242324590682983,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains no explicit statement or description of a physical examination or its findings. The dialogue focuses on patient symptoms and history without mention of examination results or absence of abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Lab tests were ordered to assess kidney function and rule out infections.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3725777864456177,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2947036921977997,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24578061699867249,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.21362417936325073,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2027589976787567,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "Sentence E5[6] explicitly states that lab tests were ordered to check kidney function and rule out infections.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Steve presents with symptoms suggestive of benign prostatic hyperplasia, including urinary hesitancy, incomplete emptying, and discomfort.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.509051501750946,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5071296691894531,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.43985113501548767,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4130193591117859,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40227964520454407,
+          "text": "Have you had any issues with urinary frequency or urgency? Patient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports difficulty starting urination (urinary hesitancy) and feeling like he cannot fully empty his bladder, as well as discomfort when starting to urinate, which aligns with symptoms suggestive of benign prostatic hyperplasia.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "His erectile dysfunction and decreased libido may be related to underlying urological issues.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5434468388557434,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5409069061279297,
+          "text": "Patient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately. Physician: I understand. Have you experienced any decrease in libido or sexual desire? Patient: Yes, doctor. It's like my interest in sex has just disappeared. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40617820620536804,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36695751547813416,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3623468577861786,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient has erectile dysfunction and decreased libido and also urinary symptoms, with the physician recommending follow-up with a urologist for urinary symptoms and sexual health concerns. However, there is no explicit statement or clear evidence linking the erectile dysfunction and decreased libido to underlying urological issues. The relationship is implied but not confirmed or stated explicitly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Referral to a urologist for further evaluation is recommended.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5083199143409729,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3917345404624939,
+          "text": "Physician: I see. Have you noticed any pain or discomfort during urination? Patient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37056416273117065,
+          "text": "Have you had any issues with urinary frequency or urgency? Patient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35886743664741516,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34255725145339966,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends follow-up with a urologist to address urinary symptoms and sexual health concerns.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Update medication list and order lab tests to assess kidney function.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4369564354419708,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3183813691139221,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.28835535049438477,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.27666163444519043,
+          "text": "Have you had any issues with urinary frequency or urgency? Patient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24952489137649536,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will update the medication list and order lab tests to check kidney function in sentence 6 of span E5.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Refer Steve to a urologist for further evaluation of urinary symptoms and sexual health concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.7108663320541382,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5473122596740723,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5421197414398193,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48641490936279297,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4042046368122101,
+          "text": "Have you had any issues with urinary frequency or urgency? Patient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends that Steve follow up with a urologist to address his urinary symptoms and sexual health concerns.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Follow up with Steve after urology consultation to discuss treatment options and management plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5971547365188599,
+          "text": "Have you experienced any pain or discomfort during sexual activity? Patient: No, doctor. It's just been difficult to get things going, so to speak. Physician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections. Patient: Alright, doctor. Thank you for your help."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5182772874832153,
+          "text": "Physician: Good morning, Steve. How are you feeling today? Patient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately. Physician: Of course, Steve. Please go ahead and share your concerns with me. Patient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4751167297363281,
+          "text": "Physician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4185570478439331,
+          "text": "Have you noticed any blood in your urine or cloudiness? Patient: No, doctor. I haven't noticed anything like that. Physician: Good. Have you had any recent changes in your sexual health, Steve?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32775062322616577,
+          "text": "Have you had any issues with urinary frequency or urgency? Patient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends follow-up with a urologist to address urinary symptoms and sexual health concerns, which implies discussing treatment options and management plan after the consultation.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Steve. How are you feeling today?\n\nPatient: Good morning, doctor. I've been feeling alright, but I wanted to follow up on some concerns I've had lately.\n\nPhysician: Of course, Steve. Please go ahead and share your concerns with me.\n\nPatient: Well, doctor, I've been experiencing some difficulty with urination. It's been taking me longer to start, and sometimes I feel like I can't fully empty my bladder.\n\nPhysician: I see. Have you noticed any pain or discomfort during urination?\n\nPatient: Yes, doctor. It's been a bit uncomfortable, especially when I start to urinate. It feels like there's a pinching sensation down there.\n\nPhysician: I understand. Have you had any issues with urinary frequency or urgency?\n\nPatient: Yes, doctor. I've been needing to go more often, especially at night. And sometimes, I feel like I need to go right away, even when I just went a short while ago.\n\nPhysician: I see. Have you noticed any blood in your urine or cloudiness?\n\nPatient: No, doctor. I haven't noticed anything like that.\n\nPhysician: Good. Have you had any recent changes in your sexual health, Steve?\n\nPatient: Well, doctor, that's another reason I wanted to come in. I've been having some trouble getting and keeping an erection lately.\n\nPhysician: I understand. Have you experienced any decrease in libido or sexual desire?\n\nPatient: Yes, doctor. It's like my interest in sex has just disappeared.\n\nPhysician: I see. Have you experienced any pain or discomfort during sexual activity?\n\nPatient: No, doctor. It's just been difficult to get things going, so to speak.\n\nPhysician: I understand, Steve. I'm going to recommend that you follow up with a urologist to address your urinary symptoms and sexual health concerns. In the meantime, I'll make sure to update your medication list and order some lab tests to check your kidney function and rule out any infections.\n\nPatient: Alright, doctor. Thank you for your help.\n\nPhysician: Of course, Steve. We'll get to the bottom of this and work together to get you feeling better.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "note_text": "Subjective:\nSteve Andrews, a 79-year-old male, presented with concerns regarding difficulty with urination, including hesitancy, incomplete emptying, and discomfort. He also reported increased urinary frequency and urgency, especially at night. Additionally, Steve mentioned experiencing erectile dysfunction and a decrease in libido without pain during sexual activity.\n\nObjective:\nDuring the examination, Steve appeared alert and oriented. Vital signs were within normal limits. No signs of distress were noted. Physical examination revealed no abnormalities. Lab tests were ordered to assess kidney function and rule out infections.\n\nAssessment:\nSteve presents with symptoms suggestive of benign prostatic hyperplasia, including urinary hesitancy, incomplete emptying, and discomfort. His erectile dysfunction and decreased libido may be related to underlying urological issues. Referral to a urologist for further evaluation is recommended.\n\nPlan:\n1. Update medication list and order lab tests to assess kidney function.\n2. Refer Steve to a urologist for further evaluation of urinary symptoms and sexual health concerns.\n3. Follow up with Steve after urology consultation to discuss treatment options and management plan."
+}

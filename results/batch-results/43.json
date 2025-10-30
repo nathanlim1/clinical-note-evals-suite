@@ -1,0 +1,911 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 0,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 0,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 41,
+    "failed_calls": 0,
+    "successful_calls": 41,
+    "total_input_tokens": 20295,
+    "total_output_tokens": 1630,
+    "total_tokens": 21925,
+    "total cost w/ GPT-4.1-mini (in $)": 0.010726
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C8",
+      "text": "Physical examination reveals no acute distress, and vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.35523879528045654,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.33515727519989014,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2809143662452698,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.279676616191864,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25973576307296753,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention physical examination findings or vital signs, nor do they state that the patient is in no acute distress or that vital signs are within normal limits.",
+        "severity": "high"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Warren reports experiencing worsening symptoms of abdominal pain, bloating, diarrhea, nausea, and vomiting over the past few months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7812796831130981,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.7625442743301392,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.7518178224563599,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5743280649185181,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5466871857643127,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "Warren explicitly reports abdominal pain, bloating, diarrhea, nausea, and vomiting, stating these symptoms have worsened over the past few months.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He notes that the symptoms started around three months ago and have become more persistent and frequent.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6099556684494019,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4307858943939209,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as certain foods or stress? Warren: Yes, I've tried to pay attention to my diet, and it seems like dairy and spicy foods make me feel worse. And, to be honest, I have been pretty stressed lately. I recently changed jobs, and it's been a bit of an adjustment. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41386812925338745,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3946004807949066,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38732224702835083,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that symptoms started around three months ago and have become more persistent and frequent, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Warren mentions that dairy and spicy foods seem to exacerbate his symptoms, and he has been under increased stress due to a recent job change.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.7846546173095703,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as certain foods or stress? Warren: Yes, I've tried to pay attention to my diet, and it seems like dairy and spicy foods make me feel worse. And, to be honest, I have been pretty stressed lately. I recently changed jobs, and it's been a bit of an adjustment. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5473455190658569,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5258449912071228,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5193824172019958,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5072373747825623,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "Warren explicitly states that dairy and spicy foods worsen his symptoms and that he has been stressed due to a recent job change.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "He has also observed some blood in his stool and has experienced weight loss.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6229601502418518,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5072678923606873,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.49764877557754517,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.454368531703949,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.42317473888397217,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports noticing some blood in his stool occasionally (E4:2) and also reports having lost a bit of weight (E3:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Warren appears anxious but cooperative during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5176400542259216,
+          "text": "We'll follow up in a few days once we have the test results, and we'll go from there. Does that sound good to you? Warren: Yes, that sounds great. Thank you for taking the time to listen to me and for helping me figure this out. Physician: Of course, Warren. That's what we're here for. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4583401679992676,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3651917576789856,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3648514151573181,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35993796586990356,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "Warren explicitly states he is feeling 'nervously' which indicates anxiety, and there is no indication of non-cooperation; his responses are appropriate and engaged, implying cooperation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "He denies fever, chills, fatigue, weakness, or difficulty swallowing.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4731552004814148,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4629010856151581,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.321378231048584,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2997688055038452,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2487783432006836,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as certain foods or stress? Warren: Yes, I've tried to pay attention to my diet, and it seems like dairy and spicy foods make me feel worse. And, to be honest, I have been pretty stressed lately. I recently changed jobs, and it's been a bit of an adjustment. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies fever and chills (E3:1-2) and also denies fatigue, weakness, and difficulty swallowing (E5:1-2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "His medical history includes a diagnosis of GERD three years ago, for which he has been taking Omeprazole.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.7363249063491821,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.475475013256073,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.35995200276374817,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3522074222564697,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3362595736980438,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states that Warren was diagnosed with GERD about three years ago and has been taking Omeprazole since then.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Warren mentions that his father has a history of gastrointestinal issues, including GERD and irritable bowel syndrome.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6928987503051758,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.570163369178772,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5676769018173218,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5158864855766296,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4814695417881012,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "Warren explicitly states that his father has had stomach problems and was diagnosed with GERD and irritable bowel syndrome, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Physical examination reveals no acute distress, and vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.35523879528045654,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.33515727519989014,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2809143662452698,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.279676616191864,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25973576307296753,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention physical examination findings or vital signs, nor do they state that the patient is in no acute distress or that vital signs are within normal limits.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Warren presents with chronic symptoms of GERD, including abdominal pain, bloating, diarrhea, nausea, and vomiting.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.690255343914032,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.6793226003646851,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.6659272909164429,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.6162533760070801,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.560742974281311,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "Warren has a prior diagnosis of GERD (E6:3) and reports chronic symptoms including abdominal pain, bloating, diarrhea, nausea, and vomiting worsening over months (E0:4-5, E1:3-6).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Given his family history of gastrointestinal issues and the presence of blood in his stool, further investigation is warranted to rule out potential underlying causes.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6310768127441406,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4899616837501526,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37904995679855347,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3686169385910034,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3630746304988861,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports a family history of gastrointestinal issues (father with GERD and IBS) and presence of blood in stool. The physician plans further investigation including colonoscopy and blood tests to rule out underlying causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "A colonoscopy and blood tests have been ordered to assess for possible infections, inflammation, or other contributing factors.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.585931658744812,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4574210047721863,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3700692355632782,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3351297378540039,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3151094913482666,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as certain foods or stress? Warren: Yes, I've tried to pay attention to my diet, and it seems like dairy and spicy foods make me feel worse. And, to be honest, I have been pretty stressed lately. I recently changed jobs, and it's been a bit of an adjustment. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering a colonoscopy to examine the colon and blood tests to check for infections, inflammation, and other causes, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Warren will undergo a colonoscopy to evaluate his colon and investigate any potential abnormalities.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5970337390899658,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.515889585018158,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5157812237739563,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4918079972267151,
+          "text": "We'll follow up in a few days once we have the test results, and we'll go from there. Does that sound good to you? Warren: Yes, that sounds great. Thank you for taking the time to listen to me and for helping me figure this out. Physician: Of course, Warren. That's what we're here for. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.45343342423439026,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will start with a colonoscopy to take a closer look at Warren's colon and rule out potential issues, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Blood tests will be conducted to assess for infections and inflammation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.36003732681274414,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34328407049179077,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2925531566143036,
+          "text": "We'll follow up in a few days once we have the test results, and we'll go from there. Does that sound good to you? Warren: Yes, that sounds great. Thank you for taking the time to listen to me and for helping me figure this out. Physician: Of course, Warren. That's what we're here for. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2896168828010559,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2567536532878876,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as certain foods or stress? Warren: Yes, I've tried to pay attention to my diet, and it seems like dairy and spicy foods make me feel worse. And, to be honest, I have been pretty stressed lately. I recently changed jobs, and it's been a bit of an adjustment. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "Sentence E7[7] explicitly states that blood tests will be run to check for infections and inflammation, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "In the interim, Warren is advised to avoid trigger foods and manage stress levels.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6117140054702759,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as certain foods or stress? Warren: Yes, I've tried to pay attention to my diet, and it seems like dairy and spicy foods make me feel worse. And, to be honest, I have been pretty stressed lately. I recently changed jobs, and it's been a bit of an adjustment. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4703395962715149,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.46736592054367065,
+          "text": "Have you experienced any other symptoms, such as fever, chills, or weight loss? Warren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much. Physician: That's understandable."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40351051092147827,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38730067014694214,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends avoiding trigger foods and managing stress levels in the interim, which directly supports the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Follow-up will occur once the test results are available to determine the next steps in his treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5272799730300903,
+          "text": "We'll follow up in a few days once we have the test results, and we'll go from there. Does that sound good to you? Warren: Yes, that sounds great. Thank you for taking the time to listen to me and for helping me figure this out. Physician: Of course, Warren. That's what we're here for. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3290889859199524,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23493069410324097,
+          "text": "Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency? Warren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2154034972190857,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21187907457351685,
+          "text": "Can you tell me more about your symptoms? When did they start, and how often do you experience them? Warren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states that follow-up will occur once test results are available, and next steps will be determined from there.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Warren expresses gratitude for the physician's attention and assistance in addressing his health concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6254649758338928,
+          "text": "We'll follow up in a few days once we have the test results, and we'll go from there. Does that sound good to you? Warren: Yes, that sounds great. Thank you for taking the time to listen to me and for helping me figure this out. Physician: Of course, Warren. That's what we're here for. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5787032246589661,
+          "text": "Physician: Good morning, Warren. How are you feeling today? Warren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48156604170799255,
+          "text": "Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries? Warren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues. Physician: That's good to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4463536739349365,
+          "text": "Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing? Warren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4220036268234253,
+          "text": "Have you noticed any family history of gastrointestinal issues? Warren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago. Physician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "Warren explicitly thanks the physician for listening and helping him, which directly supports the claim of expressing gratitude for the physician's attention and assistance.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Warren. How are you feeling today?\n\nWarren: (nervously) Not great, to be honest. I've been experiencing a lot of abdominal pain, bloating, diarrhea, nausea, and vomiting lately. It's been getting worse over the past few months.\n\nPhysician: I see. Can you tell me more about your symptoms? When did they start, and how often do you experience them?\n\nWarren: They started around three months ago. At first, it was just occasional discomfort after eating, but it's become more persistent and frequent. Now, I feel bloated and uncomfortable most of the time, and I've had diarrhea almost daily. The nausea and vomiting have been getting worse too.\n\nPhysician: I understand. Have you noticed any triggers that make your symptoms worse, such as certain foods or stress?\n\nWarren: Yes, I've tried to pay attention to my diet, and it seems like dairy and spicy foods make me feel worse. And, to be honest, I have been pretty stressed lately. I recently changed jobs, and it's been a bit of an adjustment.\n\nPhysician: That's helpful information. Have you experienced any other symptoms, such as fever, chills, or weight loss?\n\nWarren: No, I haven't had a fever or chills, but I have lost a bit of weight. I'm not sure if it's related to my symptoms or just due to stress and not eating as much.\n\nPhysician: That's understandable. Have you noticed any changes in your bowel movements, such as blood in your stool or changes in the color or consistency?\n\nWarren: Yes, my stool has been a bit more loose and watery lately, and I have noticed some blood in it occasionally.\n\nPhysician: I see. Have you experienced any other symptoms, such as fatigue, weakness, or difficulty swallowing?\n\nWarren: No, I haven't had any of those symptoms. Just the abdominal pain, bloating, diarrhea, nausea, and vomiting.\n\nPhysician: I understand. Can you tell me about your medical history? Have you had any previous gastrointestinal issues or surgeries?\n\nWarren: Yes, I was diagnosed with GERD about three years ago, and I've been taking Omeprazole for it since then. Other than that, I've never had any major health issues.\n\nPhysician: That's good to know. Have you noticed any family history of gastrointestinal issues?\n\nWarren: Actually, my father has had some stomach problems too. He was diagnosed with GERD and irritable bowel syndrome a few years ago.\n\nPhysician: That's helpful to know. I'm going to order some tests to help us better understand what's going on. We'll start with a colonoscopy to take a closer look at your colon and rule out any potential issues like polyps or cancer. We'll also run some blood tests to check for infections, inflammation, and other possible causes of your symptoms. In the meantime, I recommend that you avoid any trigger foods that seem to make your symptoms worse and try to manage your stress levels through relaxation techniques or other methods that work for you. We'll follow up in a few days once we have the test results, and we'll go from there. Does that sound good to you?\n\nWarren: Yes, that sounds great. Thank you for taking the time to listen to me and for helping me figure this out.\n\nPhysician: Of course, Warren. That's what we're here for. We'll get to the bottom of this and work together to get you feeling better.",
+  "note_text": "Subjective:\nWarren reports experiencing worsening symptoms of abdominal pain, bloating, diarrhea, nausea, and vomiting over the past few months. He notes that the symptoms started around three months ago and have become more persistent and frequent. Warren mentions that dairy and spicy foods seem to exacerbate his symptoms, and he has been under increased stress due to a recent job change. He has also observed some blood in his stool and has experienced weight loss.\n\nObjective:\nWarren appears anxious but cooperative during the consultation. He denies fever, chills, fatigue, weakness, or difficulty swallowing. His medical history includes a diagnosis of GERD three years ago, for which he has been taking Omeprazole. Warren mentions that his father has a history of gastrointestinal issues, including GERD and irritable bowel syndrome. Physical examination reveals no acute distress, and vital signs are within normal limits.\n\nAssessment:\nWarren presents with chronic symptoms of GERD, including abdominal pain, bloating, diarrhea, nausea, and vomiting. Given his family history of gastrointestinal issues and the presence of blood in his stool, further investigation is warranted to rule out potential underlying causes. A colonoscopy and blood tests have been ordered to assess for possible infections, inflammation, or other contributing factors.\n\nPlan:\nWarren will undergo a colonoscopy to evaluate his colon and investigate any potential abnormalities. Blood tests will be conducted to assess for infections and inflammation. In the interim, Warren is advised to avoid trigger foods and manage stress levels. Follow-up will occur once the test results are available to determine the next steps in his treatment plan. Warren expresses gratitude for the physician's attention and assistance in addressing his health concerns."
+}

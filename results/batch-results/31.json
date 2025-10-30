@@ -1,0 +1,1084 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 43,
+    "failed_calls": 0,
+    "successful_calls": 43,
+    "total_input_tokens": 21028,
+    "total_output_tokens": 1661,
+    "total_tokens": 22689,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0110688
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Mrs. Lucas appears alert and oriented during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6441366672515869,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5820161700248718,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34583306312561035,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31118154525756836,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2958514094352722,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mrs. Lucas appears alert and oriented during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Her medical history includes hypertension, diabetes type II, osteoarthritis, and vision problems.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.47808951139450073,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44761353731155396,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4192456603050232,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4153178334236145,
+          "text": "Can you tell me more about your vision problems? What do you mean by \"vision problems\"? Patient: Well, it's mostly blurry vision, especially when I'm reading or watching TV. It's like there's a veil over my eyes, and I can't see things clearly. Sometimes, I also have trouble seeing colors, and everything appears faded. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.41114693880081177,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the patient's medical history including hypertension, diabetes type II, or osteoarthritis. Vision problems are discussed, but the other conditions are not confirmed in the provided evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mrs. Lucas is due for an influenza vaccine and colorectal cancer screening.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.46712344884872437,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.45758020877838135,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25133320689201355,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2251189798116684,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.18810412287712097,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention influenza vaccine or colorectal cancer screening, nor do they indicate that Mrs. Lucas is due for these screenings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Her recent results show an HbA1c of 6.5% and blood pressure of 142/88 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.2863163650035858,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2710813879966736,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.267442911863327,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2281877100467682,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22768092155456543,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not contain any information about the patient's recent HbA1c or blood pressure results.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "An ophthalmologist appointment is scheduled for 3/15/2023 to address her vision problems.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6055927276611328,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5414854288101196,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4422622323036194,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40153247117996216,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3762972354888916,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates that an appointment with an ophthalmologist is to be scheduled, but no specific date, including 3/15/2023, is mentioned.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mrs. Lucas reports experiencing blurry vision, especially when reading or watching TV.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5655046701431274,
+          "text": "Can you tell me more about your vision problems? What do you mean by \"vision problems\"? Patient: Well, it's mostly blurry vision, especially when I'm reading or watching TV. It's like there's a veil over my eyes, and I can't see things clearly. Sometimes, I also have trouble seeing colors, and everything appears faded. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5637902021408081,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5611902475357056,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5010614991188049,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4415917992591858,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states experiencing blurry vision, especially when reading or watching TV.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes it as if there is a veil over her eyes and has trouble seeing colors clearly.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5788934826850891,
+          "text": "Can you tell me more about your vision problems? What do you mean by \"vision problems\"? Patient: Well, it's mostly blurry vision, especially when I'm reading or watching TV. It's like there's a veil over my eyes, and I can't see things clearly. Sometimes, I also have trouble seeing colors, and everything appears faded. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40841591358184814,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34769952297210693,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33804839849472046,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3346359431743622,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that it feels like there is a veil over her eyes and that she has trouble seeing colors clearly, describing colors as faded.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She denies any eye pain, discomfort, or sensitivity to light but mentions feeling like her eyes are tired.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.705695629119873,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5285983085632324,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.43893909454345703,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4383658468723297,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43719568848609924,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies eye pain, discomfort, or sensitivity to light (E2:2) and mentions feeling like her eyes are tired (E2:3).",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mrs. Lucas started taking a glucosamine supplement a few months ago and noticed dry eyes and a gritty sensation.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6076093912124634,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5459696054458618,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4650900959968567,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45671987533569336,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.43389979004859924,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she started glucosamine a few months ago (E3:3-4) and reports dry eyes and gritty sensation (E5:1-2). The physician confirms glucosamine can cause eye irritation (E4:3) and asks about dry eyes (E4:4), supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She expresses concern about the seriousness of her symptoms.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.40642720460891724,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.405155748128891,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3819141983985901,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32212111353874207,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30773109197616577,
+          "text": "Can you tell me more about your vision problems? What do you mean by \"vision problems\"? Patient: Well, it's mostly blurry vision, especially when I'm reading or watching TV. It's like there's a veil over my eyes, and I can't see things clearly. Sometimes, I also have trouble seeing colors, and everything appears faded. Physician: Okay, that sounds like it could be a few different things."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she is 'worrying' about her vision problems and says 'I'm worried that it might be something serious,' indicating concern about the seriousness of her symptoms.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Mrs. Lucas appears alert and oriented during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6441366672515869,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5820161700248718,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34583306312561035,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31118154525756836,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2958514094352722,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mrs. Lucas appears alert and oriented during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "She does not display signs of eye redness or irritation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4382294714450836,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43186187744140625,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37974074482917786,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3111621141433716,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2719692587852478,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies eye pain, discomfort, or sensitivity to light, which supports the absence of eye redness or irritation signs. Although the patient reports dry and gritty eyes, there is no mention of redness or irritation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Her medical history includes hypertension, diabetes type II, osteoarthritis, and vision problems.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.47808951139450073,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44761353731155396,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4192456603050232,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4153178334236145,
+          "text": "Can you tell me more about your vision problems? What do you mean by \"vision problems\"? Patient: Well, it's mostly blurry vision, especially when I'm reading or watching TV. It's like there's a veil over my eyes, and I can't see things clearly. Sometimes, I also have trouble seeing colors, and everything appears faded. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.41114693880081177,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the patient's medical history including hypertension, diabetes type II, or osteoarthritis. Vision problems are discussed, but the other conditions are not confirmed in the provided evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mrs. Lucas is due for an influenza vaccine and colorectal cancer screening.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.46712344884872437,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.45758020877838135,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25133320689201355,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2251189798116684,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.18810412287712097,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention influenza vaccine or colorectal cancer screening, nor do they indicate that Mrs. Lucas is due for these screenings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Her recent results show an HbA1c of 6.5% and blood pressure of 142/88 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.2863163650035858,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2710813879966736,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.267442911863327,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2281877100467682,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22768092155456543,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not contain any information about the patient's recent HbA1c or blood pressure results.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "An ophthalmologist appointment is scheduled for 3/15/2023 to address her vision problems.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6055927276611328,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5414854288101196,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4422622323036194,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40153247117996216,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3762972354888916,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates that an appointment with an ophthalmologist is to be scheduled, but no specific date, including 3/15/2023, is mentioned.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Mrs. Lucas presents with blurry vision, dry eyes, and a gritty sensation, possibly related to the glucosamine supplement she started taking.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6467419266700745,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5196424126625061,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5179981589317322,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5154180526733398,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5096708536148071,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports vision problems (blurry vision implied by 'vision problems'), and the patient confirms starting glucosamine supplement. The physician states glucosamine can cause eye irritation or blurry vision, linking symptoms to the supplement. Dry eyes and gritty sensation are implied by physician's question about dry eyes and eye redness, supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Given her symptoms and medical history, further evaluation by an ophthalmologist is warranted to determine the underlying cause of her vision problems.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5601860284805298,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5412948727607727,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43267565965652466,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.42161843180656433,
+          "text": "Can you tell me more about your vision problems? What do you mean by \"vision problems\"? Patient: Well, it's mostly blurry vision, especially when I'm reading or watching TV. It's like there's a veil over my eyes, and I can't see things clearly. Sometimes, I also have trouble seeing colors, and everything appears faded. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41876739263534546,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends scheduling an eye exam with an ophthalmologist to determine the cause of the patient's vision problems, and the nurse is tasked with scheduling the appointment, supporting the claim that further evaluation is warranted.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Mrs. Lucas is compliant with recommendations and expresses concerns about her eye health.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6224676370620728,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5827604532241821,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42699581384658813,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4007992744445801,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38391247391700745,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              7
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient agrees to recommendations such as scheduling an eye exam and stopping glucosamine (E6:3,7), indicating compliance. The patient also expresses concerns about her eye health, mentioning dry and gritty eyes (E5:1,2).",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "The physician will schedule an appointment with an ophthalmologist for Mrs. Lucas to undergo a comprehensive eye exam.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.7041367292404175,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.599055290222168,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5387958884239197,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3930012583732605,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3853883743286133,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the nurse will schedule an appointment with an ophthalmologist (E7:1) and mentions that the ophthalmologist can perform a comprehensive eye exam (E6:1-2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "She is advised to discontinue the glucosamine supplement until further evaluation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.553054928779602,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.49983617663383484,
+          "text": "Could that be causing it? Physician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.47334641218185425,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31636813282966614,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21177756786346436,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends stopping the glucosamine supplement until potential side effects can be ruled out.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Mrs. Lucas is encouraged to reach out if she experiences worsening symptoms or has additional concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6400912404060364,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5352879762649536,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33570829033851624,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3200991749763489,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28220173716545105,
+          "text": "Have you experienced any eye pain, discomfort, or sensitivity to light? Patient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises Mrs. Lucas to reach out if she experiences worsening symptoms or has further concerns, matching the claim exactly.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Follow-up will be conducted to monitor her progress and address any further needs.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4484044015407562,
+          "text": "I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office. Patient: Thank you, Doctor. I feel better knowing that we're taking steps to address this. Physician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3339172601699829,
+          "text": "In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment. Patient: That sounds good. I'm worried that it might be something serious. Physician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects. Patient: Okay, I can do that. Physician: Great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23776797950267792,
+          "text": "Physician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today? Patient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23233743011951447,
+          "text": "Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants? Patient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22233635187149048,
+          "text": "Patient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them. Physician: I see. That's helpful information. Have you had any recent eye exams or vision tests? Patient: No, not recently. I had a vision test a few years ago, and my vision was fine back then. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician arranges an appointment with an ophthalmologist and advises the patient to contact the office if symptoms worsen or further concerns arise, indicating planned follow-up to monitor progress and address needs.",
+        "severity": "none"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mrs. Lucas. Thank you for scheduling this appointment. How are you feeling today?\n\nPatient: Good morning, Doctor. I'm feeling a bit uncomfortable, to be honest. I've been experiencing some vision problems lately, and it's been worrying me.\n\nPhysician: I see. Can you tell me more about your vision problems? What do you mean by \"vision problems\"?\n\nPatient: Well, it's mostly blurry vision, especially when I'm reading or watching TV. It's like there's a veil over my eyes, and I can't see things clearly. Sometimes, I also have trouble seeing colors, and everything appears faded.\n\nPhysician: Okay, that sounds like it could be a few different things. Have you experienced any eye pain, discomfort, or sensitivity to light?\n\nPatient: No, not really. Just the blurry vision and sometimes feeling like my eyes are tired.\n\nPhysician: All right. Have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new medication or supplement, or have you been exposed to any chemicals or pollutants?\n\nPatient: I did start taking a new supplement for my joints a few months ago. It's called glucosamine. Could that be causing it?\n\nPhysician: It's possible. Glucosamine can sometimes cause eye irritation or blurry vision as a side effect. Have you noticed any other symptoms, like dry eyes or eye redness?\n\nPatient: Yes, my eyes have been feeling dry lately. And sometimes, they feel gritty, like there's sand in them.\n\nPhysician: I see. That's helpful information. Have you had any recent eye exams or vision tests?\n\nPatient: No, not recently. I had a vision test a few years ago, and my vision was fine back then.\n\nPhysician: Okay. In that case, I think it would be a good idea to schedule an eye exam with an ophthalmologist. They can perform a comprehensive eye exam to determine the cause of your vision problems and recommend appropriate treatment.\n\nPatient: That sounds good. I'm worried that it might be something serious.\n\nPhysician: We'll do our best to determine the cause and address it appropriately. In the meantime, I recommend that you stop taking the glucosamine supplement until we can rule out any potential side effects.\n\nPatient: Okay, I can do that.\n\nPhysician: Great. I'll also have my nurse schedule an appointment with an ophthalmologist for you. In the meantime, if you experience any worsening symptoms or have any further concerns, don't hesitate to reach out to my office.\n\nPatient: Thank you, Doctor. I feel better knowing that we're taking steps to address this.\n\nPhysician: Of course, Mrs. Lucas. We'll do everything we can to help you resolve your vision problems and ensure your overall health and well-being.",
+  "note_text": "Subjective:\nMrs. Lucas reports experiencing blurry vision, especially when reading or watching TV. She describes it as if there is a veil over her eyes and has trouble seeing colors clearly. She denies any eye pain, discomfort, or sensitivity to light but mentions feeling like her eyes are tired. Mrs. Lucas started taking a glucosamine supplement a few months ago and noticed dry eyes and a gritty sensation. She expresses concern about the seriousness of her symptoms.\n\nObjective:\nMrs. Lucas appears alert and oriented during the appointment. She does not display signs of eye redness or irritation. Her medical history includes hypertension, diabetes type II, osteoarthritis, and vision problems. Mrs. Lucas is due for an influenza vaccine and colorectal cancer screening. Her recent results show an HbA1c of 6.5% and blood pressure of 142/88 mmHg. An ophthalmologist appointment is scheduled for 3/15/2023 to address her vision problems.\n\nAssessment:\nMrs. Lucas presents with blurry vision, dry eyes, and a gritty sensation, possibly related to the glucosamine supplement she started taking. Given her symptoms and medical history, further evaluation by an ophthalmologist is warranted to determine the underlying cause of her vision problems. Mrs. Lucas is compliant with recommendations and expresses concerns about her eye health.\n\nPlan:\nThe physician will schedule an appointment with an ophthalmologist for Mrs. Lucas to undergo a comprehensive eye exam. She is advised to discontinue the glucosamine supplement until further evaluation. Mrs. Lucas is encouraged to reach out if she experiences worsening symptoms or has additional concerns. Follow-up will be conducted to monitor her progress and address any further needs."
+}

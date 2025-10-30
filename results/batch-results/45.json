@@ -1,0 +1,1102 @@
+{
+  "summary": {
+    "claims": 16,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 1,
+    "contradicted_claim_high_severity": 1,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 43,
+    "failed_calls": 0,
+    "successful_calls": 43,
+    "total_input_tokens": 20060,
+    "total_output_tokens": 1581,
+    "total_tokens": 21641,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0105536
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Mr. Obrien appears alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.45177212357521057,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4516354501247406,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33813637495040894,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32391345500946045,
+          "text": "Have you had any vertigo or balance issues? Patient: Yes, doctor. I've been feeling a bit dizzy and unsteady, especially when I stand up or walk. It's like the room is spinning. My wife has noticed it too, and she's been worried about me falling. Physician: I appreciate your wife's concern."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2941254675388336,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly state or imply that Mr. Obrien appears alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He reports discomfort when pressure is applied to the left ear.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5892112851142883,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4447348117828369,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4304933547973633,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41372692584991455,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40638047456741333,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports discomfort and sharp pains in the left ear, especially when chewing or yawning, but there is no explicit mention of discomfort specifically when pressure is applied to the left ear.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Audiometry test results are pending.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.35702285170555115,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31535959243774414,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30008459091186523,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28833794593811035,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25814419984817505,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention that audiometry test results are pending or that an audiometry test was ordered. The discussion focuses on symptoms, treatment with ear drops, and referral to an ENT specialist, but no audiometry test or its results are mentioned.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Educate Mr. Obrien on proper ear hygiene and the importance of completing the prescribed treatment regimen.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6224836111068726,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5802918076515198,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4911395311355591,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.410689115524292,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31733885407447815,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Mr. Obrien on proper ear hygiene or the importance of completing the prescribed treatment regimen. While antibiotic ear drops are prescribed and a follow-up is scheduled, no explicit education on ear hygiene or treatment adherence is documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Communicate with Mr. Obrien's wife, Jane Obrien, regarding the referral and treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4483555555343628,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42907652258872986,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30862730741500854,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2584311068058014,
+          "text": "We'll get this taken care of."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25809502601623535,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention communication with Mr. Obrien's wife, Jane Obrien, regarding the referral and treatment plan.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C5",
+      "text": "No visible discharge or swelling noted externally.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.42975449562072754,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3053675889968872,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2771371603012085,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21994757652282715,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21975532174110413,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports yellowish discharge from the ear, which contradicts the claim of no visible discharge. There is no mention of swelling, but the presence of discharge alone contradicts the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of vertigo observed during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5110520124435425,
+          "text": "Have you had any vertigo or balance issues? Patient: Yes, doctor. I've been feeling a bit dizzy and unsteady, especially when I stand up or walk. It's like the room is spinning. My wife has noticed it too, and she's been worried about me falling. Physician: I appreciate your wife's concern."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4276624917984009,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.24604745209217072,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23565994203090668,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2274586260318756,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling dizzy, unsteady, and describes the sensation as the room spinning, which are signs of vertigo, contradicting the claim of no signs of vertigo during the examination.",
+        "severity": "high"
+      }
+    }
+  ],
+  "missing_critical": [
+    {
+      "sent_id": "T21",
+      "text": "It's like the room is spinning.",
+      "sent_idx": 21,
+      "prev_text": "I've been feeling a bit dizzy and unsteady, especially when I stand up or walk.",
+      "next_text": "My wife has noticed it too, and she's been worried about me falling.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Obrien presents with complaints of a left ear infection that started a few weeks ago.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6568668484687805,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.6155604124069214,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5377980470657349,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.45659351348876953,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45369070768356323,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the ear infection started a few weeks ago and describes symptoms related to the ear infection.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He describes a constant feeling of earwax buildup, sharp pains when chewing or yawning, hearing difficulties, background noise, trouble hearing on the phone, dizziness, and unsteadiness.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5924165844917297,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5479434728622437,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4902040958404541,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4574965536594391,
+          "text": "Have you had any vertigo or balance issues? Patient: Yes, doctor. I've been feeling a bit dizzy and unsteady, especially when I stand up or walk. It's like the room is spinning. My wife has noticed it too, and she's been worried about me falling. Physician: I appreciate your wife's concern."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.44267648458480835,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports a constant feeling of earwax buildup (E0:6-7), sharp pains when chewing or yawning (E1:4-5), hearing difficulties including background noise and trouble hearing on the phone (E2:2-4), and dizziness and unsteadiness (E3:2-3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He reports yellowish discharge with a sour odor and has been using over-the-counter ear drops without relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.7533801794052124,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5597325563430786,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.506443977355957,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4925469756126404,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4381767511367798,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports yellowish discharge with a sour odor (E5:1) and confirms using over-the-counter ear drops without relief (E5:5). The presence of discharge and odor is also confirmed in E4:5-6.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Obrien appears alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.45177212357521057,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4516354501247406,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33813637495040894,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32391345500946045,
+          "text": "Have you had any vertigo or balance issues? Patient: Yes, doctor. I've been feeling a bit dizzy and unsteady, especially when I stand up or walk. It's like the room is spinning. My wife has noticed it too, and she's been worried about me falling. Physician: I appreciate your wife's concern."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2941254675388336,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly state or imply that Mr. Obrien appears alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He reports discomfort when pressure is applied to the left ear.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5892112851142883,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4447348117828369,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4304933547973633,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41372692584991455,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40638047456741333,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports discomfort and sharp pains in the left ear, especially when chewing or yawning, but there is no explicit mention of discomfort specifically when pressure is applied to the left ear.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No visible discharge or swelling noted externally.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.42975449562072754,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3053675889968872,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2771371603012085,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21994757652282715,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21975532174110413,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports yellowish discharge from the ear, which contradicts the claim of no visible discharge. There is no mention of swelling, but the presence of discharge alone contradicts the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of vertigo observed during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5110520124435425,
+          "text": "Have you had any vertigo or balance issues? Patient: Yes, doctor. I've been feeling a bit dizzy and unsteady, especially when I stand up or walk. It's like the room is spinning. My wife has noticed it too, and she's been worried about me falling. Physician: I appreciate your wife's concern."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4276624917984009,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.24604745209217072,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23565994203090668,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2274586260318756,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling dizzy, unsteady, and describes the sensation as the room spinning, which are signs of vertigo, contradicting the claim of no signs of vertigo during the examination.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Audiometry test results are pending.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.35702285170555115,
+          "text": "Have you noticed any hearing difficulties or ringing in your ears? Patient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31535959243774414,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30008459091186523,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28833794593811035,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25814419984817505,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention that audiometry test results are pending or that an audiometry test was ordered. The discussion focuses on symptoms, treatment with ear drops, and referral to an ENT specialist, but no audiometry test or its results are mentioned.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mr. Obrien presents with symptoms consistent with a left ear infection, including pain, hearing difficulties, discharge, and dizziness.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6289942264556885,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5801512002944946,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5591002702713013,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5138190388679504,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4997463524341583,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports left ear pain described as sharp and stabbing (E1:1-5), yellowish discharge with a sour smell (E5:1), and discharge/odor from the ear (E4:5-6). Hearing difficulties and dizziness are not explicitly mentioned, but pain and discharge are consistent with an ear infection.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Referral to an ENT specialist is recommended for further evaluation and management.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5341703295707703,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4064960181713104,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.39917463064193726,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35943353176116943,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34018605947494507,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a referral to an ENT specialist for further evaluation and management to address the root cause and prevent complications.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Prescription of antibiotic ear drops to address the infection.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6037634611129761,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5958958268165588,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4315617084503174,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34319621324539185,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3231216073036194,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe antibiotic ear drops to help clear up the infection.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Refer Mr. Obrien to an ENT specialist for further evaluation of the left ear infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5997564792633057,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5861608386039734,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5788304805755615,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4170399606227875,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41330909729003906,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to refer Mr. Obrien to an ENT specialist for further evaluation of the ear infection to address the root cause and prevent complications.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Prescribe antibiotic ear drops for Mr. Obrien to use as directed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6695561408996582,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5278651714324951,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5219029784202576,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36206889152526855,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32027220726013184,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe antibiotic ear drops to help clear up the infection.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Schedule a follow-up appointment in two weeks to reassess symptoms and monitor the infection's progress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5598048567771912,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34003758430480957,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3134571313858032,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23242737352848053,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2266349494457245,
+          "text": "We'll get this taken care of."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E6 sentence 5 that a follow-up appointment will be scheduled in two weeks to reassess symptoms and ensure the infection has cleared up, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Educate Mr. Obrien on proper ear hygiene and the importance of completing the prescribed treatment regimen.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6224836111068726,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5802918076515198,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4911395311355591,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.410689115524292,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31733885407447815,
+          "text": "Physician: Have you experienced any pain or discomfort in the affected ear? Patient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Mr. Obrien on proper ear hygiene or the importance of completing the prescribed treatment regimen. While antibiotic ear drops are prescribed and a follow-up is scheduled, no explicit education on ear hygiene or treatment adherence is documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Communicate with Mr. Obrien's wife, Jane Obrien, regarding the referral and treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4483555555343628,
+          "text": "Physician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with? Patient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42907652258872986,
+          "text": "Patient: That sounds good, doctor. I don't want this to keep bothering me. Physician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up. Patient: Sounds good, doctor. Thank you. Physician: You're welcome, Mr. Obrien."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30862730741500854,
+          "text": "There's been some yellowish discharge, and it smells kind of sour. Physician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection? Patient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much. Physician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2584311068058014,
+          "text": "We'll get this taken care of."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25809502601623535,
+          "text": "Have you experienced any nausea or vomiting? Patient: No, doctor. Not yet, at least. Physician: Good. Have you noticed any discharge or odor from your ear? Patient: Yes, doctor."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention communication with Mr. Obrien's wife, Jane Obrien, regarding the referral and treatment plan.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good afternoon, Mr. Obrien. I'm Dr. Johnston, your primary care physician. I've reviewed your medical history, and I'd like to discuss some concerns you've been experiencing. Can you tell me more about the ear infection you've been dealing with?\n\nPatient: Yes, doctor. It started a few weeks ago, and I've had this constant feeling of earwax buildup. It's like there's something stuck in my ear, and I can't get rid of it.\n\nPhysician: Have you experienced any pain or discomfort in the affected ear?\n\nPatient: Yes, doctor. It's been quite uncomfortable. I've had some sharp pains in my left ear, especially when I chew or yawn. It's like a stabbing sensation.\n\nPhysician: I see. Have you noticed any hearing difficulties or ringing in your ears?\n\nPatient: Yes, my hearing has been off lately. It's like there's background noise all the time, even when it's quiet. And sometimes, I have trouble hearing people when they speak to me, especially on the phone.\n\nPhysician: I understand. Have you had any vertigo or balance issues?\n\nPatient: Yes, doctor. I've been feeling a bit dizzy and unsteady, especially when I stand up or walk. It's like the room is spinning. My wife has noticed it too, and she's been worried about me falling.\n\nPhysician: I appreciate your wife's concern. Have you experienced any nausea or vomiting?\n\nPatient: No, doctor. Not yet, at least.\n\nPhysician: Good. Have you noticed any discharge or odor from your ear?\n\nPatient: Yes, doctor. There's been some yellowish discharge, and it smells kind of sour.\n\nPhysician: I see. Have you tried any over-the-counter remedies or treatments for your ear infection?\n\nPatient: Yes, doctor. I've been using some ear drops that my wife picked up from the pharmacy, but they don't seem to be helping much.\n\nPhysician: I understand. In light of your symptoms, I'd like to refer you to an ENT specialist for further evaluation. We want to make sure we're addressing the root cause of the infection and preventing any potential complications.\n\nPatient: That sounds good, doctor. I don't want this to keep bothering me.\n\nPhysician: Of course. I'll also prescribe some antibiotic ear drops to help clear up the infection. Let's schedule a follow-up appointment in two weeks to reassess your symptoms and ensure the infection has cleared up.\n\nPatient: Sounds good, doctor. Thank you.\n\nPhysician: You're welcome, Mr. Obrien. We'll get this taken care of.",
+  "note_text": "SOAP Note:\n\nSubjective:\nMr. Obrien presents with complaints of a left ear infection that started a few weeks ago. He describes a constant feeling of earwax buildup, sharp pains when chewing or yawning, hearing difficulties, background noise, trouble hearing on the phone, dizziness, and unsteadiness. He reports yellowish discharge with a sour odor and has been using over-the-counter ear drops without relief.\n\nObjective:\nMr. Obrien appears alert and oriented during the consultation. He reports discomfort when pressure is applied to the left ear. No visible discharge or swelling noted externally. No signs of vertigo observed during the examination. Audiometry test results are pending.\n\nAssessment:\nMr. Obrien presents with symptoms consistent with a left ear infection, including pain, hearing difficulties, discharge, and dizziness. Referral to an ENT specialist is recommended for further evaluation and management. Prescription of antibiotic ear drops to address the infection.\n\nPlan:\n1. Refer Mr. Obrien to an ENT specialist for further evaluation of the left ear infection.\n2. Prescribe antibiotic ear drops for Mr. Obrien to use as directed.\n3. Schedule a follow-up appointment in two weeks to reassess symptoms and monitor the infection's progress.\n4. Educate Mr. Obrien on proper ear hygiene and the importance of completing the prescribed treatment regimen.\n5. Communicate with Mr. Obrien's wife, Jane Obrien, regarding the referral and treatment plan."
+}

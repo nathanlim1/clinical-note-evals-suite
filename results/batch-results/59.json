@@ -1,0 +1,1079 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 56,
+    "failed_calls": 0,
+    "successful_calls": 56,
+    "total_input_tokens": 26186,
+    "total_output_tokens": 2046,
+    "total_tokens": 28232,
+    "total cost w/ GPT-4.1-mini (in $)": 0.013748000000000002
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C7",
+      "text": "Medications include Flonase, Singulair, Serevent, ProAir HFA, and Montelukast.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5549387335777283,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5016584992408752,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4807169437408447,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.47885310649871826,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4009144902229309,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript explicitly mentions Flonase and Singulair (E2[3]) but does not mention Serevent, ProAir HFA, or Montelukast as current medications. ProAir HFA (Albuterol) is mentioned as a rescue inhaler to start using more frequently (E8[5]), but it is not listed as a current medication. Montelukast is not mentioned at all. Therefore, the full claim that medications include all five drugs is not fully supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Allergies to pollen, dust mites, mold, peanuts, shellfish, eggs, penicillin, and ibuprofen noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.4724782705307007,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45970991253852844,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3839074373245239,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3701136112213135,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35451287031173706,
+          "text": "Physician: Good morning, Valerie. How are you feeling today? Patient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy! Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only explicitly mentions allergies to pollen and dust (E1:3). There is no mention of allergies to mold, peanuts, shellfish, eggs, penicillin, or ibuprofen anywhere in the provided evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Family history of allergies and asthma.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.48752713203430176,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43504244089126587,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4287971258163452,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.38479241728782654,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3419356346130371,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans discuss the patient's allergies and asthma symptoms and treatment but do not mention any family history of allergies or asthma.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Valerie reports feeling miserable lately with constant runny nose, watery eyes, and nonstop sneezing.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7111053466796875,
+          "text": "Physician: Good morning, Valerie. How are you feeling today? Patient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy! Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5338674783706665,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.43604356050491333,
+          "text": "Have you noticed any shortness of breath or chest tightness, along with your nasal symptoms? Patient: Yes, definitely. Especially when I exert myself or exercise, I start to feel like I can't catch my breath. And sometimes, I get this tightness in my chest that feels like someone is squeezing it. Physician: That's concerning."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4351092576980591,
+          "text": "Have you had any recent colds or viruses that could be exacerbating your symptoms? Patient: Actually, yes. I had a cold about a week ago, and it seemed to trigger all of this. But even after the cold subsided, my symptoms didn't really go away. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.42112964391708374,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling miserable lately with constant runny nose, watery eyes, and nonstop sneezing in E0 sentences 4 and 5.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "Symptoms worsen outdoors, especially in the mornings and evenings, around dust and pollen.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7396538257598877,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.507340669631958,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.48588594794273376,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4526352882385254,
+          "text": "Have you noticed any shortness of breath or chest tightness, along with your nasal symptoms? Patient: Yes, definitely. Especially when I exert myself or exercise, I start to feel like I can't catch my breath. And sometimes, I get this tightness in my chest that feels like someone is squeezing it. Physician: That's concerning."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42623043060302734,
+          "text": "Physician: Good morning, Valerie. How are you feeling today? Patient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy! Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states symptoms worsen when outside, especially in the mornings and evenings, and around dust or pollen, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She admits to inconsistent use of Flonase and Singulair, with perceived lack of efficacy.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6599480509757996,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.503888726234436,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.43817412853240967,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.40168362855911255,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3948533236980438,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states using Flonase and Singulair inconsistently and perceives them as not working well, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Shortness of breath, chest tightness, wheezing, and coughing present, exacerbated by recent cold.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6551442742347717,
+          "text": "Have you noticed any shortness of breath or chest tightness, along with your nasal symptoms? Patient: Yes, definitely. Especially when I exert myself or exercise, I start to feel like I can't catch my breath. And sometimes, I get this tightness in my chest that feels like someone is squeezing it. Physician: That's concerning."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.592797040939331,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.513986349105835,
+          "text": "Have you had any recent colds or viruses that could be exacerbating your symptoms? Patient: Actually, yes. I had a cold about a week ago, and it seemed to trigger all of this. But even after the cold subsided, my symptoms didn't really go away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5093686580657959,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.42962148785591125,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly confirms shortness of breath and chest tightness (E3:2,4), wheezing and coughing (E4:2,3), and that these symptoms were triggered by a recent cold (E5:2,3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "No fever or fatigue reported.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.34654077887535095,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28622448444366455,
+          "text": "Have you had any recent colds or viruses that could be exacerbating your symptoms? Patient: Actually, yes. I had a cold about a week ago, and it seemed to trigger all of this. But even after the cold subsided, my symptoms didn't really go away. Physician: I see."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.2741747498512268,
+          "text": "Sound good? Patient: Yes, that works for me. Thank you, Dr. Kuhn. Physician: You're welcome, Valerie. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25048136711120605,
+          "text": "Physician: Good morning, Valerie. How are you feeling today? Patient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy! Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2469697892665863,
+          "text": "Physician: Great. Before we wrap up, have you had any issues with your mammography or pap smear appointments? Patient: No, not yet. I'm due for both soon, though. Physician: Alright. We'll make sure to schedule those for you. And let's also schedule a follow-up appointment in a few weeks to reassess your symptoms and medications."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies having fatigue or fever when asked directly.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Valerie presents with nasal congestion, coughing, and wheezing.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6100783348083496,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5531133413314819,
+          "text": "Physician: Good morning, Valerie. How are you feeling today? Patient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy! Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4997216463088989,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4491623640060425,
+          "text": "Have you noticed any shortness of breath or chest tightness, along with your nasal symptoms? Patient: Yes, definitely. Especially when I exert myself or exercise, I start to feel like I can't catch my breath. And sometimes, I get this tightness in my chest that feels like someone is squeezing it. Physician: That's concerning."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40919819474220276,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports congestion and coughing in E6[3], and wheezing along with coughing in E4[2,3].",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Lung function assessment needed for asthma control evaluation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5882000923156738,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.43702906370162964,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3926565647125244,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3805856704711914,
+          "text": "Have you noticed any shortness of breath or chest tightness, along with your nasal symptoms? Patient: Yes, definitely. Especially when I exert myself or exercise, I start to feel like I can't catch my breath. And sometimes, I get this tightness in my chest that feels like someone is squeezing it. Physician: That's concerning."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36398380994796753,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to assess lung function for asthma and to evaluate asthma control with a pulmonologist, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Medications include Flonase, Singulair, Serevent, ProAir HFA, and Montelukast.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5549387335777283,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5016584992408752,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4807169437408447,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.47885310649871826,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4009144902229309,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript explicitly mentions Flonase and Singulair (E2[3]) but does not mention Serevent, ProAir HFA, or Montelukast as current medications. ProAir HFA (Albuterol) is mentioned as a rescue inhaler to start using more frequently (E8[5]), but it is not listed as a current medication. Montelukast is not mentioned at all. Therefore, the full claim that medications include all five drugs is not fully supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Allergies to pollen, dust mites, mold, peanuts, shellfish, eggs, penicillin, and ibuprofen noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.4724782705307007,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45970991253852844,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3839074373245239,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3701136112213135,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35451287031173706,
+          "text": "Physician: Good morning, Valerie. How are you feeling today? Patient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy! Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only explicitly mentions allergies to pollen and dust (E1:3). There is no mention of allergies to mold, peanuts, shellfish, eggs, penicillin, or ibuprofen anywhere in the provided evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Family history of allergies and asthma.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.48752713203430176,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43504244089126587,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4287971258163452,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.38479241728782654,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3419356346130371,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans discuss the patient's allergies and asthma symptoms and treatment but do not mention any family history of allergies or asthma.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Valerie's allergies and asthma are causing significant symptoms, with poor medication adherence contributing to inadequate control.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6529322266578674,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4917899966239929,
+          "text": "Physician: Good morning, Valerie. How are you feeling today? Patient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy! Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4683225750923157,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.46469271183013916,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4254891872406006,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports significant symptoms from allergies and asthma (E6:3,5; E0:5,6). The patient admits to poor medication adherence (E2:3,4), which likely contributes to inadequate control.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Asthma exacerbation likely triggered by recent cold.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5703068971633911,
+          "text": "Have you had any recent colds or viruses that could be exacerbating your symptoms? Patient: Actually, yes. I had a cold about a week ago, and it seemed to trigger all of this. But even after the cold subsided, my symptoms didn't really go away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4792688190937042,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4655957520008087,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4367627501487732,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.407183438539505,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having a recent cold about a week ago that seemed to trigger symptoms (E5:1-3). The physician notes wheezing and cough consistent with asthma flare-up (E4:2,4), supporting the claim that the asthma exacerbation is likely triggered by the recent cold.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Adjustment of Flonase dosage, addition of antihistamine, and evaluation of lung function recommended.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6789697408676147,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5740865468978882,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5214493870735168,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.46597033739089966,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4051855206489563,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends adjusting Flonase dosage (E7:2,6), adding an antihistamine (E7:7), and evaluating lung function via follow-up with a pulmonologist (E8:2,3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Follow-up appointment with pulmonologist scheduled for further assessment and potential medication adjustments.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.640558123588562,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4536971151828766,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.45216211676597595,
+          "text": "Physician: Great. Before we wrap up, have you had any issues with your mammography or pap smear appointments? Patient: No, not yet. I'm due for both soon, though. Physician: Alright. We'll make sure to schedule those for you. And let's also schedule a follow-up appointment in a few weeks to reassess your symptoms and medications."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.427964985370636,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4013969302177429,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              2,
+              3,
+              7
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to assess lung function and possibly adjust medications, schedules a follow-up with the pulmonologist for asthma evaluation, and mentions monitoring progress and making adjustments. Additionally, a follow-up appointment is scheduled to reassess symptoms and medications.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "1. Increase Flonase dosage to twice daily and consider adding antihistamine.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.727411150932312,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4933004081249237,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.44645100831985474,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.44155263900756836,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39921945333480835,
+          "text": "Have you noticed any patterns or triggers that seem to make your symptoms worse? Patient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly suggests increasing Flonase dosage to twice daily and adding an antihistamine to the regimen.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "2. Schedule follow-up appointment with pulmonologist for asthma evaluation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6442195177078247,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4654419422149658,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4356140196323395,
+          "text": "Physician: Great. Before we wrap up, have you had any issues with your mammography or pap smear appointments? Patient: No, not yet. I'm due for both soon, though. Physician: Alright. We'll make sure to schedule those for you. And let's also schedule a follow-up appointment in a few weeks to reassess your symptoms and medications."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3833109140396118,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37959522008895874,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to schedule a follow-up appointment with the pulmonologist to evaluate asthma control.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "3. Use Albuterol inhaler every 4-6 hours as needed and consider adding Prednisone.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6392536163330078,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4956008195877075,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41657134890556335,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4116373360157013,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35993093252182007,
+          "text": "Have you experienced any wheezing or coughing? Patient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning. Physician: Okay, that sounds like your asthma might be flaring up."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly instructs the patient to use the Albuterol inhaler every 4-6 hours as needed and to add a steroid medication like Prednisone, directly supporting the full claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "4. Schedule mammography and pap smear appointments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.6117948293685913,
+          "text": "Physician: Great. Before we wrap up, have you had any issues with your mammography or pap smear appointments? Patient: No, not yet. I'm due for both soon, though. Physician: Alright. We'll make sure to schedule those for you. And let's also schedule a follow-up appointment in a few weeks to reassess your symptoms and medications."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30617058277130127,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2304665744304657,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22113952040672302,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.21311834454536438,
+          "text": "Sound good? Patient: Yes, that works for me. Thank you, Dr. Kuhn. Physician: You're welcome, Valerie. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              2,
+              4,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly discusses mammography and pap smear appointments, confirms the patient is due for both, and states they will schedule those appointments.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "5. Schedule follow-up appointment in a few weeks to reassess symptoms and medications.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5140947103500366,
+          "text": "Physician: Great. Before we wrap up, have you had any issues with your mammography or pap smear appointments? Patient: No, not yet. I'm due for both soon, though. Physician: Alright. We'll make sure to schedule those for you. And let's also schedule a follow-up appointment in a few weeks to reassess your symptoms and medications."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.46044784784317017,
+          "text": "Patient: Okay, that makes sense. Physician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action. Patient: Sure, that works for me. Physician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed. Patient: Okay, I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37612566351890564,
+          "text": "How have you been managing your symptoms so far? Have you been using any medications or treatments? Patient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3616671562194824,
+          "text": "Have you noticed any other symptoms, like fatigue or fever? Patient: No, nothing like that. Just a lot of congestion and coughing. Physician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen. Patient: Okay, that sounds good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3479251265525818,
+          "text": "Physician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed? Patient: Yeah, I've been using it once a day, like it says on the label. Physician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E9[7] that a follow-up appointment will be scheduled in a few weeks to reassess symptoms and medications.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Valerie. How are you feeling today?\n\nPatient: Hi, Dr. Kuhn. I've been feeling pretty miserable lately. I've had a constant runny nose, watery eyes, and sneezing nonstop. It's like my allergies are going crazy!\n\nPhysician: I see. Have you noticed any patterns or triggers that seem to make your symptoms worse?\n\nPatient: Well, it seems to get worse when I'm outside, especially in the mornings and evenings. And when I'm around dust or pollen, my symptoms seem to flare up.\n\nPhysician: Okay, that's helpful. How have you been managing your symptoms so far? Have you been using any medications or treatments?\n\nPatient: I've been using Flonase and Singulair, like Dr. Dove recommended. But to be honest, I haven't been taking them as consistently as I should. And sometimes, I feel like they're not working as well as they should be.\n\nPhysician: I understand. Have you noticed any shortness of breath or chest tightness, along with your nasal symptoms?\n\nPatient: Yes, definitely. Especially when I exert myself or exercise, I start to feel like I can't catch my breath. And sometimes, I get this tightness in my chest that feels like someone is squeezing it.\n\nPhysician: That's concerning. Have you experienced any wheezing or coughing?\n\nPatient: Yeah, I've had some wheezing, especially when I breathe out. And I've had a persistent cough, mostly at night or in the morning.\n\nPhysician: Okay, that sounds like your asthma might be flaring up. Have you had any recent colds or viruses that could be exacerbating your symptoms?\n\nPatient: Actually, yes. I had a cold about a week ago, and it seemed to trigger all of this. But even after the cold subsided, my symptoms didn't really go away.\n\nPhysician: I see. Have you noticed any other symptoms, like fatigue or fever?\n\nPatient: No, nothing like that. Just a lot of congestion and coughing.\n\nPhysician: Alright, Valerie. Based on what you've shared, it sounds like your allergies and asthma are definitely causing some problems for you. We'll need to address both issues to get you feeling better. Let's start by discussing your medication regimen.\n\nPatient: Okay, that sounds good.\n\nPhysician: Great. First, I think we should consider adjusting your Flonase dosage. Have you been using it as directed?\n\nPatient: Yeah, I've been using it once a day, like it says on the label.\n\nPhysician: Okay. We might need to increase that to twice a day, especially during peak allergy season. And let's discuss adding an antihistamine to your regimen, like Zyrtec or Claritin. That should help with your nasal symptoms and sneezing.\n\nPatient: Okay, that makes sense.\n\nPhysician: For your asthma, we'll need to assess your lung function and possibly adjust your medications. I'd like to schedule you for a follow-up appointment with Dr. Lowe, your pulmonologist, to evaluate your asthma control and determine the best course of action.\n\nPatient: Sure, that works for me.\n\nPhysician: In the meantime, I want you to start using your rescue inhaler, Albuterol, more frequently, like every four to six hours, as needed. And let's add a steroid medication, like Prednisone, to help reduce inflammation in your lungs. We'll monitor your progress closely and make adjustments as needed.\n\nPatient: Okay, I understand.\n\nPhysician: Great. Before we wrap up, have you had any issues with your mammography or pap smear appointments?\n\nPatient: No, not yet. I'm due for both soon, though.\n\nPhysician: Alright. We'll make sure to schedule those for you. And let's also schedule a follow-up appointment in a few weeks to reassess your symptoms and medications. Sound good?\n\nPatient: Yes, that works for me. Thank you, Dr. Kuhn.\n\nPhysician: You're welcome, Valerie. We'll get you feeling better in no time.",
+  "note_text": "Subjective:\nValerie reports feeling miserable lately with constant runny nose, watery eyes, and nonstop sneezing. Symptoms worsen outdoors, especially in the mornings and evenings, around dust and pollen. She admits to inconsistent use of Flonase and Singulair, with perceived lack of efficacy. Shortness of breath, chest tightness, wheezing, and coughing present, exacerbated by recent cold. No fever or fatigue reported.\n\nObjective:\nValerie presents with nasal congestion, coughing, and wheezing. Lung function assessment needed for asthma control evaluation. Medications include Flonase, Singulair, Serevent, ProAir HFA, and Montelukast. Allergies to pollen, dust mites, mold, peanuts, shellfish, eggs, penicillin, and ibuprofen noted. Family history of allergies and asthma.\n\nAssessment:\nValerie's allergies and asthma are causing significant symptoms, with poor medication adherence contributing to inadequate control. Asthma exacerbation likely triggered by recent cold. Adjustment of Flonase dosage, addition of antihistamine, and evaluation of lung function recommended. Follow-up appointment with pulmonologist scheduled for further assessment and potential medication adjustments.\n\nPlan:\n1. Increase Flonase dosage to twice daily and consider adding antihistamine.\n2. Schedule follow-up appointment with pulmonologist for asthma evaluation.\n3. Use Albuterol inhaler every 4-6 hours as needed and consider adding Prednisone.\n4. Schedule mammography and pap smear appointments.\n5. Schedule follow-up appointment in a few weeks to reassess symptoms and medications."
+}

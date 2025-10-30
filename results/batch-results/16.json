@@ -1,0 +1,1211 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 41,
+    "failed_calls": 0,
+    "successful_calls": 41,
+    "total_input_tokens": 19844,
+    "total_output_tokens": 1860,
+    "total_tokens": 21704,
+    "total cost w/ GPT-4.1-mini (in $)": 0.010913599999999999
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Julia appears cooperative and compliant during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5023291707038879,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4095553457736969,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33595243096351624,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23636263608932495,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.20259195566177368,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Julia appears cooperative and compliant during the consultation. While she responds to questions and agrees to plans, there is no direct or explicit mention of her being cooperative or compliant.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She displays no signs of acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.31846296787261963,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3103151023387909,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26036781072616577,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2588663101196289,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25200143456459045,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that the patient displays no signs of acute distress. The patient reports ongoing pain, muscle spasms, fatigue, and stress, but no direct assessment of acute distress is documented.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals tenderness in the lower back region and limited range of motion.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.42455434799194336,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4118391275405884,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3751105070114136,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3547701835632324,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3263174295425415,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any findings from a physical examination, including tenderness in the lower back or limited range of motion. The information provided is based on patient-reported symptoms and planned tests, not physical exam findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Neurological examination shows decreased sensation in the toes and reduced muscle strength in the lower extremities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5189571380615234,
+          "text": "Have you noticed any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yeah, sometimes my legs feel really heavy, and I get this tingling sensation in my toes. It's not all the time, but it's pretty frequent. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33177995681762695,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2448878288269043,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23822805285453796,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21612970530986786,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported tingling in the toes and heaviness in the legs, but there is no explicit neurological examination documented showing decreased sensation or reduced muscle strength in the lower extremities.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3297254741191864,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2961726784706116,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2913798391819,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.28450238704681396,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2735964059829712,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any information about the patient's vital signs or their status.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Julia's medical history includes chronic pain management with Gabapentin and Tramadol.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5309804677963257,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5154147148132324,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40821993350982666,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3282240927219391,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3270699083805084,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention Julia's use of Gabapentin or Tramadol for chronic pain management or any other medication by name.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Order diagnostic tests, including imaging studies and nerve conduction studies, to evaluate the source of Julia's chronic pain and neurological symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5715404152870178,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4324379563331604,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41337278485298157,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3605269491672516,
+          "text": "Have you noticed any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yeah, sometimes my legs feel really heavy, and I get this tingling sensation in my toes. It's not all the time, but it's pretty frequent. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3434818983078003,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the physician plans to order tests to better understand the pain and symptoms but does not specify the types of diagnostic tests, such as imaging studies or nerve conduction studies.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Schedule follow-up appointments to monitor Julia's response to treatment and make necessary adjustments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4773319959640503,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4223371744155884,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36713284254074097,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26264500617980957,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2617894411087036,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention scheduling follow-up appointments to monitor Julia's response to treatment or making necessary adjustments.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Julia Larson, a 34-year-old female, presents with complaints of chronic lower back pain that is constant and worsens with prolonged standing or walking.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5587087273597717,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5177385210990906,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4777783751487732,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3610394597053528,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.35277342796325684,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient, Julia Larson, reports lower back pain that has been bothering her for a while (E0:5). She describes the pain as constant and worse with prolonged standing or walking (E1:3,4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She also reports experiencing tingling sensations in her toes, heaviness in her legs, headaches at the back of her head, difficulty sleeping, decreased appetite, muscle spasms in her neck and shoulders, and fatigue.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6360165476799011,
+          "text": "Have you noticed any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yeah, sometimes my legs feel really heavy, and I get this tingling sensation in my toes. It's not all the time, but it's pretty frequent. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5322583913803101,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4265749156475067,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3560684025287628,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34016790986061096,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports tingling in toes and heaviness in legs (E2:2), muscle spasms in neck and shoulders and fatigue (E6:2), headaches at the back of the head (E3:2), difficulty sleeping (E4:2), and decreased appetite (E4:4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Julia attributes some of her symptoms to work-related stress and family issues.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6137521266937256,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.46281230449676514,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41272324323654175,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.38829895853996277,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3746868669986725,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been under a lot of stress at work and dealing with difficult family issues, attributing some of her symptoms to these stressors.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She has been using over-the-counter pain medication and engaging in stretching and exercise with minimal relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5764087438583374,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41133245825767517,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3638600707054138,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.35997623205184937,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34788158535957336,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been taking over-the-counter pain medication and trying to stretch and exercise, but it is not helping much, indicating minimal relief.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Julia appears cooperative and compliant during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5023291707038879,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4095553457736969,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33595243096351624,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23636263608932495,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.20259195566177368,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Julia appears cooperative and compliant during the consultation. While she responds to questions and agrees to plans, there is no direct or explicit mention of her being cooperative or compliant.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She displays no signs of acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.31846296787261963,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3103151023387909,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26036781072616577,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2588663101196289,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25200143456459045,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that the patient displays no signs of acute distress. The patient reports ongoing pain, muscle spasms, fatigue, and stress, but no direct assessment of acute distress is documented.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals tenderness in the lower back region and limited range of motion.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.42455434799194336,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4118391275405884,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3751105070114136,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3547701835632324,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3263174295425415,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any findings from a physical examination, including tenderness in the lower back or limited range of motion. The information provided is based on patient-reported symptoms and planned tests, not physical exam findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Neurological examination shows decreased sensation in the toes and reduced muscle strength in the lower extremities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5189571380615234,
+          "text": "Have you noticed any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yeah, sometimes my legs feel really heavy, and I get this tingling sensation in my toes. It's not all the time, but it's pretty frequent. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33177995681762695,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2448878288269043,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23822805285453796,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21612970530986786,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported tingling in the toes and heaviness in the legs, but there is no explicit neurological examination documented showing decreased sensation or reduced muscle strength in the lower extremities.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3297254741191864,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2961726784706116,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2913798391819,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.28450238704681396,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2735964059829712,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any information about the patient's vital signs or their status.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Julia's medical history includes chronic pain management with Gabapentin and Tramadol.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5309804677963257,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5154147148132324,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40821993350982666,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3282240927219391,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3270699083805084,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention Julia's use of Gabapentin or Tramadol for chronic pain management or any other medication by name.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Julia presents with chronic lower back pain with associated neurological symptoms, headaches, sleep disturbances, decreased appetite, and stress-related muscle spasms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5794770121574402,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5229346752166748,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4935125708580017,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42253148555755615,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3947215974330902,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports chronic lower back pain (E0:5), muscle spasms related to stress (E6:2), sleep disturbances and decreased appetite (E4:2-4), and stress contributing to symptoms (E5:2-4). Headaches are not explicitly mentioned but neurological symptoms can be inferred from muscle spasms and fatigue, which are neurological in nature.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Work-related stress and family issues contribute to her overall symptomatology.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6048271656036377,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48281726241111755,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3051010072231293,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25432366132736206,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25317537784576416,
+          "text": "Have you experienced any other discomfort or pain in other parts of your body? Patient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states experiencing significant work-related stress and difficult family issues, which are likely contributing to her symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Further diagnostic tests are warranted to determine the underlying cause of her symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.43554723262786865,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3076642155647278,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30270886421203613,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.29944342374801636,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.26419034600257874,
+          "text": "Have you noticed any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yeah, sometimes my legs feel really heavy, and I get this tingling sensation in my toes. It's not all the time, but it's pretty frequent. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to take a closer look at the patient's symptoms and mentions ordering tests to better understand the condition, indicating that further diagnostic tests are warranted.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Pain management strategies need to be optimized to improve Julia's quality of life and functionality.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5468214750289917,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4533165991306305,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4024093747138977,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.35856330394744873,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3012760579586029,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3,
+              5,
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient reports current pain management strategies are not effective (E7:3). The physician acknowledges the need to reassess pain and symptoms (E7:5) and plans to start medication and discuss lifestyle changes to improve pain management (E7:7,8), implying optimization is needed to improve quality of life and functionality.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Order diagnostic tests, including imaging studies and nerve conduction studies, to evaluate the source of Julia's chronic pain and neurological symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5715404152870178,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4324379563331604,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41337278485298157,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3605269491672516,
+          "text": "Have you noticed any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yeah, sometimes my legs feel really heavy, and I get this tingling sensation in my toes. It's not all the time, but it's pretty frequent. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3434818983078003,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the physician plans to order tests to better understand the pain and symptoms but does not specify the types of diagnostic tests, such as imaging studies or nerve conduction studies.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Initiate a comprehensive pain management plan tailored to Julia's needs, which may include adjusting current medications, introducing new medications, and exploring non-pharmacological interventions such as physical therapy and stress management techniques.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.649814784526825,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4748919904232025,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4679460823535919,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3587559759616852,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3120918571949005,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician acknowledges the need to address Julia's pain more comprehensively by ordering tests, starting medication, and discussing lifestyle changes, which aligns with a comprehensive pain management plan including medication adjustment and non-pharmacological interventions.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Schedule follow-up appointments to monitor Julia's response to treatment and make necessary adjustments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4773319959640503,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4223371744155884,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36713284254074097,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26264500617980957,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2617894411087036,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention scheduling follow-up appointments to monitor Julia's response to treatment or making necessary adjustments.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Encourage open communication and collaboration to address Julia's holistic well-being.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.3996047377586365,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help. Physician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3072555661201477,
+          "text": "Have you tried any treatments or remedies for your pain or other symptoms? Patient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much. Physician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3068942427635193,
+          "text": "Physician: Good morning, Julia. How are you feeling today? Patient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2785874009132385,
+          "text": "Have you experienced any stress or anxiety that could be contributing to these symptoms? Patient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.18761780858039856,
+          "text": "Have you noticed any other symptoms that might be related to your stress levels? Patient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              4,
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician engages Julia in discussion about her symptoms and treatment, acknowledges her input, and states 'We'll work together to get you feeling better,' indicating collaboration and open communication to address her well-being holistically.",
+        "severity": "none"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Julia. How are you feeling today?\n\nPatient: Hi, Dr. Sims. I'm doing alright, I guess. I've been experiencing some pain in my lower back that's been bothering me for a while now.\n\nPhysician: I see. Can you tell me more about the pain? Is it constant or does it come and go?\n\nPatient: It's pretty constant, but it's worse when I'm standing or walking for long periods. It's like a dull ache that never really goes away.\n\nPhysician: Okay. Have you noticed any other symptoms, such as numbness, tingling, or weakness in your legs?\n\nPatient: Yeah, sometimes my legs feel really heavy, and I get this tingling sensation in my toes. It's not all the time, but it's pretty frequent.\n\nPhysician: I understand. Have you experienced any other discomfort or pain in other parts of your body?\n\nPatient: Well, I've been getting these headaches lately that feel like they're on the back of my head. They're not too bad, but they're definitely noticeable.\n\nPhysician: Okay. Have you had any recent changes in your sleep patterns or appetite?\n\nPatient: Yeah, I've been having trouble sleeping at night. I wake up a lot, and it's hard for me to fall back asleep. And my appetite has been pretty low lately.\n\nPhysician: I see. Have you experienced any stress or anxiety that could be contributing to these symptoms?\n\nPatient: Yeah, I've been under a lot of stress at work lately. We've been short-staffed, and it's been really overwhelming. I've also been dealing with some family issues that have been pretty difficult.\n\nPhysician: I understand. Have you noticed any other symptoms that might be related to your stress levels?\n\nPatient: Well, I've been getting these muscle spasms in my neck and shoulders, and I've been feeling really fatigued all the time.\n\nPhysician: Okay. Have you tried any treatments or remedies for your pain or other symptoms?\n\nPatient: Yeah, I've been taking some over-the-counter pain medication, and I've been trying to stretch and exercise more to help with the back pain. But it doesn't seem to be helping too much.\n\nPhysician: I see. Well, Julia, based on what you've told me today, it sounds like we need to take a closer look at your pain and other symptoms. I'm going to order some tests to help us get a better understanding of what's going on. In the meantime, I'd like to start you on a medication that can help with your pain management. We'll also discuss some lifestyle changes that might help alleviate your symptoms. Does that sound good to you?\n\nPatient: Yeah, that sounds good. Thank you, Dr. Sims. I really appreciate your help.\n\nPhysician: Of course, Julia. We'll work together to get you feeling better. Let's get started on the necessary tests and medications, and we'll go from there.",
+  "note_text": "Subjective:\nJulia Larson, a 34-year-old female, presents with complaints of chronic lower back pain that is constant and worsens with prolonged standing or walking. She also reports experiencing tingling sensations in her toes, heaviness in her legs, headaches at the back of her head, difficulty sleeping, decreased appetite, muscle spasms in her neck and shoulders, and fatigue. Julia attributes some of her symptoms to work-related stress and family issues. She has been using over-the-counter pain medication and engaging in stretching and exercise with minimal relief.\n\nObjective:\nJulia appears cooperative and compliant during the consultation. She displays no signs of acute distress. Physical examination reveals tenderness in the lower back region and limited range of motion. Neurological examination shows decreased sensation in the toes and reduced muscle strength in the lower extremities. Vital signs are within normal limits. Julia's medical history includes chronic pain management with Gabapentin and Tramadol.\n\nAssessment:\nJulia presents with chronic lower back pain with associated neurological symptoms, headaches, sleep disturbances, decreased appetite, and stress-related muscle spasms. Work-related stress and family issues contribute to her overall symptomatology. Further diagnostic tests are warranted to determine the underlying cause of her symptoms. Pain management strategies need to be optimized to improve Julia's quality of life and functionality.\n\nPlan:\nOrder diagnostic tests, including imaging studies and nerve conduction studies, to evaluate the source of Julia's chronic pain and neurological symptoms. Initiate a comprehensive pain management plan tailored to Julia's needs, which may include adjusting current medications, introducing new medications, and exploring non-pharmacological interventions such as physical therapy and stress management techniques. Schedule follow-up appointments to monitor Julia's response to treatment and make necessary adjustments. Encourage open communication and collaboration to address Julia's holistic well-being."
+}

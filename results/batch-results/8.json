@@ -1,0 +1,1163 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 1,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 48,
+    "failed_calls": 0,
+    "successful_calls": 48,
+    "total_input_tokens": 22818,
+    "total_output_tokens": 1769,
+    "total_tokens": 24587,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0119576
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C6",
+      "text": "Mr. Spencer appears fatigued during the examination but is alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5987049341201782,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4986470937728882,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4431588649749756,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.43151503801345825,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32541003823280334,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Mr. Spencer reports feeling fatigued and having low energy, but there is no explicit mention of the physician observing that he appears fatigued during the examination, nor any statement confirming he is alert and oriented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs show blood pressure at 142/88 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4227144718170166,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3682427406311035,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31025606393814087,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29324042797088623,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.28493472933769226,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention of a blood pressure reading of 142/88 mmHg is found in the provided transcript spans. The patient mentions blood pressure 'creeping up' but no specific vital sign values are given.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Lab results indicate an HbA1c of 6.8% and a normal lipid panel.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3841969966888428,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37829768657684326,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2898060083389282,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.26736655831336975,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2634117901325226,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions ordering lab tests including blood sugar and lipid panel (E5[6]) but does not provide any actual lab results or values such as HbA1c or lipid panel status.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Physical examination reveals signs of osteoarthritis with joint tenderness and limited range of motion.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.46450474858283997,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2797497808933258,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2753789722919464,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22647088766098022,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22149184346199036,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of physical examination findings such as joint tenderness or limited range of motion indicative of osteoarthritis. The only related information is the patient's report of joint aching and the physician's mention of osteoarthritis, but no physical exam signs are documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "Follow up with Mr. Spencer to discuss test results and adjust treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5124186277389526,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4734435975551605,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4031665325164795,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3329012989997864,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2760652005672455,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention a follow-up with Mr. Spencer to discuss test results or adjust the treatment plan. While tests are ordered and treatment changes are made, no explicit plan for follow-up discussion is stated.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C12",
+      "text": "Lab results show stable diabetes control but elevated blood pressure.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5933140516281128,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4927634596824646,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27979981899261475,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27347511053085327,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.256160169839859,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient reports that blood sugar has been higher than usual and blood pressure has been creeping up, indicating worsening rather than stable diabetes control and elevated blood pressure. Additionally, the physician plans to increase blood pressure medication, supporting that blood pressure is elevated and not stable.",
+        "severity": "high"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Spencer reports feeling off lately with symptoms of shortness of breath and low energy levels.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7427058219909668,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.562544584274292,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5068075656890869,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5047574043273926,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.40937280654907227,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling 'a bit off lately' and reports symptoms of shortness of breath and low energy levels (fatigue) in E0 and E3.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He describes the shortness of breath as intermittent and noticeable during simple tasks like walking upstairs.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7923769950866699,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5715014934539795,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.48229366540908813,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4302506446838379,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33939772844314575,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the shortness of breath is intermittent ('coming and going') and noticeable during simple tasks like walking upstairs.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He denies chest pain or tightness but acknowledges feeling tired most of the time, even after adequate sleep.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6119990348815918,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5920203328132629,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4720219075679779,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46083933115005493,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3897288739681244,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies chest pain or tightness (E2:1-2) and acknowledges feeling tired most of the time even after adequate sleep (E3:1).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "He denies dizziness, lightheadedness, or nausea.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.524085283279419,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3950788974761963,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32691454887390137,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3206760585308075,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2895384430885315,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly asks about dizziness, lightheadedness, or nausea, and the patient denies these symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Mr. Spencer notes higher blood sugar levels and increasing blood pressure.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6259709596633911,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5015711188316345,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.44724926352500916,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36166948080062866,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.35576099157333374,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that his blood sugar has been higher than usual and his blood pressure has been creeping up, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "He also mentions joint pain, particularly in the mornings.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5094419717788696,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3693624436855316,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3348870873451233,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32002711296081543,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3199695944786072,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that their joints have been aching more than usual, especially in the mornings, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Mr. Spencer appears fatigued during the examination but is alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5987049341201782,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4986470937728882,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4431588649749756,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.43151503801345825,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32541003823280334,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Mr. Spencer reports feeling fatigued and having low energy, but there is no explicit mention of the physician observing that he appears fatigued during the examination, nor any statement confirming he is alert and oriented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs show blood pressure at 142/88 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4227144718170166,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3682427406311035,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31025606393814087,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29324042797088623,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.28493472933769226,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention of a blood pressure reading of 142/88 mmHg is found in the provided transcript spans. The patient mentions blood pressure 'creeping up' but no specific vital sign values are given.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Lab results indicate an HbA1c of 6.8% and a normal lipid panel.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3841969966888428,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37829768657684326,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2898060083389282,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.26736655831336975,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2634117901325226,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions ordering lab tests including blood sugar and lipid panel (E5[6]) but does not provide any actual lab results or values such as HbA1c or lipid panel status.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Physical examination reveals signs of osteoarthritis with joint tenderness and limited range of motion.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.46450474858283997,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2797497808933258,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2753789722919464,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22647088766098022,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22149184346199036,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of physical examination findings such as joint tenderness or limited range of motion indicative of osteoarthritis. The only related information is the patient's report of joint aching and the physician's mention of osteoarthritis, but no physical exam signs are documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Mr. Spencer presents with symptoms of shortness of breath, fatigue, elevated blood sugar, and increasing blood pressure.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6332505345344543,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5875799059867859,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5204898118972778,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.486358642578125,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.46986544132232666,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient reports shortness of breath and low energy (fatigue) explicitly (E0:4-5, E3:1,7). The patient also confirms elevated blood sugar and increasing blood pressure recently (E4:4-5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "His osteoarthritis is contributing to joint pain.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5266193151473999,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2917886972427368,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28080233931541443,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23777362704277039,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.20187629759311676,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient reports increased joint aching, and the physician explicitly states that this could be related to osteoarthritis, supporting the claim that osteoarthritis is contributing to joint pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Lab results show stable diabetes control but elevated blood pressure.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5933140516281128,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4927634596824646,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27979981899261475,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.27347511053085327,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.256160169839859,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient reports that blood sugar has been higher than usual and blood pressure has been creeping up, indicating worsening rather than stable diabetes control and elevated blood pressure. Additionally, the physician plans to increase blood pressure medication, supporting that blood pressure is elevated and not stable.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Further evaluation is needed to assess kidney function and digestive health through a colonoscopy.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4068380892276764,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2521515488624573,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.17491790652275085,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.15754783153533936,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.15745915472507477,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering lab tests to check kidney function and scheduling a colonoscopy to assess digestive health.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Order lab tests to monitor blood sugar control, blood pressure, lipid panel, and kidney function.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5335322022438049,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4763638973236084,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23522384464740753,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2315540909767151,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2262149602174759,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering lab tests to check blood sugar, blood pressure control, lipid panel, and kidney function in sentence 6 of E5.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Schedule a colonoscopy for further evaluation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.37317004799842834,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2273711860179901,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.22708669304847717,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.20438192784786224,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.18651093542575836,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E5[7] that a colonoscopy will be scheduled to ensure digestive health, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Increase blood pressure medication to manage hypertension.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4342938959598541,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39273980259895325,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2517576217651367,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22598159313201904,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.21779340505599976,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to increase blood pressure medication to help manage symptoms, which supports the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Recommend lifestyle changes to improve symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.42565056681632996,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3621135950088501,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3264453113079071,
+          "text": "Can you tell me more about your shortness of breath? Is it occasional or persistent? Patient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3132188320159912,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2742053270339966,
+          "text": "Patient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up. Physician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example? Patient: No, nothing like that. Just the fatigue and shortness of breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states recommending lifestyle changes to help manage symptoms in sentence 8 of E5.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "Follow up with Mr. Spencer to discuss test results and adjust treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5124186277389526,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Doc. Physician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4734435975551605,
+          "text": "Physician: Good morning, Mr. Spencer. How are you feeling today? Patient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4031665325164795,
+          "text": "Have you experienced any other health issues recently, such as pain or discomfort? Patient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe. Physician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3329012989997864,
+          "text": "Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently? Patient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too. Physician: I see. That could certainly contribute to your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2760652005672455,
+          "text": "Have you experienced any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath. Physician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention a follow-up with Mr. Spencer to discuss test results or adjust the treatment plan. While tests are ordered and treatment changes are made, no explicit plan for follow-up discussion is stated.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Spencer. How are you feeling today?\n\nPatient: Hi, Doc. I've been feeling a bit off lately. I've had some shortness of breath, and my energy levels have been low.\n\nPhysician: I see. Can you tell me more about your shortness of breath? Is it occasional or persistent?\n\nPatient: It's been coming and going for the past few weeks. It's not severe, but it's definitely noticeable, especially when I'm doing simple tasks like walking upstairs.\n\nPhysician: I understand. Have you experienced any chest pain or tightness?\n\nPatient: No, nothing like that. Just the shortness of breath.\n\nPhysician: Okay. And how about your energy levels? Have you noticed any specific patterns or triggers that make you feel more fatigued?\n\nPatient: Well, I've been feeling tired most of the time, even after getting a full night's sleep. It's like my body just can't seem to catch up.\n\nPhysician: I see. Have you experienced any other symptoms that might be related to your fatigue? Dizziness, lightheadedness, or nausea, for example?\n\nPatient: No, nothing like that. Just the fatigue and shortness of breath.\n\nPhysician: Okay. Let's take a step back and look at your overall health. You have a history of hypertension and diabetes. Have you noticed any changes in your blood sugar control or blood pressure recently?\n\nPatient: Actually, yes. My blood sugar has been a bit higher than usual lately, and my blood pressure has been creeping up too.\n\nPhysician: I see. That could certainly contribute to your symptoms. Have you experienced any other health issues recently, such as pain or discomfort?\n\nPatient: Well, my joints have been aching a bit more than usual, especially in the mornings. But it's not anything too severe.\n\nPhysician: Okay. That could be related to your osteoarthritis. I'm going to order some lab tests to check your blood sugar and blood pressure control, as well as your lipid panel and kidney function. We'll also schedule you for a colonoscopy to ensure everything is okay with your digestive health. In the meantime, I want to increase your blood pressure medication and recommend some lifestyle changes to help manage your symptoms. Does that sound good to you?\n\nPatient: Yes, that sounds great. Thank you, Doc.\n\nPhysician: You're welcome, Mr. Spencer. I'll have the nurse come in and go over the details with you. We'll get you feeling better in no time.",
+  "note_text": "Subjective:\nMr. Spencer reports feeling off lately with symptoms of shortness of breath and low energy levels. He describes the shortness of breath as intermittent and noticeable during simple tasks like walking upstairs. He denies chest pain or tightness but acknowledges feeling tired most of the time, even after adequate sleep. He denies dizziness, lightheadedness, or nausea. Mr. Spencer notes higher blood sugar levels and increasing blood pressure. He also mentions joint pain, particularly in the mornings.\n\nObjective:\nMr. Spencer appears fatigued during the examination but is alert and oriented. Vital signs show blood pressure at 142/88 mmHg. Lab results indicate an HbA1c of 6.8% and a normal lipid panel. Physical examination reveals signs of osteoarthritis with joint tenderness and limited range of motion.\n\nAssessment:\nMr. Spencer presents with symptoms of shortness of breath, fatigue, elevated blood sugar, and increasing blood pressure. His osteoarthritis is contributing to joint pain. Lab results show stable diabetes control but elevated blood pressure. Further evaluation is needed to assess kidney function and digestive health through a colonoscopy.\n\nPlan:\nOrder lab tests to monitor blood sugar control, blood pressure, lipid panel, and kidney function. Schedule a colonoscopy for further evaluation. Increase blood pressure medication to manage hypertension. Recommend lifestyle changes to improve symptoms. Follow up with Mr. Spencer to discuss test results and adjust treatment plan as needed."
+}

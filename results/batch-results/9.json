@@ -1,0 +1,894 @@
+{
+  "summary": {
+    "claims": 14,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 42,
+    "failed_calls": 0,
+    "successful_calls": 42,
+    "total_input_tokens": 19263,
+    "total_output_tokens": 1510,
+    "total_tokens": 20773,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0101212
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C2",
+      "text": "Mr. Burns presents with high blood pressure (142/88 mmHg) and elevated blood glucose levels (178 mg/dL).",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6949357390403748,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5726606249809265,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.505490243434906,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39701831340789795,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3035103380680084,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports high blood pressure and variable blood sugar but does not provide specific measured values of 142/88 mmHg for blood pressure or 178 mg/dL for blood glucose.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "He is overweight and has a history of hypertension, type 2 diabetes, and obesity.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4555355906486511,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4416784644126892,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4375980794429779,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3048895299434662,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27295243740081787,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient has hypertension and diabetes, and mentions weight gain, but does not explicitly state the patient is overweight or has a history of obesity.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He is a former smoker and social drinker.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.26129165291786194,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23024551570415497,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21552720665931702,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2147645652294159,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.20012666285037994,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention the patient's smoking or drinking status explicitly or implicitly.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "His recent bout of bronchitis may be impacting his respiratory health.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.7065893411636353,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5021824836730957,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.46582064032554626,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32218238711357117,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31347960233688354,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient reports a past bout of bronchitis a few months ago, and the physician acknowledges bronchitis can affect respiratory health. However, there is no explicit statement that the recent bronchitis is currently impacting his respiratory health; the physician only suggests monitoring given the history. Thus, the claim that the recent bronchitis may be impacting his respiratory health is implied but not explicitly supported.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Burns reports feeling off lately with high blood pressure, fluctuating blood sugar levels, headaches, lightheadedness, increased urination, abdominal discomfort, shortness of breath, chest tightness, and stress.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6975446343421936,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.6482793092727661,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4687314033508301,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4644690454006195,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45844370126724243,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling off, high blood pressure, fluctuating blood sugar, headaches, lightheadedness, increased stress, shortness of breath, and chest tightness. Abdominal discomfort and increased urination are not mentioned.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He mentions challenges with diet and exercise due to his wife's cooking and work-related stress.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5908486843109131,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4217031002044678,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3324583172798157,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33106666803359985,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28239870071411133,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states difficulty eating healthier due to his wife's cooking of rich foods and mentions work-related stress as a source of feeling stressed out lately.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Mr. Burns presents with high blood pressure (142/88 mmHg) and elevated blood glucose levels (178 mg/dL).",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6949357390403748,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5726606249809265,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.505490243434906,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39701831340789795,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3035103380680084,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports high blood pressure and variable blood sugar but does not provide specific measured values of 142/88 mmHg for blood pressure or 178 mg/dL for blood glucose.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "He is overweight and has a history of hypertension, type 2 diabetes, and obesity.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4555355906486511,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4416784644126892,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4375980794429779,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3048895299434662,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27295243740081787,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient has hypertension and diabetes, and mentions weight gain, but does not explicitly state the patient is overweight or has a history of obesity.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He is a former smoker and social drinker.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.26129165291786194,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23024551570415497,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21552720665931702,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2147645652294159,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.20012666285037994,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention the patient's smoking or drinking status explicitly or implicitly.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "His recent bout of bronchitis may be impacting his respiratory health.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.7065893411636353,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5021824836730957,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.46582064032554626,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32218238711357117,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31347960233688354,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient reports a past bout of bronchitis a few months ago, and the physician acknowledges bronchitis can affect respiratory health. However, there is no explicit statement that the recent bronchitis is currently impacting his respiratory health; the physician only suggests monitoring given the history. Thus, the claim that the recent bronchitis may be impacting his respiratory health is implied but not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Mr. Burns requires closer monitoring of his hypertension and diabetes management.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6314364671707153,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.6141198873519897,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5016834735870361,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3724901080131531,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31703758239746094,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to take a closer look at Mr. Burns' hypertension and diabetes management, discusses potential medication changes, and plans follow-up appointments to monitor progress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Medication adjustments may be necessary, and follow-up appointments are needed to track his progress.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4397261142730713,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.43806856870651245,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3335268199443817,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30794528126716614,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30404919385910034,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to discuss medications and potentially adjust them, as well as scheduling follow-up appointments to monitor progress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Respiratory health should also be monitored due to his history of bronchitis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5454933047294617,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.47849053144454956,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3981984853744507,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2745439410209656,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2673405110836029,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient has a history of bronchitis (E3[3]) and the physician explicitly states that respiratory health should be monitored given this history (E3[4], E6[8]).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Schedule tests and follow-up appointments to monitor Mr. Burns' health.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5643692016601562,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.540576159954071,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5075578689575195,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40638890862464905,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2349483221769333,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions scheduling follow-up appointments to monitor progress (E6:7), initiating scheduling of tests and appointments (E7:5), and indicates they will be in touch to discuss test results and next steps (E8:2), supporting the claim to schedule tests and follow-up appointments to monitor Mr. Burns' health.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Consider medication adjustments for hypertension and diabetes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4792725145816803,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3986334204673767,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35208040475845337,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3294846713542938,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3036748468875885,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to review hypertension and diabetes management and discusses potential medication changes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Encourage healthy lifestyle changes, including a balanced diet and stress management techniques.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4949898421764374,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4285453259944916,
+          "text": "Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure? Patient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time. Physician: I understand. It can be challenging to make those changes, especially when there are other factors at play."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42264899611473083,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23244625329971313,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2070247083902359,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends continuing healthy lifestyle changes, including eating a balanced diet and managing stress levels, which directly supports the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Keep an eye on respiratory health and address any concerns that may arise.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4632222056388855,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.43968576192855835,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4101687967777252,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3288715183734894,
+          "text": "Have you noticed any symptoms such as headaches, dizziness, or blurred vision? Patient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3199102282524109,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to keep an eye on respiratory health given the patient's history of bronchitis (E6:8). Additionally, the impact of bronchitis on respiratory health is acknowledged (E3:3-4).",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Follow up with Mr. Burns to discuss test results and next steps.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.7655565142631531,
+          "text": "Physician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5016658306121826,
+          "text": "Have you experienced any stress or anxiety that may be impacting your health? Patient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues. Physician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4991864562034607,
+          "text": "Physician: Good morning, Mr. Burns. How are you feeling today? Patient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4493899643421173,
+          "text": "Patient: Okay, that sounds good. I just want to feel better and get my health back on track. Physician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels. Patient: Alright, that sounds like a plan. Thank you, Dr. Carlson."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23544789850711823,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of bronchitis a few months ago. Physician: Bronchitis can definitely affect your respiratory health."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will be in touch soon to discuss test results and next steps, confirming the follow-up plan with Mr. Burns.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Burns. How are you feeling today?\n\nPatient: Hi, Dr. Carlson. I've been feeling a bit off lately. My blood pressure has been high, and my blood sugar has been all over the place. I've also gained a bit of weight, which I'm sure isn't helping.\n\nPhysician: I see. Have you noticed any symptoms such as headaches, dizziness, or blurred vision?\n\nPatient: Yes, I've been getting headaches pretty regularly, especially in the morning. And sometimes I feel a bit lightheaded when I stand up too quickly.\n\nPhysician: Okay, that's helpful to know. Have you noticed any changes in your urination habits or experiencing any pain or discomfort in your abdomen?\n\nPatient: Well, I have been needing to urinate more frequently, especially at night. And sometimes I feel a bit of discomfort in my stomach, like a dull ache.\n\nPhysician: I understand. Have you had any recent illnesses or injuries that may be contributing to your symptoms?\n\nPatient: No, nothing recent. But I did have a bout of bronchitis a few months ago.\n\nPhysician: Bronchitis can definitely affect your respiratory health. Have you noticed any shortness of breath or wheezing?\n\nPatient: Yes, I have been feeling a bit winded when I exert myself. And sometimes I get this tightness in my chest that makes it hard to breathe deeply.\n\nPhysician: I see. Have you had any recent changes in your diet or exercise routine that may be contributing to your weight gain and high blood pressure?\n\nPatient: Well, I've been trying to eat healthier, but it's hard when my wife is always cooking rich foods. And I've been meaning to start exercising more, but I just haven't had the time.\n\nPhysician: I understand. It can be challenging to make those changes, especially when there are other factors at play. Have you experienced any stress or anxiety that may be impacting your health?\n\nPatient: Yes, I have been feeling pretty stressed out lately. Work has been hectic, and I've been worried about my health issues.\n\nPhysician: I see. Well, Mr. Burns, based on what you've shared with me today, it sounds like we need to take a closer look at your hypertension and diabetes management. We'll need to discuss your medications and potentially make some changes to your regimen. We'll also want to schedule you for some follow-up appointments to monitor your progress. And given your history of bronchitis, we'll want to keep an eye on your respiratory health as well.\n\nPatient: Okay, that sounds good. I just want to feel better and get my health back on track.\n\nPhysician: Absolutely. We'll work together to make sure that happens. Let's start by scheduling some tests and appointments. And in the meantime, I recommend that you continue to work on making healthy lifestyle changes, such as eating a balanced diet and finding ways to manage your stress levels.\n\nPatient: Alright, that sounds like a plan. Thank you, Dr. Carlson.\n\nPhysician: You're welcome, Mr. Burns. We'll be in touch soon to discuss your test results and next steps.",
+  "note_text": "Subjective:\nMr. Burns reports feeling off lately with high blood pressure, fluctuating blood sugar levels, headaches, lightheadedness, increased urination, abdominal discomfort, shortness of breath, chest tightness, and stress. He mentions challenges with diet and exercise due to his wife's cooking and work-related stress.\n\nObjective:\nMr. Burns presents with high blood pressure (142/88 mmHg) and elevated blood glucose levels (178 mg/dL). He is overweight and has a history of hypertension, type 2 diabetes, and obesity. He is a former smoker and social drinker. His recent bout of bronchitis may be impacting his respiratory health.\n\nAssessment:\nMr. Burns requires closer monitoring of his hypertension and diabetes management. Medication adjustments may be necessary, and follow-up appointments are needed to track his progress. Respiratory health should also be monitored due to his history of bronchitis.\n\nPlan:\nSchedule tests and follow-up appointments to monitor Mr. Burns' health. Consider medication adjustments for hypertension and diabetes. Encourage healthy lifestyle changes, including a balanced diet and stress management techniques. Keep an eye on respiratory health and address any concerns that may arise. Follow up with Mr. Burns to discuss test results and next steps."
+}

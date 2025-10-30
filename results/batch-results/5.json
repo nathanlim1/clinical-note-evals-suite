@@ -1,0 +1,1102 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 1,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 39,
+    "failed_calls": 0,
+    "successful_calls": 39,
+    "total_input_tokens": 20595,
+    "total_output_tokens": 1545,
+    "total_tokens": 22140,
+    "total cost w/ GPT-4.1-mini (in $)": 0.01071
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Patient appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.35422590374946594,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3533726632595062,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3383829593658447,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3291357159614563,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3044677972793579,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe the patient's appearance during the examination, specifically whether the patient appeared fatigued or alert. Fatigue is reported by the patient, but the physician's observation of alertness or fatigue is not documented.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals swollen lymph nodes in the neck.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5476431846618652,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29394492506980896,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.258444219827652,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.24888110160827637,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23582682013511658,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only indicates the patient reports feeling swollen lymph nodes in the neck (E4:2), but there is no explicit mention of a physical examination confirming swollen lymph nodes.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of respiratory distress noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3713008165359497,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33321285247802734,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2584318518638611,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2240763008594513,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21119993925094604,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes the patient reporting shortness of breath (E1:2), which is a sign of respiratory distress. No explicit statement from the physician notes absence of respiratory distress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Patient's medical history indicates no chronic conditions or allergies.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5332359671592712,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3673785328865051,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3469718098640442,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3464134931564331,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31628358364105225,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the patient's medical history regarding chronic conditions or allergies, so the claim cannot be verified.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate the patient on the importance of completing the prescribed medication regimen and seeking medical attention if symptoms worsen or new symptoms develop.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.31808146834373474,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3163822889328003,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29886460304260254,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.297307550907135,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26654112339019775,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating the patient on the importance of completing the prescribed medication regimen or seeking medical attention if symptoms worsen or new symptoms develop.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3256407082080841,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30686262249946594,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29879963397979736,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2854331433773041,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2829563617706299,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports having a mild fever that comes and goes, which indicates that at least one vital sign (temperature) is not within normal limits.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Kitty Holmes presents with symptoms of a constant runny nose, sore throat, body aches, mild fever, persistent cough, shortness of breath, fatigue, and swollen lymph nodes in the neck.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6158077716827393,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5278041362762451,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.437660813331604,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41818422079086304,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3837437629699707,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports a constant runny nose, sore throat, body aches, mild fever (E0:5-6), fatigue and swollen lymph nodes in the neck (E4:2), and persistent cough and shortness of breath (E1:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "Symptoms started a week ago and have been progressively worsening.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.569223940372467,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3959406316280365,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3535703420639038,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.350053995847702,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3095877766609192,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that symptoms started about a week ago and have been getting worse every day, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Over-the-counter medications (acetaminophen and ibuprofen) have provided minimal relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5784320831298828,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3111131489276886,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2825619876384735,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2643952965736389,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.25538310408592224,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that they have been taking acetaminophen and ibuprofen but they don't seem to be helping much, indicating minimal relief from these over-the-counter medications.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "No recent travel or exposure to sick individuals reported.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6996103525161743,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2810862064361572,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2792438268661499,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2554752230644226,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.247778981924057,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent travel and exposure to sick individuals in E3 sentences 1 and 2.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Patient appears fatigued but alert during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.35422590374946594,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3533726632595062,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3383829593658447,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3291357159614563,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3044677972793579,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe the patient's appearance during the examination, specifically whether the patient appeared fatigued or alert. Fatigue is reported by the patient, but the physician's observation of alertness or fatigue is not documented.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3256407082080841,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30686262249946594,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29879963397979736,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2854331433773041,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2829563617706299,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports having a mild fever that comes and goes, which indicates that at least one vital sign (temperature) is not within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals swollen lymph nodes in the neck.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5476431846618652,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29394492506980896,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.258444219827652,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.24888110160827637,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23582682013511658,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only indicates the patient reports feeling swollen lymph nodes in the neck (E4:2), but there is no explicit mention of a physical examination confirming swollen lymph nodes.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of respiratory distress noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3713008165359497,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33321285247802734,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2584318518638611,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2240763008594513,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21119993925094604,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes the patient reporting shortness of breath (E1:2), which is a sign of respiratory distress. No explicit statement from the physician notes absence of respiratory distress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Patient's medical history indicates no chronic conditions or allergies.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5332359671592712,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3673785328865051,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3469718098640442,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3464134931564331,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31628358364105225,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the patient's medical history regarding chronic conditions or allergies, so the claim cannot be verified.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Current medications include acetaminophen and ibuprofen for symptom management.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5606632828712463,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37010687589645386,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3246689438819885,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2911478579044342,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28741711378097534,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states taking acetaminophen and ibuprofen for symptom management, and the physician recommends continuing over-the-counter medications for symptoms.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Based on the patient's symptoms and physical examination, Kitty Holmes likely has a viral infection, possibly the common cold or flu.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5511921644210815,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.548575222492218,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.540697455406189,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3631266951560974,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34409648180007935,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that based on the patient's symptoms and history, the patient might have a viral infection, possibly the common cold or flu.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Further diagnostic tests, including a rapid flu test and blood work to check white blood cell count, are recommended to confirm the diagnosis and rule out other infections.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5488899350166321,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5121846199035645,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3078959584236145,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2996349334716797,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27484872937202454,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that a rapid flu test and blood work to check white blood cell count will be done to confirm the diagnosis and rule out other infections, and also mentions the need to run tests to confirm diagnosis and rule out other causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Antiviral medication will be prescribed to manage symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.41773778200149536,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36828821897506714,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.312247633934021,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2904612421989441,
+          "text": "We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24212121963500977,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe an antiviral medication to help manage symptoms in sentence 6 of E4.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Perform a rapid flu test and blood work to confirm the diagnosis.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5236436724662781,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41536661982536316,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2867954969406128,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.285907119512558,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27207833528518677,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E5[3] that a rapid flu test and blood work will be performed to confirm the diagnosis, and in E4[5] mentions the need to run tests to confirm the diagnosis and rule out other causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Prescribe antiviral medication for symptom management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4076947271823883,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37465810775756836,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3127874732017517,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2663879692554474,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2531002163887024,
+          "text": "We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe an antiviral medication to help manage symptoms in sentence 6 of E4.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Advise the patient to rest, stay hydrated, and avoid close contact with others to prevent the spread of infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4457983672618866,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4214789569377899,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3149641156196594,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3114573657512665,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29617372155189514,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises the patient to rest, stay hydrated, and avoid close contact with others to prevent the spread of infection in sentence 4 of E5.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Follow up with the patient to discuss test results and adjust treatment plan accordingly.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3971744179725647,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3415035605430603,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28108835220336914,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27084314823150635,
+          "text": "Have you had any recent travel or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2697397768497467,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that test results will be received soon and that the plan will proceed based on those results, implying follow-up and adjustment of treatment accordingly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate the patient on the importance of completing the prescribed medication regimen and seeking medical attention if symptoms worsen or new symptoms develop.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.31808146834373474,
+          "text": "Physician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there. Patient: Thank you, Dr. Cox. I appreciate your help. Physician: You're welcome, Kitty."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3163822889328003,
+          "text": "How long have you been experiencing these symptoms? Patient: It started about a week ago, and it's been getting worse every day. Physician: Have you tried any over-the-counter medications or remedies? Patient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29886460304260254,
+          "text": "Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes? Patient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen. Physician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms. Patient: Okay, that sounds good. Thank you, Dr. Cox."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.297307550907135,
+          "text": "Physician: Hi, Kitty. How are you feeling today? Patient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26654112339019775,
+          "text": "Have you experienced any other symptoms, such as coughing or shortness of breath? Patient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating the patient on the importance of completing the prescribed medication regimen or seeking medical attention if symptoms worsen or new symptoms develop.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Hi, Kitty. How are you feeling today?\n\nPatient: Hi, Dr. Cox. I've been feeling pretty miserable lately. I've had a constant runny nose, sore throat, and my body aches all over. I also have a mild fever that comes and goes.\n\nPhysician: I see. Have you experienced any other symptoms, such as coughing or shortness of breath?\n\nPatient: Yes, I've had a persistent cough, especially in the mornings, and sometimes I feel like I can't catch my breath.\n\nPhysician: Okay. How long have you been experiencing these symptoms?\n\nPatient: It started about a week ago, and it's been getting worse every day.\n\nPhysician: Have you tried any over-the-counter medications or remedies?\n\nPatient: Yes, I've been taking acetaminophen and ibuprofen for the fever and body aches, but they don't seem to be helping much.\n\nPhysician: I understand. Have you had any recent travel or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't think anyone in my household has been sick.\n\nPhysician: Okay. Have you noticed any other unusual symptoms, such as headaches, fatigue, or swollen lymph nodes?\n\nPatient: Yes, I've been feeling really tired and my lymph nodes in my neck feel swollen.\n\nPhysician: I see. Based on what you've told me, it sounds like you might have a viral infection, possibly the common cold or flu. We'll need to run some tests to confirm the diagnosis and rule out any other potential causes. In the meantime, I recommend that you continue taking the over-the-counter medications as needed for your symptoms, and I'll prescribe an antiviral medication to help manage your symptoms.\n\nPatient: Okay, that sounds good. Thank you, Dr. Cox.\n\nPhysician: You're welcome, Kitty. We'll get you feeling better in no time. I'll have the nurse come in and take a swab for the rapid flu test, and we'll also draw some blood to check your white blood cell count and rule out any other infections. In the meantime, make sure to rest, stay hydrated, and avoid close contact with others to prevent the spread of the infection. We'll have the results of the tests back soon, and we'll go from there.\n\nPatient: Thank you, Dr. Cox. I appreciate your help.\n\nPhysician: You're welcome, Kitty. We'll get you feeling better soon.",
+  "note_text": "Subjective:\nKitty Holmes presents with symptoms of a constant runny nose, sore throat, body aches, mild fever, persistent cough, shortness of breath, fatigue, and swollen lymph nodes in the neck. Symptoms started a week ago and have been progressively worsening. Over-the-counter medications (acetaminophen and ibuprofen) have provided minimal relief. No recent travel or exposure to sick individuals reported.\n\nObjective:\nPatient appears fatigued but alert during the examination. Vital signs are within normal limits. Physical examination reveals swollen lymph nodes in the neck. No signs of respiratory distress noted. Patient's medical history indicates no chronic conditions or allergies. Current medications include acetaminophen and ibuprofen for symptom management.\n\nAssessment:\nBased on the patient's symptoms and physical examination, Kitty Holmes likely has a viral infection, possibly the common cold or flu. Further diagnostic tests, including a rapid flu test and blood work to check white blood cell count, are recommended to confirm the diagnosis and rule out other infections. Antiviral medication will be prescribed to manage symptoms.\n\nPlan:\n1. Perform a rapid flu test and blood work to confirm the diagnosis.\n2. Prescribe antiviral medication for symptom management.\n3. Advise the patient to rest, stay hydrated, and avoid close contact with others to prevent the spread of infection.\n4. Follow up with the patient to discuss test results and adjust treatment plan accordingly.\n5. Educate the patient on the importance of completing the prescribed medication regimen and seeking medical attention if symptoms worsen or new symptoms develop."
+}

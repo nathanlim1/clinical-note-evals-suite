@@ -1,0 +1,1219 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 3,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 1,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 50,
+    "failed_calls": 0,
+    "successful_calls": 50,
+    "total_input_tokens": 24198,
+    "total_output_tokens": 1772,
+    "total_tokens": 25970,
+    "total cost w/ GPT-4.1-mini (in $)": 0.012514400000000002
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Aaron appears fatigued but is alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5572296977043152,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.42682525515556335,
+          "text": "Can you elaborate on the fatigue you're experiencing? Is it a general feeling of tiredness or do you experience any specific symptoms such as dizziness or lightheadedness? Patient: It's more of a general feeling of tiredness, and it's been persistent throughout the day, even after getting a full night's sleep. Sometimes, I feel like I'm dragging myself through the day. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41583335399627686,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3948725461959839,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.36832135915756226,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reports feeling fatigued, but there is no explicit mention that Aaron appears fatigued or that he is alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3223629593849182,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30573058128356934,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3051210045814514,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30423885583877563,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28795066475868225,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any mention or documentation of vital signs or their values, so the claim that vital signs are within normal limits is not supported by the evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Laboratory results show a hemoglobin level of 11.5 g/dL, indicating iron deficiency anemia.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3380587697029114,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26540058851242065,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2402598261833191,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2354663908481598,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20889858901500702,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not provide any laboratory results or mention a hemoglobin level of 11.5 g/dL or a diagnosis of iron deficiency anemia.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Aaron's BMI is 32.5, indicating obesity.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3046393394470215,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28263819217681885,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2536870837211609,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1905205249786377,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.17146962881088257,
+          "text": "Have you noticed any changes in your bowel movements or urination habits recently? Patient: Yes, I've been experiencing some constipation, and it's been harder for me to pass urine. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention Aaron's BMI or any specific value such as 32.5, nor do they explicitly state that Aaron is obese.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Aaron presents with symptoms consistent with iron deficiency anemia, potentially contributing to his fatigue and other complaints.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4947044551372528,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4929242730140686,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.38445863127708435,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.38163572549819946,
+          "text": "Can you elaborate on the fatigue you're experiencing? Is it a general feeling of tiredness or do you experience any specific symptoms such as dizziness or lightheadedness? Patient: It's more of a general feeling of tiredness, and it's been persistent throughout the day, even after getting a full night's sleep. Sometimes, I feel like I'm dragging myself through the day. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37936654686927795,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions considering anemia as a possibility and ordering tests to investigate, but there is no explicit confirmation or evidence that Aaron presents with symptoms consistent with iron deficiency anemia or that it is contributing to his fatigue and other complaints.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "His obesity may also be impacting his overall health and well-being.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.31833040714263916,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31543466448783875,
+          "text": "Have you noticed any changes in your bowel movements or urination habits recently? Patient: Yes, I've been experiencing some constipation, and it's been harder for me to pass urine. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3116256296634674,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31099265813827515,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3031703531742096,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention the patient's obesity or its impact on his overall health and well-being.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Refer Aaron to a nutritionist to develop a healthier diet plan to address his obesity and anemia.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5656792521476746,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.45176100730895996,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.44200897216796875,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2932084798812866,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2360231727361679,
+          "text": "We'll work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The transcript supports referring Aaron to a nutritionist to develop a healthier diet plan, but it does not explicitly link this referral to addressing both obesity and anemia. Obesity is not mentioned in the transcript, and anemia is only mentioned as a possible diagnosis to be tested. Therefore, the full claim is not fully supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Encourage Aaron to schedule an appointment for the influenza vaccine and follow-up for nutritional guidance.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5382791757583618,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43822282552719116,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4275586009025574,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2913966774940491,
+          "text": "We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2550908327102661,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript explicitly mentions encouraging the patient to schedule an appointment with a nutritionist (E8[1],[8]) but does not mention scheduling an appointment for the influenza vaccine or follow-up specifically for nutritional guidance.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C4",
+      "text": "He denies any signs of acute distress and does not exhibit any abnormal physical findings.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.33115625381469727,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.32471877336502075,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3052782416343689,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2979942858219147,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29186007380485535,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports frequent headaches and muscle weakness, which are abnormal physical findings, contradicting the claim that there are no abnormal physical findings or signs of acute distress.",
+        "severity": "high"
+      }
+    }
+  ],
+  "missing_critical": [
+    {
+      "sent_id": "T36",
+      "text": "But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since.",
+      "sent_idx": 36,
+      "prev_text": "Patient: No, nothing recent.",
+      "next_text": "Physician: I understand.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Aaron Thompson, a 24-year-old male, presents with complaints of persistent fatigue, decreased energy levels, trouble focusing, and memory issues.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4986926317214966,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4224832057952881,
+          "text": "Can you elaborate on the fatigue you're experiencing? Is it a general feeling of tiredness or do you experience any specific symptoms such as dizziness or lightheadedness? Patient: It's more of a general feeling of tiredness, and it's been persistent throughout the day, even after getting a full night's sleep. Sometimes, I feel like I'm dragging myself through the day. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39921027421951294,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.39784863591194153,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38461509346961975,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports persistent fatigue, decreased energy levels, trouble focusing, and memory issues in E0 sentences 5 and 6, and confirms the fatigue is persistent in E1 sentence 3. The patient's age and name are also confirmed in the dialogue.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He reports experiencing general tiredness throughout the day, difficulty falling and staying asleep, decreased appetite, irritability, anxiety, frequent headaches, muscle weakness, constipation, and difficulty passing urine.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.602286696434021,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5944942235946655,
+          "text": "Can you elaborate on the fatigue you're experiencing? Is it a general feeling of tiredness or do you experience any specific symptoms such as dizziness or lightheadedness? Patient: It's more of a general feeling of tiredness, and it's been persistent throughout the day, even after getting a full night's sleep. Sometimes, I feel like I'm dragging myself through the day. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5536874532699585,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.49538475275039673,
+          "text": "Have you noticed any changes in your bowel movements or urination habits recently? Patient: Yes, I've been experiencing some constipation, and it's been harder for me to pass urine. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4743964374065399,
+          "text": "Have you noticed any changes in your mood or emotional state recently? Perhaps feeling more irritable or anxious than usual? Patient: Yes, definitely. I've been feeling quite irritable and frustrated lately, and I've noticed that I've been getting upset over little things that wouldn't normally bother me. I've also been experiencing some anxiety, especially at night when I'm trying to fall asleep. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports general tiredness throughout the day (E1:3,4), difficulty falling and staying asleep (E2:3,4), decreased appetite (E2:5), irritability and anxiety (E3:3,4,5), frequent headaches and muscle weakness (E4:2), and constipation with difficulty passing urine (E6:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Aaron attributes some of his stress to starting a new job and dealing with family issues.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4829910397529602,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36353540420532227,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2956123948097229,
+          "text": "Have you noticed any changes in your mood or emotional state recently? Perhaps feeling more irritable or anxious than usual? Patient: Yes, definitely. I've been feeling quite irritable and frustrated lately, and I've noticed that I've been getting upset over little things that wouldn't normally bother me. I've also been experiencing some anxiety, especially at night when I'm trying to fall asleep. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2772575616836548,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25666046142578125,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that he recently started a new job which has been stressful and that he has been dealing with some family issues.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Aaron appears fatigued but is alert and oriented during the consultation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5572296977043152,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.42682525515556335,
+          "text": "Can you elaborate on the fatigue you're experiencing? Is it a general feeling of tiredness or do you experience any specific symptoms such as dizziness or lightheadedness? Patient: It's more of a general feeling of tiredness, and it's been persistent throughout the day, even after getting a full night's sleep. Sometimes, I feel like I'm dragging myself through the day. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41583335399627686,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3948725461959839,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.36832135915756226,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reports feeling fatigued, but there is no explicit mention that Aaron appears fatigued or that he is alert and oriented during the consultation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He denies any signs of acute distress and does not exhibit any abnormal physical findings.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.33115625381469727,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.32471877336502075,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3052782416343689,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2979942858219147,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29186007380485535,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports frequent headaches and muscle weakness, which are abnormal physical findings, contradicting the claim that there are no abnormal physical findings or signs of acute distress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3223629593849182,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30573058128356934,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3051210045814514,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30423885583877563,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28795066475868225,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any mention or documentation of vital signs or their values, so the claim that vital signs are within normal limits is not supported by the evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Laboratory results show a hemoglobin level of 11.5 g/dL, indicating iron deficiency anemia.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3380587697029114,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26540058851242065,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2402598261833191,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2354663908481598,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20889858901500702,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not provide any laboratory results or mention a hemoglobin level of 11.5 g/dL or a diagnosis of iron deficiency anemia.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Aaron's BMI is 32.5, indicating obesity.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3046393394470215,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28263819217681885,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2536870837211609,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1905205249786377,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.17146962881088257,
+          "text": "Have you noticed any changes in your bowel movements or urination habits recently? Patient: Yes, I've been experiencing some constipation, and it's been harder for me to pass urine. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention Aaron's BMI or any specific value such as 32.5, nor do they explicitly state that Aaron is obese.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Aaron presents with symptoms consistent with iron deficiency anemia, potentially contributing to his fatigue and other complaints.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4947044551372528,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4929242730140686,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.38445863127708435,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.38163572549819946,
+          "text": "Can you elaborate on the fatigue you're experiencing? Is it a general feeling of tiredness or do you experience any specific symptoms such as dizziness or lightheadedness? Patient: It's more of a general feeling of tiredness, and it's been persistent throughout the day, even after getting a full night's sleep. Sometimes, I feel like I'm dragging myself through the day. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37936654686927795,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions considering anemia as a possibility and ordering tests to investigate, but there is no explicit confirmation or evidence that Aaron presents with symptoms consistent with iron deficiency anemia or that it is contributing to his fatigue and other complaints.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "His obesity may also be impacting his overall health and well-being.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.31833040714263916,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31543466448783875,
+          "text": "Have you noticed any changes in your bowel movements or urination habits recently? Patient: Yes, I've been experiencing some constipation, and it's been harder for me to pass urine. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3116256296634674,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31099265813827515,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3031703531742096,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention the patient's obesity or its impact on his overall health and well-being.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Stress from his new job and family issues may be exacerbating his symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6556231379508972,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.47187113761901855,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.41011717915534973,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3903311789035797,
+          "text": "Have you noticed any changes in your mood or emotional state recently? Perhaps feeling more irritable or anxious than usual? Patient: Yes, definitely. I've been feeling quite irritable and frustrated lately, and I've noticed that I've been getting upset over little things that wouldn't normally bother me. I've also been experiencing some anxiety, especially at night when I'm trying to fall asleep. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3639121651649475,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              2,
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the new job has been stressful and mentions family issues. The physician acknowledges these stressors and plans to consider stress management strategies, implying these stressors may be exacerbating symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Further evaluation is needed to rule out hypothyroidism and depression.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4508984684944153,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35507693886756897,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3131204843521118,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2898924648761749,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2457476705312729,
+          "text": "Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness? Patient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions considering hypothyroidism and depression and states the need to run tests to better understand the situation, indicating further evaluation is needed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Order additional tests including a complete blood count, thyroid function test, and urinalysis to further evaluate Aaron's condition.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5978283286094666,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5199207067489624,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4322296679019928,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3044414520263672,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.28676778078079224,
+          "text": "We'll work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to consider anemia, hypothyroidism, and orders tests including a complete blood count, thyroid function test, and urinalysis to better understand the patient's condition.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Refer Aaron to a nutritionist to develop a healthier diet plan to address his obesity and anemia.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5656792521476746,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.45176100730895996,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.44200897216796875,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2932084798812866,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2360231727361679,
+          "text": "We'll work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The transcript supports referring Aaron to a nutritionist to develop a healthier diet plan, but it does not explicitly link this referral to addressing both obesity and anemia. Obesity is not mentioned in the transcript, and anemia is only mentioned as a possible diagnosis to be tested. Therefore, the full claim is not fully supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Implement stress management strategies to help Aaron cope with job-related and family stress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5788686275482178,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4275657534599304,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38084977865219116,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3181733191013336,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2790669798851013,
+          "text": "Have you noticed any changes in your mood or emotional state recently? Perhaps feeling more irritable or anxious than usual? Patient: Yes, definitely. I've been feeling quite irritable and frustrated lately, and I've noticed that I've been getting upset over little things that wouldn't normally bother me. I've also been experiencing some anxiety, especially at night when I'm trying to fall asleep. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              2,
+              8
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to consider stress management strategies to help Aaron cope with job and family stress (E8:2,8). Aaron reports recent job stress and family issues contributing to symptoms (E5:2,3), supporting the relevance of this intervention.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Follow up with Aaron to discuss test results and adjust the treatment plan accordingly.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5587716102600098,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4483802616596222,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43631240725517273,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.35083818435668945,
+          "text": "We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3054058253765106,
+          "text": "Have you had any recent changes in your work or personal life that may be contributing to your symptoms? Patient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up with Aaron once test results are available, implying discussion and potential treatment plan adjustment.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Encourage Aaron to schedule an appointment for the influenza vaccine and follow-up for nutritional guidance.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5382791757583618,
+          "text": "Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you? Patient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues. Physician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43822282552719116,
+          "text": "Physician: Good morning, Aaron. How can I assist you today? Patient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4275586009025574,
+          "text": "Have you had any recent illnesses or injuries that may be contributing to your symptoms? Patient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since. Physician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2913966774940491,
+          "text": "We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2550908327102661,
+          "text": "Have you noticed any changes in your sleep patterns or appetite recently? Patient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript explicitly mentions encouraging the patient to schedule an appointment with a nutritionist (E8[1],[8]) but does not mention scheduling an appointment for the influenza vaccine or follow-up specifically for nutritional guidance.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Aaron. How can I assist you today?\n\nPatient: Hi, Dr. Rice. I've been experiencing some concerns that I'd like to discuss with you. Lately, I've been feeling quite fatigued and have noticed that my energy levels have been decreasing. Additionally, I've been having trouble focusing, and my memory hasn't been as sharp as it used to be.\n\nPhysician: I see. Can you elaborate on the fatigue you're experiencing? Is it a general feeling of tiredness or do you experience any specific symptoms such as dizziness or lightheadedness?\n\nPatient: It's more of a general feeling of tiredness, and it's been persistent throughout the day, even after getting a full night's sleep. Sometimes, I feel like I'm dragging myself through the day.\n\nPhysician: I understand. Have you noticed any changes in your sleep patterns or appetite recently?\n\nPatient: Yes, actually. I've been having a lot of trouble falling asleep and staying asleep. I often wake up during the night and have trouble getting back to sleep. And as for appetite, I've been experiencing a decrease in my appetite, which is unusual for me since I've always had a healthy appetite.\n\nPhysician: I see. Have you noticed any changes in your mood or emotional state recently? Perhaps feeling more irritable or anxious than usual?\n\nPatient: Yes, definitely. I've been feeling quite irritable and frustrated lately, and I've noticed that I've been getting upset over little things that wouldn't normally bother me. I've also been experiencing some anxiety, especially at night when I'm trying to fall asleep.\n\nPhysician: I understand. Have you experienced any physical symptoms such as headaches, nausea, or muscle weakness?\n\nPatient: Yes, I've been getting frequent headaches, especially in the morning, and I've noticed some muscle weakness, particularly in my legs.\n\nPhysician: I see. Have you had any recent changes in your work or personal life that may be contributing to your symptoms?\n\nPatient: Well, I did recently start a new job, and it's been pretty stressful. I've also been dealing with some family issues, but I'm not sure if that's related.\n\nPhysician: I understand. Have you noticed any changes in your bowel movements or urination habits recently?\n\nPatient: Yes, I've been experiencing some constipation, and it's been harder for me to pass urine.\n\nPhysician: I see. Have you had any recent illnesses or injuries that may be contributing to your symptoms?\n\nPatient: No, nothing recent. But I did have a bout of food poisoning a few months ago, and I've been feeling off ever since.\n\nPhysician: I understand. Thank you for sharing that information, Aaron. Based on what you've shared with me, it seems like we need to consider a few possibilities, such as anemia, hypothyroidism, or even depression. I'd like to run some tests to help us get a better understanding of what's going on. We'll start with a complete blood count, a thyroid function test, and a urinalysis. Additionally, I'd like to refer you to a nutritionist to help you develop a healthier diet plan, as your diet may be contributing to some of your symptoms. We'll also consider stress management strategies to help you cope with your job and family stress. Does that sound good to you?\n\nPatient: Yes, that sounds great. Thank you for taking the time to listen to me and for your help in addressing these issues.\n\nPhysician: You're welcome, Aaron. We'll get these tests ordered, and I'll follow up with you once we have the results. In the meantime, please make sure to schedule an appointment with the nutritionist and start thinking about ways to reduce your stress levels. We'll work together to get you feeling better.",
+  "note_text": "Subjective:\nAaron Thompson, a 24-year-old male, presents with complaints of persistent fatigue, decreased energy levels, trouble focusing, and memory issues. He reports experiencing general tiredness throughout the day, difficulty falling and staying asleep, decreased appetite, irritability, anxiety, frequent headaches, muscle weakness, constipation, and difficulty passing urine. Aaron attributes some of his stress to starting a new job and dealing with family issues.\n\nObjective:\nAaron appears fatigued but is alert and oriented during the consultation. He denies any signs of acute distress and does not exhibit any abnormal physical findings. Vital signs are within normal limits. Laboratory results show a hemoglobin level of 11.5 g/dL, indicating iron deficiency anemia. Aaron's BMI is 32.5, indicating obesity.\n\nAssessment:\nAaron presents with symptoms consistent with iron deficiency anemia, potentially contributing to his fatigue and other complaints. His obesity may also be impacting his overall health and well-being. Stress from his new job and family issues may be exacerbating his symptoms. Further evaluation is needed to rule out hypothyroidism and depression.\n\nPlan:\n1. Order additional tests including a complete blood count, thyroid function test, and urinalysis to further evaluate Aaron's condition.\n2. Refer Aaron to a nutritionist to develop a healthier diet plan to address his obesity and anemia.\n3. Implement stress management strategies to help Aaron cope with job-related and family stress.\n4. Follow up with Aaron to discuss test results and adjust the treatment plan accordingly.\n5. Encourage Aaron to schedule an appointment for the influenza vaccine and follow-up for nutritional guidance."
+}

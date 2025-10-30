@@ -1,0 +1,944 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 49,
+    "failed_calls": 0,
+    "successful_calls": 49,
+    "total_input_tokens": 24885,
+    "total_output_tokens": 1667,
+    "total_tokens": 26552,
+    "total cost w/ GPT-4.1-mini (in $)": 0.012621199999999999
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C7",
+      "text": "No acute distress observed during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3481194078922272,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34520646929740906,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2822340130805969,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2770858407020569,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2721414566040039,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or describe the patient's appearance or condition during the examination in terms of distress; no statement confirms 'no acute distress' was observed.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mr. Mills likely has contact dermatitis from exposure to poison ivy or oak during his recent trip to the beach.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5358434915542603,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4520394802093506,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39019542932510376,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33847469091415405,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3206000328063965,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient mentions possible exposure to poison ivy or oak during a recent beach trip, and the physician acknowledges it as a possibility, but there is no explicit confirmation or diagnosis of contact dermatitis from this exposure in the transcript.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T27",
+      "text": "I'll start using the cream today.",
+      "sent_idx": 27,
+      "prev_text": "Patient: That sounds good.",
+      "next_text": "Physician: Excellent.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Mills reports experiencing a red, itchy rash with small bumps on his arms and legs that started about a week ago.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5744410753250122,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5735952854156494,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.555080771446228,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5421020984649658,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3589274287223816,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports a red, itchy rash with small bumps on his arms and legs that started about a week ago and is itchy.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He notes that the rash is uncomfortable and has been causing difficulty sleeping due to itchiness.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7163824439048767,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5839187502861023,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5296174883842468,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3905404806137085,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3470311760902405,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the rash is itchy and uncomfortable and that it has been causing difficulty sleeping due to itchiness.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Mr. Mills denies fever, fatigue, or swelling.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.42963287234306335,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39521270990371704,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3288379907608032,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30926433205604553,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29239222407341003,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies fever, fatigue, or swelling in response to the physician's question.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "He mentions a recent trip to the beach where he may have been exposed to poison ivy or oak.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6065975427627563,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4226929545402527,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3371473252773285,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3012857139110565,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2853929400444031,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that he went on a trip to the beach last week and may have been exposed to poison ivy or oak, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Mr. Mills presents with a red, itchy rash with small bumps on his arms and legs.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.589271605014801,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5678648352622986,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5345134735107422,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4987848103046417,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3857838809490204,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly describes the rash as red, itchy, and with small bumps, located on his arms and legs.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of infection such as increased redness, swelling, or pus are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.42759764194488525,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31471046805381775,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2891916036605835,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23377729952335358,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2090354561805725,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician asks about symptoms such as swelling, and the patient denies any such symptoms, indicating no signs of infection like increased redness, swelling, or pus are noted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Blood pressure and blood sugar levels remain slightly elevated despite medication adherence and lifestyle changes.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6185814738273621,
+          "text": "Physician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions? Patient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high. Physician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3870038688182831,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24225103855133057,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2353554368019104,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.21468394994735718,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient reports adherence to medications and lifestyle changes (healthy eating and exercise) but still experiences slightly elevated blood pressure and blood sugar levels, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No acute distress observed during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3481194078922272,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34520646929740906,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2822340130805969,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2770858407020569,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2721414566040039,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or describe the patient's appearance or condition during the examination in terms of distress; no statement confirms 'no acute distress' was observed.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mr. Mills likely has contact dermatitis from exposure to poison ivy or oak during his recent trip to the beach.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5358434915542603,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4520394802093506,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39019542932510376,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33847469091415405,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3206000328063965,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient mentions possible exposure to poison ivy or oak during a recent beach trip, and the physician acknowledges it as a possibility, but there is no explicit confirmation or diagnosis of contact dermatitis from this exposure in the transcript.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Hypertension and diabetes management require closer monitoring and potential medication adjustments.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6544177532196045,
+          "text": "Physician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions? Patient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high. Physician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3699951171875,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2421618551015854,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2118678241968155,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.19491004943847656,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to monitor hypertension and diabetes closely and adjust medications as needed, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Colon cancer screening is overdue and should be discussed further with a gastroenterologist.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5911604762077332,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37351924180984497,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31006330251693726,
+          "text": "Physician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions? Patient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high. Physician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24275940656661987,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2170102596282959,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that colon cancer screening is important and recommends discussing concerns with a gastroenterologist. The patient mentions hesitancy about colonoscopy prep but acknowledges the daughter's urging, implying the screening is overdue and should be further discussed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Recommend over-the-counter hydrocortisone cream for the rash and advise follow-up if no improvement within two weeks.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6317524909973145,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4537274241447449,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4175221621990204,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.38239097595214844,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31711718440055847,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends over-the-counter hydrocortisone cream for the rash and advises follow-up if no improvement within two weeks or signs of infection appear.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Schedule a follow-up appointment with the dermatologist to assess the progress of the rash.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4950485825538635,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4797062575817108,
+          "text": "Have you noticed any other symptoms, such as fever, fatigue, or swelling? Patient: No, nothing like that. Just the itchy rash. Physician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46735164523124695,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.43422436714172363,
+          "text": "Physician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel? Patient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3597221076488495,
+          "text": "We'll follow up with you soon to check on your progress. Have a good day."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will schedule a follow-up appointment with the dermatologist to assess the progress of the skin rash.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Consider adjusting hypertension and diabetes medications as needed and refer to a dietician for meal planning.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6985995769500732,
+          "text": "Physician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions? Patient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high. Physician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.45110201835632324,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3206675350666046,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24280667304992676,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22771495580673218,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to adjust hypertension and diabetes medications as needed and recommends scheduling an appointment with a dietician for meal planning.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Discuss stress-reducing techniques to manage blood pressure.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5430047512054443,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4658108055591583,
+          "text": "Physician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions? Patient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high. Physician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2366206794977188,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.19532011449337006,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.19061946868896484,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states that stress-reducing techniques such as meditation or deep breathing exercises will be discussed to help manage blood pressure.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Encourage Mr. Mills to schedule a colonoscopy with a gastroenterologist to address concerns and ensure preventive care.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6862739324569702,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4977871775627136,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.435198038816452,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39722907543182373,
+          "text": "Physician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions? Patient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high. Physician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2652151584625244,
+          "text": "Patient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it. Physician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause. Patient: That sounds good. I'll start using the cream today."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends scheduling an appointment with a gastroenterologist to discuss colonoscopy concerns, and the patient acknowledges the daughter's urging for a colonoscopy. The conversation supports encouraging Mr. Mills to schedule a colonoscopy for preventive care.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "6. Document all recommendations in Mr. Mills' chart for future reference and follow-up.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.45152541995048523,
+          "text": "What are your thoughts on that? Physician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have. Patient: Alright, I'll do that. Thank you for your advice, Dr. Snyder. Physician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3811458945274353,
+          "text": "We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure. Patient: That sounds like a good plan. Thank you, Dr. Snyder. Physician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have? Patient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33353254199028015,
+          "text": "Physician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions? Patient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high. Physician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32801949977874756,
+          "text": "Physician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns. Patient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3073904812335968,
+          "text": "We'll follow up with you soon to check on your progress. Have a good day."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states, 'I'll make sure to document all of this in your chart,' confirming that all recommendations will be documented for future reference and follow-up.",
+        "severity": "none"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Mills. It's a pleasure to meet you. I'm Dr. Snyder, your primary care physician. I've reviewed your medical history, and I'd like to discuss your current symptoms and concerns.\n\nPatient: Good morning, Dr. Snyder. I appreciate your time. Lately, I've been experiencing a skin rash on my arms and legs that's been bothering me. It started about a week ago, and it's been getting worse ever since.\n\nPhysician: Sorry to hear that. Can you tell me more about the rash? What does it look like, and how does it feel?\n\nPatient: It's a red, itchy rash with small bumps. It's not painful, but it's quite uncomfortable. It's also been causing me some difficulty sleeping due to the itchiness.\n\nPhysician: I see. Have you noticed any other symptoms, such as fever, fatigue, or swelling?\n\nPatient: No, nothing like that. Just the itchy rash.\n\nPhysician: Okay. Have you recently traveled, been exposed to new substances, or experienced any changes in your environment that could be contributing to the rash?\n\nPatient: Well, my wife and I went on a trip to the beach last week, and I may have been exposed to some poison ivy or oak. I'm not sure if that could be causing it.\n\nPhysician: That's definitely a possibility. We'll need to investigate further. In the meantime, I recommend using an over-the-counter hydrocortisone cream to help with the itching and inflammation. If the rash doesn't improve within two weeks or shows signs of infection, such as increased redness, swelling, or pus, we'll consider a biopsy to determine the cause.\n\nPatient: That sounds good. I'll start using the cream today.\n\nPhysician: Excellent. Now, let's discuss your hypertension and diabetes. How have you been managing those conditions?\n\nPatient: I've been taking my medications as prescribed, and I've been trying to eat healthier and exercise more. However, my blood pressure and blood sugar levels still seem to be a bit high.\n\nPhysician: I understand. We'll need to monitor those conditions closely and adjust your medications as needed. In addition, I recommend that you schedule an appointment with a dietician to help you develop a more comprehensive meal plan that will support your health goals. We'll also discuss stress-reducing techniques, such as meditation or deep breathing exercises, to help manage your blood pressure.\n\nPatient: That sounds like a good plan. Thank you, Dr. Snyder.\n\nPhysician: Of course, Mr. Mills. We'll also make sure to schedule a follow-up appointment with your dermatologist to assess the progress of your skin rash. Before we wrap up, are there any other concerns or questions you have?\n\nPatient: Actually, yes. My daughter has been urging me to get a colonoscopy, but I'm a bit hesitant due to the prep process. What are your thoughts on that?\n\nPhysician: Well, Mr. Mills, colon cancer screening is an essential aspect of preventive healthcare, especially for someone with your age and medical history. While the prep process can be inconvenient, it's a necessary step to ensure that the procedure is effective in detecting any potential issues. I recommend discussing your concerns with your daughter and scheduling an appointment with a gastroenterologist to address any questions or concerns you may have.\n\nPatient: Alright, I'll do that. Thank you for your advice, Dr. Snyder.\n\nPhysician: You're welcome, Mr. Mills. I'll make sure to document all of this in your chart. We'll follow up with you soon to check on your progress. Have a good day.",
+  "note_text": "Subjective:\nMr. Mills reports experiencing a red, itchy rash with small bumps on his arms and legs that started about a week ago. He notes that the rash is uncomfortable and has been causing difficulty sleeping due to itchiness. Mr. Mills denies fever, fatigue, or swelling. He mentions a recent trip to the beach where he may have been exposed to poison ivy or oak.\n\nObjective:\nMr. Mills presents with a red, itchy rash with small bumps on his arms and legs. No signs of infection such as increased redness, swelling, or pus are noted. Blood pressure and blood sugar levels remain slightly elevated despite medication adherence and lifestyle changes. No acute distress observed during the examination.\n\nAssessment:\nMr. Mills likely has contact dermatitis from exposure to poison ivy or oak during his recent trip to the beach. Hypertension and diabetes management require closer monitoring and potential medication adjustments. Colon cancer screening is overdue and should be discussed further with a gastroenterologist.\n\nPlan:\n1. Recommend over-the-counter hydrocortisone cream for the rash and advise follow-up if no improvement within two weeks.\n2. Schedule a follow-up appointment with the dermatologist to assess the progress of the rash.\n3. Consider adjusting hypertension and diabetes medications as needed and refer to a dietician for meal planning.\n4. Discuss stress-reducing techniques to manage blood pressure.\n5. Encourage Mr. Mills to schedule a colonoscopy with a gastroenterologist to address concerns and ensure preventive care.\n6. Document all recommendations in Mr. Mills' chart for future reference and follow-up."
+}

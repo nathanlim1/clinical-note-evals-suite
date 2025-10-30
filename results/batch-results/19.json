@@ -1,0 +1,743 @@
+{
+  "summary": {
+    "claims": 14,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 0,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 0,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 2,
+    "missing_critical_low_severity": 2,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 51,
+    "failed_calls": 0,
+    "successful_calls": 51,
+    "total_input_tokens": 21715,
+    "total_output_tokens": 1571,
+    "total_tokens": 23286,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0111996
+  },
+  "hallucinated": [],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T20",
+      "text": "Sometimes it feels like someone is squeezing my stomach.",
+      "sent_idx": 20,
+      "prev_text": "It's a sharp, stabbing pain that comes and goes.",
+      "next_text": "Physician: That sounds uncomfortable.",
+      "severity": "low"
+    },
+    {
+      "sent_id": "T37",
+      "text": "And I've noticed that I need to urinate more frequently, especially at night.",
+      "sent_idx": 37,
+      "prev_text": "Patient: Yes, I've been having some diarrhea, especially after I eat.",
+      "next_text": "Physician: Okay.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Kelly Ruiz reports feeling miserable lately due to constant heartburn that doesn't improve with medication.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5960396528244019,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5090286135673523,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.48916739225387573,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46928468346595764,
+          "text": "Have you noticed any triggers that make your symptoms worse? For example, do certain foods or drinks seem to set off the heartburn or abdominal pain? Patient: Yes, definitely. Fatty or spicy foods make my heartburn worse, and I've noticed that dairy products seem to make my abdominal pain worse. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44078946113586426,
+          "text": "Can you tell me more about your heartburn? What does it feel like? Is it a burning sensation, or is it more of a pressure? Patient: It's definitely a burning sensation, like someone poured hot water on my chest. It's worse when I lie down or bend over, and sometimes it radiates up to my throat. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling miserable lately and having constant heartburn that does not improve with medication.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She also mentions worsening abdominal pain, nausea, vomiting, and diarrhea.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5347951054573059,
+          "text": "Have you noticed any other symptoms, like nausea or vomiting? Patient: Yes, I've been feeling nauseous a lot lately, especially after I eat. And I've had some vomiting, mostly in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5025571584701538,
+          "text": "Have you noticed any other changes in your bowel movements or urination patterns? Patient: Yes, I've been having some diarrhea, especially after I eat. And I've noticed that I need to urinate more frequently, especially at night. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.49450209736824036,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4675346314907074,
+          "text": "Have you noticed any triggers that make your symptoms worse? For example, do certain foods or drinks seem to set off the heartburn or abdominal pain? Patient: Yes, definitely. Fatty or spicy foods make my heartburn worse, and I've noticed that dairy products seem to make my abdominal pain worse. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.45714157819747925,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports nausea (E4:2), vomiting (E4:3), diarrhea (E7:2), and abdominal pain (E8:4). The claim of worsening abdominal pain is implied by the patient noting abdominal pain along with worsening symptoms in other areas, supported by E2:4 and E5:4, but the claim only states 'worsening abdominal pain' without specifying timing, so the presence of abdominal pain is supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Symptoms have been present for years but have intensified recently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4774462580680847,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4594600796699524,
+          "text": "Have you had any recent changes in your diet or lifestyle that could be contributing to these symptoms? Patient: Well, my husband and I have been trying to eat healthier, so we've cut back on red meat and added more fruits and vegetables to our diet. But I haven't noticed any improvement in my symptoms. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4172535240650177,
+          "text": "Have you noticed any other symptoms, like nausea or vomiting? Patient: Yes, I've been feeling nauseous a lot lately, especially after I eat. And I've had some vomiting, mostly in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3904340863227844,
+          "text": "Have you noticed any other changes in your bowel movements or urination patterns? Patient: Yes, I've been having some diarrhea, especially after I eat. And I've noticed that I need to urinate more frequently, especially at night. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36438697576522827,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the heartburn has been on and off for years but has worsened recently, directly supporting the claim about symptom duration and recent intensification.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Kelly pointed to upper abdominal pain that is sharp and stabbing.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5998074412345886,
+          "text": "Can you point to where it hurts? Patient: It's mostly in my upper abdomen, around my ribcage. It's a sharp, stabbing pain that comes and goes. Sometimes it feels like someone is squeezing my stomach. Physician: That sounds uncomfortable."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5183888077735901,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4713357985019684,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.45604366064071655,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4167139232158661,
+          "text": "Thank you, Dr. Castillo. Physician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly points to upper abdominal pain and describes it as sharp and stabbing in the transcript.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She experiences burning heartburn that worsens when lying down or bending over.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6445852518081665,
+          "text": "Can you tell me more about your heartburn? What does it feel like? Is it a burning sensation, or is it more of a pressure? Patient: It's definitely a burning sensation, like someone poured hot water on my chest. It's worse when I lie down or bend over, and sometimes it radiates up to my throat. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5472507476806641,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5196027159690857,
+          "text": "Have you noticed any triggers that make your symptoms worse? For example, do certain foods or drinks seem to set off the heartburn or abdominal pain? Patient: Yes, definitely. Fatty or spicy foods make my heartburn worse, and I've noticed that dairy products seem to make my abdominal pain worse. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4739269018173218,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.454679936170578,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the heartburn is a burning sensation and that it worsens when lying down or bending over.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of fever, chills, or bloating were noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.36300453543663025,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35612303018569946,
+          "text": "Have you noticed any other symptoms, like nausea or vomiting? Patient: Yes, I've been feeling nauseous a lot lately, especially after I eat. And I've had some vomiting, mostly in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3284870684146881,
+          "text": "Have you had any recent changes in your diet or lifestyle that could be contributing to these symptoms? Patient: Well, my husband and I have been trying to eat healthier, so we've cut back on red meat and added more fruits and vegetables to our diet. But I haven't noticed any improvement in my symptoms. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.27257296442985535,
+          "text": "Have you noticed any other changes in your bowel movements or urination patterns? Patient: Yes, I've been having some diarrhea, especially after I eat. And I've noticed that I need to urinate more frequently, especially at night. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2708140015602112,
+          "text": "Can you point to where it hurts? Patient: It's mostly in my upper abdomen, around my ribcage. It's a sharp, stabbing pain that comes and goes. Sometimes it feels like someone is squeezing my stomach. Physician: That sounds uncomfortable."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies having fevers, chills, or abdominal bloating when asked directly about these symptoms.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Kelly has been adhering to a healthier diet with her husband but has not seen improvement in symptoms.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5885266661643982,
+          "text": "Have you had any recent changes in your diet or lifestyle that could be contributing to these symptoms? Patient: Well, my husband and I have been trying to eat healthier, so we've cut back on red meat and added more fruits and vegetables to our diet. But I haven't noticed any improvement in my symptoms. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4525219798088074,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4297366738319397,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3495407700538635,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3417523503303528,
+          "text": "Thank you, Dr. Castillo. Physician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that she and her husband have been trying to eat healthier by cutting back on red meat and adding more fruits and vegetables, but she has not noticed any improvement in her symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Based on Kelly's symptoms and history of GERD and IBS, further evaluation is needed.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6645314693450928,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.522965133190155,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4611940383911133,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.42073947191238403,
+          "text": "Thank you, Dr. Castillo. Physician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35380470752716064,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the symptoms could be related to GERD or IBS and recommends scheduling tests and referral for further evaluation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "An upper endoscopy is recommended to assess the esophagus and stomach.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5593223571777344,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.37770724296569824,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.312343031167984,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3021032214164734,
+          "text": "Have you noticed any triggers that make your symptoms worse? For example, do certain foods or drinks seem to set off the heartburn or abdominal pain? Patient: Yes, definitely. Fatty or spicy foods make my heartburn worse, and I've noticed that dairy products seem to make my abdominal pain worse. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2855026423931122,
+          "text": "Can you point to where it hurts? Patient: It's mostly in my upper abdomen, around my ribcage. It's a sharp, stabbing pain that comes and goes. Sometimes it feels like someone is squeezing my stomach. Physician: That sounds uncomfortable."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to schedule an upper endoscopy to examine the esophagus and stomach.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Referral to a gastroenterologist is also advised for comprehensive evaluation.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5388766527175903,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4520794749259949,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3425281047821045,
+          "text": "Thank you, Dr. Castillo. Physician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3337286412715912,
+          "text": "Have you noticed any other symptoms, like nausea or vomiting? Patient: Yes, I've been feeling nauseous a lot lately, especially after I eat. And I've had some vomiting, mostly in the mornings. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3245674669742584,
+          "text": "Have you noticed any other changes in your bowel movements or urination patterns? Patient: Yes, I've been having some diarrhea, especially after I eat. And I've noticed that I need to urinate more frequently, especially at night. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E10",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a referral to a gastroenterologist for further evaluation (E9:4) and confirms that the referral will be scheduled (E10:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Lifestyle changes, including avoiding trigger foods, weight loss, and a low-FODMAP diet, are suggested to manage symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.6239684224128723,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.49213066697120667,
+          "text": "Have you had any recent changes in your diet or lifestyle that could be contributing to these symptoms? Patient: Well, my husband and I have been trying to eat healthier, so we've cut back on red meat and added more fruits and vegetables to our diet. But I haven't noticed any improvement in my symptoms. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4305680990219116,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41133761405944824,
+          "text": "Have you noticed any triggers that make your symptoms worse? For example, do certain foods or drinks seem to set off the heartburn or abdominal pain? Patient: Yes, definitely. Fatty or spicy foods make my heartburn worse, and I've noticed that dairy products seem to make my abdominal pain worse. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30049049854278564,
+          "text": "Have you noticed any other changes in your bowel movements or urination patterns? Patient: Yes, I've been having some diarrhea, especially after I eat. And I've noticed that I need to urinate more frequently, especially at night. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends avoiding trigger foods, weight loss if overweight, and a low-FODMAP diet to manage symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "The nurse will schedule an upper endoscopy for Kelly and make a referral to a gastroenterologist.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.5589828491210938,
+          "text": "Thank you, Dr. Castillo. Physician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5176635980606079,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4659405052661896,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.424628347158432,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2648424804210663,
+          "text": "And how long have you been experiencing this heartburn? Patient: It's been on and off for years, but it's been much worse lately. Physician: I understand. And what about the abdominal pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E10",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to schedule an upper endoscopy and make a referral to a gastroenterologist for Kelly, and confirms that the nurse will schedule the tests and referral.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Kelly will be instructed to follow the recommended lifestyle changes to alleviate symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4824056029319763,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.45425498485565186,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4308841824531555,
+          "text": "Thank you, Dr. Castillo. Physician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3927556276321411,
+          "text": "Physician: Good morning, Kelly. How are you feeling today? Patient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3865165710449219,
+          "text": "Have you had any recent changes in your diet or lifestyle that could be contributing to these symptoms? Patient: Well, my husband and I have been trying to eat healthier, so we've cut back on red meat and added more fruits and vegetables to our diet. But I haven't noticed any improvement in my symptoms. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              5,
+              6,
+              8
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends lifestyle changes to alleviate symptoms (E9:5,6) and the patient agrees to make those changes (E9:8). Additionally, the physician states a desire to recommend lifestyle changes to help alleviate symptoms (E8:8).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Follow-up will be conducted to discuss test results and adjust the treatment plan accordingly.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.4841102957725525,
+          "text": "Thank you, Dr. Castillo. Physician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.42152100801467896,
+          "text": "Patient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make? Physician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms. Patient: Okay, that makes sense. I'll do my best to make those changes."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31401777267456055,
+          "text": "Have you had any recent changes in your diet or lifestyle that could be contributing to these symptoms? Patient: Well, my husband and I have been trying to eat healthier, so we've cut back on red meat and added more fruits and vegetables to our diet. But I haven't noticed any improvement in my symptoms. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3035683333873749,
+          "text": "Have you noticed any other changes in your bowel movements or urination patterns? Patient: Yes, I've been having some diarrhea, especially after I eat. And I've noticed that I need to urinate more frequently, especially at night. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.303484171628952,
+          "text": "Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating? Patient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea. Physician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E10",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the nurse will schedule tests and that they will follow up soon to discuss the results, implying that the treatment plan may be adjusted accordingly.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Kelly. How are you feeling today?\n\nPatient: Hi, Dr. Castillo. I've been feeling pretty miserable lately. I've had this constant heartburn that doesn't seem to go away, even when I take my medication. And I've been experiencing abdominal pain that's been getting worse over the past few weeks.\n\nPhysician: I see. Can you tell me more about your heartburn? What does it feel like? Is it a burning sensation, or is it more of a pressure?\n\nPatient: It's definitely a burning sensation, like someone poured hot water on my chest. It's worse when I lie down or bend over, and sometimes it radiates up to my throat.\n\nPhysician: Okay. And how long have you been experiencing this heartburn?\n\nPatient: It's been on and off for years, but it's been much worse lately.\n\nPhysician: I understand. And what about the abdominal pain? Can you point to where it hurts?\n\nPatient: It's mostly in my upper abdomen, around my ribcage. It's a sharp, stabbing pain that comes and goes. Sometimes it feels like someone is squeezing my stomach.\n\nPhysician: That sounds uncomfortable. Have you noticed any other symptoms, like nausea or vomiting?\n\nPatient: Yes, I've been feeling nauseous a lot lately, especially after I eat. And I've had some vomiting, mostly in the mornings.\n\nPhysician: Okay. Have you noticed any triggers that make your symptoms worse? For example, do certain foods or drinks seem to set off the heartburn or abdominal pain?\n\nPatient: Yes, definitely. Fatty or spicy foods make my heartburn worse, and I've noticed that dairy products seem to make my abdominal pain worse.\n\nPhysician: That's helpful to know. Have you had any recent changes in your diet or lifestyle that could be contributing to these symptoms?\n\nPatient: Well, my husband and I have been trying to eat healthier, so we've cut back on red meat and added more fruits and vegetables to our diet. But I haven't noticed any improvement in my symptoms.\n\nPhysician: I see. Have you noticed any other changes in your bowel movements or urination patterns?\n\nPatient: Yes, I've been having some diarrhea, especially after I eat. And I've noticed that I need to urinate more frequently, especially at night.\n\nPhysician: Okay. Have you experienced any other symptoms that might be related to your gastrointestinal issues? For example, have you had any fevers, chills, or abdominal bloating?\n\nPatient: No, I haven't had any of those symptoms. Just the heartburn, abdominal pain, nausea, and diarrhea.\n\nPhysician: Okay, Kelly. Based on what you've told me, it sounds like you might be experiencing some gastrointestinal issues that could be related to your GERD or IBS. I'd like to schedule you for some tests to get a better idea of what's going on. In the meantime, I'd like to recommend some lifestyle changes that might help alleviate your symptoms.\n\nPatient: Sure, what kind of tests do you have in mind? And what kind of lifestyle changes should I make?\n\nPhysician: Well, first, I'd like to schedule you for an upper endoscopy to take a closer look at your esophagus and stomach. And I'd also like to refer you to a gastroenterologist for further evaluation. In terms of lifestyle changes, I'd recommend avoiding trigger foods like fatty or spicy foods, losing weight if you're overweight, and avoiding lying down after eating. I'd also suggest trying a low-FODMAP diet, which can help manage IBS symptoms.\n\nPatient: Okay, that makes sense. I'll do my best to make those changes. Thank you, Dr. Castillo.\n\nPhysician: You're welcome, Kelly. I'll have my nurse schedule the tests and referral, and we'll follow up soon to discuss the results.",
+  "note_text": "Subjective:\nKelly Ruiz reports feeling miserable lately due to constant heartburn that doesn't improve with medication. She also mentions worsening abdominal pain, nausea, vomiting, and diarrhea. Symptoms have been present for years but have intensified recently.\n\nObjective:\nDuring the examination, Kelly pointed to upper abdominal pain that is sharp and stabbing. She experiences burning heartburn that worsens when lying down or bending over. No signs of fever, chills, or bloating were noted. Kelly has been adhering to a healthier diet with her husband but has not seen improvement in symptoms.\n\nAssessment:\nBased on Kelly's symptoms and history of GERD and IBS, further evaluation is needed. An upper endoscopy is recommended to assess the esophagus and stomach. Referral to a gastroenterologist is also advised for comprehensive evaluation. Lifestyle changes, including avoiding trigger foods, weight loss, and a low-FODMAP diet, are suggested to manage symptoms.\n\nPlan:\nThe nurse will schedule an upper endoscopy for Kelly and make a referral to a gastroenterologist. Kelly will be instructed to follow the recommended lifestyle changes to alleviate symptoms. Follow-up will be conducted to discuss test results and adjust the treatment plan accordingly."
+}

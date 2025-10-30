@@ -1,0 +1,1194 @@
+{
+  "summary": {
+    "claims": 21,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 45,
+    "failed_calls": 0,
+    "successful_calls": 45,
+    "total_input_tokens": 23114,
+    "total_output_tokens": 1741,
+    "total_tokens": 24855,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0120312
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C6",
+      "text": "Mrs. Mitchell appears fatigued during the consultation but is alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5384867787361145,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40862953662872314,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33365118503570557,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29731497168540955,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.29356902837753296,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Mrs. Mitchell reports feeling tired (E3[2]) but does not explicitly state that she appears fatigued during the consultation. There is no mention of her being alert and oriented. Thus, the claim about her appearance and mental status is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "She denies any visible signs of distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3244791626930237,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24247419834136963,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2363404631614685,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22456252574920654,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2014874815940857,
+          "text": "Have you noticed any triggers that make the pain worse, such as eating certain foods or drinks? Patient: Yes, I've noticed that if I eat fatty or spicy foods, it makes the pain worse. And if I lie down for too long, it also seems to make it worse. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or deny any visible signs of distress; no direct statement about visible distress is present.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3200359046459198,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31786757707595825,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2618827223777771,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2547515332698822,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25139808654785156,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Physical examination reveals tenderness in the upper right quadrant of the abdomen.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5621510744094849,
+          "text": "Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located? Patient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38309890031814575,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37643516063690186,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3568105101585388,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3466857373714447,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains patient-reported location of pain in the upper right abdomen but does not include any physical examination findings or mention of tenderness on exam.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Differential diagnoses include gastroesophageal reflux disease (GERD), inflammatory bowel disease, or gastrointestinal infection.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3842463493347168,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3738405704498291,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3560050129890442,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34412336349487305,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30182021856307983,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly list gastroesophageal reflux disease (GERD), inflammatory bowel disease, or gastrointestinal infection as differential diagnoses. While symptoms and tests related to these conditions are mentioned, the claim that these are included in the differential diagnoses is not explicitly stated.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mrs. Mitchell reports experiencing worsening abdominal pain, bloating, and diarrhea over the past month.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7550156116485596,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.546289324760437,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.48416781425476074,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.46940290927886963,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4438324570655823,
+          "text": "Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located? Patient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports experiencing abdominal pain, bloating, and diarrhea, and states that these symptoms have been worsening over the past month.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes the pain as a dull ache with occasional sharp stabbing pain, primarily located in the upper right side of her abdomen.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7635231018066406,
+          "text": "Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located? Patient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4225155711174011,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42195820808410645,
+          "text": "Have you noticed any triggers that make the pain worse, such as eating certain foods or drinks? Patient: Yes, I've noticed that if I eat fatty or spicy foods, it makes the pain worse. And if I lie down for too long, it also seems to make it worse. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40277203917503357,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3310609459877014,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the pain is mostly a dull ache with occasional sharp stabbing pain and that it is primarily located in the upper right side of the abdomen.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She notes that fatty or spicy foods exacerbate the pain, along with prolonged periods of lying down.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6889058947563171,
+          "text": "Have you noticed any triggers that make the pain worse, such as eating certain foods or drinks? Patient: Yes, I've noticed that if I eat fatty or spicy foods, it makes the pain worse. And if I lie down for too long, it also seems to make it worse. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39294546842575073,
+          "text": "Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located? Patient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38152509927749634,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37154555320739746,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2970889210700989,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that fatty or spicy foods worsen the pain and that lying down for too long also exacerbates it.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mrs. Mitchell also mentions feeling tired, nauseous, and experiencing a persistent sour taste in her mouth.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5794080495834351,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5336423516273499,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.439909428358078,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28603866696357727,
+          "text": "Have you noticed any triggers that make the pain worse, such as eating certain foods or drinks? Patient: Yes, I've noticed that if I eat fatty or spicy foods, it makes the pain worse. And if I lie down for too long, it also seems to make it worse. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27322205901145935,
+          "text": "Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located? Patient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling tired and nauseous, and also mentions a persistent sour taste in her mouth that won't go away.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She reports irregular bowel movements, with periods of constipation followed by episodes of diarrhea.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6505862474441528,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4441589415073395,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43603742122650146,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39387285709381104,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3836345672607422,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports irregular bowel movements, describing periods without bowel movements (constipation) followed by episodes of diarrhea.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Additionally, she has lost approximately 10 pounds recently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.41373491287231445,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34915676712989807,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.281615287065506,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25313663482666016,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24231648445129395,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has lost about 10 pounds over the past month, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Mrs. Mitchell appears fatigued during the consultation but is alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5384867787361145,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40862953662872314,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33365118503570557,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29731497168540955,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.29356902837753296,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Mrs. Mitchell reports feeling tired (E3[2]) but does not explicitly state that she appears fatigued during the consultation. There is no mention of her being alert and oriented. Thus, the claim about her appearance and mental status is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "She denies any visible signs of distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3244791626930237,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24247419834136963,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2363404631614685,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22456252574920654,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2014874815940857,
+          "text": "Have you noticed any triggers that make the pain worse, such as eating certain foods or drinks? Patient: Yes, I've noticed that if I eat fatty or spicy foods, it makes the pain worse. And if I lie down for too long, it also seems to make it worse. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or deny any visible signs of distress; no direct statement about visible distress is present.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3200359046459198,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31786757707595825,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2618827223777771,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2547515332698822,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25139808654785156,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Physical examination reveals tenderness in the upper right quadrant of the abdomen.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5621510744094849,
+          "text": "Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located? Patient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38309890031814575,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37643516063690186,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3568105101585388,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3466857373714447,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains patient-reported location of pain in the upper right abdomen but does not include any physical examination findings or mention of tenderness on exam.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "No signs of blood in stools or black tarry stools are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.731387734413147,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37570446729660034,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.364712655544281,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33371585607528687,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25719237327575684,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies noticing any blood or black tarry stools when asked directly.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Mrs. Mitchell's weight has decreased by 10 pounds since her last visit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4762211740016937,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.38401344418525696,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3555300235748291,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33184680342674255,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2780619263648987,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has lost about 10 pounds over the past month, which supports the claim of a 10-pound weight decrease since her last visit.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Mrs. Mitchell presents with chronic symptoms of abdominal pain, bloating, and diarrhea, along with weight loss.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7095590829849243,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5164305567741394,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4994536340236664,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42468011379241943,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4085189700126648,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports abdominal pain, bloating, and diarrhea (E0:5,6), along with weight loss of about 10 pounds over the past month (E6:1). Irregular bowel movements including diarrhea are also described (E4:2,3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Differential diagnoses include gastroesophageal reflux disease (GERD), inflammatory bowel disease, or gastrointestinal infection.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3842463493347168,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3738405704498291,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3560050129890442,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34412336349487305,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30182021856307983,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly list gastroesophageal reflux disease (GERD), inflammatory bowel disease, or gastrointestinal infection as differential diagnoses. While symptoms and tests related to these conditions are mentioned, the claim that these are included in the differential diagnoses is not explicitly stated.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Further investigations are warranted to determine the underlying cause of her symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4209766387939453,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3979955315589905,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3343880772590637,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29788076877593994,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2920886278152466,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              4,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tests and a colonoscopy to understand the cause of symptoms and mentions following up after test results, indicating further investigations are planned to determine the underlying cause.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "1. Order a colonoscopy to evaluate for colon polyps or cancer.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.47271087765693665,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3599865138530731,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3153063654899597,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3131484389305115,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2238990068435669,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to order a colonoscopy to rule out colon polyps or cancer.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "2. Conduct a complete blood count (CBC) and lipid panel to assess for infections or inflammation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.43237537145614624,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34355711936950684,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3287472724914551,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2476014345884323,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24121519923210144,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to do a CBC and lipid panel to check for infections or inflammation.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "3. Perform an H. pylori antibody test to check for infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5635932683944702,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3721364736557007,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2891339361667633,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2852228283882141,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23919133841991425,
+          "text": "Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located? Patient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states that an H. pylori antibody test will be performed to check for infection.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "4. Initiate treatment with omeprazole 20mg daily to alleviate symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5606195330619812,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34560030698776245,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3338254690170288,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28735852241516113,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2631140947341919,
+          "text": "Have you noticed any triggers that make the pain worse, such as eating certain foods or drinks? Patient: Yes, I've noticed that if I eat fatty or spicy foods, it makes the pain worse. And if I lie down for too long, it also seems to make it worse. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the physician's instruction to start taking omeprazole daily to help with symptoms, which supports the claim to initiate treatment with omeprazole 20mg daily to alleviate symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "5. Advise Mrs. Mitchell to contact the clinic if she experiences worsening symptoms or has any concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5071539282798767,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5022808313369751,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3085460960865021,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29343315958976746,
+          "text": "Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea? Patient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2924841642379761,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the physician advising Mrs. Mitchell to reach out if she experiences worsening symptoms or has any questions, which aligns with the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "6. Schedule a follow-up appointment to review test results and determine the next steps in her care plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.43150749802589417,
+          "text": "And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests. Patient: Okay, that sounds good. Thank you, Dr. Medina. Physician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33084630966186523,
+          "text": "Patient: Yes, I've lost about 10 pounds over the past month. Physician: I see. Have you had any recent travel or exposure to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms. Physician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.24466393887996674,
+          "text": "Have you noticed any blood in your stools or black tarry stools? Patient: No, I haven't noticed any blood or black tarry stools. Physician: Okay. Have you had any recent weight loss or gain?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23432782292366028,
+          "text": "Have you had any recent changes in your bowel movements? Patient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21739792823791504,
+          "text": "Physician: Good morning, Mrs. Mitchell. How are you feeling today? Patient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up in a few days once test results are available and mentions figuring out the best course of action, implying review of results and next steps in care.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mrs. Mitchell. How are you feeling today?\n\nPatient: Hi, Dr. Medina. I'm not feeling too well, to be honest. I've been experiencing a lot of abdominal pain, bloating, and diarrhea lately. It's been getting worse over the past month.\n\nPhysician: I see. Can you tell me more about the abdominal pain? Is it sharp, dull, or crampy? And where is it located?\n\nPatient: It's mostly a dull ache, but sometimes it feels like a sharp stabbing pain. It's mostly in the upper right side of my abdomen, but sometimes it feels like it's all over my stomach.\n\nPhysician: Okay. Have you noticed any triggers that make the pain worse, such as eating certain foods or drinks?\n\nPatient: Yes, I've noticed that if I eat fatty or spicy foods, it makes the pain worse. And if I lie down for too long, it also seems to make it worse.\n\nPhysician: I understand. Have you had any other symptoms aside from the abdominal pain, bloating, and diarrhea?\n\nPatient: Yes, I've been feeling really tired and nauseous lately. And sometimes I get this sour taste in my mouth that won't go away.\n\nPhysician: I see. Have you had any recent changes in your bowel movements?\n\nPatient: Yes, my bowel movements have been really irregular lately. Sometimes I'll go a few days without a bowel movement, and then other times I'll have diarrhea for a few days in a row.\n\nPhysician: I understand. Have you noticed any blood in your stools or black tarry stools?\n\nPatient: No, I haven't noticed any blood or black tarry stools.\n\nPhysician: Okay. Have you had any recent weight loss or gain?\n\nPatient: Yes, I've lost about 10 pounds over the past month.\n\nPhysician: I see. Have you had any recent travel or exposure to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't think anyone in my household has similar symptoms.\n\nPhysician: I understand. I'm going to order some tests to help us better understand what's going on. We'll need to do a colonoscopy to rule out any colon polyps or cancer. We'll also do a CBC and lipid panel to check for any infections or inflammation. And we'll also do an H. pylori antibody test to see if you have an infection. In the meantime, I'd like you to start taking omeprazole daily to help with the symptoms. If you experience any worsening symptoms or have any questions, please don't hesitate to reach out to me. We'll follow up in a few days once we get the results of the tests.\n\nPatient: Okay, that sounds good. Thank you, Dr. Medina.\n\nPhysician: You're welcome, Mrs. Mitchell. We'll get to the bottom of this and figure out the best course of action for you.",
+  "note_text": "SOAP Note:\n\nSubjective:\nMrs. Mitchell reports experiencing worsening abdominal pain, bloating, and diarrhea over the past month. She describes the pain as a dull ache with occasional sharp stabbing pain, primarily located in the upper right side of her abdomen. She notes that fatty or spicy foods exacerbate the pain, along with prolonged periods of lying down. Mrs. Mitchell also mentions feeling tired, nauseous, and experiencing a persistent sour taste in her mouth. She reports irregular bowel movements, with periods of constipation followed by episodes of diarrhea. Additionally, she has lost approximately 10 pounds recently.\n\nObjective:\nMrs. Mitchell appears fatigued during the consultation but is alert and oriented. She denies any visible signs of distress. Vital signs are within normal limits. Physical examination reveals tenderness in the upper right quadrant of the abdomen. No signs of blood in stools or black tarry stools are noted. Mrs. Mitchell's weight has decreased by 10 pounds since her last visit.\n\nAssessment:\nMrs. Mitchell presents with chronic symptoms of abdominal pain, bloating, and diarrhea, along with weight loss. Differential diagnoses include gastroesophageal reflux disease (GERD), inflammatory bowel disease, or gastrointestinal infection. Further investigations are warranted to determine the underlying cause of her symptoms.\n\nPlan:\n1. Order a colonoscopy to evaluate for colon polyps or cancer.\n2. Conduct a complete blood count (CBC) and lipid panel to assess for infections or inflammation.\n3. Perform an H. pylori antibody test to check for infection.\n4. Initiate treatment with omeprazole 20mg daily to alleviate symptoms.\n5. Advise Mrs. Mitchell to contact the clinic if she experiences worsening symptoms or has any concerns.\n6. Schedule a follow-up appointment to review test results and determine the next steps in her care plan."
+}

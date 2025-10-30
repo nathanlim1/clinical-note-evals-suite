@@ -1,0 +1,1040 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 2,
+    "missing_critical_low_severity": 2,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 50,
+    "failed_calls": 0,
+    "successful_calls": 50,
+    "total_input_tokens": 23624,
+    "total_output_tokens": 1678,
+    "total_tokens": 25302,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0121344
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "During the examination, Zack appeared uncomfortable when moving his right knee and left ankle.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5801137685775757,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4122214913368225,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4116702377796173,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3567662835121155,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3403468728065491,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Zack reports pain in his right knee and left ankle and that it affects his mobility, but there is no explicit mention of him appearing uncomfortable during the physical examination or when moving those joints.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "There were no signs of swelling or redness in the affected joints.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5708732604980469,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34969058632850647,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28891491889953613,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26696622371673584,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2641806900501251,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient denies noticeable swelling or redness but admits occasional mild puffiness in the knee after activity, which implies some swelling is present though not severe. The claim states 'no signs of swelling or redness,' which is not fully supported.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Zack's range of motion in both joints was limited due to pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.49122539162635803,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4159335494041443,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.40919771790504456,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3622540831565857,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32265719771385193,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Zack experiences pain in his right knee and left ankle and that the pain affects his mobility, but there is no explicit mention that his range of motion in both joints was limited due to pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "He is currently taking ibuprofen 600mg as needed for pain relief.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.47737249732017517,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39926862716674805,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38290417194366455,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3650416433811188,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34044796228408813,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient has been taking ibuprofen regularly for pain, but does not specify the dose or that it is taken as needed. The claim that he is currently taking ibuprofen 600mg as needed is not explicitly stated or implied.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Zack's mother expressed concerns about his mental health due to the impact of the pain on his daily activities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4729822278022766,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3978500962257385,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34992384910583496,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3058580756187439,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27268779277801514,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not mention Zack's mother or any concerns expressed by her about Zack's mental health or the impact of pain on his daily activities. The conversation is between the physician and Zack only, focusing on pain and mobility issues without reference to mental health or parental concerns.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T14",
+      "text": "I've been avoiding stairs and stuff because it just hurts too much.",
+      "sent_idx": 14,
+      "prev_text": "Yeah, it's definitely affecting my mobility.",
+      "next_text": "Physician: Okay, that helps.",
+      "severity": "low"
+    },
+    {
+      "sent_id": "T22",
+      "text": "At first, it was just a little twinge every now and then, but it's gradually gotten worse over time.",
+      "sent_idx": 22,
+      "prev_text": "Patient: It started about six months ago.",
+      "next_text": "Physician: I understand.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Zack Fields reports experiencing constant pain in his right knee and left ankle for the past six months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5786603689193726,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.41777053475379944,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3430461287498474,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33977994322776794,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3221297264099121,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports constant pain in the right knee and left ankle (E0:5) and states the pain started about six months ago (E3:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He describes the pain as a dull ache that is always present and affects his mobility, particularly when walking or standing for extended periods.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7067661285400391,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5593793988227844,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5339353084564209,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5212157964706421,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43794581294059753,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              7
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly describes the pain as a dull ache that is always present (E0:5-6, E1:4) and confirms it affects his mobility (E1:7). He also states the pain worsens when walking or standing for extended periods (E4:2).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He notes that the pain improves when he is sitting or lying down.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6956607699394226,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4865397810935974,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4598214626312256,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.45162495970726013,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4210382103919983,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the pain seems to get better if he is sitting or lying down, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Zack has been taking ibuprofen for pain relief, but it provides only minimal relief and occasionally causes stomach discomfort.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4646722078323364,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4453442096710205,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4229748845100403,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3432460427284241,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34312599897384644,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient states he has been taking ibuprofen regularly but it only helps a little (minimal relief) and sometimes causes stomach discomfort.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "During the examination, Zack appeared uncomfortable when moving his right knee and left ankle.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5801137685775757,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4122214913368225,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4116702377796173,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3567662835121155,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3403468728065491,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Zack reports pain in his right knee and left ankle and that it affects his mobility, but there is no explicit mention of him appearing uncomfortable during the physical examination or when moving those joints.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "There were no signs of swelling or redness in the affected joints.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5708732604980469,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34969058632850647,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28891491889953613,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26696622371673584,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2641806900501251,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient denies noticeable swelling or redness but admits occasional mild puffiness in the knee after activity, which implies some swelling is present though not severe. The claim states 'no signs of swelling or redness,' which is not fully supported.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Zack's range of motion in both joints was limited due to pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.49122539162635803,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4159335494041443,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.40919771790504456,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3622540831565857,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32265719771385193,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Zack experiences pain in his right knee and left ankle and that the pain affects his mobility, but there is no explicit mention that his range of motion in both joints was limited due to pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "He is currently taking ibuprofen 600mg as needed for pain relief.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.47737249732017517,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39926862716674805,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38290417194366455,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3650416433811188,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34044796228408813,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient has been taking ibuprofen regularly for pain, but does not specify the dose or that it is taken as needed. The claim that he is currently taking ibuprofen 600mg as needed is not explicitly stated or implied.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Zack's mother expressed concerns about his mental health due to the impact of the pain on his daily activities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4729822278022766,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3978500962257385,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34992384910583496,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3058580756187439,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27268779277801514,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not mention Zack's mother or any concerns expressed by her about Zack's mental health or the impact of pain on his daily activities. The conversation is between the physician and Zack only, focusing on pain and mobility issues without reference to mental health or parental concerns.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Based on Zack's symptoms and history, the likely diagnosis is osteoarthritis in the right knee and left ankle.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5796840786933899,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4474456310272217,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.43921995162963867,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3485243320465088,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3430197834968567,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a possible diagnosis of osteoarthritis based on the patient's symptoms and history, which include pain in the right knee and left ankle. Although further testing is needed, the likely diagnosis is osteoarthritis in those joints.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further testing is needed to confirm the diagnosis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.31889069080352783,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.23635950684547424,
+          "text": "Sound good? Patient: Sounds good to me. Thanks again."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.20821130275726318,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.19743269681930542,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.18512976169586182,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that further testing is needed to confirm the diagnosis of osteoarthritis.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Zack's current pain management with ibuprofen is suboptimal, and he experiences occasional gastrointestinal side effects.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5277187824249268,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4684199094772339,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.447043776512146,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3865192234516144,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3693104386329651,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports taking ibuprofen regularly with only partial pain relief and occasional stomach discomfort, indicating suboptimal pain management and gastrointestinal side effects.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Referral to physical therapy is recommended to improve mobility and reduce strain on the affected joints.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.486402690410614,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4393247365951538,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3819634020328522,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32935649156570435,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3240595757961273,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a referral to physical therapy to improve mobility and reduce strain on joints in sentence 7 of E5.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Prescribe a different medication for pain management that may be more effective and have fewer gastrointestinal side effects.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.48828375339508057,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36008429527282715,
+          "text": "Have you noticed any triggers that make the pain better or worse? Patient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3205510377883911,
+          "text": "And how long have you been experiencing this pain? Patient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3173121213912964,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2960783839225769,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports taking ibuprofen with limited pain relief and gastrointestinal side effects. The physician proposes prescribing a different medication that may be more effective for pain management, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Refer Zack to physical therapy to address mobility issues and strengthen the affected joints.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5709972381591797,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4487460255622864,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41692328453063965,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3489139676094055,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3152618408203125,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a plan to refer Zack to physical therapy to improve mobility and reduce joint strain, and later confirms setting up with a physical therapist.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Advise Zack to avoid heavy lifting or bending and to take it easy on his joints.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5778945684432983,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4694381654262543,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.35967302322387695,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around? Patient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33608025312423706,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.33283358812332153,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises Zack to avoid heavy lifting or bending and to take it easy on his joints in sentence 6 of span E6.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Follow up with Zack in a few weeks to assess his progress and adjust the treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5582653880119324,
+          "text": "Does that sound good to you? Patient: Yeah, that sounds like a plan. Thanks, Doc. Physician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3660348653793335,
+          "text": "Physician: Good morning, Zack. How are you feeling today? Patient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30997365713119507,
+          "text": "Sound good? Patient: Sounds good to me. Thanks again."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2884224057197571,
+          "text": "And have you tried any treatments or medications so far to help manage the pain? Patient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it. Physician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25393742322921753,
+          "text": "Physician: Okay, that helps. Have you noticed any swelling or redness in the affected areas? Patient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything. Physician: Got it."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will follow up in a few weeks to see how the patient is doing and reassess, which aligns with the claim of following up with Zack in a few weeks to assess progress and adjust the treatment plan as needed.",
+        "severity": "none"
+      }
+    }
+  ],
+  "transcript_text": "Physician: Good morning, Zack. How are you feeling today?\n\nPatient: Hi, Doc. I've been feeling pretty lousy lately. I've got this constant pain in my right knee and left ankle that just won't go away. It's like a dull ache that's always there, no matter what I'm doing.\n\nPhysician: I see. Can you tell me more about the pain? Is it sharp, dull, throbbing? Does it feel like it's affecting your ability to move around?\n\nPatient: It's definitely dull and achy. It's not excruciating, but it's definitely noticeable. It's like there's pressure on my joints all the time. Yeah, it's definitely affecting my mobility. I've been avoiding stairs and stuff because it just hurts too much.\n\nPhysician: Okay, that helps. Have you noticed any swelling or redness in the affected areas?\n\nPatient: Not really. I mean, sometimes my knee will get a little puffy if I've been walking or standing for a while, but it's not like it's massively swollen or anything.\n\nPhysician: Got it. And how long have you been experiencing this pain?\n\nPatient: It started about six months ago. At first, it was just a little twinge every now and then, but it's gradually gotten worse over time.\n\nPhysician: I understand. Have you noticed any triggers that make the pain better or worse?\n\nPatient: Well, like I said, it gets worse when I'm walking or standing for a long time. But it also seems to get better if I'm sitting or lying down for a bit.\n\nPhysician: Okay, that's helpful. And have you tried any treatments or medications so far to help manage the pain?\n\nPatient: Yeah, I've been taking ibuprofen pretty regularly, but it only seems to help a little bit. And sometimes it makes my stomach feel weird, so I don't want to take too much of it.\n\nPhysician: I see. Well, based on what you've told me, it sounds like we're looking at a possible diagnosis of osteoarthritis. We'll need to do some further testing to confirm that, but in the meantime, I think we can start by prescribing you a different medication that might be more effective at managing your pain. I'd also like to refer you to physical therapy to help improve your mobility and reduce the strain on your joints. Does that sound good to you?\n\nPatient: Yeah, that sounds like a plan. Thanks, Doc.\n\nPhysician: You're welcome, Zack. We'll get you set up with a physical therapist and get that medication prescription sent over to your pharmacy. In the meantime, try to avoid any heavy lifting or bending, and see if you can take it easy on your joints for a bit. We'll follow up in a few weeks to see how you're doing and reassess from there. Sound good?\n\nPatient: Sounds good to me. Thanks again.",
+  "note_text": "Subjective:\nZack Fields reports experiencing constant pain in his right knee and left ankle for the past six months. He describes the pain as a dull ache that is always present and affects his mobility, particularly when walking or standing for extended periods. He notes that the pain improves when he is sitting or lying down. Zack has been taking ibuprofen for pain relief, but it provides only minimal relief and occasionally causes stomach discomfort.\n\nObjective:\nDuring the examination, Zack appeared uncomfortable when moving his right knee and left ankle. There were no signs of swelling or redness in the affected joints. Zack's range of motion in both joints was limited due to pain. He is currently taking ibuprofen 600mg as needed for pain relief. Zack's mother expressed concerns about his mental health due to the impact of the pain on his daily activities.\n\nAssessment:\nBased on Zack's symptoms and history, the likely diagnosis is osteoarthritis in the right knee and left ankle. Further testing is needed to confirm the diagnosis. Zack's current pain management with ibuprofen is suboptimal, and he experiences occasional gastrointestinal side effects. Referral to physical therapy is recommended to improve mobility and reduce strain on the affected joints.\n\nPlan:\n1. Prescribe a different medication for pain management that may be more effective and have fewer gastrointestinal side effects.\n2. Refer Zack to physical therapy to address mobility issues and strengthen the affected joints.\n3. Advise Zack to avoid heavy lifting or bending and to take it easy on his joints.\n4. Follow up with Zack in a few weeks to assess his progress and adjust the treatment plan as needed."
+}

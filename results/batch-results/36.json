@@ -1,0 +1,1282 @@
+{
+  "summary": {
+    "claims": 22,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 48,
+    "failed_calls": 0,
+    "successful_calls": 48,
+    "total_input_tokens": 24767,
+    "total_output_tokens": 2240,
+    "total_tokens": 27007,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0134908
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Mr. Mitchell appears alert and oriented during the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5235221982002258,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.44406577944755554,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2903181314468384,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28661036491394043,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2681807279586792,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Mr. Mitchell appears alert and oriented during the conversation. While he responds appropriately, there is no direct mention of his alertness or orientation status.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.39435848593711853,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38533759117126465,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3645690977573395,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3292865455150604,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3239355683326721,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any mention or documentation of vital signs or their values, nor any explicit statement that vital signs are within normal limits.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Physical exam reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4173862934112549,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3974897265434265,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39076077938079834,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34113144874572754,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3315221667289734,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the physical exam revealed no abnormalities; it only includes patient symptom reports and physician questions without any direct physical exam findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "5. Encourage stress management techniques and self-care practices.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.29918235540390015,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28640055656433105,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25261104106903076,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22226868569850922,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.21244704723358154,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging stress management techniques or self-care practices. While stress is discussed (E5), and lifestyle changes like exercise and dietitian consult are recommended (E6, E7), there is no direct evidence of encouragement for stress management or self-care practices.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Mitchell reports feeling constant fatigue, brain fog, and heaviness/achiness in his legs, especially when walking upstairs or standing for long periods.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6840913891792297,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5818692445755005,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.535372257232666,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4984280467033386,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34968215227127075,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2,
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports constant fatigue (E0:7, E2:3), brain fog (E1:2, E4:5), and heaviness/achiness in legs especially when walking upstairs or standing long (E0:8, E1:6, E4:5).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He has also experienced some weight gain and increased appetite recently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5519917011260986,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3640515208244324,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35437560081481934,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3457276225090027,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33456429839134216,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that they have been eating more than usual and have gained a few pounds recently, directly supporting the claim of weight gain and increased appetite.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "No shortness of breath, chest pain, dizziness, or headaches reported.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5664373636245728,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5193626284599304,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5026810765266418,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3657407760620117,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35102808475494385,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies chest pain (E2:1-2), dizziness and headaches (E4:3-4), and shortness of breath (E1:4-5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Denies recent travel or exposure to illness.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4342242479324341,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3659878373146057,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2971642315387726,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2856637239456177,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23214122653007507,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent travel or exposure to illness in response to the physician's question.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Mr. Mitchell mentions a previous rough patch at work but states it is resolved.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4544770121574402,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40610384941101074,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3835536241531372,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.22616666555404663,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.22134123742580414,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having had a rough patch at work a few months ago and confirms that it is now resolved ('But it's all good now').",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Mr. Mitchell appears alert and oriented during the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5235221982002258,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.44406577944755554,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2903181314468384,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28661036491394043,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2681807279586792,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Mr. Mitchell appears alert and oriented during the conversation. While he responds appropriately, there is no direct mention of his alertness or orientation status.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.39435848593711853,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38533759117126465,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3645690977573395,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3292865455150604,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3239355683326721,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any mention or documentation of vital signs or their values, nor any explicit statement that vital signs are within normal limits.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of distress or acute illness observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4010758101940155,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3845692276954651,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35895270109176636,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3280109465122223,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28933751583099365,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies symptoms such as chest pain, shortness of breath, swelling, dizziness, headaches, or other concerning symptoms, indicating no acute illness or distress observed.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Physical exam reveals no abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4173862934112549,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3974897265434265,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39076077938079834,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34113144874572754,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3315221667289734,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the physical exam revealed no abnormalities; it only includes patient symptom reports and physician questions without any direct physical exam findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Blood work ordered to check thyroid function, blood sugar, and lipid levels.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6541091203689575,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4628468155860901,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33376795053482056,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3294146955013275,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31710249185562134,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering blood work to check thyroid function, blood sugar, and lipid levels in sentence 5 of E6.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Follow-up appointment scheduled for a few weeks.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.46496227383613586,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30900222063064575,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2972146272659302,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27116870880126953,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2625006437301636,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that a follow-up appointment will be scheduled in a few weeks to review results and discuss changes.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Recommendations for regular exercise and dietitian consult provided.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.48797181248664856,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4566429853439331,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.41023576259613037,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2919842004776001,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2612803280353546,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends starting regular exercise (E6:7-8) and arranging a dietitian consult (E7:1).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Mr. Mitchell presents with symptoms of fatigue, brain fog, and leg heaviness/achiness.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7049522399902344,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5807422399520874,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5630694031715393,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5130288600921631,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40820562839508057,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2,
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports fatigue (E0:7, E2:3), brain fog (E1:2, E4:5), and leg heaviness/achiness (E0:8, E1:6, E4:5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Differential diagnosis includes possible thyroid dysfunction, metabolic issues, or musculoskeletal concerns.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.42836517095565796,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3484351634979248,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3267711400985718,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30175837874412537,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28924793004989624,
+          "text": "Oh, and I've been having some trouble remembering things. It's like my brain is in a fog. Physician: I see. Have you noticed any shortness of breath or swelling in your legs? Patient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions ordering blood work to check thyroid function and blood sugar (metabolic issues), which supports thyroid dysfunction and metabolic issues as part of the differential diagnosis. The patient's symptoms of heavy and achy legs imply musculoskeletal concerns, which aligns with the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Further evaluation through blood work will help determine the underlying cause.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4100363254547119,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31732046604156494,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31722894310951233,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28492361307144165,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25572970509529114,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering additional blood work to check thyroid function, blood sugar, and lipid levels, indicating further evaluation through blood work to determine underlying causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Monitoring of weight gain and lifestyle modifications are essential for managing his chronic conditions.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5301388502120972,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4101213812828064,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3328838348388672,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2917070984840393,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28617316484451294,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician acknowledges the patient's weight gain and the need to monitor it given his chronic conditions (E3:1,2,5). The plan includes monitoring blood work and recommending lifestyle changes such as regular exercise (E6:6,7) and a dietitian consult to support healthier eating habits (E7:1). This collectively supports that monitoring weight gain and lifestyle modifications are essential for managing his chronic conditions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "1. Order blood work to assess thyroid function, blood sugar, and lipid levels.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6598344445228577,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42843714356422424,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3188576102256775,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3090246319770813,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3037327527999878,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering additional blood work to check thyroid function, blood sugar, and lipid levels in sentence 5 of E6.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "2. Schedule follow-up appointment to review results and adjust treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.44466036558151245,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33629846572875977,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33229273557662964,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2627825140953064,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21410982310771942,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will schedule a follow-up appointment to review results and discuss any necessary changes to medications or lifestyle, which aligns with the claim to schedule a follow-up to review results and adjust treatment plan as needed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "3. Recommend regular exercise routine, starting with daily walks.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4508015513420105,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30884140729904175,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30403199791908264,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2967929542064667,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2814502716064453,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends starting regular exercise and mentions that even a short daily walk can improve health, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "4. Set up dietitian consult to address healthy eating habits and weight management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5354118943214417,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.39573416113853455,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3771041929721832,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25595635175704956,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22991853952407837,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states that the physician will set up a dietitian consult to help develop healthier eating habits, which aligns with the claim about addressing healthy eating habits and weight management.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "5. Encourage stress management techniques and self-care practices.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.29918235540390015,
+          "text": "Have you been under any significant stress recently? Work-related or personal stress? Patient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28640055656433105,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25261104106903076,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.22226868569850922,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.21244704723358154,
+          "text": "Have you experienced any chest pain or discomfort? Patient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging stress management techniques or self-care practices. While stress is discussed (E5), and lifestyle changes like exercise and dietitian consult are recommended (E6, E7), there is no direct evidence of encouragement for stress management or self-care practices.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C21",
+      "text": "6. Monitor symptoms closely and encourage open communication for any changes or concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.391046404838562,
+          "text": "Have you had any recent travel or exposure to illness? Patient: No, nothing like that. I've been pretty much staying close to home. Physician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3816920816898346,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right? Physician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective. Patient: Sure, sure. I'm happy to do whatever it takes to get healthier."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31921976804733276,
+          "text": "Physician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms? Patient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2981643080711365,
+          "text": "And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good? Patient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help. Physician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28110629320144653,
+          "text": "Physician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you? Patient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to monitor blood work and medications (E3:5-6) and schedules a follow-up appointment to review results and discuss changes (E6:6), implying close symptom monitoring and ongoing communication.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Mr. Mitchell. I'm Dr. Matthews. I've reviewed your medical history, and I'd like to discuss your current health concerns. Can you tell me about your recent symptoms?\n\nPatient: Hi, Dr. Matthews. Yeah, I've been feeling pretty crummy lately. I've had this constant fatigue that doesn't seem to go away, even when I get a full night's sleep. And my legs have been feeling heavy and achy, especially when I walk upstairs or stand for a long time. Oh, and I've been having some trouble remembering things. It's like my brain is in a fog.\n\nPhysician: I see. Have you noticed any shortness of breath or swelling in your legs?\n\nPatient: No, nothing like that. It's just the heaviness and achiness, like my legs are made of lead or something.\n\nPhysician: I understand. Have you experienced any chest pain or discomfort?\n\nPatient: No, nothing like that either. It's just the fatigue and brain fog that are really bothering me.\n\nPhysician: Okay. Have you noticed any changes in your appetite or weight recently?\n\nPatient: Well, I have been eating a bit more than usual, and I've gained a few pounds. But I figure that's just part of getting older, right?\n\nPhysician: It's possible. But we'll want to keep an eye on that, especially given your history of hypertension and hyperlipidemia. We'll need to monitor your blood work and make sure your medications are effective.\n\nPatient: Sure, sure. I'm happy to do whatever it takes to get healthier.\n\nPhysician: Great. Have you noticed any other symptoms? Dizziness, headaches, or anything else that's concerning you?\n\nPatient: No, nothing like that. Just the fatigue and brain fog, and the heavy legs.\n\nPhysician: Okay. Have you been under any significant stress recently? Work-related or personal stress?\n\nPatient: Well, I did have a bit of a rough patch at work a few months ago. But it's all good now. I don't think that's what's causing this.\n\nPhysician: I see. Have you had any recent travel or exposure to illness?\n\nPatient: No, nothing like that. I've been pretty much staying close to home.\n\nPhysician: Alright. I'm going to order some additional blood work to check your thyroid function, as well as your blood sugar and lipid levels. We'll also schedule you for a follow-up appointment in a few weeks to review the results and discuss any necessary changes to your medications or lifestyle. In the meantime, I recommend that you start exercising regularly. Even a short walk each day can make a big difference in your energy levels and overall health. And we'll also set you up with a dietitian consult to help you develop healthier eating habits. Sound good?\n\nPatient: Sounds great, Dr. Matthews. Thank you. I really appreciate your help.\n\nPhysician: You're welcome, Mr. Mitchell. We'll work together to get you feeling better in no time.",
+  "note_text": "Subjective:\nMr. Mitchell reports feeling constant fatigue, brain fog, and heaviness/achiness in his legs, especially when walking upstairs or standing for long periods. He has also experienced some weight gain and increased appetite recently. No shortness of breath, chest pain, dizziness, or headaches reported. Denies recent travel or exposure to illness. Mr. Mitchell mentions a previous rough patch at work but states it is resolved.\n\nObjective:\nMr. Mitchell appears alert and oriented during the conversation. Vital signs are within normal limits. No signs of distress or acute illness observed. Physical exam reveals no abnormalities. Blood work ordered to check thyroid function, blood sugar, and lipid levels. Follow-up appointment scheduled for a few weeks. Recommendations for regular exercise and dietitian consult provided.\n\nAssessment:\nMr. Mitchell presents with symptoms of fatigue, brain fog, and leg heaviness/achiness. Differential diagnosis includes possible thyroid dysfunction, metabolic issues, or musculoskeletal concerns. Further evaluation through blood work will help determine the underlying cause. Monitoring of weight gain and lifestyle modifications are essential for managing his chronic conditions.\n\nPlan:\n1. Order blood work to assess thyroid function, blood sugar, and lipid levels.\n2. Schedule follow-up appointment to review results and adjust treatment plan as needed.\n3. Recommend regular exercise routine, starting with daily walks.\n4. Set up dietitian consult to address healthy eating habits and weight management.\n5. Encourage stress management techniques and self-care practices.\n6. Monitor symptoms closely and encourage open communication for any changes or concerns."
+}

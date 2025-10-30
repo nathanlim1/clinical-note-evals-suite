@@ -1,0 +1,1043 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 41,
+    "failed_calls": 0,
+    "successful_calls": 41,
+    "total_input_tokens": 20119,
+    "total_output_tokens": 2062,
+    "total_tokens": 22181,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0113468
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C11",
+      "text": "The nausea from his statin medication should be monitored.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.592854380607605,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3604496121406555,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35540616512298584,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33932754397392273,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25824201107025146,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient experiencing a bit of nausea from the statin (E6[1]) but does not include any statement from the physician or plan indicating that the nausea should be monitored. There is no explicit or implicit evidence that monitoring nausea from the statin is part of the clinical plan.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Educate Mr. Coleman on the importance of adhering to his treatment plan and seeking medical attention for any concerning symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5182561874389648,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5135254859924316,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34305837750434875,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3352400064468384,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2945902943611145,
+          "text": "Physician: Of course. We'll get the X-ray done, and I'll see you again soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly show the physician educating Mr. Coleman on the importance of adhering to his treatment plan or advising him to seek medical attention for concerning symptoms. While the physician discusses diagnosis, orders tests, prescribes medication, and schedules follow-up, explicit education on adherence and seeking care is not documented.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Coleman presents with significant pain in his left arm following a recent fall.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.725462019443512,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5944921970367432,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5341349840164185,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5172257423400879,
+          "text": "Can you tell me what happened? Patient: Well, I was walking down the stairs at home, and my foot slipped. I put my hand out to break my fall, and that's when I felt a sharp pain in my arm."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.39822304248809814,
+          "text": "Have you experienced any numbness or tingling in your arm or hand? Patient: A bit of tingling, yes. It's mostly in my fingers, though. Physician: Okay. And have you noticed any swelling or bruising in your arm?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports significant arm pain following a recent fall, describing difficulty moving the arm and pain with movement, confirming the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He reports difficulty moving his arm, numbness and tingling in his fingers, swelling around his wrist, and bruising.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6591283082962036,
+          "text": "Have you experienced any numbness or tingling in your arm or hand? Patient: A bit of tingling, yes. It's mostly in my fingers, though. Physician: Okay. And have you noticed any swelling or bruising in your arm?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.6278083920478821,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5327351093292236,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.49491047859191895,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4831486642360687,
+          "text": "Can you tell me what happened? Patient: Well, I was walking down the stairs at home, and my foot slipped. I put my hand out to break my fall, and that's when I felt a sharp pain in my arm."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports difficulty moving his arm (E2:2-3), tingling in his fingers (E3:2-3), and swelling and bruising around his wrist (E4:1).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He also mentions elevated blood sugar, blood pressure, and lipids.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5961583852767944,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.46700793504714966,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33883047103881836,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3134978413581848,
+          "text": "Have you experienced any numbness or tingling in your arm or hand? Patient: A bit of tingling, yes. It's mostly in my fingers, though. Physician: Okay. And have you noticed any swelling or bruising in your arm?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2998727262020111,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly mentions elevated blood sugar, blood pressure, and lipids in E4 sentences 6 and 7, and the physician acknowledges these elevated values in E7 sentence 6.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Coleman reports experiencing nausea from his statin medication but denies any other side effects.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5611388683319092,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4597897231578827,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44985130429267883,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4121202826499939,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30150270462036133,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports nausea from the statin and denies other side effects such as shortness of breath or chest pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He notes challenges in maintaining a healthy diet and exercise routine due to his arm injury.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5141561031341553,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4471394121646881,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4282165467739105,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3949568569660187,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3726087510585785,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states difficulty eating healthier due to inability to use his arm properly (E6:3,5) and confirms difficulty moving his arm (E2:2), supporting the claim of challenges in maintaining diet and exercise due to arm injury.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals swelling and bruising around Mr. Coleman's left wrist.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5459165573120117,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5020120143890381,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4299626350402832,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41565021872520447,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4142751097679138,
+          "text": "Have you experienced any numbness or tingling in your arm or hand? Patient: A bit of tingling, yes. It's mostly in my fingers, though. Physician: Okay. And have you noticed any swelling or bruising in your arm?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports swelling and bruising around the wrist, which supports the claim about physical examination findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "He exhibits limited range of motion in his left arm and reports pain upon movement.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5388608574867249,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44001325964927673,
+          "text": "Have you experienced any numbness or tingling in your arm or hand? Patient: A bit of tingling, yes. It's mostly in my fingers, though. Physician: Okay. And have you noticed any swelling or bruising in your arm?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4177035689353943,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3850427269935608,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38371890783309937,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states difficulty moving his arm and pain upon movement, indicating limited range of motion and pain. The physician also notes the arm hurting after a fall, supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of respiratory distress or chest pain are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3618386387825012,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3083516061306,
+          "text": "Have you experienced any numbness or tingling in your arm or hand? Patient: A bit of tingling, yes. It's mostly in my fingers, though. Physician: Okay. And have you noticed any swelling or bruising in your arm?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27796825766563416,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2756648659706116,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.263641893863678,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly asks about shortness of breath or chest pain, and the patient denies these symptoms, indicating no signs of respiratory distress or chest pain.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "His medical history includes Type 2 Diabetes Mellitus, hypertension, dyslipidemia, and a fractured left radius and ulna.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5951067209243774,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5226425528526306,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37563496828079224,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3608332872390747,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3446881175041199,
+          "text": "Can you tell me what happened? Patient: Well, I was walking down the stairs at home, and my foot slipped. I put my hand out to break my fall, and that's when I felt a sharp pain in my arm."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient's medical history explicitly includes diabetes, hypertension, and dyslipidemia (E4:3-4). The physician suspects a fracture in the arm, which aligns with a fractured left radius and ulna (E7:4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Mr. Coleman likely has a fracture in his left arm, necessitating further evaluation with an X-ray.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5989021062850952,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5590702295303345,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.41543471813201904,
+          "text": "Physician: Of course. We'll get the X-ray done, and I'll see you again soon."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39882320165634155,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3719114661216736,
+          "text": "Can you tell me what happened? Patient: Well, I was walking down the stairs at home, and my foot slipped. I put my hand out to break my fall, and that's when I felt a sharp pain in my arm."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the likelihood of a fracture in Mr. Coleman's arm and the need for an X-ray to confirm and assess the injury. The patient's symptoms and history of a fall support this clinical suspicion.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "His elevated blood sugar, blood pressure, and lipids require management to optimize his overall health.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.569206714630127,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4533797800540924,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.370245099067688,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3225080966949463,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23685714602470398,
+          "text": "Have you experienced any numbness or tingling in your arm or hand? Patient: A bit of tingling, yes. It's mostly in my fingers, though. Physician: Okay. And have you noticed any swelling or bruising in your arm?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4,
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient has diabetes, hypertension, and dyslipidemia with elevated blood sugar, blood pressure, and lipids (E4:4,6,7). The physician explicitly states the need to address these elevated values (E7:6), indicating management is required to optimize health.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "The nausea from his statin medication should be monitored.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.592854380607605,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3604496121406555,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35540616512298584,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33932754397392273,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25824201107025146,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient experiencing a bit of nausea from the statin (E6[1]) but does not include any statement from the physician or plan indicating that the nausea should be monitored. There is no explicit or implicit evidence that monitoring nausea from the statin is part of the clinical plan.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Mr. Coleman's challenges with diet and exercise due to his injury may impact his overall health outcomes.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4802537262439728,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4703198969364166,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3812791109085083,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32481110095977783,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31032276153564453,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports difficulty using his arm due to injury, which makes it hard to eat healthier and maintain exercise. This implies that his injury-related challenges with diet and exercise may impact his overall health outcomes.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Order an X-ray to confirm the presence and extent of the fracture in Mr. Coleman's left arm.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6349807977676392,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4942121207714081,
+          "text": "Physician: Of course. We'll get the X-ray done, and I'll see you again soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.48695963621139526,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3774191737174988,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3567558825016022,
+          "text": "Can you tell me what happened? Patient: Well, I was walking down the stairs at home, and my foot slipped. I put my hand out to break my fall, and that's when I felt a sharp pain in my arm."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order an X-ray to confirm the fracture and assess the extent of the injury in Mr. Coleman's arm.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Prescribe pain medication to alleviate his discomfort.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.38914400339126587,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33350086212158203,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3116467595100403,
+          "text": "Physician: Okay, and have you noticed any difficulty moving your arm or using it since the fall? Patient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.30853575468063354,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.29057061672210693,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe medication to help with the pain, directly supporting the claim to prescribe pain medication to alleviate discomfort.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Address his elevated blood sugar, blood pressure, and lipids through medication management and lifestyle modifications.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.531815230846405,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.41959044337272644,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.38872867822647095,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3568115234375,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21144185960292816,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4,
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the patient has diabetes, hypertension, and dyslipidemia with elevated blood sugar, blood pressure, and lipids (E4:3,4,6,7). The physician acknowledges the need to address these elevated values (E7:6), implying medication management and lifestyle modifications.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Schedule a follow-up appointment to monitor his progress and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4049752354621887,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36887961626052856,
+          "text": "Physician: Of course. We'll get the X-ray done, and I'll see you again soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3497879207134247,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2922668755054474,
+          "text": "Patient: A bit of nausea from the statin, but that's it. Physician: Okay. And have you had any recent changes in your diet or exercise routine? Patient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.275591105222702,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E7[7] that a follow-up appointment will be scheduled to monitor progress, and in E8[2] confirms the plan to see the patient again after the X-ray, supporting the claim to monitor progress and adjust treatment as needed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Educate Mr. Coleman on the importance of adhering to his treatment plan and seeking medical attention for any concerning symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5182561874389648,
+          "text": "Physician: Good morning, Mr. Coleman. How are you feeling today? Patient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago. Physician: Sorry to hear that. Let's start with the fall."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5135254859924316,
+          "text": "Lastly, have you noticed any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress. Patient: Sounds good, thank you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.34305837750434875,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking them every day. Physician: That's good. Have you noticed any side effects from the medications?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3352400064468384,
+          "text": "Patient: There's some swelling around my wrist, and it's a bit bruised too. Physician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions? Patient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2945902943611145,
+          "text": "Physician: Of course. We'll get the X-ray done, and I'll see you again soon."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly show the physician educating Mr. Coleman on the importance of adhering to his treatment plan or advising him to seek medical attention for concerning symptoms. While the physician discusses diagnosis, orders tests, prescribes medication, and schedules follow-up, explicit education on adherence and seeking care is not documented.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Coleman. How are you feeling today?\n\nPatient: Not great, to be honest. My arm has been hurting a lot lately, especially after that fall I took a few days ago.\n\nPhysician: Sorry to hear that. Let's start with the fall. Can you tell me what happened?\n\nPatient: Well, I was walking down the stairs at home, and my foot slipped. I put my hand out to break my fall, and that's when I felt a sharp pain in my arm.\n\nPhysician: Okay, and have you noticed any difficulty moving your arm or using it since the fall?\n\nPatient: Yes, it's been hard for me to move my arm at all. I can't even lift a glass of water, and even just moving my fingers is painful.\n\nPhysician: I see. Have you experienced any numbness or tingling in your arm or hand?\n\nPatient: A bit of tingling, yes. It's mostly in my fingers, though.\n\nPhysician: Okay. And have you noticed any swelling or bruising in your arm?\n\nPatient: There's some swelling around my wrist, and it's a bit bruised too.\n\nPhysician: I understand. Now, let's talk about your medical history. You have diabetes, hypertension, and dyslipidemia. Have you been experiencing any symptoms related to those conditions?\n\nPatient: Well, my blood sugar has been a bit high lately, and my blood pressure has been going up too. I've also noticed my lipids have been a bit elevated.\n\nPhysician: I see. Have you been taking your medications as prescribed?\n\nPatient: Yes, I've been taking them every day.\n\nPhysician: That's good. Have you noticed any side effects from the medications?\n\nPatient: A bit of nausea from the statin, but that's it.\n\nPhysician: Okay. And have you had any recent changes in your diet or exercise routine?\n\nPatient: Not really. I've been trying to eat healthier, but it's hard when you can't use your arm properly.\n\nPhysician: I understand. Lastly, have you noticed any shortness of breath or chest pain recently?\n\nPatient: No, nothing like that.\n\nPhysician: Alright, Mr. Coleman. Based on what you've told me, it sounds like you may have a fracture in your arm. I'd like to order an X-ray to confirm that and see the extent of the injury. We'll also need to address your elevated blood sugar, blood pressure, and lipids. I'll prescribe you a medication to help with the pain, and we'll schedule a follow-up appointment to monitor your progress.\n\nPatient: Sounds good, thank you.\n\nPhysician: Of course. We'll get the X-ray done, and I'll see you again soon.",
+  "note_text": "Subjective:\nMr. Coleman presents with significant pain in his left arm following a recent fall. He reports difficulty moving his arm, numbness and tingling in his fingers, swelling around his wrist, and bruising. He also mentions elevated blood sugar, blood pressure, and lipids. Mr. Coleman reports experiencing nausea from his statin medication but denies any other side effects. He notes challenges in maintaining a healthy diet and exercise routine due to his arm injury.\n\nObjective:\nPhysical examination reveals swelling and bruising around Mr. Coleman's left wrist. He exhibits limited range of motion in his left arm and reports pain upon movement. No signs of respiratory distress or chest pain are noted. His medical history includes Type 2 Diabetes Mellitus, hypertension, dyslipidemia, and a fractured left radius and ulna.\n\nAssessment:\nMr. Coleman likely has a fracture in his left arm, necessitating further evaluation with an X-ray. His elevated blood sugar, blood pressure, and lipids require management to optimize his overall health. The nausea from his statin medication should be monitored. Mr. Coleman's challenges with diet and exercise due to his injury may impact his overall health outcomes.\n\nPlan:\nOrder an X-ray to confirm the presence and extent of the fracture in Mr. Coleman's left arm. Prescribe pain medication to alleviate his discomfort. Address his elevated blood sugar, blood pressure, and lipids through medication management and lifestyle modifications. Schedule a follow-up appointment to monitor his progress and adjust treatment as needed. Educate Mr. Coleman on the importance of adhering to his treatment plan and seeking medical attention for any concerning symptoms."
+}

@@ -1,0 +1,904 @@
+{
+  "summary": {
+    "claims": 15,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 36,
+    "failed_calls": 0,
+    "successful_calls": 36,
+    "total_input_tokens": 17666,
+    "total_output_tokens": 1636,
+    "total_tokens": 19302,
+    "total cost w/ GPT-4.1-mini (in $)": 0.009684000000000002
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Phyllis presents as alert and cooperative during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5528882145881653,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5336171388626099,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5005137920379639,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29800474643707275,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29730209708213806,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Phyllis is alert and cooperative during the appointment; no direct observations or descriptions of her mental status or behavior are provided.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No acute distress or abnormalities noted during the physical examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.31322181224823,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2930343449115753,
+          "text": "Have you noticed any physical symptoms associated with your anxiety, such as a racing heart, trembling, or shortness of breath? Patient: Yes, I've experienced all of those symptoms, especially when I'm under a lot of stress. My heart races, and I feel like I can't catch my breath. It's pretty scary. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29104098677635193,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2873086631298065,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23368054628372192,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any findings from a physical examination or state that no acute distress or abnormalities were noted. The conversation focuses on symptoms and medication adherence without physical exam details.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "4. Encourage Phyllis to continue her current lifestyle modifications for diabetes management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5249886512756348,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.473231703042984,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4234958589076996,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29022684693336487,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25793367624282837,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention encouraging Phyllis to continue her current lifestyle modifications for diabetes management or any discussion about diabetes management or lifestyle modifications.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Phyllis reports feeling stressed and anxious lately, with symptoms including difficulty falling asleep, constant worrying, and occasional panic attacks.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.654220461845398,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.6474668383598328,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5401461720466614,
+          "text": "Have you noticed any physical symptoms associated with your anxiety, such as a racing heart, trembling, or shortness of breath? Patient: Yes, I've experienced all of those symptoms, especially when I'm under a lot of stress. My heart races, and I feel like I can't catch my breath. It's pretty scary. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.519515872001648,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4419000744819641,
+          "text": "Have you tried any coping strategies or techniques to manage your anxiety? Patient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out. Physician: Those are great strategies, though."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "Phyllis explicitly reports feeling stressed and anxious (E0[4,5]), difficulty falling asleep and constant worrying (E1[4]), and occasional panic attacks (E1[5]).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She experiences physical symptoms such as a racing heart, trembling, and shortness of breath during periods of high stress.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.7407933473587036,
+          "text": "Have you noticed any physical symptoms associated with your anxiety, such as a racing heart, trembling, or shortness of breath? Patient: Yes, I've experienced all of those symptoms, especially when I'm under a lot of stress. My heart races, and I feel like I can't catch my breath. It's pretty scary. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4942970275878906,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4200291633605957,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40401774644851685,
+          "text": "Have you tried any coping strategies or techniques to manage your anxiety? Patient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out. Physician: Those are great strategies, though."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35090509057044983,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly confirms experiencing physical symptoms including a racing heart, trembling, and shortness of breath, particularly during times of high stress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Phyllis has been trying to manage her anxiety through exercise and meditation but finds it challenging due to her stress levels.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6246121525764465,
+          "text": "Have you tried any coping strategies or techniques to manage your anxiety? Patient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out. Physician: Those are great strategies, though."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5596806406974792,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5236013531684875,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4732288718223572,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4686222970485687,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been trying to exercise and meditate to manage anxiety but finds it hard due to stress, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Phyllis presents as alert and cooperative during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5528882145881653,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5336171388626099,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5005137920379639,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29800474643707275,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29730209708213806,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Phyllis is alert and cooperative during the appointment; no direct observations or descriptions of her mental status or behavior are provided.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She reports no specific physical symptoms related to her hypertension but notes an increase in blood pressure readings during recent visits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6675869226455688,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45947957038879395,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.45680803060531616,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.44702181220054626,
+          "text": "Have you noticed any physical symptoms associated with your anxiety, such as a racing heart, trembling, or shortness of breath? Patient: Yes, I've experienced all of those symptoms, especially when I'm under a lot of stress. My heart races, and I feel like I can't catch my breath. It's pretty scary. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.38281863927841187,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies specific physical symptoms related to hypertension (E5:2) and reports an increase in blood pressure readings during recent visits (E5:3, E0:5).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Phyllis confirms compliance with her medication regimen and expresses willingness to explore therapy for her anxiety.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6912200450897217,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5481835007667542,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5132482647895813,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4692317843437195,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4142284393310547,
+          "text": "Have you tried any coping strategies or techniques to manage your anxiety? Patient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out. Physician: Those are great strategies, though."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2,
+              3,
+              8
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "Phyllis confirms medication compliance explicitly in E6:1-3. The physician recommends therapy for anxiety in E6:8, and Phyllis expresses interest in therapy resources in E4:5-6, indicating willingness to explore therapy.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No acute distress or abnormalities noted during the physical examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.31322181224823,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2930343449115753,
+          "text": "Have you noticed any physical symptoms associated with your anxiety, such as a racing heart, trembling, or shortness of breath? Patient: Yes, I've experienced all of those symptoms, especially when I'm under a lot of stress. My heart races, and I feel like I can't catch my breath. It's pretty scary. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29104098677635193,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2873086631298065,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23368054628372192,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any findings from a physical examination or state that no acute distress or abnormalities were noted. The conversation focuses on symptoms and medication adherence without physical exam details.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Phyllis is experiencing symptoms of anxiety that are impacting her daily life and sleep patterns.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5941504836082458,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5861228704452515,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5195052623748779,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4847371280193329,
+          "text": "Have you noticed any physical symptoms associated with your anxiety, such as a racing heart, trembling, or shortness of breath? Patient: Yes, I've experienced all of those symptoms, especially when I'm under a lot of stress. My heart races, and I feel like I can't catch my breath. It's pretty scary. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4000175893306732,
+          "text": "Have you tried any coping strategies or techniques to manage your anxiety? Patient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out. Physician: Those are great strategies, though."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "Phyllis explicitly reports feeling increasingly worried and on edge, which are anxiety symptoms, and states difficulty falling asleep and constant worrying, indicating impact on daily life and sleep patterns.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Her blood pressure has been trending upwards, warranting close monitoring and potential medication adjustments.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6153028011322021,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5735623836517334,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5037933588027954,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4072500467300415,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3938433825969696,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              7
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient reports blood pressure creeping up at recent appointments (E5:3, E0:5). The physician acknowledges the need to monitor blood pressure and possibly adjust medications (E5:5, E6:5). A follow-up appointment is planned to monitor blood pressure (E6:7).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Phyllis is open to seeking therapy to address her anxiety and improve her coping skills.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5789775252342224,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5290683507919312,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.519573986530304,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.460152804851532,
+          "text": "Have you tried any coping strategies or techniques to manage your anxiety? Patient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out. Physician: Those are great strategies, though."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.42768198251724243,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient has considered therapy but is unsure where to start (E4:1-2), and the physician offers resources and recommends therapy to address anxiety (E4:5-6, E6:8), indicating openness to seeking therapy.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "1. Provide Phyllis with referrals for therapy to address her anxiety symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5977631211280823,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5052878260612488,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.49934881925582886,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4982373118400574,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41600301861763,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              3,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends starting therapy to address anxiety (E6:8), offers resources/referrals for therapy (E4:5, E7:1), and discusses therapy as a tool for managing anxiety (E4:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "2. Schedule a follow-up appointment in a few weeks to monitor her anxiety and blood pressure.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6789236664772034,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4624808728694916,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45471248030662537,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41752052307128906,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3626655340194702,
+          "text": "Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life? Patient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack. Physician: That sounds challenging."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to schedule a follow-up appointment in a few weeks to check on the patient's anxiety and blood pressure.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "3. Order lab work to assess her overall health status and medication efficacy.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5018912553787231,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4807538092136383,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34753578901290894,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32681339979171753,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3199024498462677,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order lab work to get a better picture of the patient's overall health, which aligns with assessing overall health status and medication efficacy.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "4. Encourage Phyllis to continue her current lifestyle modifications for diabetes management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5249886512756348,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.473231703042984,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4234958589076996,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29022684693336487,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25793367624282837,
+          "text": "Have you noticed any symptoms related to your hypertension, such as headaches or dizziness? Patient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments. Physician: I see. We'll definitely want to keep an eye on that."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly mention encouraging Phyllis to continue her current lifestyle modifications for diabetes management or any discussion about diabetes management or lifestyle modifications.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "5. Collaborate with the care team to ensure coordinated care and support for Phyllis's mental and physical health needs.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5099779367446899,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I have. I've been trying to be more consistent with my regimen. Physician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed. Patient: Okay, that makes sense. Physician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4965978264808655,
+          "text": "I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health. Patient: That sounds like a good plan. Thank you, Dr. Reynolds. Physician: You're welcome, Phyllis. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42758816480636597,
+          "text": "Physician: Good morning, Phyllis. How are you feeling today? Patient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33072537183761597,
+          "text": "Have you considered seeking counseling or therapy to address your anxiety? Patient: I've thought about it, but I'm not sure where to start or if it will even help. Physician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested. Patient: That would be great, thank you. Physician: Of course. Now, let's talk about your blood pressure."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29663336277008057,
+          "text": "Have you tried any coping strategies or techniques to manage your anxiety? Patient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out. Physician: Those are great strategies, though."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              3,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician discusses monitoring and adjusting medications, scheduling follow-up appointments, recommending therapy, providing referrals, and working together to improve Phyllis's mental and physical health, indicating collaboration with the care team for coordinated care.",
+        "severity": "none"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Phyllis. How are you feeling today?\n\nPatient: Hi, Dr. Reynolds. I've been feeling a bit stressed lately. My anxiety has been bothering me, and I've noticed that my blood pressure has been creeping up again.\n\nPhysician: I see. Can you tell me more about your anxiety symptoms? When did you first notice them, and how have they been affecting your daily life?\n\nPatient: Well, I've been feeling increasingly worried and on edge over the past few months. It's hard for me to fall asleep at night, and I find myself constantly thinking about work and other stressors. Sometimes, I feel like I'm going to have a panic attack.\n\nPhysician: That sounds challenging. Have you noticed any physical symptoms associated with your anxiety, such as a racing heart, trembling, or shortness of breath?\n\nPatient: Yes, I've experienced all of those symptoms, especially when I'm under a lot of stress. My heart races, and I feel like I can't catch my breath. It's pretty scary.\n\nPhysician: I understand. Have you tried any coping strategies or techniques to manage your anxiety?\n\nPatient: I've been trying to exercise more and practice meditation, but it's hard to find the time and motivation when I'm feeling so stressed out.\n\nPhysician: Those are great strategies, though. Have you considered seeking counseling or therapy to address your anxiety?\n\nPatient: I've thought about it, but I'm not sure where to start or if it will even help.\n\nPhysician: It's definitely worth considering. Therapy can be a very effective tool in managing anxiety and stress. I can provide you with some resources if you're interested.\n\nPatient: That would be great, thank you.\n\nPhysician: Of course. Now, let's talk about your blood pressure. Have you noticed any symptoms related to your hypertension, such as headaches or dizziness?\n\nPatient: No, not really. I just noticed that my blood pressure has been creeping up at my last few appointments.\n\nPhysician: I see. We'll definitely want to keep an eye on that. Have you been taking your medications as prescribed?\n\nPatient: Yes, I have. I've been trying to be more consistent with my regimen.\n\nPhysician: That's great to hear. We'll need to monitor your blood pressure and possibly adjust your medications as needed.\n\nPatient: Okay, that makes sense.\n\nPhysician: Phyllis, I'd like to schedule you for a follow-up appointment in a few weeks to check in on your anxiety and blood pressure. In the meantime, I recommend starting therapy to address your anxiety. I'll provide you with some referrals. Additionally, I'd like to order some lab work to get a better picture of your overall health.\n\nPatient: That sounds like a good plan. Thank you, Dr. Reynolds.\n\nPhysician: You're welcome, Phyllis. We'll work together to get you feeling better.",
+  "note_text": "Subjective:\nPhyllis reports feeling stressed and anxious lately, with symptoms including difficulty falling asleep, constant worrying, and occasional panic attacks. She experiences physical symptoms such as a racing heart, trembling, and shortness of breath during periods of high stress. Phyllis has been trying to manage her anxiety through exercise and meditation but finds it challenging due to her stress levels.\n\nObjective:\nPhyllis presents as alert and cooperative during the appointment. She reports no specific physical symptoms related to her hypertension but notes an increase in blood pressure readings during recent visits. Phyllis confirms compliance with her medication regimen and expresses willingness to explore therapy for her anxiety. No acute distress or abnormalities noted during the physical examination.\n\nAssessment:\nPhyllis is experiencing symptoms of anxiety that are impacting her daily life and sleep patterns. Her blood pressure has been trending upwards, warranting close monitoring and potential medication adjustments. Phyllis is open to seeking therapy to address her anxiety and improve her coping skills.\n\nPlan:\n1. Provide Phyllis with referrals for therapy to address her anxiety symptoms.\n2. Schedule a follow-up appointment in a few weeks to monitor her anxiety and blood pressure.\n3. Order lab work to assess her overall health status and medication efficacy.\n4. Encourage Phyllis to continue her current lifestyle modifications for diabetes management.\n5. Collaborate with the care team to ensure coordinated care and support for Phyllis's mental and physical health needs."
+}

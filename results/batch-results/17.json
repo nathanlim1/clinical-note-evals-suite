@@ -1,0 +1,757 @@
+{
+  "summary": {
+    "claims": 13,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 43,
+    "failed_calls": 0,
+    "successful_calls": 43,
+    "total_input_tokens": 18113,
+    "total_output_tokens": 1321,
+    "total_tokens": 19434,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0093588
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C2",
+      "text": "Mrs. Sanders appears well-groomed and alert during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5236419439315796,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5126029849052429,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.48321300745010376,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28659218549728394,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24178293347358704,
+          "text": "Have you experienced any numbness or tingling in your hands or feet? Patient: No, not that I've noticed. Physician: Okay. Have you had any recent illnesses or injuries?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly describe Mrs. Sanders' appearance as well-groomed or alert during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.39960187673568726,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3721858263015747,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3555765151977539,
+          "text": "Have you experienced any numbness or tingling in your hands or feet? Patient: No, not that I've noticed. Physician: Okay. Have you had any recent illnesses or injuries?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33732661604881287,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3317684531211853,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or documentation of vital signs or their values, nor any statement that they are within normal limits.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mrs. Sanders reports feeling tired and out of breath, especially during physical activity.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5781705975532532,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5402295589447021,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.39894744753837585,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39237961173057556,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3420371413230896,
+          "text": "Patient: Yes, a few times. Especially when I stand up quickly or bend down. Physician: I understand. Have you noticed any changes in your urination habits? Patient: Yes, I've been going to the bathroom more often lately, especially at night. And sometimes I feel like I need to go again right after I just went. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling tired and out of breath, especially during physical activity, in sentence 6 of span E0.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She also mentions swelling in her feet, chest tightness, dizziness, increased urination frequency, and difficulty sticking to a healthy diet and exercise routine.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4857822358608246,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4591013789176941,
+          "text": "Patient: Yes, a few times. Especially when I stand up quickly or bend down. Physician: I understand. Have you noticed any changes in your urination habits? Patient: Yes, I've been going to the bathroom more often lately, especially at night. And sometimes I feel like I need to go again right after I just went. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.45282119512557983,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43919897079467773,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4066130816936493,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been trying to eat healthier and exercise more, so I've lost a few pounds. But it's hard to stick to it all the time. Physician: That's great that you're trying to make healthy changes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              5
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly mentions swelling in her feet (E0:7), chest tightness (E1:3), dizziness (E1:5), increased urination frequency (E2:5-6), and difficulty sticking to a healthy diet and exercise routine (E5:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Mrs. Sanders appears well-groomed and alert during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5236419439315796,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5126029849052429,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.48321300745010376,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.28659218549728394,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24178293347358704,
+          "text": "Have you experienced any numbness or tingling in your hands or feet? Patient: No, not that I've noticed. Physician: Okay. Have you had any recent illnesses or injuries?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly describe Mrs. Sanders' appearance as well-groomed or alert during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She denies chest pain, numbness, or tingling.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5730677843093872,
+          "text": "Have you experienced any numbness or tingling in your hands or feet? Patient: No, not that I've noticed. Physician: Okay. Have you had any recent illnesses or injuries?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5540053844451904,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.390234112739563,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.319783091545105,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3079715371131897,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies numbness or tingling (E3:2) and chest pain (E1:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Her weight has decreased slightly due to efforts to eat healthier and exercise.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.558684229850769,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been trying to eat healthier and exercise more, so I've lost a few pounds. But it's hard to stick to it all the time. Physician: That's great that you're trying to make healthy changes."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3556843101978302,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27748364210128784,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25516951084136963,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25473088026046753,
+          "text": "Patient: Yes, a few times. Especially when I stand up quickly or bend down. Physician: I understand. Have you noticed any changes in your urination habits? Patient: Yes, I've been going to the bathroom more often lately, especially at night. And sometimes I feel like I need to go again right after I just went. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that she has lost a few pounds due to trying to eat healthier and exercise more, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.39960187673568726,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3721858263015747,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3555765151977539,
+          "text": "Have you experienced any numbness or tingling in your hands or feet? Patient: No, not that I've noticed. Physician: Okay. Have you had any recent illnesses or injuries?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33732661604881287,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3317684531211853,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or documentation of vital signs or their values, nor any statement that they are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Mrs. Sanders presents with symptoms of fatigue, dyspnea, edema, chest tightness, and increased urination, which may be indicative of underlying cardiovascular or metabolic issues.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5617385506629944,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5475577116012573,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40904638171195984,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39119476079940796,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3827049434185028,
+          "text": "Patient: Yes, a few times. Especially when I stand up quickly or bend down. Physician: I understand. Have you noticed any changes in your urination habits? Patient: Yes, I've been going to the bathroom more often lately, especially at night. And sometimes I feel like I need to go again right after I just went. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports fatigue (tiredness), dyspnea (out of breath), edema (feet swelling), chest tightness, and increased urination, which are explicitly mentioned in the transcript. The physician's plan to check blood sugar, blood pressure, and lipid levels implies concern for cardiovascular or metabolic issues.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Further testing is needed to assess her blood sugar, blood pressure, and lipid levels.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5965654850006104,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.36850911378860474,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30680954456329346,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30304691195487976,
+          "text": "Have you experienced any numbness or tingling in your hands or feet? Patient: No, not that I've noticed. Physician: Okay. Have you had any recent illnesses or injuries?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2966158092021942,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to run tests to check blood sugar, blood pressure, and lipid levels.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mammogram screening is also recommended.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3633056879043579,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22728189826011658,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.13789081573486328,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.13774770498275757,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.12351208925247192,
+          "text": "Patient: Yes, a few times. Especially when I stand up quickly or bend down. Physician: I understand. Have you noticed any changes in your urination habits? Patient: Yes, I've been going to the bathroom more often lately, especially at night. And sometimes I feel like I need to go again right after I just went. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that a mammogram will be scheduled since it is due soon, directly supporting the claim that mammogram screening is recommended.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Schedule tests for blood sugar, blood pressure, and lipid levels.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5038111805915833,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34975916147232056,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30003678798675537,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2847651541233063,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28315305709838867,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been trying to eat healthier and exercise more, so I've lost a few pounds. But it's hard to stick to it all the time. Physician: That's great that you're trying to make healthy changes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to run tests for blood sugar, blood pressure, and lipid levels (E6:4) and confirms scheduling these tests (E7:5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Arrange a mammogram screening.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.42758142948150635,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3302760720252991,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.20260171592235565,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.19757339358329773,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.19126643240451813,
+          "text": "Have you noticed any chest pain or discomfort? Patient: No, not really. Just some tightness in my chest sometimes. Physician: Okay. Have you experienced any dizziness or lightheadedness?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that a mammogram will be scheduled since it is due soon.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Encourage Mrs. Sanders to continue with her healthy eating and exercise habits.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5289534330368042,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4349271059036255,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41316336393356323,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been trying to eat healthier and exercise more, so I've lost a few pounds. But it's hard to stick to it all the time. Physician: That's great that you're trying to make healthy changes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38304758071899414,
+          "text": "Physician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today? Patient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23412376642227173,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends continuing healthy eating and exercise habits (E6:6), and the patient reports trying to eat healthier and exercise more (E5:2), with the physician affirming this effort (E5:4).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Follow up with test results and discuss further management at the next appointment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5290707945823669,
+          "text": "Have you noticed any other symptoms or changes in your body that concern you? Patient: No, nothing else that I can think of. Physician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4672882556915283,
+          "text": "Is that okay with you? Patient: Yes, that sounds good. Thank you, Dr. Matthews. Physician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35926690697669983,
+          "text": "Patient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious. Physician: I see. Have you been taking your medications as prescribed? Patient: Yes, I take them every day. Physician: That's good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30456987023353577,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: Well, I have been trying to eat healthier and exercise more, so I've lost a few pounds. But it's hard to stick to it all the time. Physician: That's great that you're trying to make healthy changes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.278383731842041,
+          "text": "Patient: Yes, a few times. Especially when I stand up quickly or bend down. Physician: I understand. Have you noticed any changes in your urination habits? Patient: Yes, I've been going to the bathroom more often lately, especially at night. And sometimes I feel like I need to go again right after I just went. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4,
+              6
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician states that tests will be run and further discussion will occur at the next appointment, and confirms scheduling tests and follow-up.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Mrs. Sanders. I'm Dr. Matthews, your primary care physician. How are you feeling today?\n\nPatient: Hi, Dr. Matthews. I'm doing alright, I guess. I've been feeling a bit tired and out of breath lately, especially when I walk upstairs or do any physical activity. And my feet have been swelling a bit too.\n\nPhysician: I see. Have you noticed any chest pain or discomfort?\n\nPatient: No, not really. Just some tightness in my chest sometimes.\n\nPhysician: Okay. Have you experienced any dizziness or lightheadedness?\n\nPatient: Yes, a few times. Especially when I stand up quickly or bend down.\n\nPhysician: I understand. Have you noticed any changes in your urination habits?\n\nPatient: Yes, I've been going to the bathroom more often lately, especially at night. And sometimes I feel like I need to go again right after I just went.\n\nPhysician: I see. Have you experienced any numbness or tingling in your hands or feet?\n\nPatient: No, not that I've noticed.\n\nPhysician: Okay. Have you had any recent illnesses or injuries?\n\nPatient: No, nothing recent. I did have a cold a few weeks ago, but it wasn't anything serious.\n\nPhysician: I see. Have you been taking your medications as prescribed?\n\nPatient: Yes, I take them every day.\n\nPhysician: That's good. Have you noticed any changes in your appetite or weight recently?\n\nPatient: Well, I have been trying to eat healthier and exercise more, so I've lost a few pounds. But it's hard to stick to it all the time.\n\nPhysician: That's great that you're trying to make healthy changes. Have you noticed any other symptoms or changes in your body that concern you?\n\nPatient: No, nothing else that I can think of.\n\nPhysician: Alright, thank you for sharing that information with me, Mrs. Sanders. Based on what you've told me, we'll need to run some tests to check your blood sugar and blood pressure, as well as your lipid levels. We'll also schedule you for a mammogram since it's due soon. In the meantime, I recommend that you continue with your healthy eating and exercise habits, and we'll discuss further at your next appointment. Is that okay with you?\n\nPatient: Yes, that sounds good. Thank you, Dr. Matthews.\n\nPhysician: You're welcome, Mrs. Sanders. We'll get these tests scheduled and follow up with you soon.",
+  "note_text": "Subjective:\nMrs. Sanders reports feeling tired and out of breath, especially during physical activity. She also mentions swelling in her feet, chest tightness, dizziness, increased urination frequency, and difficulty sticking to a healthy diet and exercise routine.\n\nObjective:\nMrs. Sanders appears well-groomed and alert during the appointment. She denies chest pain, numbness, or tingling. Her weight has decreased slightly due to efforts to eat healthier and exercise. Vital signs are within normal limits.\n\nAssessment:\nMrs. Sanders presents with symptoms of fatigue, dyspnea, edema, chest tightness, and increased urination, which may be indicative of underlying cardiovascular or metabolic issues. Further testing is needed to assess her blood sugar, blood pressure, and lipid levels. Mammogram screening is also recommended.\n\nPlan:\nSchedule tests for blood sugar, blood pressure, and lipid levels. Arrange a mammogram screening. Encourage Mrs. Sanders to continue with her healthy eating and exercise habits. Follow up with test results and discuss further management at the next appointment."
+}

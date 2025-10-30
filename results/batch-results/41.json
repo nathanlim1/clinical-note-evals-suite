@@ -1,0 +1,1129 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 1,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 57,
+    "failed_calls": 0,
+    "successful_calls": 57,
+    "total_input_tokens": 24829,
+    "total_output_tokens": 1912,
+    "total_tokens": 26741,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0129908
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Anna appears alert and cooperative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.4398806691169739,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43857628107070923,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.39230114221572876,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2947848439216614,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.29214924573898315,
+          "text": "We'll be in touch soon to discuss your test results and the next steps."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly state or imply that Anna appears alert and cooperative during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3502151072025299,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3361855745315552,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3177488148212433,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.30917006731033325,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.286580890417099,
+          "text": "Can you tell me more about your symptoms? When did they start, and have they been constant or do they come and go? Patient: They started around two weeks ago, and they've been pretty consistent since then. It's been a daily thing. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any information about the patient's vital signs or their status as within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals tenderness in the upper abdomen upon palpation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5696300864219666,
+          "text": "Have you experienced any abdominal pain or discomfort? If so, can you describe its location and severity? Patient: Yes, I have. The pain is mostly in my upper abdomen, and it's a dull, aching feeling. It's not excruciating, but it's uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3716283440589905,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35562512278556824,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.35006240010261536,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3426733911037445,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported upper abdominal pain but does not mention any physical examination findings or tenderness upon palpation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of fever or dehydration are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.33932727575302124,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30768030881881714,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.27082353830337524,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.2171945720911026,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21298517286777496,
+          "text": "Can you tell me more about your symptoms? When did they start, and have they been constant or do they come and go? Patient: They started around two weeks ago, and they've been pretty consistent since then. It's been a daily thing. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the presence or absence of fever or dehydration signs. Fever is only queried but not confirmed or denied, and dehydration is not addressed.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C4",
+      "text": "She does not exhibit signs of distress or acute pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.34268563985824585,
+          "text": "Have you experienced any abdominal pain or discomfort? If so, can you describe its location and severity? Patient: Yes, I have. The pain is mostly in my upper abdomen, and it's a dull, aching feeling. It's not excruciating, but it's uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30680519342422485,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2940649092197418,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27167946100234985,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2652157247066498,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient reports abdominal pain described as a dull, aching feeling that is uncomfortable, indicating the presence of pain and distress.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Anna Hudson presents with persistent symptoms of abdominal pain, diarrhea, bloating, and nausea lasting for the past two weeks.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5568346381187439,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4427593946456909,
+          "text": "Can you tell me more about your symptoms? When did they start, and have they been constant or do they come and go? Patient: They started around two weeks ago, and they've been pretty consistent since then. It's been a daily thing. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4335133135318756,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42451488971710205,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4043431282043457,
+          "text": "Have you experienced any abdominal pain or discomfort? If so, can you describe its location and severity? Patient: Yes, I have. The pain is mostly in my upper abdomen, and it's a dull, aching feeling. It's not excruciating, but it's uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports persistent diarrhea, bloating, and nausea for the past two weeks (E0:5-6), confirms symptoms started two weeks ago and have been consistent daily (E1:3-4), and confirms abdominal pain described as dull and aching (E3:3-5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She reports avoiding trigger foods and experiencing a loss of appetite, increased bowel movements, and occasional nausea.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5871960520744324,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5733075141906738,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4152476191520691,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40525245666503906,
+          "text": "Have you noticed any changes in your GERD symptoms recently, such as heartburn or difficulty swallowing? Patient: Actually, yes. I have been experiencing some heartburn again, especially at night. Physician: I see."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.4048522114753723,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports avoiding trigger foods (E2:3), experiencing loss of appetite and increased bowel movements (E4:2), and occasional nausea (E4:3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Anna also mentions a recent resurgence of heartburn symptoms related to her GERD.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6076149344444275,
+          "text": "Have you noticed any changes in your GERD symptoms recently, such as heartburn or difficulty swallowing? Patient: Actually, yes. I have been experiencing some heartburn again, especially at night. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5356624722480774,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4735637605190277,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45450559258461,
+          "text": "You have a history of GERD, correct? Patient: Yes, I was diagnosed with GERD about five years ago. I've been taking Omeprazole for it, and it's helped manage my symptoms. Physician: That's great."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.38255876302719116,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been experiencing heartburn again, especially at night, indicating a recent resurgence of heartburn symptoms related to her GERD.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Anna appears alert and cooperative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.4398806691169739,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43857628107070923,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.39230114221572876,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2947848439216614,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E12",
+          "sim": 0.29214924573898315,
+          "text": "We'll be in touch soon to discuss your test results and the next steps."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not explicitly state or imply that Anna appears alert and cooperative during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She does not exhibit signs of distress or acute pain.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.34268563985824585,
+          "text": "Have you experienced any abdominal pain or discomfort? If so, can you describe its location and severity? Patient: Yes, I have. The pain is mostly in my upper abdomen, and it's a dull, aching feeling. It's not excruciating, but it's uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30680519342422485,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2940649092197418,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27167946100234985,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2652157247066498,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient reports abdominal pain described as a dull, aching feeling that is uncomfortable, indicating the presence of pain and distress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3502151072025299,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3361855745315552,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3177488148212433,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.30917006731033325,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.286580890417099,
+          "text": "Can you tell me more about your symptoms? When did they start, and have they been constant or do they come and go? Patient: They started around two weeks ago, and they've been pretty consistent since then. It's been a daily thing. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans include any information about the patient's vital signs or their status as within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals tenderness in the upper abdomen upon palpation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5696300864219666,
+          "text": "Have you experienced any abdominal pain or discomfort? If so, can you describe its location and severity? Patient: Yes, I have. The pain is mostly in my upper abdomen, and it's a dull, aching feeling. It's not excruciating, but it's uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3716283440589905,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35562512278556824,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.35006240010261536,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3426733911037445,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported upper abdominal pain but does not mention any physical examination findings or tenderness upon palpation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of fever or dehydration are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.33932727575302124,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30768030881881714,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.27082353830337524,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.2171945720911026,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21298517286777496,
+          "text": "Can you tell me more about your symptoms? When did they start, and have they been constant or do they come and go? Patient: They started around two weeks ago, and they've been pretty consistent since then. It's been a daily thing. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the presence or absence of fever or dehydration signs. Fever is only queried but not confirmed or denied, and dehydration is not addressed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Anna's medical history includes a diagnosis of GERD five years ago, for which she takes Omeprazole.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6517639756202698,
+          "text": "You have a history of GERD, correct? Patient: Yes, I was diagnosed with GERD about five years ago. I've been taking Omeprazole for it, and it's helped manage my symptoms. Physician: That's great."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.512283444404602,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.47903043031692505,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.46298909187316895,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.45953601598739624,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states Anna was diagnosed with GERD about five years ago and that she has been taking Omeprazole for it as prescribed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Based on Anna's symptoms and medical history, she is likely experiencing a gastrointestinal issue, possibly related to her GERD.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.6471437215805054,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5460354685783386,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4611278772354126,
+          "text": "Have you noticed any changes in your GERD symptoms recently, such as heartburn or difficulty swallowing? Patient: Actually, yes. I have been experiencing some heartburn again, especially at night. Physician: I see."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.4433387815952301,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42593884468078613,
+          "text": "You have a history of GERD, correct? Patient: Yes, I was diagnosed with GERD about five years ago. I've been taking Omeprazole for it, and it's helped manage my symptoms. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that Anna might be experiencing a gastrointestinal issue possibly related to her GERD (E9:4). Anna has a history of GERD (E6:1-2) and reports symptoms consistent with gastrointestinal issues (E0:5-6) along with recent worsening of GERD symptoms (E7:1-3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further diagnostic tests, including a colonoscopy, gastroscopy, and blood tests, are recommended to investigate the underlying cause of her symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5858935713768005,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4435104429721832,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.39108097553253174,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35245281457901,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3490470051765442,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order a colonoscopy, gastroscopy, and blood tests to better understand the patient's gastrointestinal symptoms and confirms scheduling these tests.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Adjustments to her medication regimen and lifestyle changes will be considered to manage her symptoms effectively.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.4831351935863495,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35826852917671204,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.3487999439239502,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32698148488998413,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31864994764328003,
+          "text": "Can you tell me more about your symptoms? When did they start, and have they been constant or do they come and go? Patient: They started around two weeks ago, and they've been pretty consistent since then. It's been a daily thing. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E10",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly discusses managing symptoms by increasing medication dosage and adding an antibiotic, as well as recommending lifestyle changes such as avoiding trigger foods and increasing dietary fiber.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Order colonoscopy, gastroscopy, and blood tests to evaluate gastrointestinal health.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.6517806053161621,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.463445782661438,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.4074312150478363,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3749918043613434,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35566723346710205,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              5,
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering colonoscopy, gastroscopy, and blood tests to evaluate the gastrointestinal issue and confirms scheduling these tests.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Increase Omeprazole dosage and consider adding an antibiotic to address potential infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.6505722999572754,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.491897314786911,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48993101716041565,
+          "text": "You have a history of GERD, correct? Patient: Yes, I was diagnosed with GERD about five years ago. I've been taking Omeprazole for it, and it's helped manage my symptoms. Physician: That's great."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.36227649450302124,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.35755491256713867,
+          "text": "Have you noticed any changes in your GERD symptoms recently, such as heartburn or difficulty swallowing? Patient: Actually, yes. I have been experiencing some heartburn again, especially at night. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E10",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to increase Omeprazole dosage and add an antibiotic to address potential infection in sentence 6 of E10.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Recommend lifestyle modifications, such as avoiding trigger foods and increasing fiber intake.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.5017029643058777,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4445028007030487,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.3648063540458679,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3507784307003021,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3248993754386902,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements? Patient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit. Physician: Thank you for sharing that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E10",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends lifestyle changes including avoiding trigger foods and increasing fiber intake in sentence 7 of E10.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Schedule follow-up appointment to review test results and discuss further treatment options.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.5661323070526123,
+          "text": "We'll be in touch soon to discuss your test results and the next steps."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.44108736515045166,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4319804310798645,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3475556969642639,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3119716942310333,
+          "text": "Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues. Physician: That's good to know. Let's talk about your medical history."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E12",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states that the physician will be in touch to discuss test results and next steps (E12:1) and that the test results and food diary will be reviewed at the next appointment (E11:5), implying a follow-up appointment to review results and discuss further treatment.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Advise Anna to keep a food diary to track symptoms and triggers for future reference.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E11",
+          "sim": 0.5659533143043518,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.45167678594589233,
+          "text": "Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel? Patient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4279361963272095,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4193337857723236,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4167481064796448,
+          "text": "Physician: Good afternoon, Anna. It's great to see you today. How can I assist you? Patient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E11",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises Anna to keep a food diary to track symptoms and potential triggers, which matches the claim exactly.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "6. Coordinate with insurance for test approvals and scheduling.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E12",
+          "sim": 0.4051740765571594,
+          "text": "We'll be in touch soon to discuss your test results and the next steps."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3915877342224121,
+          "text": "Patient: That makes sense. I'm willing to do whatever it takes to figure out what's going on. Physician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet. Patient: That sounds like a good plan."
+        },
+        {
+          "span_id": "E11",
+          "sim": 0.38245460391044617,
+          "text": "Thank you, Dr. Rodriguez. Physician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment. Patient: Okay, I'll do that. Thank you again. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.280910462141037,
+          "text": "Have you had any changes in your medications or dosages recently? Patient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed. Physician: Okay."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2685994803905487,
+          "text": "Lastly, have you noticed any blood in your stool or black tarry stools? Patient: No, I haven't noticed anything like that. Physician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E10",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E11",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will work with insurance to get test approvals (E10:4) and also mentions scheduling the tests as soon as possible (E11:3), directly supporting the claim.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good afternoon, Anna. It's great to see you today. How can I assist you?\n\nPatient: Hi, Dr. Rodriguez. I've been experiencing some abdominal issues that I'm concerned about. I've had persistent diarrhea, bloating, and nausea for the past two weeks.\n\nPhysician: I see. Can you tell me more about your symptoms? When did they start, and have they been constant or do they come and go?\n\nPatient: They started around two weeks ago, and they've been pretty consistent since then. It's been a daily thing.\n\nPhysician: Okay. Have you noticed any triggers that make your symptoms worse or better? For instance, are there any specific foods or activities that affect how you feel?\n\nPatient: Well, I've been avoiding certain foods that I know can irritate my stomach, like spicy or fatty foods. But even with that, I still feel bloated and nauseous.\n\nPhysician: That's helpful information. Have you experienced any abdominal pain or discomfort? If so, can you describe its location and severity?\n\nPatient: Yes, I have. The pain is mostly in my upper abdomen, and it's a dull, aching feeling. It's not excruciating, but it's uncomfortable.\n\nPhysician: I understand. Have you noticed any other symptoms, such as fever, chills, or changes in your appetite or bowel movements?\n\nPatient: Yes, I've had some loss of appetite, and my bowel movements have been more frequent than usual. And sometimes, I feel like I'm going to vomit.\n\nPhysician: Thank you for sharing that. Have you recently traveled or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't think anyone in my household has been experiencing the same issues.\n\nPhysician: That's good to know. Let's talk about your medical history. You have a history of GERD, correct?\n\nPatient: Yes, I was diagnosed with GERD about five years ago. I've been taking Omeprazole for it, and it's helped manage my symptoms.\n\nPhysician: That's great. Have you noticed any changes in your GERD symptoms recently, such as heartburn or difficulty swallowing?\n\nPatient: Actually, yes. I have been experiencing some heartburn again, especially at night.\n\nPhysician: I see. Have you had any changes in your medications or dosages recently?\n\nPatient: No, nothing has changed with my medications. I've been taking my Omeprazole as prescribed.\n\nPhysician: Okay. Lastly, have you noticed any blood in your stool or black tarry stools?\n\nPatient: No, I haven't noticed anything like that.\n\nPhysician: Alright, Anna. Based on what you've shared, it sounds like you might be experiencing a gastrointestinal issue, possibly related to your GERD. I'd like to order some tests to get a better understanding of what's going on. We'll start with a colonoscopy to rule out any potential issues in your colon. We'll also do a gastroscopy to examine your esophagus and stomach. Additionally, we'll run some blood tests to check for any inflammation or infections.\n\nPatient: That makes sense. I'm willing to do whatever it takes to figure out what's going on.\n\nPhysician: Great. I'll work with your insurance to get the necessary approvals for the tests. In the meantime, let's discuss some possible ways to manage your symptoms. We can increase your Omeprazole dosage and add an antibiotic to address any potential infection. We'll also recommend some lifestyle changes, such as avoiding trigger foods and incorporating more fiber into your diet.\n\nPatient: That sounds like a good plan. Thank you, Dr. Rodriguez.\n\nPhysician: You're welcome, Anna. We'll get you scheduled for the tests as soon as possible. In the meantime, please keep a food diary to track your symptoms and any potential triggers. We'll review it at your next appointment.\n\nPatient: Okay, I'll do that. Thank you again.\n\nPhysician: Of course. We'll be in touch soon to discuss your test results and the next steps.",
+  "note_text": "Subjective:\nAnna Hudson presents with persistent symptoms of abdominal pain, diarrhea, bloating, and nausea lasting for the past two weeks. She reports avoiding trigger foods and experiencing a loss of appetite, increased bowel movements, and occasional nausea. Anna also mentions a recent resurgence of heartburn symptoms related to her GERD.\n\nObjective:\nDuring the examination, Anna appears alert and cooperative. She does not exhibit signs of distress or acute pain. Vital signs are within normal limits. Physical examination reveals tenderness in the upper abdomen upon palpation. No signs of fever or dehydration are noted. Anna's medical history includes a diagnosis of GERD five years ago, for which she takes Omeprazole.\n\nAssessment:\nBased on Anna's symptoms and medical history, she is likely experiencing a gastrointestinal issue, possibly related to her GERD. Further diagnostic tests, including a colonoscopy, gastroscopy, and blood tests, are recommended to investigate the underlying cause of her symptoms. Adjustments to her medication regimen and lifestyle changes will be considered to manage her symptoms effectively.\n\nPlan:\n1. Order colonoscopy, gastroscopy, and blood tests to evaluate gastrointestinal health.\n2. Increase Omeprazole dosage and consider adding an antibiotic to address potential infection.\n3. Recommend lifestyle modifications, such as avoiding trigger foods and increasing fiber intake.\n4. Schedule follow-up appointment to review test results and discuss further treatment options.\n5. Advise Anna to keep a food diary to track symptoms and triggers for future reference.\n6. Coordinate with insurance for test approvals and scheduling."
+}

@@ -1,0 +1,1042 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 5,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 5,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 34,
+    "failed_calls": 0,
+    "successful_calls": 34,
+    "total_input_tokens": 17990,
+    "total_output_tokens": 1462,
+    "total_tokens": 19452,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0095352
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals no visible swelling or redness in the affected joints.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6807292699813843,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44815367460250854,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39102962613105774,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3824550211429596,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36290106177330017,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes the patient's report of no swelling or redness (E2[2]), but there is no explicit statement from the physician's physical examination confirming the absence of visible swelling or redness in the affected joints.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Laboratory results show an elevated ESR and CRP.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4734947383403778,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4218762516975403,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.357758104801178,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3552000820636749,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.25042814016342163,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention laboratory results showing elevated ESR or CRP levels.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Joint aspiration was negative for crystals, and ANA was negative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.35620787739753723,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34497740864753723,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3037060499191284,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28753432631492615,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2408214658498764,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of joint aspiration results or ANA test results, so the claim cannot be verified.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Kathy's vital signs are within normal limits, and she appears well-groomed and in no acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4356425702571869,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40584397315979004,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2775091528892517,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.264384925365448,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1863914430141449,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any information about Kathy's vital signs, her grooming, or her level of distress. Therefore, the claim cannot be verified as true based on the given evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Discuss treatment options, including possible referral to a rheumatologist.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5984969735145569,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39980030059814453,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3847340941429138,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3791131377220154,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3436874449253082,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion of possible autoimmune disorder and plans for further testing and follow-up to develop a treatment plan, but there is no explicit mention of discussing treatment options or referral to a rheumatologist.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Continue current medications (ibuprofen and acetaminophen) for pain management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5273488759994507,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38394784927368164,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.363731324672699,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3504049777984619,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2966214418411255,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient is currently taking ibuprofen and acetaminophen for pain, but there is no explicit statement from the physician to continue these medications. The physician mentions further testing and follow-up but does not instruct to continue current medications.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Kathy Morales, a 28-year-old female, presents with complaints of persistent joint pain in her wrists and knees for the past few months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6336326003074646,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4110967516899109,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40521305799484253,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36747193336486816,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3649684190750122,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states experiencing joint pain in wrists and knees for the past few months, and that the pain is persistent.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes the pain as a dull ache that worsens in the mornings and after prolonged periods of sitting or standing.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.713546872138977,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4457553029060364,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4393657445907593,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3924987316131592,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2975919544696808,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly describes the pain as a dull ache and states it worsens in the mornings and after prolonged sitting or standing.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She denies any swelling, redness, fatigue, fever, or loss of appetite.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5881761908531189,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3660045862197876,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29005488753318787,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24464938044548035,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24358882009983063,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies swelling and redness (E2:2), and also denies fatigue, fever, or loss of appetite (E2:4, E3:1).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "The pain seems to be exacerbated by stress and inactivity.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5360577702522278,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4455389976501465,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3641096353530884,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.344214528799057,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.332477331161499,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the pain seems worse when under stress or when not moving much, directly supporting the claim that pain is exacerbated by stress and inactivity.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She has been taking over-the-counter ibuprofen and acetaminophen with minimal relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5148985385894775,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3715420365333557,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33760201930999756,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3198894262313843,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30732548236846924,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states taking over-the-counter ibuprofen and acetaminophen with only minimal relief, matching the claim exactly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals no visible swelling or redness in the affected joints.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6807292699813843,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44815367460250854,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39102962613105774,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3824550211429596,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36290106177330017,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes the patient's report of no swelling or redness (E2[2]), but there is no explicit statement from the physician's physical examination confirming the absence of visible swelling or redness in the affected joints.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Laboratory results show an elevated ESR and CRP.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4734947383403778,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4218762516975403,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.357758104801178,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3552000820636749,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.25042814016342163,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention laboratory results showing elevated ESR or CRP levels.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Joint aspiration was negative for crystals, and ANA was negative.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.35620787739753723,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34497740864753723,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3037060499191284,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28753432631492615,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2408214658498764,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention of joint aspiration results or ANA test results, so the claim cannot be verified.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Kathy's vital signs are within normal limits, and she appears well-groomed and in no acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4356425702571869,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40584397315979004,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2775091528892517,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.264384925365448,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1863914430141449,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any information about Kathy's vital signs, her grooming, or her level of distress. Therefore, the claim cannot be verified as true based on the given evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Based on Kathy's symptoms, history, and lab results, there is a suspicion of an autoimmune disorder, such as rheumatoid arthritis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5603543519973755,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.502199649810791,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4190317392349243,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3525122404098511,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3513980209827423,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              3,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that based on history, exam, and lab results, an autoimmune disorder such as rheumatoid arthritis is possible. The patient's symptoms of persistent and worsening joint pain in wrists and knees support this suspicion.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further testing is needed to confirm the diagnosis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.3950355052947998,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.26195982098579407,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.25620508193969727,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22785651683807373,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.19963590800762177,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that further testing is needed to confirm the diagnosis.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "A follow-up appointment is scheduled in two weeks to reassess symptoms and discuss additional test results.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5168926119804382,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3240737318992615,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29904040694236755,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.294786661863327,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28678736090660095,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in two weeks to reassess symptoms and discuss additional test results (E4:6). The patient agrees to this plan (E5:1-2).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Schedule follow-up appointment in two weeks for further evaluation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.40542545914649963,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2857534885406494,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2608190178871155,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23454856872558594,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2043258249759674,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in two weeks for reassessment (E4:6), and the patient agrees to this plan (E5:1-2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Consider additional testing to confirm the diagnosis of rheumatoid arthritis.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6172825694084167,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3976593017578125,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35670560598373413,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34665369987487793,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.25158360600471497,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that further testing is needed to confirm the diagnosis of an autoimmune disorder such as rheumatoid arthritis.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Discuss treatment options, including possible referral to a rheumatologist.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5984969735145569,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39980030059814453,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3847340941429138,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3791131377220154,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3436874449253082,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion of possible autoimmune disorder and plans for further testing and follow-up to develop a treatment plan, but there is no explicit mention of discussing treatment options or referral to a rheumatologist.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Continue current medications (ibuprofen and acetaminophen) for pain management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5273488759994507,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38394784927368164,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.363731324672699,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3504049777984619,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2966214418411255,
+          "text": "Is it sharp, dull, or achy? Patient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient is currently taking ibuprofen and acetaminophen for pain, but there is no explicit statement from the physician to continue these medications. The physician mentions further testing and follow-up but does not instruct to continue current medications.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Educate patient on the importance of staying active and managing stress to help alleviate symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4213307797908783,
+          "text": "Patient: No, nothing else. Just the joint pain. Physician: Can you tell me about your recent travel history or any possible exposures to illnesses? Patient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual. Physician: Have you noticed any patterns or triggers that make the pain better or worse? Patient: It seems to be worse when I'm under stress or haven't been moving around much. Physician: That's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3470589518547058,
+          "text": "Physician: Have you noticed any swelling or redness in the affected joints? Patient: No, nothing like that. Just the pain and stiffness. Physician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3245266079902649,
+          "text": "Have you tried any treatments or medications for the pain yet? Patient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit. Physician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30398446321487427,
+          "text": "Physician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns. Patient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time. Physician: Can you describe the pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2732599377632141,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Simpson. Physician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports that joint pain worsens with stress and lack of movement, implying the importance of managing stress and staying active to alleviate symptoms.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Kathy. I'm Dr. Simpson. I've reviewed your medical history and test results. I'd like to hear more about your symptoms and concerns.\n\nPatient: Hi, Dr. Simpson. I've been experiencing joint pain in my wrists and knees for the past few months. It's been persistent and has been getting worse over time.\n\nPhysician: Can you describe the pain? Is it sharp, dull, or achy?\n\nPatient: It's a dull ache that feels like someone is squeezing my joints. It's worse in the mornings and after I've been sitting or standing for a while.\n\nPhysician: Have you noticed any swelling or redness in the affected joints?\n\nPatient: No, nothing like that. Just the pain and stiffness.\n\nPhysician: Have you experienced any other symptoms, such as fatigue, fever, or loss of appetite?\n\nPatient: No, nothing else. Just the joint pain.\n\nPhysician: Can you tell me about your recent travel history or any possible exposures to illnesses?\n\nPatient: I haven't traveled anywhere recently, and I don't think I've been exposed to anything unusual.\n\nPhysician: Have you noticed any patterns or triggers that make the pain better or worse?\n\nPatient: It seems to be worse when I'm under stress or haven't been moving around much.\n\nPhysician: That's helpful to know. Have you tried any treatments or medications for the pain yet?\n\nPatient: I've been taking over-the-counter ibuprofen and acetaminophen, but they only seem to help a little bit.\n\nPhysician: I see. Based on your history, exam, and lab results, it's possible that you may have developed an autoimmune disorder, such as rheumatoid arthritis. We'll need to do further testing to confirm this and develop an appropriate treatment plan. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to reassess your symptoms and discuss any additional test results. Does that sound good to you?\n\nPatient: Sure, that works for me. Thank you, Dr. Simpson.\n\nPhysician: Of course, Kathy. We'll work together to get to the bottom of this and find the best course of treatment for you.",
+  "note_text": "Subjective:\nKathy Morales, a 28-year-old female, presents with complaints of persistent joint pain in her wrists and knees for the past few months. She describes the pain as a dull ache that worsens in the mornings and after prolonged periods of sitting or standing. She denies any swelling, redness, fatigue, fever, or loss of appetite. The pain seems to be exacerbated by stress and inactivity. She has been taking over-the-counter ibuprofen and acetaminophen with minimal relief.\n\nObjective:\nPhysical examination reveals no visible swelling or redness in the affected joints. Laboratory results show an elevated ESR and CRP. Joint aspiration was negative for crystals, and ANA was negative. Kathy's vital signs are within normal limits, and she appears well-groomed and in no acute distress.\n\nAssessment:\nBased on Kathy's symptoms, history, and lab results, there is a suspicion of an autoimmune disorder, such as rheumatoid arthritis. Further testing is needed to confirm the diagnosis. A follow-up appointment is scheduled in two weeks to reassess symptoms and discuss additional test results.\n\nPlan:\n1. Schedule follow-up appointment in two weeks for further evaluation.\n2. Consider additional testing to confirm the diagnosis of rheumatoid arthritis.\n3. Discuss treatment options, including possible referral to a rheumatologist.\n4. Continue current medications (ibuprofen and acetaminophen) for pain management.\n5. Educate patient on the importance of staying active and managing stress to help alleviate symptoms."
+}

@@ -1,0 +1,847 @@
+{
+  "summary": {
+    "claims": 14,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 46,
+    "failed_calls": 0,
+    "successful_calls": 46,
+    "total_input_tokens": 20547,
+    "total_output_tokens": 1511,
+    "total_tokens": 22058,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0106364
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Carolyn appears alert and engaged during the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4442990720272064,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44414615631103516,
+          "text": "Physician: Good morning, Carolyn. How are you feeling today? Patient: Hi, Dr. Ruiz. I've been experiencing some persistent headaches lately, and I wanted to get your opinion on them. Physician: Of course, I'm happy to help."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35440725088119507,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24812491238117218,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24388864636421204,
+          "text": "How has that been managed, and have you noticed any changes in your symptoms recently? Patient: It's been pretty well-controlled, thanks to my albuterol inhaler. I just use it as needed, and it seems to do the trick. But I did notice that I've been needing it a bit more frequently over the past year or so. Physician: That's good to know. We'll definitely want to keep an eye on that."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Carolyn appears alert and engaged during the conversation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of acute distress are noted during the visit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3395494818687439,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.33695870637893677,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32939034700393677,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2988733947277069,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2775832414627075,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, actually. I've been having a bit of trouble falling asleep lately, and I've noticed that my appetite has been decreasing over the past few months. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that no signs of acute distress were noted during the visit. There is no direct mention of the patient's general appearance or distress level.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Emphasize stress management techniques and healthy sleep habits to address headache triggers.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6004467010498047,
+          "text": "Have you tried any over-the-counter pain relievers or relaxation techniques to help manage the stress and headaches? Patient: Yes, I've tried ibuprofen, and it seems to help a bit. But I'm not sure if it's just masking the symptoms or actually addressing the root cause. Physician: That's a good point."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5568959712982178,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.43069353699684143,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.37087756395339966,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3433946967124939,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript discusses stress as a possible headache trigger and mentions relaxation techniques and ibuprofen use, but there is no explicit recommendation or emphasis on stress management techniques or healthy sleep habits to address headache triggers.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Carolyn Cruz reports experiencing persistent headaches for the past three years, occurring about twice a week.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6370745897293091,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5541131496429443,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5311397910118103,
+          "text": "Physician: Good morning, Carolyn. How are you feeling today? Patient: Hi, Dr. Ruiz. I've been experiencing some persistent headaches lately, and I wanted to get your opinion on them. Physician: Of course, I'm happy to help."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5200358629226685,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45168766379356384,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the headaches started about three years ago and occur about twice a week. The patient also describes the headaches as persistent, confirming the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She attributes the headaches to stress at work and notes sensitivity to light and sound.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6177529692649841,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5001500248908997,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.49316710233688354,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4601505696773529,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44402971863746643,
+          "text": "Have you tried any over-the-counter pain relievers or relaxation techniques to help manage the stress and headaches? Patient: Yes, I've tried ibuprofen, and it seems to help a bit. But I'm not sure if it's just masking the symptoms or actually addressing the root cause. Physician: That's a good point."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly attributes headaches to work stress (E2:2) and notes sensitivity to light and sound (E4:3).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She has tried ibuprofen for relief but is concerned about the root cause of the headaches.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6194032430648804,
+          "text": "Have you tried any over-the-counter pain relievers or relaxation techniques to help manage the stress and headaches? Patient: Yes, I've tried ibuprofen, and it seems to help a bit. But I'm not sure if it's just masking the symptoms or actually addressing the root cause. Physician: That's a good point."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.49934589862823486,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.47513461112976074,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44042202830314636,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.421212375164032,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has tried ibuprofen and is unsure if it addresses the root cause of the headaches, matching the claim exactly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Carolyn also mentions a decrease in appetite and trouble falling asleep recently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6510621309280396,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, actually. I've been having a bit of trouble falling asleep lately, and I've noticed that my appetite has been decreasing over the past few months. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3545181453227997,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3534436821937561,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33629143238067627,
+          "text": "Physician: Good morning, Carolyn. How are you feeling today? Patient: Hi, Dr. Ruiz. I've been experiencing some persistent headaches lately, and I wanted to get your opinion on them. Physician: Of course, I'm happy to help."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31780028343200684,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having trouble falling asleep lately and a decreasing appetite over the past few months.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Carolyn appears alert and engaged during the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4442990720272064,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44414615631103516,
+          "text": "Physician: Good morning, Carolyn. How are you feeling today? Patient: Hi, Dr. Ruiz. I've been experiencing some persistent headaches lately, and I wanted to get your opinion on them. Physician: Of course, I'm happy to help."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35440725088119507,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24812491238117218,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24388864636421204,
+          "text": "How has that been managed, and have you noticed any changes in your symptoms recently? Patient: It's been pretty well-controlled, thanks to my albuterol inhaler. I just use it as needed, and it seems to do the trick. But I did notice that I've been needing it a bit more frequently over the past year or so. Physician: That's good to know. We'll definitely want to keep an eye on that."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or clearly imply that Carolyn appears alert and engaged during the conversation.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "She reports using her albuterol inhaler as needed for her well-controlled asthma, which has required more frequent use over the past year.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.7357531785964966,
+          "text": "How has that been managed, and have you noticed any changes in your symptoms recently? Patient: It's been pretty well-controlled, thanks to my albuterol inhaler. I just use it as needed, and it seems to do the trick. But I did notice that I've been needing it a bit more frequently over the past year or so. Physician: That's good to know. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4808843731880188,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3962448239326477,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32803863286972046,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2889559268951416,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, actually. I've been having a bit of trouble falling asleep lately, and I've noticed that my appetite has been decreasing over the past few months. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states her asthma is well-controlled with albuterol inhaler used as needed, and she has noticed needing it more frequently over the past year.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of acute distress are noted during the visit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3395494818687439,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.33695870637893677,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32939034700393677,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2988733947277069,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2775832414627075,
+          "text": "Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, actually. I've been having a bit of trouble falling asleep lately, and I've noticed that my appetite has been decreasing over the past few months. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that no signs of acute distress were noted during the visit. There is no direct mention of the patient's general appearance or distress level.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Carolyn presents with chronic tension-type headaches likely related to stress and muscle tension, without signs of neurological involvement.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6990057826042175,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5026698112487793,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46275579929351807,
+          "text": "Physician: Good morning, Carolyn. How are you feeling today? Patient: Hi, Dr. Ruiz. I've been experiencing some persistent headaches lately, and I wanted to get your opinion on them. Physician: Of course, I'm happy to help."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45380449295043945,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4347213804721832,
+          "text": "Have you tried any over-the-counter pain relievers or relaxation techniques to help manage the stress and headaches? Patient: Yes, I've tried ibuprofen, and it seems to help a bit. But I'm not sure if it's just masking the symptoms or actually addressing the root cause. Physician: That's a good point."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician states the headaches are tension-type without neurological symptoms and likely related to muscle tension or stress. The patient reports stress as a possible trigger and denies neurological symptoms, supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Her asthma is well-controlled with albuterol but may require closer monitoring due to increased usage.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.7090474963188171,
+          "text": "How has that been managed, and have you noticed any changes in your symptoms recently? Patient: It's been pretty well-controlled, thanks to my albuterol inhaler. I just use it as needed, and it seems to do the trick. But I did notice that I've been needing it a bit more frequently over the past year or so. Physician: That's good to know. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5140870809555054,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3925764858722687,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28027620911598206,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.2685099244117737,
+          "text": "I'll see you in a few weeks, and we'll continue to monitor your symptoms and make sure that we're doing everything we can to help you feel better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              1,
+              2,
+              3,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports asthma is well-controlled with albuterol used as needed, but notes increased frequency of use over the past year. The physician acknowledges this and plans closer monitoring, including follow-up appointments and symptom observation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "No concerning symptoms suggestive of a brain tumor are present.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4993525445461273,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4387269616127014,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3327217698097229,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2685624063014984,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2358589768409729,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states it is unlikely the headaches are related to a brain tumor, noting the headaches are tension-type without aura or focal neurological symptoms, and have been stable for three years. The patient denies any aura or focal neurological symptoms.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Recommend a follow-up appointment in a few weeks to monitor Carolyn's headaches and asthma.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.6941367983818054,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.5075290203094482,
+          "text": "I'll see you in a few weeks, and we'll continue to monitor your symptoms and make sure that we're doing everything we can to help you feel better."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4971041679382324,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.48963820934295654,
+          "text": "Physician: Good morning, Carolyn. How are you feeling today? Patient: Hi, Dr. Ruiz. I've been experiencing some persistent headaches lately, and I wanted to get your opinion on them. Physician: Of course, I'm happy to help."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4458600878715515,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E10",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly includes a recommendation for a follow-up appointment in a few weeks to monitor Carolyn's headaches and asthma (E9:2, E10:1).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Encourage continued use of ibuprofen for headache relief and appropriate use of the albuterol inhaler.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5433200001716614,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5353026986122131,
+          "text": "How has that been managed, and have you noticed any changes in your symptoms recently? Patient: It's been pretty well-controlled, thanks to my albuterol inhaler. I just use it as needed, and it seems to do the trick. But I did notice that I've been needing it a bit more frequently over the past year or so. Physician: That's good to know. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.45926016569137573,
+          "text": "Have you tried any over-the-counter pain relievers or relaxation techniques to help manage the stress and headaches? Patient: Yes, I've tried ibuprofen, and it seems to help a bit. But I'm not sure if it's just masking the symptoms or actually addressing the root cause. Physician: That's a good point."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36137568950653076,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34294429421424866,
+          "text": "Have you experienced any other health issues in the past, such as migraines or other neurological conditions? Patient: My mother has a history of migraines, actually. But aside from that, no, nothing major. Physician: Thanks for sharing that. Now, let's move on to your asthma."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends continuing ibuprofen as directed and appropriate use of the albuterol inhaler.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Emphasize stress management techniques and healthy sleep habits to address headache triggers.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6004467010498047,
+          "text": "Have you tried any over-the-counter pain relievers or relaxation techniques to help manage the stress and headaches? Patient: Yes, I've tried ibuprofen, and it seems to help a bit. But I'm not sure if it's just masking the symptoms or actually addressing the root cause. Physician: That's a good point."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5568959712982178,
+          "text": "Have you noticed any specific triggers that seem to set off the headaches? Patient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure. Physician: That's definitely worth considering."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.43069353699684143,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.37087756395339966,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3433946967124939,
+          "text": "Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms? Patient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound. Physician: Okay, that's helpful to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript discusses stress as a possible headache trigger and mentions relaxation techniques and ibuprofen use, but there is no explicit recommendation or emphasis on stress management techniques or healthy sleep habits to address headache triggers.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Discuss the importance of regular monitoring and communication for ongoing symptom management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5199357271194458,
+          "text": "That being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately. Does that sound good to you, Carolyn? Patient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things. Physician: Great. I'm glad we could have this conversation today, Carolyn."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5017821788787842,
+          "text": "How has that been managed, and have you noticed any changes in your symptoms recently? Patient: It's been pretty well-controlled, thanks to my albuterol inhaler. I just use it as needed, and it seems to do the trick. But I did notice that I've been needing it a bit more frequently over the past year or so. Physician: That's good to know. We'll definitely want to keep an eye on that."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.42474114894866943,
+          "text": "I'll see you in a few weeks, and we'll continue to monitor your symptoms and make sure that we're doing everything we can to help you feel better."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3897026777267456,
+          "text": "Can you tell me a bit more about these headaches? When did they start, and how often do you get them? Patient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3672567903995514,
+          "text": "Do you have any questions or concerns that you'd like to discuss before we wrap up our conversation? Patient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something. Physician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E10",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly discusses the need to keep an eye on symptoms, scheduling follow-up appointments for monitoring, and continuing communication to manage symptoms effectively.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Carolyn. How are you feeling today?\n\nPatient: Hi, Dr. Ruiz. I've been experiencing some persistent headaches lately, and I wanted to get your opinion on them.\n\nPhysician: Of course, I'm happy to help. Can you tell me a bit more about these headaches? When did they start, and how often do you get them?\n\nPatient: They started about three years ago, and they've been pretty consistent ever since. I get them about twice a week, sometimes more, sometimes less.\n\nPhysician: I see. Have you noticed any specific triggers that seem to set off the headaches?\n\nPatient: Well, I've been under a lot of stress at work lately, and I think that might be contributing to them. But I'm not sure.\n\nPhysician: That's definitely worth considering. Have you tried any over-the-counter pain relievers or relaxation techniques to help manage the stress and headaches?\n\nPatient: Yes, I've tried ibuprofen, and it seems to help a bit. But I'm not sure if it's just masking the symptoms or actually addressing the root cause.\n\nPhysician: That's a good point. Have you experienced any other symptoms aside from the headaches, such as auras or focal neurological symptoms?\n\nPatient: No, nothing like that. Just a dull ache on both sides of my head, sometimes with a bit of sensitivity to light and sound.\n\nPhysician: Okay, that's helpful to know. Have you had any recent changes in your sleep patterns or appetite?\n\nPatient: Yes, actually. I've been having a bit of trouble falling asleep lately, and I've noticed that my appetite has been decreasing over the past few months.\n\nPhysician: I see. Have you experienced any other health issues in the past, such as migraines or other neurological conditions?\n\nPatient: My mother has a history of migraines, actually. But aside from that, no, nothing major.\n\nPhysician: Thanks for sharing that. Now, let's move on to your asthma. How has that been managed, and have you noticed any changes in your symptoms recently?\n\nPatient: It's been pretty well-controlled, thanks to my albuterol inhaler. I just use it as needed, and it seems to do the trick. But I did notice that I've been needing it a bit more frequently over the past year or so.\n\nPhysician: That's good to know. We'll definitely want to keep an eye on that.\n\nDo you have any questions or concerns that you'd like to discuss before we wrap up our conversation?\n\nPatient: Actually, yes. I'm a bit worried that these headaches might be related to something more serious. I've been doing some research online, and I'm worried that it could be a brain tumor or something.\n\nPhysician: I completely understand your concerns, Carolyn. However, based on what you've shared with me today, it seems unlikely that the headaches are related to a brain tumor. The fact that they're tension-type headaches, without any aura or focal neurological symptoms, suggests that they're probably linked to muscle tension or stress. And the fact that you've been experiencing them for three years without any significant changes suggests that they're not likely to be related to a tumor.\n\nThat being said, I completely understand your concerns, and we'll definitely want to keep an eye on your symptoms and make sure that we're addressing them properly. I'd like to recommend that we schedule you for a follow-up appointment in a few weeks to check in on your headaches and asthma and see how you're doing. In the meantime, let's make sure that you're taking your ibuprofen as directed and that you're using your albuterol inhaler appropriately.\n\nDoes that sound good to you, Carolyn?\n\nPatient: Yes, thank you, Dr. Ruiz. I feel a bit better knowing that we're going to keep an eye on things.\n\nPhysician: Great. I'm glad we could have this conversation today, Carolyn. I'll see you in a few weeks, and we'll continue to monitor your symptoms and make sure that we're doing everything we can to help you feel better.",
+  "note_text": "Subjective:\nCarolyn Cruz reports experiencing persistent headaches for the past three years, occurring about twice a week. She attributes the headaches to stress at work and notes sensitivity to light and sound. She has tried ibuprofen for relief but is concerned about the root cause of the headaches. Carolyn also mentions a decrease in appetite and trouble falling asleep recently.\n\nObjective:\nCarolyn appears alert and engaged during the conversation. She reports using her albuterol inhaler as needed for her well-controlled asthma, which has required more frequent use over the past year. No signs of acute distress are noted during the visit.\n\nAssessment:\nCarolyn presents with chronic tension-type headaches likely related to stress and muscle tension, without signs of neurological involvement. Her asthma is well-controlled with albuterol but may require closer monitoring due to increased usage. No concerning symptoms suggestive of a brain tumor are present.\n\nPlan:\nRecommend a follow-up appointment in a few weeks to monitor Carolyn's headaches and asthma. Encourage continued use of ibuprofen for headache relief and appropriate use of the albuterol inhaler. Emphasize stress management techniques and healthy sleep habits to address headache triggers. Discuss the importance of regular monitoring and communication for ongoing symptom management."
+}

@@ -1,0 +1,1247 @@
+{
+  "summary": {
+    "claims": 20,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 6,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 6,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 45,
+    "failed_calls": 0,
+    "successful_calls": 45,
+    "total_input_tokens": 19628,
+    "total_output_tokens": 1585,
+    "total_tokens": 21213,
+    "total cost w/ GPT-4.1-mini (in $)": 0.010387200000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "She denies any changes in urination or bowel habits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5230745077133179,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38740983605384827,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3611059784889221,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32315781712532043,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3074491322040558,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The patient was asked about changes in urination or bowel habits (E5[4]), but there is no explicit response denying changes in these habits. The closest relevant response is 'No, nothing out of the ordinary' (E6[1]), but it is not explicitly linked to urination or bowel habits, making the claim unsupported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs show a blood pressure of 150/95 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.38175147771835327,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34407079219818115,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33784499764442444,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3332154154777527,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3311944603919983,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention a blood pressure reading of 150/95 mmHg or any specific vital signs.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Ashley's BMI is 35.4, and her A1C level is 7.8%.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4147862195968628,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3422080874443054,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31169605255126953,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2643417418003082,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24421924352645874,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not provide any explicit information about Ashley's BMI or A1C level values.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Educate Ashley on lifestyle modifications to manage diabetes, hypertension, and obesity.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4246455132961273,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4178263545036316,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37794774770736694,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36084598302841187,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.32123106718063354,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient's history of diabetes, hypertension, and obesity, and plans for lab tests and follow-up, but there is no explicit mention of educating the patient on lifestyle modifications to manage these conditions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Encourage regular physical activity and healthy eating habits.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.29437199234962463,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2932000756263733,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25077158212661743,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2444974184036255,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22188186645507812,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention encouraging regular physical activity or healthy eating habits.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "6. Consider adjusting medication dosages if necessary.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4257700741291046,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34182217717170715,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3134908974170685,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2872818112373352,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2770868241786957,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention considering or recommending adjusting medication dosages. The physician discusses ordering lab tests and scheduling follow-up but does not state or imply medication dosage adjustments.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "7. Collaborate with the registered dietitian for nutritional guidance and meal planning.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.29629260301589966,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2154795378446579,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20035067200660706,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.1900356262922287,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.18607579171657562,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention collaboration with a registered dietitian or nutritional guidance and meal planning.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "8. Discuss the importance of adherence to medication regimen and regular follow-up appointments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.46438437700271606,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.423965185880661,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2708534598350525,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2589690089225769,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25541406869888306,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes questions about medication adherence and scheduling follow-up appointments, but there is no explicit discussion on the importance of adherence to medication regimen or regular follow-up appointments.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Ashley reports feeling tired and experiencing swelling in her feet, especially after standing for a while.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6466538906097412,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.6123285293579102,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5444408655166626,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4949806332588196,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4124981760978699,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling tired (fatigue) and swelling in her feet, with the swelling noted to be especially after standing for a while.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She also mentions feeling constantly thirsty and having trouble sleeping at night.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6622864603996277,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3529476821422577,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3300297260284424,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2910817265510559,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2812838852405548,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling really thirsty all the time and having trouble sleeping at night in E3 sentence 2.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Ashley notes that she has gained weight recently and her clothes feel tighter.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.62275230884552,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.45589226484298706,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34026360511779785,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31127291917800903,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30770862102508545,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has put on a few pounds recently and that her clothes have been feeling tighter, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "During the examination, Ashley did not report any shortness of breath, chest pain, headaches, or dizziness.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5167121291160583,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4344359040260315,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43356814980506897,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4086814522743225,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35644078254699707,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies shortness of breath, chest pain, headaches, and dizziness in the relevant questions and answers.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She denies any changes in urination or bowel habits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5230745077133179,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38740983605384827,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3611059784889221,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.32315781712532043,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3074491322040558,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The patient was asked about changes in urination or bowel habits (E5[4]), but there is no explicit response denying changes in these habits. The closest relevant response is 'No, nothing out of the ordinary' (E6[1]), but it is not explicitly linked to urination or bowel habits, making the claim unsupported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No pain or discomfort in her feet or legs was noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5810847282409668,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5439631938934326,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3654715120792389,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34209102392196655,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2814651131629944,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any pain or discomfort in her feet or legs, stating only swelling is bothersome.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs show a blood pressure of 150/95 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.38175147771835327,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34407079219818115,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.33784499764442444,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3332154154777527,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3311944603919983,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention a blood pressure reading of 150/95 mmHg or any specific vital signs.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Ashley's BMI is 35.4, and her A1C level is 7.8%.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4147862195968628,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3422080874443054,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31169605255126953,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2643417418003082,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24421924352645874,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not provide any explicit information about Ashley's BMI or A1C level values.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Ashley presents with symptoms of fatigue, swelling in the feet, increased thirst, weight gain, and trouble sleeping.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5903639793395996,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5567595958709717,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5509533286094666,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4496650695800781,
+          "text": "Have you noticed any shortness of breath or chest pain? Patient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3907056450843811,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports fatigue (tiredness), swelling in the feet, increased thirst, and trouble sleeping. Weight gain is not mentioned in the transcript, but the claim does not specify it as a current symptom, so it is not contradicted but also not explicitly stated. However, the majority of symptoms are clearly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Her medical history includes type 2 diabetes, hypertension, and obesity.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6050240993499756,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40989816188812256,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33730462193489075,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33578187227249146,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3102303147315979,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The claim is explicitly stated in E4 sentences 5 and 6, confirming the patient's history of type 2 diabetes, hypertension, and obesity.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Lab tests have been ordered to assess blood sugar, blood pressure, lipid levels, and thyroid function.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6742067337036133,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3871026039123535,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3700663447380066,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.341406911611557,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2961031496524811,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering lab tests to check blood sugar, blood pressure, lipid levels, and thyroid function in sentences 4 and 5 of E7.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Follow-up appointment scheduled in two weeks to discuss results and develop a treatment plan.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5905358195304871,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.32333865761756897,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3199954330921173,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2656894624233246,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.253445565700531,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in two weeks to discuss results and develop a plan.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Monitor blood sugar, blood pressure, and lipid levels.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.533889651298523,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41253089904785156,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3987519145011902,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34351643919944763,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.29659584164619446,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering lab tests to check blood sugar, blood pressure, and lipid levels, directly supporting the claim to monitor these parameters.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Rule out potential infections.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.43662190437316895,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2728232145309448,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. Have you been experiencing any pain or discomfort in your feet or legs? Patient: No, it's just the swelling that's been bothering me. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26606446504592896,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2532033920288086,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2435925155878067,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will 'rule out any potential infections' as part of the lab tests ordered.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Follow up in two weeks to review lab results and develop a treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5860786437988281,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3017541170120239,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2948014736175537,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24534811079502106,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2338927984237671,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in two weeks to discuss lab results and develop a treatment plan.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Educate Ashley on lifestyle modifications to manage diabetes, hypertension, and obesity.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4246455132961273,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4178263545036316,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37794774770736694,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36084598302841187,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.32123106718063354,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient's history of diabetes, hypertension, and obesity, and plans for lab tests and follow-up, but there is no explicit mention of educating the patient on lifestyle modifications to manage these conditions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Encourage regular physical activity and healthy eating habits.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.29437199234962463,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2932000756263733,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25077158212661743,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2444974184036255,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22188186645507812,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention encouraging regular physical activity or healthy eating habits.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "6. Consider adjusting medication dosages if necessary.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4257700741291046,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34182217717170715,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3134908974170685,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2872818112373352,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2770868241786957,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention considering or recommending adjusting medication dosages. The physician discusses ordering lab tests and scheduling follow-up but does not state or imply medication dosage adjustments.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "7. Collaborate with the registered dietitian for nutritional guidance and meal planning.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.29629260301589966,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2154795378446579,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.20035067200660706,
+          "text": "Have you gained any weight recently? Patient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.1900356262922287,
+          "text": "Have you experienced any headaches or dizziness? Patient: No, nothing like that. Just the fatigue and swelling in my feet. Physician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.18607579171657562,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention collaboration with a registered dietitian or nutritional guidance and meal planning.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "8. Discuss the importance of adherence to medication regimen and regular follow-up appointments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.46438437700271606,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I take my medications every day. Physician: That's good to hear. Have you noticed any changes in your urination or bowel habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.423965185880661,
+          "text": "Have you had any recent illnesses or infections? Patient: No, nothing recent. Physician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2708534598350525,
+          "text": "Does that sound good to you? Patient: Sure, that works for me. Thank you, Dr. Mendoza. Physician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2589690089225769,
+          "text": "Have you noticed any other symptoms? Patient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25541406869888306,
+          "text": "Physician: Good morning, Ashley. How are you feeling today? Patient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes questions about medication adherence and scheduling follow-up appointments, but there is no explicit discussion on the importance of adherence to medication regimen or regular follow-up appointments.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Ashley. How are you feeling today?\n\nPatient: Hi, Dr. Mendoza. I'm feeling a bit tired and my feet have been swollen lately.\n\nPhysician: I see. Have you noticed any shortness of breath or chest pain?\n\nPatient: No, nothing like that. It's just my feet have been really swollen, especially after I've been standing for a while.\n\nPhysician: Okay. Have you gained any weight recently?\n\nPatient: Yeah, I've put on a few pounds. I'm not sure how much, but my clothes have been feeling tighter.\n\nPhysician: I understand. Have you noticed any other symptoms?\n\nPatient: Well, I've been feeling really thirsty all the time, and I've been having some trouble sleeping at night.\n\nPhysician: Okay. Have you experienced any headaches or dizziness?\n\nPatient: No, nothing like that. Just the fatigue and swelling in my feet.\n\nPhysician: All right. Let's take a closer look at your medical history. You have a history of type 2 diabetes, hypertension, and obesity. Have you been taking your medications as prescribed?\n\nPatient: Yes, I take my medications every day.\n\nPhysician: That's good to hear. Have you noticed any changes in your urination or bowel habits?\n\nPatient: No, nothing out of the ordinary.\n\nPhysician: Okay. Have you been experiencing any pain or discomfort in your feet or legs?\n\nPatient: No, it's just the swelling that's been bothering me.\n\nPhysician: I see. Have you had any recent illnesses or infections?\n\nPatient: No, nothing recent.\n\nPhysician: All right. I'm going to order some lab tests to check your blood sugar, blood pressure, and lipid levels. We'll also check your thyroid function and rule out any potential infections. In the meantime, I'd like to schedule you for a follow-up appointment in two weeks to discuss the results and develop a plan to address your symptoms. Does that sound good to you?\n\nPatient: Sure, that works for me. Thank you, Dr. Mendoza.\n\nPhysician: You're welcome, Ashley. We'll get to the bottom of this and work together to get you feeling better.",
+  "note_text": "Subjective:\nAshley reports feeling tired and experiencing swelling in her feet, especially after standing for a while. She also mentions feeling constantly thirsty and having trouble sleeping at night. Ashley notes that she has gained weight recently and her clothes feel tighter.\n\nObjective:\nDuring the examination, Ashley did not report any shortness of breath, chest pain, headaches, or dizziness. She denies any changes in urination or bowel habits. No pain or discomfort in her feet or legs was noted. Vital signs show a blood pressure of 150/95 mmHg. Ashley's BMI is 35.4, and her A1C level is 7.8%.\n\nAssessment:\nAshley presents with symptoms of fatigue, swelling in the feet, increased thirst, weight gain, and trouble sleeping. Her medical history includes type 2 diabetes, hypertension, and obesity. Lab tests have been ordered to assess blood sugar, blood pressure, lipid levels, and thyroid function. Follow-up appointment scheduled in two weeks to discuss results and develop a treatment plan.\n\nPlan:\n1. Monitor blood sugar, blood pressure, and lipid levels.\n2. Rule out potential infections.\n3. Follow up in two weeks to review lab results and develop a treatment plan.\n4. Educate Ashley on lifestyle modifications to manage diabetes, hypertension, and obesity.\n5. Encourage regular physical activity and healthy eating habits.\n6. Consider adjusting medication dosages if necessary.\n7. Collaborate with the registered dietitian for nutritional guidance and meal planning.\n8. Discuss the importance of adherence to medication regimen and regular follow-up appointments."
+}

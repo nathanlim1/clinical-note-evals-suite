@@ -1,0 +1,899 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 36,
+    "failed_calls": 0,
+    "successful_calls": 36,
+    "total_input_tokens": 19170,
+    "total_output_tokens": 1578,
+    "total_tokens": 20748,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0101928
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C11",
+      "text": "Mrs. Stephens will be monitored closely for any changes in her symptoms or lung function.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5802587270736694,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5443825721740723,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5269936323165894,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3202233910560608,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3137008547782898,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Mrs. Stephens will be monitored closely for any changes in her symptoms or lung function. While follow-up and tests are mentioned, close monitoring is not explicitly confirmed.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mrs. Stephens reports feeling under the weather with a persistent cough and tightness in her chest that has worsened over the past few days.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7153728604316711,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5401425957679749,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5349462628364563,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4081086814403534,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3273288607597351,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling under the weather, having a persistent cough, and chest tightness that has worsened over the past few days.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She experiences shortness of breath and wheezing, especially with exertion.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6977097988128662,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.47029221057891846,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3850952386856079,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3728775382041931,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37007150053977966,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly confirms experiencing shortness of breath and wheezing, especially with exertion, in response to the physician's question.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She suspects her daughter's new cat may be triggering her symptoms.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6469313502311707,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3821389675140381,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3272401690483093,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3006535768508911,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29626569151878357,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that her daughter recently brought home a new cat and she has been sneezing a lot since then, indicating she suspects the cat may be triggering her symptoms.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mrs. Stephens has been using her rescue inhaler more frequently but has not found relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6165564656257629,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5347222089767456,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5289213061332703,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4960640072822571,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4281482696533203,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that she has been using her rescue inhaler more frequently but it does not seem to be helping as much as it should, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She also reports a low-grade fever and constant fatigue.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.4614720046520233,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36468619108200073,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3032366633415222,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2867251932621002,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23199675977230072,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having a low-grade fever and feeling tired all the time, which corresponds to constant fatigue.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Mrs. Stephens presents with symptoms indicative of exacerbated asthma.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6346325278282166,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5768926739692688,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5411253571510315,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5055171847343445,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.41172829270362854,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports worsening cough and chest tightness, increased use of rescue inhaler with reduced effectiveness, and symptoms consistent with asthma exacerbation. The physician explicitly states the asthma might be exacerbated.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Spirometry and imaging tests are planned to assess lung function and rule out other potential causes.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5193713903427124,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3806641101837158,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.37023282051086426,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3610862195491791,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2477778196334839,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering spirometry to assess lung function and imaging (X-ray or CT scan) to rule out other potential causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "The physician plans to prescribe a course of prednisone to reduce airway inflammation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6088046431541443,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.478934645652771,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4343591332435608,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.427181601524353,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3403075635433197,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to prescribe a course of prednisone to help reduce inflammation in the airways.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Mrs. Stephens is advised to avoid potential triggers, such as the cat, and adhere to her current medication regimen.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.626187801361084,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4379914402961731,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.417996883392334,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4141775965690613,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30865243077278137,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the advice to avoid potential triggers such as the cat and to take medications as directed, which matches the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Based on Mrs. Stephens' symptoms and history of asthma, the physician suspects an asthma exacerbation.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6668684482574463,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5930455327033997,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5702912211418152,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5327408909797668,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42193281650543213,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states suspicion of asthma exacerbation based on Mrs. Stephens' symptoms and history of asthma. The patient reports worsening cough and chest tightness, and mentions asthma acting up again, supporting the physician's suspicion.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further testing and treatment are warranted to manage her condition effectively.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.44498616456985474,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4225219190120697,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3780064582824707,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2810235321521759,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2699049115180969,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tests to better understand the condition and prescribes treatment (prednisone). Follow-up is planned after test results, indicating further testing and treatment are warranted.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Mrs. Stephens will be monitored closely for any changes in her symptoms or lung function.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5802587270736694,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5443825721740723,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5269936323165894,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3202233910560608,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3137008547782898,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Mrs. Stephens will be monitored closely for any changes in her symptoms or lung function. While follow-up and tests are mentioned, close monitoring is not explicitly confirmed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "1. Order spirometry and imaging tests to evaluate lung function and rule out other causes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5308698415756226,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3764820098876953,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3522239923477173,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3417026698589325,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2416682243347168,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order spirometry to assess lung function and imaging (X-ray or CT scan) to rule out other causes.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "2. Prescribe a course of prednisone to reduce airway inflammation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5144031047821045,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3994303345680237,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3523707389831543,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.341276615858078,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29929885268211365,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E4[8] that they will prescribe a course of prednisone to help reduce airway inflammation.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "3. Advise Mrs. Stephens to avoid potential triggers, such as the cat, and adhere to her current medication regimen.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6206490993499756,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.42389023303985596,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.411856472492218,
+          "text": "Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress? Patient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it? Physician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40330854058265686,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3178563117980957,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly advises Mrs. Stephens to avoid potential triggers such as the cat and to ensure adherence to her medication regimen.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "4. Schedule a follow-up appointment to review test results and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4423792064189911,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3645353317260742,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.29542624950408936,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24292168021202087,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21366091072559357,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a plan to follow up in a few days once test results are available, implying a follow-up appointment to review results and adjust treatment as needed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "5. Instruct Mrs. Stephens to seek immediate medical attention if her symptoms worsen or if she experiences any shortness of breath.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6147117614746094,
+          "text": "In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed. Patient: Okay, that makes sense. Physician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention. Patient: Thank you, Dr. Sutton. I appreciate your help. Physician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5234054923057556,
+          "text": "Have you noticed any other symptoms, such as a fever or fatigue? Patient: Yes, I've had a low-grade fever and feel tired all the time. Physician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes. Patient: Sure, whatever it takes to feel better. Physician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.518050491809845,
+          "text": "Physician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling? Patient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3972184360027313,
+          "text": "Have you experienced any shortness of breath or wheezing? Patient: Yes, especially when I exert myself. It's like my asthma is acting up again. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3107188940048218,
+          "text": "Have you tried any over-the-counter medications or remedies for your symptoms? Patient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly instructs Mrs. Stephens to seek immediate medical attention if her symptoms worsen or if she experiences any shortness of breath.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mrs. Stephens. It's a pleasure to see you today. How are you feeling?\n\nPatient: Good morning, Dr. Sutton. I've been feeling a bit under the weather lately. I've had this persistent cough and my chest has been feeling tight. It's been getting worse over the past few days.\n\nPhysician: I see. Have you experienced any shortness of breath or wheezing?\n\nPatient: Yes, especially when I exert myself. It's like my asthma is acting up again.\n\nPhysician: I understand. Have you noticed any triggers that might be contributing to your symptoms, such as allergens or stress?\n\nPatient: Well, my daughter recently brought home a new cat, and I've been sneezing a lot since then. Could that be it?\n\nPhysician: It's possible. Cats are common allergens, and your symptoms could be an allergic reaction. Have you tried any over-the-counter medications or remedies for your symptoms?\n\nPatient: I've been using my rescue inhaler more frequently, but it doesn't seem to be helping as much as it should.\n\nPhysician: I see. Have you noticed any other symptoms, such as a fever or fatigue?\n\nPatient: Yes, I've had a low-grade fever and feel tired all the time.\n\nPhysician: Mrs. Stephens, based on what you've shared, it sounds like your asthma might be exacerbated. I'd like to order some tests to get a better understanding of your condition. We'll do a spirometry to assess your lung function and perhaps an X-ray or CT scan to rule out any other potential causes.\n\nPatient: Sure, whatever it takes to feel better.\n\nPhysician: Great. I'll also prescribe you a course of prednisone to help reduce inflammation in your airways. In the meantime, it's essential to avoid any potential triggers, such as the cat, and ensure you're taking your medications as directed.\n\nPatient: Okay, that makes sense.\n\nPhysician: We'll follow up in a few days once we have the results of your tests. In the meantime, if your symptoms worsen or you experience any shortness of breath, please don't hesitate to seek immediate medical attention.\n\nPatient: Thank you, Dr. Sutton. I appreciate your help.\n\nPhysician: You're welcome, Mrs. Stephens. We'll get to the bottom of this and get you feeling better soon.",
+  "note_text": "Subjective:\nMrs. Stephens reports feeling under the weather with a persistent cough and tightness in her chest that has worsened over the past few days. She experiences shortness of breath and wheezing, especially with exertion. She suspects her daughter's new cat may be triggering her symptoms. Mrs. Stephens has been using her rescue inhaler more frequently but has not found relief. She also reports a low-grade fever and constant fatigue.\n\nObjective:\nMrs. Stephens presents with symptoms indicative of exacerbated asthma. Spirometry and imaging tests are planned to assess lung function and rule out other potential causes. The physician plans to prescribe a course of prednisone to reduce airway inflammation. Mrs. Stephens is advised to avoid potential triggers, such as the cat, and adhere to her current medication regimen.\n\nAssessment:\nBased on Mrs. Stephens' symptoms and history of asthma, the physician suspects an asthma exacerbation. Further testing and treatment are warranted to manage her condition effectively. Mrs. Stephens will be monitored closely for any changes in her symptoms or lung function.\n\nPlan:\n1. Order spirometry and imaging tests to evaluate lung function and rule out other causes.\n2. Prescribe a course of prednisone to reduce airway inflammation.\n3. Advise Mrs. Stephens to avoid potential triggers, such as the cat, and adhere to her current medication regimen.\n4. Schedule a follow-up appointment to review test results and adjust treatment as needed.\n5. Instruct Mrs. Stephens to seek immediate medical attention if her symptoms worsen or if she experiences any shortness of breath."
+}

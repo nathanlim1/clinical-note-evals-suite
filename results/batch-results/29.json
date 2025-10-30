@@ -1,0 +1,1006 @@
+{
+  "summary": {
+    "claims": 17,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 50,
+    "failed_calls": 0,
+    "successful_calls": 50,
+    "total_input_tokens": 22158,
+    "total_output_tokens": 1921,
+    "total_tokens": 24079,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011936800000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C6",
+      "text": "During the examination, Mr. Hernandez appears fatigued but is alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5798956751823425,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.45869219303131104,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4123804271221161,
+          "text": "Can you tell me more about your fatigue? Is it constant or does it come and go? Patient: It's pretty constant, doctor. I just feel tired all the time, even after I've had a good night's sleep. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.365511417388916,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32625192403793335,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe the physician's direct observation of Mr. Hernandez appearing fatigued, alert, or oriented during the examination. The patient reports feeling tired, but there is no explicit statement about his alertness or orientation from the physician's perspective.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "His physical exam does not reveal any significant abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4660705327987671,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42872917652130127,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39777976274490356,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, nothing like that. Physician: Okay. Can you tell me about your diet and exercise habits? Patient: I try to eat healthy, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34664323925971985,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3179681599140167,
+          "text": "I don't eat much meat, mostly vegetables and fruits. And I try to walk every day, but like I said, I get winded easily. Physician: That's great that you're making an effort to eat healthy and exercise regularly. Have you noticed any changes in your vision or any numbness or tingling in your hands or feet? Patient: No, nothing like that. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains no explicit mention or description of a physical exam or its findings, so the claim about the physical exam revealing no significant abnormalities is not supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Referrals to support services may also be considered to help him cope with his recent loss and emotional challenges.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.40536290407180786,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.24076515436172485,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.1831153929233551,
+          "text": "Patient: Thank you, doctor. I appreciate your help."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17439574003219604,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.16066643595695496,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript acknowledges the patient's recent loss and emotional difficulty but does not explicitly mention or imply referrals to support services for coping with the loss or emotional challenges.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Hernandez reports feeling tired and experiencing shortness of breath, particularly when exerting himself.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7012423872947693,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.6262082457542419,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5634092092514038,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5356981158256531,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3651515543460846,
+          "text": "Can you tell me more about your fatigue? Is it constant or does it come and go? Patient: It's pretty constant, doctor. I just feel tired all the time, even after I've had a good night's sleep. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling tired and experiencing shortness of breath, with the shortness of breath worsening on exertion such as walking upstairs or doing yard work.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He mentions that this symptom has been ongoing for a few months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.49248749017715454,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.43513262271881104,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4303460121154785,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38352370262145996,
+          "text": "Can you tell me more about your fatigue? Is it constant or does it come and go? Patient: It's pretty constant, doctor. I just feel tired all the time, even after I've had a good night's sleep. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3299875259399414,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the symptom has been coming and going for a few months, directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He denies chest pain, dizziness, changes in urination or bowel movements, swelling in his legs or feet, changes in vision, or numbness/tingling in his extremities.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5434635877609253,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5359969139099121,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, nothing like that. Physician: Okay. Can you tell me about your diet and exercise habits? Patient: I try to eat healthy, doctor."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5082072615623474,
+          "text": "I don't eat much meat, mostly vegetables and fruits. And I try to walk every day, but like I said, I get winded easily. Physician: That's great that you're making an effort to eat healthy and exercise regularly. Have you noticed any changes in your vision or any numbness or tingling in your hands or feet? Patient: No, nothing like that. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.47873973846435547,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.40996742248535156,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies chest pain and dizziness (E2:1-2), changes in urination or bowel movements (E3:4-5), swelling in legs or feet (E5:1-2), and changes in vision or numbness/tingling in extremities (E6:4-5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Hernandez also shares that he has been feeling fatigued constantly, even after a good night's sleep.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5581972599029541,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5456441640853882,
+          "text": "Can you tell me more about your fatigue? Is it constant or does it come and go? Patient: It's pretty constant, doctor. I just feel tired all the time, even after I've had a good night's sleep. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.49403515458106995,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36609214544296265,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3429536521434784,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that his fatigue is constant and that he feels tired all the time, even after a good night's sleep.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He mentions that he tries to eat healthy and exercises by walking daily, but gets winded easily.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6252561211585999,
+          "text": "I don't eat much meat, mostly vegetables and fruits. And I try to walk every day, but like I said, I get winded easily. Physician: That's great that you're making an effort to eat healthy and exercise regularly. Have you noticed any changes in your vision or any numbness or tingling in your hands or feet? Patient: No, nothing like that. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4540013074874878,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.404885858297348,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, nothing like that. Physician: Okay. Can you tell me about your diet and exercise habits? Patient: I try to eat healthy, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3888794183731079,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3709776997566223,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states he tries to eat healthy (E5:5) and mostly eats vegetables and fruits (E6:1). He also tries to walk every day but gets winded easily (E6:2).",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Additionally, he discloses that he recently lost his wife, which has been emotionally challenging for him.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.41450047492980957,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.24187088012695312,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23547731339931488,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22326761484146118,
+          "text": "Can you tell me more about your family history? Do you have a history of heart disease or diabetes in your family? Patient: Yes, doctor. My father had heart disease, and my mother had diabetes. Physician: I see. That's important information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.19865889847278595,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that his wife passed away a few months ago and that it has been tough, indicating emotional challenge.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "During the examination, Mr. Hernandez appears fatigued but is alert and oriented.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5798956751823425,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.45869219303131104,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4123804271221161,
+          "text": "Can you tell me more about your fatigue? Is it constant or does it come and go? Patient: It's pretty constant, doctor. I just feel tired all the time, even after I've had a good night's sleep. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.365511417388916,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32625192403793335,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly describe the physician's direct observation of Mr. Hernandez appearing fatigued, alert, or oriented during the examination. The patient reports feeling tired, but there is no explicit statement about his alertness or orientation from the physician's perspective.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs are within normal limits, and there are no signs of swelling in his extremities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5382827520370483,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, nothing like that. Physician: Okay. Can you tell me about your diet and exercise habits? Patient: I try to eat healthy, doctor."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.43948838114738464,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42746058106422424,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.40069660544395447,
+          "text": "I don't eat much meat, mostly vegetables and fruits. And I try to walk every day, but like I said, I get winded easily. Physician: That's great that you're making an effort to eat healthy and exercise regularly. Have you noticed any changes in your vision or any numbness or tingling in your hands or feet? Patient: No, nothing like that. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34461480379104614,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any swelling in legs or feet, supporting the claim of no signs of swelling in extremities. Although vital signs are not directly mentioned, the absence of symptoms like chest pain, dizziness, or other acute issues in other spans implies stability, supporting the claim that vital signs are within normal limits.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "His physical exam does not reveal any significant abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4660705327987671,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42872917652130127,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.39777976274490356,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, nothing like that. Physician: Okay. Can you tell me about your diet and exercise habits? Patient: I try to eat healthy, doctor."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34664323925971985,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3179681599140167,
+          "text": "I don't eat much meat, mostly vegetables and fruits. And I try to walk every day, but like I said, I get winded easily. Physician: That's great that you're making an effort to eat healthy and exercise regularly. Have you noticed any changes in your vision or any numbness or tingling in your hands or feet? Patient: No, nothing like that. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript contains no explicit mention or description of a physical exam or its findings, so the claim about the physical exam revealing no significant abnormalities is not supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Based on his medical history and current symptoms, further tests including blood work, an electrocardiogram (ECG), and a possible stress test are recommended to assess his overall health and determine the cause of his symptoms.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6316787004470825,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.48160111904144287,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4046987295150757,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3914622664451599,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3763851821422577,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends blood work, an ECG, and possibly a stress test based on the patient's symptoms and history.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Mr. Hernandez presents with symptoms of fatigue and shortness of breath, which have been ongoing for a few months.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6447960138320923,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.6241946220397949,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.599000871181488,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5766557455062866,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.42842161655426025,
+          "text": "Can you tell me more about your fatigue? Is it constant or does it come and go? Patient: It's pretty constant, doctor. I just feel tired all the time, even after I've had a good night's sleep. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling tired and experiencing shortness of breath (E0:4), with the shortness of breath ongoing for a few months (E1:3). Fatigue is described as constant (E4:3), and the patient confirms these symptoms without other complaints (E2:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Given his medical history of Type 2 Diabetes Mellitus, hypertension, and hyperlipidemia, along with recent emotional stressors, further evaluation is necessary to rule out any underlying cardiac or pulmonary issues.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5135085582733154,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.45306336879730225,
+          "text": "Can you tell me more about your family history? Do you have a history of heart disease or diabetes in your family? Patient: Yes, doctor. My father had heart disease, and my mother had diabetes. Physician: I see. That's important information."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4333614110946655,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.40051767230033875,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3780319094657898,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2,
+              3,
+              6,
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly mentions recent emotional stressors (wife's passing) and symptoms (fatigue, shortness of breath). The physician recommends tests including ECG and stress test to evaluate heart health, indicating further evaluation for cardiac issues. The patient's medical history of diabetes, hypertension, and hyperlipidemia is implied by the context of the claim but not explicitly stated in the transcript; however, the physician's plan to check blood work and heart function supports the need for further evaluation given the patient's symptoms and stressors.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "The recommended tests will provide valuable information to guide his treatment plan.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.46546313166618347,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3617573380470276,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3169856071472168,
+          "text": "Patient: Thank you, doctor. I appreciate your help."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28710588812828064,
+          "text": "Can you tell me more about your family history? Do you have a history of heart disease or diabetes in your family? Patient: Yes, doctor. My father had heart disease, and my mother had diabetes. Physician: I see. That's important information."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2510834336280823,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, nothing like that. Physician: Okay. Can you tell me about your diet and exercise habits? Patient: I try to eat healthy, doctor."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              5,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that tests are recommended to better understand the patient's condition and mentions specific tests. The plan to order tests and follow up after results indicates these tests will guide treatment.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Orders will be placed for blood work, an ECG, and a possible stress test to further evaluate Mr. Hernandez's symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5907288789749146,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4623990058898926,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44306957721710205,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30572205781936646,
+          "text": "Can you tell me more about your family history? Do you have a history of heart disease or diabetes in your family? Patient: Yes, doctor. My father had heart disease, and my mother had diabetes. Physician: I see. That's important information."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2922738790512085,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to order blood work, an ECG, and possibly a stress test to evaluate the patient's symptoms, and confirms that orders will be placed promptly.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "He is advised to continue with his regular medications and monitor his symptoms closely.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5360426306724548,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.34621307253837585,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3118756413459778,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.295573890209198,
+          "text": "Have you noticed any swelling in your legs or feet? Patient: No, nothing like that. Physician: Okay. Can you tell me about your diet and exercise habits? Patient: I try to eat healthy, doctor."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28736329078674316,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises the patient to continue with his regular medications and to monitor his symptoms closely, with instructions to reach out if symptoms change or worsen.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Follow-up will be scheduled in a few days to review the test results and determine the next steps in his care.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5458317995071411,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.33574730157852173,
+          "text": "Patient: Thank you, doctor. I appreciate your help."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.32968971133232117,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.306316614151001,
+          "text": "Patient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious. Physician: I see. Have you noticed any changes in your urination habits or bowel movements? Patient: No, nothing out of the ordinary. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28319984674453735,
+          "text": "Physician: Good morning, Mr. Hernandez. How are you feeling today? Patient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that they will follow up in a few days once the test results are available, which aligns with scheduling a follow-up to review results and determine next steps.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Referrals to support services may also be considered to help him cope with his recent loss and emotional challenges.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.40536290407180786,
+          "text": "Have you had any recent stressors or changes in your life that could be contributing to your symptoms? Patient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time. Physician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.24076515436172485,
+          "text": "Does that sound good to you? Patient: Yes, doctor. Whatever it takes to feel better. Physician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.1831153929233551,
+          "text": "Patient: Thank you, doctor. I appreciate your help."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.17439574003219604,
+          "text": "Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing? Patient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.16066643595695496,
+          "text": "Have you noticed any other symptoms, like chest pain or dizziness? Patient: No, nothing like that. Just the shortness of breath and fatigue. Physician: Okay. Have you had any recent illnesses or infections?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript acknowledges the patient's recent loss and emotional difficulty but does not explicitly mention or imply referrals to support services for coping with the loss or emotional challenges.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Hernandez. How are you feeling today?\n\nPatient: Not too bad, doctor. Just a bit tired and experiencing some shortness of breath.\n\nPhysician: I see. Can you tell me more about your shortness of breath? Is it a new symptom or has it been ongoing?\n\nPatient: Well, it's been coming and going for a few months now. It's worse when I exert myself, like when I walk upstairs or do some yard work.\n\nPhysician: I understand. Have you noticed any other symptoms, like chest pain or dizziness?\n\nPatient: No, nothing like that. Just the shortness of breath and fatigue.\n\nPhysician: Okay. Have you had any recent illnesses or infections?\n\nPatient: No, nothing recent. I had a cold a few months ago, but it wasn't anything serious.\n\nPhysician: I see. Have you noticed any changes in your urination habits or bowel movements?\n\nPatient: No, nothing out of the ordinary.\n\nPhysician: Okay. Can you tell me more about your fatigue? Is it constant or does it come and go?\n\nPatient: It's pretty constant, doctor. I just feel tired all the time, even after I've had a good night's sleep.\n\nPhysician: I understand. Have you noticed any swelling in your legs or feet?\n\nPatient: No, nothing like that.\n\nPhysician: Okay. Can you tell me about your diet and exercise habits?\n\nPatient: I try to eat healthy, doctor. I don't eat much meat, mostly vegetables and fruits. And I try to walk every day, but like I said, I get winded easily.\n\nPhysician: That's great that you're making an effort to eat healthy and exercise regularly. Have you noticed any changes in your vision or any numbness or tingling in your hands or feet?\n\nPatient: No, nothing like that.\n\nPhysician: Okay. Can you tell me more about your family history? Do you have a history of heart disease or diabetes in your family?\n\nPatient: Yes, doctor. My father had heart disease, and my mother had diabetes.\n\nPhysician: I see. That's important information. Have you had any recent stressors or changes in your life that could be contributing to your symptoms?\n\nPatient: Well, my wife passed away a few months ago, and it's been tough. I've been trying to stay busy, but it's hard when you're feeling tired and short of breath all the time.\n\nPhysician: I'm so sorry to hear that, Mr. Hernandez. Losing a loved one can be incredibly difficult. It's important that we address your symptoms and work together to manage your health. Based on what you've shared with me today, I'm going to recommend some tests to help us better understand what's going on. We'll need to check your blood work, do an electrocardiogram (ECG) to assess your heart health, and possibly schedule a stress test to evaluate your exercise tolerance. Does that sound good to you?\n\nPatient: Yes, doctor. Whatever it takes to feel better.\n\nPhysician: Great. I'll work with my nurse to get the orders in place, and we'll have the tests done as soon as possible. In the meantime, I want you to continue with your regular medications and keep an eye on your symptoms. If anything changes or worsens, please don't hesitate to reach out to me or my nurse. We'll follow up in a few days once we have the test results.\n\nPatient: Thank you, doctor. I appreciate your help.",
+  "note_text": "Subjective:\nMr. Hernandez reports feeling tired and experiencing shortness of breath, particularly when exerting himself. He mentions that this symptom has been ongoing for a few months. He denies chest pain, dizziness, changes in urination or bowel movements, swelling in his legs or feet, changes in vision, or numbness/tingling in his extremities. Mr. Hernandez also shares that he has been feeling fatigued constantly, even after a good night's sleep. He mentions that he tries to eat healthy and exercises by walking daily, but gets winded easily. Additionally, he discloses that he recently lost his wife, which has been emotionally challenging for him.\n\nObjective:\nDuring the examination, Mr. Hernandez appears fatigued but is alert and oriented. Vital signs are within normal limits, and there are no signs of swelling in his extremities. His physical exam does not reveal any significant abnormalities. Based on his medical history and current symptoms, further tests including blood work, an electrocardiogram (ECG), and a possible stress test are recommended to assess his overall health and determine the cause of his symptoms.\n\nAssessment:\nMr. Hernandez presents with symptoms of fatigue and shortness of breath, which have been ongoing for a few months. Given his medical history of Type 2 Diabetes Mellitus, hypertension, and hyperlipidemia, along with recent emotional stressors, further evaluation is necessary to rule out any underlying cardiac or pulmonary issues. The recommended tests will provide valuable information to guide his treatment plan.\n\nPlan:\nOrders will be placed for blood work, an ECG, and a possible stress test to further evaluate Mr. Hernandez's symptoms. He is advised to continue with his regular medications and monitor his symptoms closely. Follow-up will be scheduled in a few days to review the test results and determine the next steps in his care. Referrals to support services may also be considered to help him cope with his recent loss and emotional challenges."
+}

@@ -1,0 +1,1274 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 7,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 7,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 46,
+    "failed_calls": 0,
+    "successful_calls": 46,
+    "total_input_tokens": 23531,
+    "total_output_tokens": 1646,
+    "total_tokens": 25177,
+    "total cost w/ GPT-4.1-mini (in $)": 0.012046
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Dora presents as a 53-year-old female with no signs of acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.44046908617019653,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37070369720458984,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.36430150270462036,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2537611424922943,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23179927468299866,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state Dora's age or mention that she presents with no signs of acute distress. While emotional distress is noted, no direct assessment of acute distress or age is provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "She appears anxious but cooperative during the session.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3893430233001709,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35492372512817383,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3505652844905853,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.30764415860176086,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2833918333053589,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports feeling anxious, but there is no explicit mention or description of her being cooperative during the session.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3004639744758606,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27029791474342346,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23192784190177917,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21831634640693665,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.18191617727279663,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Dora's affect is flat, and she exhibits poor eye contact.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3607150614261627,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29153355956077576,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2540058493614197,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.20518696308135986,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.10983926057815552,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention Dora's affect or eye contact, so the claim about flat affect and poor eye contact is not supported by the provided evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "She reports a history of anxiety and depression managed with Zoloft and Xanax.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.40557727217674255,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3814144730567932,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37178805470466614,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37135860323905945,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3658226728439331,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reports anxiety and depression symptoms, but there is no mention of management with Zoloft or Xanax or any medications at all.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "No acute distress noted during the physical exam.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3479452133178711,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34589990973472595,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.252865195274353,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23364301025867462,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2284826934337616,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit mention of a physical exam or the patient's distress level during such an exam. No statement confirms or denies 'no acute distress' during a physical exam.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "2. Continue therapy sessions with John Doe to address underlying issues contributing to anxiety and depression.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5328544974327087,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.381697416305542,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.37224137783050537,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33913007378578186,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3386807441711426,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript suggests continuing therapy might be helpful but does not explicitly mention continuing therapy sessions with John Doe or specify addressing underlying issues contributing to anxiety and depression.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "3. Schedule follow-up appointment in two weeks to monitor progress and adjust treatment plan as necessary.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.442477822303772,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22901594638824463,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2074877768754959,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.17013296484947205,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1433970034122467,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention scheduling a follow-up appointment in two weeks or monitoring progress and adjusting the treatment plan as necessary.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "4. Encourage self-care practices such as mindfulness, relaxation techniques, and regular exercise to manage symptoms between sessions.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4690081775188446,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3654395341873169,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33607643842697144,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31959009170532227,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30927520990371704,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging self-care practices such as mindfulness, relaxation techniques, or regular exercise to manage symptoms between sessions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "5. Provide education on coping strategies for managing anxiety and depression symptoms in daily life.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.38557887077331543,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3799203038215637,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36033153533935547,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3460599184036255,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3350173532962799,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion of symptoms, triggers, and treatment options but does not explicitly mention providing education on coping strategies for managing anxiety and depression symptoms in daily life.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Dora reports feeling anxious and depressed, with symptoms worsening recently.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5295031666755676,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5082942247390747,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46689343452453613,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4266107976436615,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40876951813697815,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports feeling anxious and depressed, with anxiety described as worsening recently (E0:6, E1:4) and depression bothering her more than usual (E0:6).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes trouble sleeping due to racing thoughts and physical symptoms like heart racing, dizziness, and hot flashes.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6229312419891357,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5023193955421448,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3415117561817169,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3254658579826355,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31323695182800293,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having trouble sleeping due to her mind not shutting off at night and describes physical symptoms including heart racing, dizziness, and hot flashes.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Triggers for her anxiety include work stress and crowded places.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6351383924484253,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41588130593299866,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2675960063934326,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22218409180641174,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21816541254520416,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that work stress and crowded places trigger her anxiety.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She also experiences feelings of sadness, hopelessness, guilt, and loss of interest in activities.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4963666796684265,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.428616464138031,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2792958617210388,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2757195830345154,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2739869952201843,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              4,
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling sad and hopeless, not enjoying activities, and feeling guilty, which directly supports the claim of sadness, hopelessness, guilt, and loss of interest in activities.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Appetite and sleep patterns are inconsistent.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6019014716148376,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28003183007240295,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2649880647659302,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22951242327690125,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2105485200881958,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having trouble sleeping and describes their appetite as inconsistent, with some days eating very little and other days bingeing on junk food.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Dora presents as a 53-year-old female with no signs of acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.44046908617019653,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37070369720458984,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.36430150270462036,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2537611424922943,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23179927468299866,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state Dora's age or mention that she presents with no signs of acute distress. While emotional distress is noted, no direct assessment of acute distress or age is provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "She appears anxious but cooperative during the session.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3893430233001709,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35492372512817383,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3505652844905853,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.30764415860176086,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2833918333053589,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports feeling anxious, but there is no explicit mention or description of her being cooperative during the session.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3004639744758606,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27029791474342346,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23192784190177917,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.21831634640693665,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.18191617727279663,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Dora's affect is flat, and she exhibits poor eye contact.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3607150614261627,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29153355956077576,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2540058493614197,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.20518696308135986,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.10983926057815552,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention Dora's affect or eye contact, so the claim about flat affect and poor eye contact is not supported by the provided evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "She reports a history of anxiety and depression managed with Zoloft and Xanax.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.40557727217674255,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3814144730567932,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37178805470466614,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37135860323905945,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3658226728439331,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reports anxiety and depression symptoms, but there is no mention of management with Zoloft or Xanax or any medications at all.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "No acute distress noted during the physical exam.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3479452133178711,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34589990973472595,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.252865195274353,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.23364301025867462,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2284826934337616,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not include any explicit mention of a physical exam or the patient's distress level during such an exam. No statement confirms or denies 'no acute distress' during a physical exam.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Dora is experiencing worsening symptoms of anxiety and depression, impacting her sleep, appetite, and daily functioning.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5733015537261963,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5216253399848938,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4808628559112549,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44972604513168335,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3772183060646057,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "Dora explicitly reports worsening anxiety and depression symptoms (E0:6), including trouble sleeping (E4:2; E1:4), inconsistent appetite (E4:3-4), and impact on daily functioning such as trouble concentrating and loss of interest (E3:5).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "She has a history of anxiety attacks triggered by stress and crowded places.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5270180702209473,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.39688265323638916,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26582932472229004,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2228434979915619,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.20044010877609253,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that stress triggers her anxiety and that being in crowded places can also set off her anxiety.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Current medication management may need adjustment to address her symptoms effectively.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5056586265563965,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.35017940402030945,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31985896825790405,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28734123706817627,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2787477374076843,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions that adjusting medication might be helpful and discusses working together to find the right treatment plan, indicating that current medication management may need adjustment to address symptoms effectively.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "1. Adjust medication regimen as needed to address worsening symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4991177022457123,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3376607298851013,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3012573719024658,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29185453057289124,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.28214842081069946,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions that adjusting medication might be helpful based on the patient's shared symptoms and indicates a plan to work together to find the right treatment plan, implying adjustment as needed for worsening symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "2. Continue therapy sessions with John Doe to address underlying issues contributing to anxiety and depression.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5328544974327087,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.381697416305542,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.37224137783050537,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33913007378578186,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3386807441711426,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript suggests continuing therapy might be helpful but does not explicitly mention continuing therapy sessions with John Doe or specify addressing underlying issues contributing to anxiety and depression.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "3. Schedule follow-up appointment in two weeks to monitor progress and adjust treatment plan as necessary.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.442477822303772,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22901594638824463,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2074877768754959,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.17013296484947205,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.1433970034122467,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention scheduling a follow-up appointment in two weeks or monitoring progress and adjusting the treatment plan as necessary.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "4. Encourage self-care practices such as mindfulness, relaxation techniques, and regular exercise to manage symptoms between sessions.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4690081775188446,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3654395341873169,
+          "text": "Have you experienced any changes in your appetite or sleep patterns? Patient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain. Physician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33607643842697144,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.31959009170532227,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30927520990371704,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention encouraging self-care practices such as mindfulness, relaxation techniques, or regular exercise to manage symptoms between sessions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "5. Provide education on coping strategies for managing anxiety and depression symptoms in daily life.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.38557887077331543,
+          "text": "Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further. Patient: That sounds good. I just want to feel better. Physician: Of course, Dora. We'll work together to find the right treatment plan for you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3799203038215637,
+          "text": "Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off? Patient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off. Physician: Okay, that helps me get a better picture."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36033153533935547,
+          "text": "Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you? Patient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3460599184036255,
+          "text": "How about your depression? Can you tell me a bit more about that? Patient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3350173532962799,
+          "text": "Physician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today? Patient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion of symptoms, triggers, and treatment options but does not explicitly mention providing education on coping strategies for managing anxiety and depression symptoms in daily life.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Dora. It's a pleasure to meet you. How are you feeling today?\n\nPatient: Hi, Dr. Palmer. I'm doing alright, I guess. I've been feeling a bit anxious lately, and my depression has been bothering me more than usual.\n\nPhysician: I see. Can you tell me more about your anxiety? When did you first start experiencing symptoms, and how have they been affecting you?\n\nPatient: Well, I've always been a bit of a worrier, but it seemed to get worse after my divorce a few years ago. Lately, I've been having trouble sleeping because my mind won't shut off at night. I'll lie awake for hours, worrying about everything from work to my kids. And sometimes, I get these weird physical symptoms like my heart racing, feeling dizzy, and getting hot flashes. It's really uncomfortable.\n\nPhysician: I understand. Have you noticed any triggers that make your anxiety worse? For example, do certain situations or events seem to set it off?\n\nPatient: Yeah, definitely. If I have a lot on my plate at work or if I'm under a lot of stress, that's when I start to feel the anxiety creeping in. And sometimes, even little things like watching the news or being in crowded places can set me off.\n\nPhysician: Okay, that helps me get a better picture. How about your depression? Can you tell me a bit more about that?\n\nPatient: Sure. I've been feeling sad and hopeless for a while now. I don't really enjoy doing things that I used to like, and I've been having trouble concentrating. I feel guilty all the time, like I'm not good enough, and that's been really hard to shake off.\n\nPhysician: I see. Have you experienced any changes in your appetite or sleep patterns?\n\nPatient: Yes, I've been having trouble sleeping, like I mentioned before. And my appetite has been pretty inconsistent. Some days, I'll eat next to nothing, and other days, I'll binge on junk food. It's like my body is trying to cope with all the emotional pain.\n\nPhysician: That makes sense. Dora, it sounds like you're experiencing a lot of emotional distress. I'm glad you came in today. Based on what you've shared, it seems like continuing therapy and adjusting your medication might be helpful. Let's discuss those options further.\n\nPatient: That sounds good. I just want to feel better.\n\nPhysician: Of course, Dora. We'll work together to find the right treatment plan for you.",
+  "note_text": "Subjective:\nDora reports feeling anxious and depressed, with symptoms worsening recently. She describes trouble sleeping due to racing thoughts and physical symptoms like heart racing, dizziness, and hot flashes. Triggers for her anxiety include work stress and crowded places. She also experiences feelings of sadness, hopelessness, guilt, and loss of interest in activities. Appetite and sleep patterns are inconsistent.\n\nObjective:\nDora presents as a 53-year-old female with no signs of acute distress. She appears anxious but cooperative during the session. Vital signs are within normal limits. Dora's affect is flat, and she exhibits poor eye contact. She reports a history of anxiety and depression managed with Zoloft and Xanax. No acute distress noted during the physical exam.\n\nAssessment:\nDora is experiencing worsening symptoms of anxiety and depression, impacting her sleep, appetite, and daily functioning. She has a history of anxiety attacks triggered by stress and crowded places. Current medication management may need adjustment to address her symptoms effectively.\n\nPlan:\n1. Adjust medication regimen as needed to address worsening symptoms.\n2. Continue therapy sessions with John Doe to address underlying issues contributing to anxiety and depression.\n3. Schedule follow-up appointment in two weeks to monitor progress and adjust treatment plan as necessary.\n4. Encourage self-care practices such as mindfulness, relaxation techniques, and regular exercise to manage symptoms between sessions.\n5. Provide education on coping strategies for managing anxiety and depression symptoms in daily life."
+}

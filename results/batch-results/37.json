@@ -1,0 +1,1059 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 1,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 1,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 50,
+    "failed_calls": 0,
+    "successful_calls": 50,
+    "total_input_tokens": 22375,
+    "total_output_tokens": 1682,
+    "total_tokens": 24057,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0116412
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Mr. Castillo appears well during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6019229292869568,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5195499658584595,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3925197720527649,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3602686822414398,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32501137256622314,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not contain any explicit statement or description indicating that Mr. Castillo appears well during the examination. There is no direct or implied assessment of his appearance or condition during the exam.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.48324188590049744,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3797203302383423,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3762717843055725,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37048447132110596,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3279862403869629,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or confirmation of vital signs being within normal limits is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "Encourage Mr. Castillo to continue efforts towards healthier habits and self-care.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5076509714126587,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4311217665672302,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.36991748213768005,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3520424962043762,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27966129779815674,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly show the physician encouraging Mr. Castillo to continue efforts towards healthier habits and self-care. While the patient mentions trying to eat healthier and exercise, and the physician acknowledges the difficulty, there is no direct encouragement documented.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Castillo reports feeling generally good but has been experiencing increased shortness of breath and swelling in his legs.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7013627290725708,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5857290029525757,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4665719270706177,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4420793950557709,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.40392741560935974,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling generally good but reports increased shortness of breath ('getting winded a lot easier') and swelling in his legs.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He also mentions occasional dizziness upon standing and joint pain.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5570186376571655,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4606427550315857,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4406365752220154,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42239874601364136,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32712239027023315,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports occasional dizziness upon standing (E2:2) and joint pain described as achy joints (E3:7).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He has been trying to eat healthier and exercise more but has difficulty sticking to a routine.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.530484676361084,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35488438606262207,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2742674946784973,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26492810249328613,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24087998270988464,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that he has been trying to eat healthier and exercise more but finds it hard to find time and has not been able to stick to an exercise routine.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Additionally, he notes achy joints and trouble sleeping.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5637421607971191,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36580806970596313,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34747374057769775,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3222823739051819,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2990938425064087,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that his joints have been feeling achy and that he has been having trouble sleeping at night in sentences 7 and 8 of span E3.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "No recent illnesses or changes in bowel or urination habits reported.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.7247592806816101,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.532288134098053,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.43461868166923523,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4332994222640991,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3490374982357025,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              6
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent illnesses or infections (E4:2-3) and denies changes in bowel or urination habits (E4:6, E5:1).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Mr. Castillo appears well during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6019229292869568,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5195499658584595,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3925197720527649,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3602686822414398,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32501137256622314,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not contain any explicit statement or description indicating that Mr. Castillo appears well during the examination. There is no direct or implied assessment of his appearance or condition during the exam.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.48324188590049744,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3797203302383423,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3762717843055725,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37048447132110596,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3279862403869629,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or confirmation of vital signs being within normal limits is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physician notes will order tests for blood sugar, cholesterol levels, and a lipid panel, as well as a urinalysis.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6726086139678955,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4623875021934509,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39685070514678955,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.35144558548927307,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3454930782318115,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tests for blood sugar, cholesterol levels, a lipid panel, and a urinalysis in sentences 7 and 8 of E5.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Follow-up appointment scheduled in two weeks to review results.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6283988952636719,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37519019842147827,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2944485545158386,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28244102001190186,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2558016777038574,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in a couple of weeks to review results.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Influenza vaccine and colorectal cancer screening to be scheduled.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5242950916290283,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27107954025268555,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.24919241666793823,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.22310054302215576,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.189792662858963,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the influenza vaccine and colorectal cancer screening will be scheduled.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Physician will discuss weight management goals and potential referral to a dietitian.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5339711308479309,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4008309543132782,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3882615566253662,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3500332236289978,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.342842698097229,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will discuss weight management goals and the possibility of a referral to a dietitian.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Mr. Castillo presents with symptoms of shortness of breath, leg swelling, dizziness, joint pain, and sleep disturbances.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5922390222549438,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5386393070220947,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.43644312024116516,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4081891179084778,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40439552068710327,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports shortness of breath (E0:4), leg swelling (E0:5, E1:3), dizziness (E2:2), joint pain (E3:7), and sleep disturbances (E3:8).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Further investigation through lab tests and screenings is warranted to assess underlying issues.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4745049774646759,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33650243282318115,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3151172995567322,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.26614493131637573,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26525476574897766,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tests to check blood sugar, cholesterol, lipid panel, and urinalysis to check for underlying issues, and schedules follow-up and screenings, indicating further investigation is warranted.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Weight management goals and lifestyle changes will be addressed to improve overall health.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3856423795223236,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35079067945480347,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3090406060218811,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3006148934364319,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26319992542266846,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will talk more about weight management goals and the possibility of a dietitian referral, indicating that weight management goals and lifestyle changes will be addressed.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Order tests for blood sugar, cholesterol levels, lipid panel, and urinalysis.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5560974478721619,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3367241322994232,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3048700988292694,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2820771038532257,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.24065697193145752,
+          "text": "Have you noticed any chest pain or tightness? Patient: No, nothing like that. Just the shortness of breath and swelling in my legs. Physician: Okay. Have you been experiencing any other symptoms?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tests for blood sugar, cholesterol levels, lipid panel, and urinalysis in sentences 7 and 8 of span E5.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Schedule follow-up appointment in two weeks.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5755963325500488,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2836564779281616,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25394922494888306,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22155044972896576,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2026461660861969,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in a couple of weeks to review results.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Arrange for influenza vaccine and colorectal cancer screening.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5361894965171814,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.33074480295181274,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3075326085090637,
+          "text": "Physician: Okay. Have you had any recent illnesses or infections? Patient: No, nothing recent. Just a cold a few months ago. Physician: Alright. Have you noticed any changes in your bowel movements or urination habits?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2382347583770752,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.21018366515636444,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will schedule the influenza vaccine and colorectal cancer screening in sentence 6 of span E6.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Discuss weight management goals and potential referral to a dietitian for further support.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4436551332473755,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3010217845439911,
+          "text": "Dizziness, lightheadedness? Patient: Yes, a little dizziness sometimes when I stand up. But it's not too bad. Physician: I understand. Have you had any recent changes in your diet or exercise routine?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27885615825653076,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22153490781784058,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.19036684930324554,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will discuss weight management goals and the possibility of a referral to a dietitian, and the patient responds positively.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "Encourage Mr. Castillo to continue efforts towards healthier habits and self-care.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5076509714126587,
+          "text": "Thank you. Physician: No problem, Mr. Castillo. We'll take good care of you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4311217665672302,
+          "text": "Physician: Good morning, Mr. Castillo. How are you feeling today? Patient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.36991748213768005,
+          "text": "And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you? Patient: Sure, that sounds good. Thank you, Dr. Hawkins. Physician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful. Patient: That sounds great."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3520424962043762,
+          "text": "Patient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it. Physician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort? Patient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27966129779815674,
+          "text": "Patient: No, everything seems normal there. Physician: Good. Have you had any recent travel or exposure to anyone with illnesses? Patient: No, nothing recent. Just the usual stuff at work. Physician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly show the physician encouraging Mr. Castillo to continue efforts towards healthier habits and self-care. While the patient mentions trying to eat healthier and exercise, and the physician acknowledges the difficulty, there is no direct encouragement documented.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Castillo. How are you feeling today?\n\nPatient: Hi, Dr. Hawkins. I've been feeling pretty good, but I've noticed that I've been getting winded a lot easier lately. And my legs have been feeling a little swollen.\n\nPhysician: I see. Have you noticed any chest pain or tightness?\n\nPatient: No, nothing like that. Just the shortness of breath and swelling in my legs.\n\nPhysician: Okay. Have you been experiencing any other symptoms? Dizziness, lightheadedness?\n\nPatient: Yes, a little dizziness sometimes when I stand up. But it's not too bad.\n\nPhysician: I understand. Have you had any recent changes in your diet or exercise routine?\n\nPatient: Well, I've been trying to eat a little healthier and exercise more, but it's hard to find the time. I've been meaning to get a exercise routine going, but I haven't been able to stick to it.\n\nPhysician: That's understandable. It can be tough to make time for self-care. Have you noticed any other changes in your body? Any pain or discomfort?\n\nPatient: Yeah, my joints have been feeling a little achy lately. And I've been having some trouble sleeping at night.\n\nPhysician: Okay. Have you had any recent illnesses or infections?\n\nPatient: No, nothing recent. Just a cold a few months ago.\n\nPhysician: Alright. Have you noticed any changes in your bowel movements or urination habits?\n\nPatient: No, everything seems normal there.\n\nPhysician: Good. Have you had any recent travel or exposure to anyone with illnesses?\n\nPatient: No, nothing recent. Just the usual stuff at work.\n\nPhysician: Okay. I'm going to order some tests to check your blood sugar and cholesterol levels, as well as a lipid panel. We'll also do a urinalysis to check for any underlying issues. And I'd like to schedule you for a follow-up appointment in a couple of weeks to go over the results. Does that sound good to you?\n\nPatient: Sure, that sounds good. Thank you, Dr. Hawkins.\n\nPhysician: Of course. We'll also make sure to schedule your influenza vaccine and colorectal cancer screening. And I'll talk to you more about your weight management goals and whether a referral to a dietitian might be helpful.\n\nPatient: That sounds great. Thank you.\n\nPhysician: No problem, Mr. Castillo. We'll take good care of you.",
+  "note_text": "Subjective:\nMr. Castillo reports feeling generally good but has been experiencing increased shortness of breath and swelling in his legs. He also mentions occasional dizziness upon standing and joint pain. He has been trying to eat healthier and exercise more but has difficulty sticking to a routine. Additionally, he notes achy joints and trouble sleeping. No recent illnesses or changes in bowel or urination habits reported.\n\nObjective:\nMr. Castillo appears well during the examination. Vital signs are within normal limits. Physician notes will order tests for blood sugar, cholesterol levels, and a lipid panel, as well as a urinalysis. Follow-up appointment scheduled in two weeks to review results. Influenza vaccine and colorectal cancer screening to be scheduled. Physician will discuss weight management goals and potential referral to a dietitian.\n\nAssessment:\nMr. Castillo presents with symptoms of shortness of breath, leg swelling, dizziness, joint pain, and sleep disturbances. Further investigation through lab tests and screenings is warranted to assess underlying issues. Weight management goals and lifestyle changes will be addressed to improve overall health.\n\nPlan:\nOrder tests for blood sugar, cholesterol levels, lipid panel, and urinalysis. Schedule follow-up appointment in two weeks. Arrange for influenza vaccine and colorectal cancer screening. Discuss weight management goals and potential referral to a dietitian for further support. Encourage Mr. Castillo to continue efforts towards healthier habits and self-care."
+}

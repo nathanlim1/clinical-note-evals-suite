@@ -1,0 +1,1041 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 1,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 46,
+    "failed_calls": 0,
+    "successful_calls": 46,
+    "total_input_tokens": 22851,
+    "total_output_tokens": 1704,
+    "total_tokens": 24555,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0118668
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Patient appears alert and cooperative during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3647368848323822,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Harris. Physician: You're welcome, Willard. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3554691672325134,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3547901511192322,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33677905797958374,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3046559691429138,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or describe the patient's alertness or cooperativeness during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of respiratory distress observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.37823811173439026,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3629443049430847,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.336107462644577,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31706225872039795,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2454378306865692,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient reports of wheezing (E5[2]) and increased use of albuterol inhaler (E2[1], E4[2]), which may indicate respiratory distress, but no explicit statement confirms absence of respiratory distress signs. Therefore, the claim is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Lung auscultation reveals wheezing in bilateral lung fields.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5176573991775513,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38021570444107056,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3493756949901581,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34637874364852905,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3124717175960541,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient experiencing wheezing (E5[2]) but does not specify that wheezing was found on lung auscultation or that it was bilateral. The claim about lung auscultation revealing bilateral wheezing is not explicitly supported.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T21",
+      "text": "For my allergic rhinitis, I take loratadine every morning.",
+      "sent_idx": 21,
+      "prev_text": "I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma.",
+      "next_text": "Physician: That's great.",
+      "severity": "medium"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Willard Craig reports feeling crummy for the past few days with a persistent cough and a heavy, congested chest.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6772129535675049,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4542786777019501,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4423930048942566,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39798057079315186,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3711917996406555,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling crummy for the past few days with a persistent cough and a heavy, congested chest in E0 sentences 4 and 5.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He mentions using his albuterol inhaler more frequently than usual and experiencing wheezing, especially at night.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6358579397201538,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5873478651046753,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5692499876022339,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5232979655265808,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45828789472579956,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states using the albuterol inhaler more frequently than usual (E2:1) and reports wheezing, especially at night (E5:1-2).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "No fever or shortness of breath reported.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5397108793258667,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4048367440700531,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3590849041938782,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35489898920059204,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3080200254917145,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies experiencing shortness of breath or fever in response to the physician's direct question.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Denies recent travel or exposure to sick individuals.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.41095125675201416,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.37554317712783813,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2907794713973999,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24365106225013733,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22090277075767517,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies recent travel and exposure to sick individuals in E2 sentences 3 and 4.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Patient appears alert and cooperative during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3647368848323822,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Harris. Physician: You're welcome, Willard. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3554691672325134,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3547901511192322,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33677905797958374,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3046559691429138,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or describe the patient's alertness or cooperativeness during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of respiratory distress observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.37823811173439026,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3629443049430847,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.336107462644577,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31706225872039795,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2454378306865692,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient reports of wheezing (E5[2]) and increased use of albuterol inhaler (E2[1], E4[2]), which may indicate respiratory distress, but no explicit statement confirms absence of respiratory distress signs. Therefore, the claim is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Lung auscultation reveals wheezing in bilateral lung fields.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5176573991775513,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38021570444107056,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3493756949901581,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34637874364852905,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3124717175960541,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient experiencing wheezing (E5[2]) but does not specify that wheezing was found on lung auscultation or that it was bilateral. The claim about lung auscultation revealing bilateral wheezing is not explicitly supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Peak flow meter readings to be assessed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.3249073326587677,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2467247098684311,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2412521243095398,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2277737706899643,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21495375037193298,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that peak flow meter readings will be checked to assess asthma control, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Chest X-ray and nasal swab ordered to rule out pneumonia and viral infections, respectively.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6150890588760376,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4798998236656189,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.38834160566329956,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38810500502586365,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3244396150112152,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering a chest X-ray to rule out pneumonia and a nasal swab to check for viral infections.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Likely exacerbation of asthma and allergic rhinitis due to a possible viral infection.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6120831966400146,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5094590783119202,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4566417336463928,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4539424180984497,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3697755038738251,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that a viral infection is possibly exacerbating the patient's asthma and allergic rhinitis, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Increased use of albuterol inhaler and wheezing indicate compromised respiratory function.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5487387180328369,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5464041233062744,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.522916316986084,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.47247448563575745,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44060370326042175,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports increased use of albuterol inhaler (E2:1, E4:1-2) and presence of wheezing (E5:1-2), which are clinical indicators of compromised respiratory function.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Treatment plan includes increasing fluticasone dose, adding prednisone for inflammation, and providing nebulizer treatment for airway opening.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.7160693407058716,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.502248227596283,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40685519576072693,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3996434509754181,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3904915153980255,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The treatment plan explicitly includes increasing the fluticasone dose to twice daily, adding a short course of prednisone to reduce inflammation, and providing nebulizer treatment to open airways as stated in E6 sentences 4 and 5.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Follow-up appointment scheduled for next week to review test results and adjust treatment as needed.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4672966003417969,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4065748155117035,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3452307879924774,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32337188720703125,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.29016345739364624,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Harris. Physician: You're welcome, Willard. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The follow-up appointment for next week to review test results and adjust treatment is explicitly scheduled in E6 sentence 6.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Order chest X-ray and nasal swab.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.48614302277565,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.38828951120376587,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.30513858795166016,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29597997665405273,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2624775767326355,
+          "text": "Physician: Good morning, Willard. How are you feeling today? Patient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering a chest X-ray and a nasal swab to evaluate the patient's condition.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Assess peak flow meter readings.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.45207181572914124,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3546561598777771,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3169999122619629,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31444233655929565,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2997574508190155,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that they will check the peak flow meter readings to assess asthma control, directly supporting the claim to assess peak flow meter readings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Increase fluticasone dose to twice daily.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.589198648929596,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.46020838618278503,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36309224367141724,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3267688751220703,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3206647038459778,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to increase the fluticasone dose to twice daily in sentence 4 of E6.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Prescribe short course of prednisone.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4522474408149719,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.32410791516304016,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.261285662651062,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2610630691051483,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.260986864566803,
+          "text": "Have you experienced any shortness of breath or fever? Patient: No, not really. Just a lot of mucus and coughing. Physician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the plan to add a short course of prednisone to help reduce inflammation.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Provide nebulizer treatment for airway opening.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.42818784713745117,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.37559646368026733,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34545332193374634,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3199305832386017,
+          "text": "Patient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual. Physician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms? Patient: No, I haven't traveled recently, and I don't think anyone in my household has been sick. Physician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.318012535572052,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E6[5] that a nebulizer treatment will be provided to help open up the airways, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "6. Schedule follow-up appointment for next week to review test results and adjust treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.39762967824935913,
+          "text": "What do you think is going on? Physician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3323408365249634,
+          "text": "Have you noticed any changes in your symptoms or medication effectiveness recently? Patient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.29997867345809937,
+          "text": "Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness? Patient: Yes, I have noticed some wheezing, especially when I'm lying down at night. Physician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control. Patient: Sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.26215285062789917,
+          "text": "Can you tell me a little bit about how you've been managing those conditions? Patient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning. Physician: That's great."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.25760412216186523,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Harris. Physician: You're welcome, Willard. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E6 sentence 6 to schedule a follow-up appointment for next week to review test results and adjust the treatment plan as needed, directly supporting the full claim.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Willard. How are you feeling today?\n\nPatient: Hi, Dr. Harris. I've been feeling pretty crummy for the past few days. I've had a persistent cough and my chest feels heavy and congested.\n\nPhysician: I see. Have you experienced any shortness of breath or fever?\n\nPatient: No, not really. Just a lot of mucus and coughing.\n\nPhysician: Okay. Have you noticed any triggers that make your symptoms worse, such as exposure to allergens or certain environments?\n\nPatient: Well, I have been noticing that my symptoms tend to worsen at night, and I've been using my albuterol inhaler more frequently than usual.\n\nPhysician: I understand. Have you recently traveled or been exposed to anyone with similar symptoms?\n\nPatient: No, I haven't traveled recently, and I don't think anyone in my household has been sick.\n\nPhysician: Okay. Let's talk about your medical history. You have asthma and allergic rhinitis. Can you tell me a little bit about how you've been managing those conditions?\n\nPatient: Sure. I use my albuterol inhaler as needed, and I take fluticasone daily to control my asthma. For my allergic rhinitis, I take loratadine every morning.\n\nPhysician: That's great. Have you noticed any changes in your symptoms or medication effectiveness recently?\n\nPatient: Well, like I mentioned, I've been using my albuterol inhaler more often lately, but other than that, my symptoms have been pretty well-controlled.\n\nPhysician: I see. Have you experienced any other symptoms that might be related to your respiratory system, such as wheezing or chest tightness?\n\nPatient: Yes, I have noticed some wheezing, especially when I'm lying down at night.\n\nPhysician: Okay. I'm going to order a few tests to help us better understand what's going on. We'll do a chest X-ray to rule out pneumonia, and I'd like to run a nasal swab to check for any viral infections. We'll also check your peak flow meter readings to assess your asthma control.\n\nPatient: Sounds good. What do you think is going on?\n\nPhysician: It's possible that you have a viral infection that's exacerbating your asthma and allergic rhinitis. We'll get a better idea of what's going on once we have the test results back. In the meantime, I'd like to increase your fluticasone dose to twice daily and add a short course of prednisone to help reduce inflammation. We'll also provide you with a nebulizer treatment to help open up your airways. Let's schedule a follow-up appointment for next week to review the test results and adjust your treatment plan as needed. Does that sound good to you?\n\nPatient: Yes, that sounds great. Thank you, Dr. Harris.\n\nPhysician: You're welcome, Willard. We'll get you feeling better in no time.",
+  "note_text": "Subjective:\nWillard Craig reports feeling crummy for the past few days with a persistent cough and a heavy, congested chest. He mentions using his albuterol inhaler more frequently than usual and experiencing wheezing, especially at night. No fever or shortness of breath reported. Denies recent travel or exposure to sick individuals.\n\nObjective:\nPatient appears alert and cooperative during the examination. No signs of respiratory distress observed. Lung auscultation reveals wheezing in bilateral lung fields. Peak flow meter readings to be assessed. Chest X-ray and nasal swab ordered to rule out pneumonia and viral infections, respectively.\n\nAssessment:\nLikely exacerbation of asthma and allergic rhinitis due to a possible viral infection. Increased use of albuterol inhaler and wheezing indicate compromised respiratory function. Treatment plan includes increasing fluticasone dose, adding prednisone for inflammation, and providing nebulizer treatment for airway opening. Follow-up appointment scheduled for next week to review test results and adjust treatment as needed.\n\nPlan:\n1. Order chest X-ray and nasal swab.\n2. Assess peak flow meter readings.\n3. Increase fluticasone dose to twice daily.\n4. Prescribe short course of prednisone.\n5. Provide nebulizer treatment for airway opening.\n6. Schedule follow-up appointment for next week to review test results and adjust treatment plan as needed."
+}

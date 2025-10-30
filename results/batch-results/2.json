@@ -1,0 +1,1021 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 52,
+    "failed_calls": 0,
+    "successful_calls": 52,
+    "total_input_tokens": 22244,
+    "total_output_tokens": 1711,
+    "total_tokens": 23955,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0116352
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Mr. Ross appears fatigued during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5480449795722961,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5081568956375122,
+          "text": "Patient: That works for me. Thank you, Dr. Williamson. Physician: You're welcome, Mr. Ross. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35438454151153564,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3522056043148041,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31832197308540344,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reporting feeling tired, but there is no explicit mention or observation by the physician that Mr. Ross appears fatigued during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Throat examination reveals redness and swelling.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4667451083660126,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3662239611148834,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36175736784935,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34721148014068604,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3362783193588257,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient's throat is sore and scratchy, but there is no explicit mention of redness or swelling observed during the throat examination.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Chest auscultation indicates congestion with productive cough.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4714711010456085,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.46644842624664307,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4085296392440796,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3695192337036133,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33834391832351685,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports congestion and productive cough, but there is no explicit mention of chest auscultation findings indicating congestion.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T14",
+      "text": "Patient: It's sore, especially when I swallow.",
+      "sent_idx": 14,
+      "prev_text": "Is it scratchy or sore?",
+      "next_text": "It feels like there's something stuck in there.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Ross presents with symptoms of a common cold, including a constant runny nose, sore throat, fatigue, low-grade fever, chills, headache, body aches, chest congestion, and coughing up yellowish, thick mucus.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6445866823196411,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5523995757102966,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4799466133117676,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4765041768550873,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4343733489513397,
+          "text": "Patient: That works for me. Thank you, Dr. Williamson. Physician: You're welcome, Mr. Ross. We'll get you feeling better soon."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports a constant runny nose, sore throat, fatigue, low-grade fever, chills, headache, body aches, chest congestion, and coughing up mucus, consistent with the claim. The mucus is described as 'a lot of mucus' but not explicitly 'yellowish, thick'; however, the overall symptom complex supports the claim of common cold symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He reports taking pseudoephedrine for congestion with minimal relief and decreased appetite.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.637459397315979,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5439890027046204,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.43282461166381836,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4325771927833557,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3720560073852539,
+          "text": "How's your appetite been? Patient: To be honest, I haven't had much of an appetite. I've been drinking a lot of fluids, though. Physician: That's good. Staying hydrated is important."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states taking pseudoephedrine for congestion with minimal relief (E4:2) and reports decreased appetite (E5:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He denies shortness of breath or wheezing.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6171123385429382,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3392171859741211,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31914281845092773,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30872148275375366,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28243184089660645,
+          "text": "Are you taking any medications for those conditions? Patient: Yes, I take amlodipine for my blood pressure and metformin for my diabetes. Physician: Great. Have you noticed any changes in your blood sugar levels or blood pressure recently?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies shortness of breath or wheezing in response to the physician's question.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Ross appears fatigued during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5480449795722961,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5081568956375122,
+          "text": "Patient: That works for me. Thank you, Dr. Williamson. Physician: You're welcome, Mr. Ross. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35438454151153564,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3522056043148041,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.31832197308540344,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reporting feeling tired, but there is no explicit mention or observation by the physician that Mr. Ross appears fatigued during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Vital signs show a low-grade fever of 100.3 degrees Fahrenheit.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6610000133514404,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3235183358192444,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2844826281070709,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2784278094768524,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.26996371150016785,
+          "text": "How's your appetite been? Patient: To be honest, I haven't had much of an appetite. I've been drinking a lot of fluids, though. Physician: That's good. Staying hydrated is important."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports having a low-grade fever of 100.3 degrees Fahrenheit.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Nasal discharge is thick and yellowish.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5704569816589355,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38964763283729553,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3802239000797272,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.34108448028564453,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31160610914230347,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the nasal discharge is 'pretty thick and yellowish,' directly supporting the claim.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Throat examination reveals redness and swelling.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4667451083660126,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3662239611148834,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36175736784935,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34721148014068604,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3362783193588257,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions the patient's throat is sore and scratchy, but there is no explicit mention of redness or swelling observed during the throat examination.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Chest auscultation indicates congestion with productive cough.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4714711010456085,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.46644842624664307,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4085296392440796,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3695192337036133,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33834391832351685,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient reports congestion and productive cough, but there is no explicit mention of chest auscultation findings indicating congestion.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "No signs of respiratory distress are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3907437324523926,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2865317463874817,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2653364837169647,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25681281089782715,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2420559525489807,
+          "text": "How's your appetite been? Patient: To be honest, I haven't had much of an appetite. I've been drinking a lot of fluids, though. Physician: That's good. Staying hydrated is important."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies shortness of breath or wheezing, which are signs of respiratory distress, indicating no signs of respiratory distress are noted.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Medical history includes hypertension and type 2 diabetes, managed with amlodipine and metformin, respectively.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6034858226776123,
+          "text": "Are you taking any medications for those conditions? Patient: Yes, I take amlodipine for my blood pressure and metformin for my diabetes. Physician: Great. Have you noticed any changes in your blood sugar levels or blood pressure recently?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48164886236190796,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30554088950157166,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27708137035369873,
+          "text": "How's your appetite been? Patient: To be honest, I haven't had much of an appetite. I've been drinking a lot of fluids, though. Physician: That's good. Staying hydrated is important."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2453266978263855,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the patient has hypertension and diabetes (E6:5-6) and that the patient takes amlodipine for blood pressure and metformin for diabetes (E7:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Mr. Ross presents with symptoms consistent with a viral upper respiratory infection.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5868222117424011,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5046681761741638,
+          "text": "Patient: That works for me. Thank you, Dr. Williamson. Physician: You're welcome, Mr. Ross. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.49606451392173767,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.44346120953559875,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3807588219642639,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports symptoms such as runny nose, sore throat, fatigue, headaches, body aches, congestion, and productive cough, which are consistent with a viral upper respiratory infection. The physician orders a nasal swab to confirm viral infection, indicating suspicion of a viral cause.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Given his chronic conditions, further evaluation with a cholesterol test is warranted.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4404458701610565,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.36233144998550415,
+          "text": "Are you taking any medications for those conditions? Patient: Yes, I take amlodipine for my blood pressure and metformin for my diabetes. Physician: Great. Have you noticed any changes in your blood sugar levels or blood pressure recently?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.34695929288864136,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3038886487483978,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29027020931243896,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient has chronic conditions (hypertension and diabetes) as noted in E6:5-6, and the physician explicitly states ordering a cholesterol test to check levels in E8:3, supporting the claim that further evaluation with a cholesterol test is warranted given the chronic conditions.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Antiviral medication is prescribed to manage symptoms, along with continued use of pseudoephedrine for congestion.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6285432577133179,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5709863901138306,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3767086863517761,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.32236039638519287,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.26911461353302,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states prescribing an antiviral medication to manage symptoms and recommends continuing pseudoephedrine for congestion.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Follow-up appointment scheduled for next week to review test results and reassess his condition.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4684654772281647,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37495744228363037,
+          "text": "Are you taking any medications for those conditions? Patient: Yes, I take amlodipine for my blood pressure and metformin for my diabetes. Physician: Great. Have you noticed any changes in your blood sugar levels or blood pressure recently?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3527277708053589,
+          "text": "Patient: That works for me. Thank you, Dr. Williamson. Physician: You're welcome, Mr. Ross. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3134056031703949,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.31065434217453003,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E8[8] that a follow-up appointment is scheduled for next week to reassess the condition and review test results, matching the claim exactly.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "1. Order cholesterol test and nasal swab for viral infection confirmation.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6016606688499451,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3555307388305664,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3003467321395874,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2890152931213379,
+          "text": "What's the consistency of the discharge like? Is it thick, thin, watery? Patient: It's been pretty thick and yellowish. Physician: And your throat? Is it scratchy or sore? Patient: It's sore, especially when I swallow. It feels like there's something stuck in there. Physician: All right."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2887484133243561,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering a cholesterol test and a nasal swab to confirm viral infection in sentences 3 and 4 of E8.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "2. Prescribe antiviral medication for symptom management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.4736650884151459,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3126794695854187,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2797478139400482,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2645623981952667,
+          "text": "Patient: That works for me. Thank you, Dr. Williamson. Physician: You're welcome, Mr. Ross. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2623903453350067,
+          "text": "How's your appetite been? Patient: To be honest, I haven't had much of an appetite. I've been drinking a lot of fluids, though. Physician: That's good. Staying hydrated is important."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to prescribe an antiviral medication to help manage symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "3. Recommend continued use of pseudoephedrine for congestion.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5587054491043091,
+          "text": "Have you tried any over-the-counter medications or remedies? Patient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.548768937587738,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3748612403869629,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3642722964286804,
+          "text": "Have you noticed any other symptoms? Headaches, body aches, or congestion? Patient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2692708373069763,
+          "text": "Have you had any fever or chills? Patient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home. Physician: Okay, let's start with your nose."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends continuing pseudoephedrine for congestion in sentence 7 of E8.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "4. Schedule follow-up appointment for next week to review test results and reassess Mr. Ross's condition.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.49606218934059143,
+          "text": "Patient: That works for me. Thank you, Dr. Williamson. Physician: You're welcome, Mr. Ross. We'll get you feeling better soon."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4463784098625183,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms. Patient: Sounds good to me. Physician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4413908123970032,
+          "text": "Physician: Good morning, Mr. Ross. How can I assist you today? Patient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2996925115585327,
+          "text": "Have you noticed any shortness of breath or wheezing? Patient: No, nothing like that. Just the congestion and coughing. Physician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2916935682296753,
+          "text": "Are you taking any medications for those conditions? Patient: Yes, I take amlodipine for my blood pressure and metformin for my diabetes. Physician: Great. Have you noticed any changes in your blood sugar levels or blood pressure recently?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E8[8] that a follow-up appointment is to be scheduled for next week to reassess the condition and review test results, matching the claim exactly.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Mr. Ross. How can I assist you today?\n\nPatient: Hi, Dr. Williamson. I've been feeling pretty miserable for the past week. I've got a constant runny nose, my throat is sore, and I'm feeling really tired all the time.\n\nPhysician: I see. Have you had any fever or chills?\n\nPatient: Yeah, I've had a low-grade fever, around 100.3, and I've been feeling chilly, even with the heat on at home.\n\nPhysician: Okay, let's start with your nose. What's the consistency of the discharge like? Is it thick, thin, watery?\n\nPatient: It's been pretty thick and yellowish.\n\nPhysician: And your throat? Is it scratchy or sore?\n\nPatient: It's sore, especially when I swallow. It feels like there's something stuck in there.\n\nPhysician: All right. Have you noticed any other symptoms? Headaches, body aches, or congestion?\n\nPatient: Yeah, my head's been pounding, and my body feels heavy, like I've been hit by a truck. My chest feels congested, and I've been coughing up a lot of mucus.\n\nPhysician: I understand. Have you tried any over-the-counter medications or remedies?\n\nPatient: I've been taking pseudoephedrine for the congestion, but it doesn't seem to be doing much.\n\nPhysician: I see. How's your appetite been?\n\nPatient: To be honest, I haven't had much of an appetite. I've been drinking a lot of fluids, though.\n\nPhysician: That's good. Staying hydrated is important. Have you noticed any shortness of breath or wheezing?\n\nPatient: No, nothing like that. Just the congestion and coughing.\n\nPhysician: All right. Let's take a look at your medical history. I see that you have hypertension and diabetes. Are you taking any medications for those conditions?\n\nPatient: Yes, I take amlodipine for my blood pressure and metformin for my diabetes.\n\nPhysician: Great. Have you noticed any changes in your blood sugar levels or blood pressure recently?\n\nPatient: No, nothing out of the ordinary.\n\nPhysician: Okay. I'm going to order a cholesterol test to check your levels. We'll also run a nasal swab to confirm if you have a viral infection. In the meantime, I'd like to prescribe an antiviral medication to help manage your symptoms.\n\nPatient: Sounds good to me.\n\nPhysician: I'll also recommend that you continue taking pseudoephedrine for your congestion and cough. Let's schedule a follow-up appointment for next week to reassess your condition and review the test results.\n\nPatient: That works for me. Thank you, Dr. Williamson.\n\nPhysician: You're welcome, Mr. Ross. We'll get you feeling better soon.",
+  "note_text": "Subjective:\nMr. Ross presents with symptoms of a common cold, including a constant runny nose, sore throat, fatigue, low-grade fever, chills, headache, body aches, chest congestion, and coughing up yellowish, thick mucus. He reports taking pseudoephedrine for congestion with minimal relief and decreased appetite. He denies shortness of breath or wheezing.\n\nObjective:\nMr. Ross appears fatigued during the examination. Vital signs show a low-grade fever of 100.3 degrees Fahrenheit. Nasal discharge is thick and yellowish. Throat examination reveals redness and swelling. Chest auscultation indicates congestion with productive cough. No signs of respiratory distress are noted. Medical history includes hypertension and type 2 diabetes, managed with amlodipine and metformin, respectively.\n\nAssessment:\nMr. Ross presents with symptoms consistent with a viral upper respiratory infection. Given his chronic conditions, further evaluation with a cholesterol test is warranted. Antiviral medication is prescribed to manage symptoms, along with continued use of pseudoephedrine for congestion. Follow-up appointment scheduled for next week to review test results and reassess his condition.\n\nPlan:\n1. Order cholesterol test and nasal swab for viral infection confirmation.\n2. Prescribe antiviral medication for symptom management.\n3. Recommend continued use of pseudoephedrine for congestion.\n4. Schedule follow-up appointment for next week to review test results and reassess Mr. Ross's condition."
+}

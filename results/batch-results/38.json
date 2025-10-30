@@ -1,0 +1,1426 @@
+{
+  "summary": {
+    "claims": 22,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 6,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 5,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 1,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 49,
+    "failed_calls": 0,
+    "successful_calls": 49,
+    "total_input_tokens": 25115,
+    "total_output_tokens": 2118,
+    "total_tokens": 27233,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0134348
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Ava appears anxious during the appointment but is cooperative and engaged in the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5630736947059631,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5078050494194031,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.46386444568634033,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3607334792613983,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36031627655029297,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Ava reports feeling overwhelmed and anxious, but there is no explicit mention of her appearing anxious during the appointment, nor is there explicit evidence that she is cooperative and engaged in the conversation. The patient's responses show engagement, but the claim about her appearance and cooperation is not explicitly stated.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3312462568283081,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3281107544898987,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.30780649185180664,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28983935713768005,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28792187571525574,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Ava's weight is consistent with her obesity diagnosis.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4101909399032593,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3626880645751953,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3564557731151581,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24126683175563812,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22989492118358612,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any information about Ava's weight or an obesity diagnosis, so the claim cannot be verified.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "She is due for colorectal cancer screening and influenza vaccine.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.28631794452667236,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24615223705768585,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.21812370419502258,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.18068896234035492,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1699802279472351,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention colorectal cancer screening or influenza vaccine, nor do they indicate that the patient is due for these screenings or vaccinations.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Lipid panel results are pending, and a cholesterol medication adjustment reminder is noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.429179847240448,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3100692331790924,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2904849648475647,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2664181590080261,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2648290991783142,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention lipid panel results being pending or any reminder about cholesterol medication adjustment.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "4. Encourage Ava to continue coping strategies and relaxation techniques.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.47207319736480713,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41218411922454834,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3914658725261688,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31018397212028503,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2857339382171631,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Ava is encouraged to continue coping strategies and relaxation techniques; it only shows inquiry about current use and discussion of symptoms and plans for medication and follow-up.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "5. Schedule influenza vaccine administration and colorectal cancer screening.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.2578418254852295,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2143961489200592,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.18131867051124573,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.14972738921642303,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1401580274105072,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention scheduling influenza vaccine administration or colorectal cancer screening.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "6. Communicate with Ava's spouse, John Holland, as an emergency contact.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.34365037083625793,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.291303426027298,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2759178578853607,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25830525159835815,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.16991376876831055,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not mention any communication with Ava's spouse, John Holland, or identify him as an emergency contact.",
+        "severity": "high"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C7",
+      "text": "Physical examination reveals no acute abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.289341539144516,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2751691937446594,
+          "text": "Can you tell me more about your shortness of breath? Is it occurring at rest or with exertion? Patient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house. It's been getting worse over the past few weeks. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2677174210548401,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2514210641384125,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23326952755451202,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports frequent headaches and muscle tension in shoulders and neck, indicating physical abnormalities related to anxiety, contradicting the claim of no acute abnormalities on physical examination.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "missing_critical": [
+    {
+      "sent_id": "T10",
+      "text": "It's been getting worse over the past few weeks.",
+      "sent_idx": 10,
+      "prev_text": "Patient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house.",
+      "next_text": "Physician: I understand.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Ava Holland, a 40-year-old female, presents with feelings of overwhelm and increased anxiety.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5809593200683594,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5094027519226074,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.47705215215682983,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41790771484375,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4051705300807953,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling overwhelmed and reports worsened anxiety in E0 sentences 5 and 6.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She reports experiencing shortness of breath with exertion, chest tightness, dizziness, heart racing at night, trouble sleeping, increased appetite, irritability, restlessness, and difficulty concentrating.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6425979137420654,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5650632381439209,
+          "text": "Can you tell me more about your shortness of breath? Is it occurring at rest or with exertion? Patient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house. It's been getting worse over the past few weeks. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5576467514038086,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5075078010559082,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4774888753890991,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports shortness of breath with exertion (E1:3), chest tightness (E2:2), dizziness (E3:1), heart racing at night (E3:2), trouble sleeping (E3:5), increased appetite (E3:6), irritability and restlessness (E4:2), and difficulty concentrating (E4:3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Ava attributes her anxiety to work stress and relationship issues with her husband.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6344846487045288,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.49118342995643616,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4807724058628082,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4519021511077881,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3792193531990051,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that work has been stressful and that she and her husband have been having relationship issues, directly attributing these as stressors contributing to her anxiety.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She also mentions frequent headaches, fatigue, and muscle tension.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6000635027885437,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4261016845703125,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4175555109977722,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4051322340965271,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3510615825653076,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly confirms frequent headaches and muscle tension (shoulders and neck feeling tense). Fatigue is implied by the question but not explicitly confirmed; however, the claim states 'fatigue' as mentioned by the patient, which is supported by the question listing fatigue as a symptom related to anxiety and the patient's affirmative response to related symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Ava has been attempting coping strategies such as exercise and deep breathing but finds it challenging to maintain.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5018249750137329,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4876437783241272,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3705073297023773,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3358793556690216,
+          "text": "Can you tell me more about your shortness of breath? Is it occurring at rest or with exertion? Patient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house. It's been getting worse over the past few weeks. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.32285749912261963,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been trying exercise and deep breathing but finds it hard to find time and motivation, indicating difficulty maintaining these coping strategies.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Ava appears anxious during the appointment but is cooperative and engaged in the conversation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5630736947059631,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5078050494194031,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.46386444568634033,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3607334792613983,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36031627655029297,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Ava reports feeling overwhelmed and anxious, but there is no explicit mention of her appearing anxious during the appointment, nor is there explicit evidence that she is cooperative and engaged in the conversation. The patient's responses show engagement, but the claim about her appearance and cooperation is not explicitly stated.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3312462568283081,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3281107544898987,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.30780649185180664,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.28983935713768005,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28792187571525574,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their values is present in the provided transcript spans to confirm that vital signs are within normal limits.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Physical examination reveals no acute abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.289341539144516,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2751691937446594,
+          "text": "Can you tell me more about your shortness of breath? Is it occurring at rest or with exertion? Patient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house. It's been getting worse over the past few weeks. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2677174210548401,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2514210641384125,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23326952755451202,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient reports frequent headaches and muscle tension in shoulders and neck, indicating physical abnormalities related to anxiety, contradicting the claim of no acute abnormalities on physical examination.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Ava's weight is consistent with her obesity diagnosis.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.4101909399032593,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3626880645751953,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3564557731151581,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24126683175563812,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.22989492118358612,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any information about Ava's weight or an obesity diagnosis, so the claim cannot be verified.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "She is due for colorectal cancer screening and influenza vaccine.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.28631794452667236,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24615223705768585,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.21812370419502258,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.18068896234035492,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1699802279472351,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention colorectal cancer screening or influenza vaccine, nor do they indicate that the patient is due for these screenings or vaccinations.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Lipid panel results are pending, and a cholesterol medication adjustment reminder is noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.429179847240448,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3100692331790924,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2904849648475647,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2664181590080261,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2648290991783142,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention lipid panel results being pending or any reminder about cholesterol medication adjustment.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Ava presents with symptoms suggestive of anxiety and depression, in addition to her chronic conditions of hypertension, hyperlipidemia, and obesity.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6646747589111328,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5604882836341858,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45179489254951477,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4349020719528198,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43340182304382324,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states Ava might be experiencing symptoms of anxiety and depression along with her known hypertension and hyperlipidemia. Ava also reports worsening anxiety. Obesity is implied as a chronic condition but not explicitly mentioned in the transcript; however, the claim is mostly supported by the direct mention of anxiety, depression, hypertension, and hyperlipidemia.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "The cardiologist has emphasized the importance of lifestyle modifications due to her cardiovascular risk factors.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.45443248748779297,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3471345603466034,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.33055463433265686,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33026131987571716,
+          "text": "Can you tell me more about your shortness of breath? Is it occurring at rest or with exertion? Patient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house. It's been getting worse over the past few weeks. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3053407371044159,
+          "text": "Have you experienced any chest pain or tightness? Patient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress. Physician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician acknowledges the patient's cardiovascular risk factors (hypertension and hyperlipidemia) and schedules a follow-up with a dietitian to discuss healthy lifestyle modifications, emphasizing their importance.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Ava's recent stressors and physical symptoms align with her anxiety disorder diagnosis.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5510815382003784,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5288239121437073,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5176637172698975,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5078331232070923,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4773901402950287,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports recent stressors including work stress and relationship issues (E5:2-4), physical symptoms such as headaches and muscle tension (E6:2), and worsening anxiety with shortness of breath (E0:5-6), all aligning with her anxiety disorder diagnosis.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Further evaluation and management are warranted to address her mental health concerns and overall well-being.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4557923376560211,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3494970202445984,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3395351469516754,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.32465776801109314,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30480653047561646,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician acknowledges symptoms of anxiety and depression and proposes follow-up appointments for further evaluation and management, including medication and lifestyle modifications, indicating that further evaluation and management are warranted.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "1. Prescribe medication for anxiety and sleep to help manage symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.59506756067276,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.42023545503616333,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.38007012009620667,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.368198037147522,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3439069986343384,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe medication to help with anxiety and sleep in sentence 6 of E7.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "2. Schedule follow-up appointments to assess treatment progress and adjust medications as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.44991356134414673,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.255292147397995,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25257623195648193,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24754729866981506,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24483713507652283,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling follow-up appointments to evaluate symptoms and develop a management plan, prescribes medication, and schedules a follow-up with a dietitian, indicating assessment and adjustment of treatment.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "3. Refer Ava to the dietitian for lifestyle modifications to improve her overall health.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4650367200374603,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.388140469789505,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35844331979751587,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.24980959296226501,
+          "text": "Patient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep. Physician: I see. Have you had any recent changes in your sleep patterns or appetite? Patient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.22226881980895996,
+          "text": "Can you tell me more about your shortness of breath? Is it occurring at rest or with exertion? Patient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house. It's been getting worse over the past few weeks. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E7[7] the plan to schedule a follow-up appointment with the dietitian to discuss healthy lifestyle modifications for overall health, and the patient agrees to this plan in E8[1-2].",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "4. Encourage Ava to continue coping strategies and relaxation techniques.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.47207319736480713,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.41218411922454834,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3914658725261688,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31018397212028503,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2857339382171631,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Ava is encouraged to continue coping strategies and relaxation techniques; it only shows inquiry about current use and discussion of symptoms and plans for medication and follow-up.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "5. Schedule influenza vaccine administration and colorectal cancer screening.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.2578418254852295,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2143961489200592,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.18131867051124573,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.14972738921642303,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1401580274105072,
+          "text": "Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension? Patient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention scheduling influenza vaccine administration or colorectal cancer screening.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "6. Communicate with Ava's spouse, John Holland, as an emergency contact.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.34365037083625793,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.291303426027298,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2759178578853607,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25830525159835815,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.16991376876831055,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not mention any communication with Ava's spouse, John Holland, or identify him as an emergency contact.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C21",
+      "text": "7. Monitor Ava's progress and provide ongoing support and care.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.3893997073173523,
+          "text": "Physician: Good morning, Ava. It's a pleasure to see you today. How are you feeling? Patient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3739646077156067,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today. Physician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34621918201446533,
+          "text": "Have you tried any coping strategies or relaxation techniques to help manage your anxiety? Patient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation. Physician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.21065008640289307,
+          "text": "Have you had any recent stressors in your life that might be contributing to your anxiety? Patient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.18366722762584686,
+          "text": "Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating? Patient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              7
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states plans to schedule follow-up appointments to evaluate symptoms and manage them, and mentions working together to improve Ava's condition, indicating ongoing support and monitoring.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Ava. It's a pleasure to see you today. How are you feeling?\n\nPatient: Hi, Dr. Moore. I've been feeling a bit overwhelmed lately. My anxiety has been worse, and I've noticed some shortness of breath.\n\nPhysician: I see. Can you tell me more about your shortness of breath? Is it occurring at rest or with exertion?\n\nPatient: It's mostly with exertion, like when I'm walking upstairs or doing chores around the house. It's been getting worse over the past few weeks.\n\nPhysician: I understand. Have you experienced any chest pain or tightness?\n\nPatient: Yes, sometimes I feel a tightness in my chest, especially when I'm under stress.\n\nPhysician: Okay. Have you noticed any other symptoms, such as dizziness, lightheadedness, or palpitations?\n\nPatient: Yes, I've been feeling a bit dizzy sometimes, especially when I stand up too quickly. And I've noticed my heart racing at night when I'm trying to fall asleep.\n\nPhysician: I see. Have you had any recent changes in your sleep patterns or appetite?\n\nPatient: Yes, I've been having trouble falling asleep and staying asleep. And I've noticed that I've been eating more than usual, especially at night.\n\nPhysician: I understand. Have you experienced any other symptoms that might be related to your anxiety, such as irritability, restlessness, or difficulty concentrating?\n\nPatient: Yes, I've been feeling pretty irritable and restless lately. And I've noticed that I've been having trouble focusing at work.\n\nPhysician: I see. Have you had any recent stressors in your life that might be contributing to your anxiety?\n\nPatient: Well, my work has been pretty stressful lately. We've been understaffed, and I've had to take on a lot of extra responsibilities. And my husband and I have been having some issues in our relationship.\n\nPhysician: I understand. Have you noticed any other physical symptoms that might be related to your anxiety, such as headaches, fatigue, or muscle tension?\n\nPatient: Yes, I've been getting headaches pretty frequently, and I've noticed that my shoulders and neck have been feeling really tense lately.\n\nPhysician: I see. Have you tried any coping strategies or relaxation techniques to help manage your anxiety?\n\nPatient: I've been trying to exercise more and do some deep breathing exercises, but it's been hard to find the time and motivation.\n\nPhysician: I understand. Well, Ava, based on what you've shared with me today, it sounds like you might be experiencing some symptoms of anxiety and depression, in addition to your known hypertension and hyperlipidemia. I'd like to schedule some follow-up appointments with you to further evaluate your symptoms and develop a plan to manage them effectively. In the meantime, I'll prescribe you a medication to help with your anxiety and sleep. Let's also schedule a follow-up appointment with our dietitian to discuss healthy lifestyle modifications that can benefit your overall health. Does that sound good to you?\n\nPatient: Yes, that sounds great. Thank you, Dr. Moore. I feel like a weight has been lifted off my shoulders just talking to you today.\n\nPhysician: You're welcome, Ava. I'm glad I could help. We'll work together to get you feeling better.",
+  "note_text": "Subjective:\nAva Holland, a 40-year-old female, presents with feelings of overwhelm and increased anxiety. She reports experiencing shortness of breath with exertion, chest tightness, dizziness, heart racing at night, trouble sleeping, increased appetite, irritability, restlessness, and difficulty concentrating. Ava attributes her anxiety to work stress and relationship issues with her husband. She also mentions frequent headaches, fatigue, and muscle tension. Ava has been attempting coping strategies such as exercise and deep breathing but finds it challenging to maintain.\n\nObjective:\nAva appears anxious during the appointment but is cooperative and engaged in the conversation. Vital signs are within normal limits. Physical examination reveals no acute abnormalities. Ava's weight is consistent with her obesity diagnosis. She is due for colorectal cancer screening and influenza vaccine. Lipid panel results are pending, and a cholesterol medication adjustment reminder is noted.\n\nAssessment:\nAva presents with symptoms suggestive of anxiety and depression, in addition to her chronic conditions of hypertension, hyperlipidemia, and obesity. The cardiologist has emphasized the importance of lifestyle modifications due to her cardiovascular risk factors. Ava's recent stressors and physical symptoms align with her anxiety disorder diagnosis. Further evaluation and management are warranted to address her mental health concerns and overall well-being.\n\nPlan:\n1. Prescribe medication for anxiety and sleep to help manage symptoms.\n2. Schedule follow-up appointments to assess treatment progress and adjust medications as needed.\n3. Refer Ava to the dietitian for lifestyle modifications to improve her overall health.\n4. Encourage Ava to continue coping strategies and relaxation techniques.\n5. Schedule influenza vaccine administration and colorectal cancer screening.\n6. Communicate with Ava's spouse, John Holland, as an emergency contact.\n7. Monitor Ava's progress and provide ongoing support and care."
+}

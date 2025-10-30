@@ -1,0 +1,1035 @@
+{
+  "summary": {
+    "claims": 16,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 1,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 1,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 2,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 1,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 47,
+    "failed_calls": 0,
+    "successful_calls": 47,
+    "total_input_tokens": 21352,
+    "total_output_tokens": 1603,
+    "total_tokens": 22955,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011105600000000002
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C3",
+      "text": "Claire appears uncomfortable during the appointment, shifting in her seat frequently.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5406160354614258,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4320412278175354,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3510199785232544,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3370996117591858,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3221931755542755,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit or implicit mention of Claire appearing uncomfortable or shifting in her seat during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She demonstrates limited range of motion in her lower back and left leg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3835175037384033,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30671125650405884,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29468822479248047,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2628687024116516,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23167462646961212,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions pain and numbness in the lower back and left leg but does not explicitly state or imply limited range of motion in these areas.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of acute distress are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.35610008239746094,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3134509325027466,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2521039843559265,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24477779865264893,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22507591545581818,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or note the absence of signs of acute distress.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.31616878509521484,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.29076606035232544,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.28768691420555115,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2579457759857178,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.229311004281044,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their status is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Claire's medical history indicates a chronic pain management plan in place, with current medications including Oxycodone and Ibuprofen for pain relief.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.550762414932251,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.49283885955810547,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4679403305053711,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4116429388523102,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40487924218177795,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Claire has chronic pain and a need to review her pain management plan, but there is no explicit mention of a current chronic pain management plan or that she is currently taking Oxycodone and Ibuprofen for pain relief.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Follow-up appointment scheduled to discuss treatment plan and monitor progress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.43863144516944885,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3953355550765991,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2473476231098175,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2326878160238266,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.19336096942424774,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention of a follow-up appointment being scheduled to discuss the treatment plan and monitor progress is found in the provided transcript spans.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T16",
+      "text": "Patient: Yes, the pain definitely worsens when I stand or walk for too long.",
+      "sent_idx": 16,
+      "prev_text": "For example, does it worsen with movement, standing, or sitting?",
+      "next_text": "It also feels like it's affecting my balance, making me a bit unsteady at times.",
+      "severity": "medium"
+    },
+    {
+      "sent_id": "T17",
+      "text": "It also feels like it's affecting my balance, making me a bit unsteady at times.",
+      "sent_idx": 17,
+      "prev_text": "Patient: Yes, the pain definitely worsens when I stand or walk for too long.",
+      "next_text": "Physician: That's helpful information.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Claire reports experiencing constant and worsening pain in her lower back and legs, rating it an 8 out of 10.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.638911783695221,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5902033448219299,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4784992039203644,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.45978355407714844,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4368785321712494,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports constant and worsening pain in her lower back and legs (E0:5-6) and rates the pain as an 8 out of 10 (E1:6).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes the pain as dull and aching, with numbness and tingling in her left leg.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6390784978866577,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.50395268201828,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41974472999572754,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3697943091392517,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36827436089515686,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly describes the pain as dull and aching (E1:4) and confirms numbness and tingling in her left leg (E3:2).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Claire also mentions experiencing nausea when taking her pain medication and difficulty sleeping due to the pain.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5590946674346924,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5282244682312012,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4952532649040222,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.38805127143859863,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38656628131866455,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports nausea when taking pain medication (E4:3) and difficulty sleeping due to pain, including waking frequently and trouble getting back to sleep (E6:3-4, E1:5).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Claire appears uncomfortable during the appointment, shifting in her seat frequently.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5406160354614258,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4320412278175354,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3510199785232544,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3370996117591858,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3221931755542755,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit or implicit mention of Claire appearing uncomfortable or shifting in her seat during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She demonstrates limited range of motion in her lower back and left leg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.3835175037384033,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30671125650405884,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29468822479248047,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2628687024116516,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.23167462646961212,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript mentions pain and numbness in the lower back and left leg but does not explicitly state or imply limited range of motion in these areas.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "No signs of acute distress are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.35610008239746094,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3134509325027466,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2521039843559265,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.24477779865264893,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.22507591545581818,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or note the absence of signs of acute distress.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.31616878509521484,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.29076606035232544,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.28768691420555115,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2579457759857178,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.229311004281044,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their status is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Claire's medical history indicates a chronic pain management plan in place, with current medications including Oxycodone and Ibuprofen for pain relief.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.550762414932251,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.49283885955810547,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4679403305053711,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4116429388523102,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.40487924218177795,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Claire has chronic pain and a need to review her pain management plan, but there is no explicit mention of a current chronic pain management plan or that she is currently taking Oxycodone and Ibuprofen for pain relief.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Claire presents with chronic pain in her lower back and legs, accompanied by numbness and tingling in her left leg.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6069953441619873,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5718065500259399,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41377198696136475,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.411020427942276,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.40558257699012756,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports chronic pain in the lower back and legs (E0:5-6) and numbness and tingling in the left leg (E3:2-3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "The pain is impacting her quality of life, mood, and sleep patterns.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.661013126373291,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.45987990498542786,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4157285690307617,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3868681788444519,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3507668673992157,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that pain is causing mood changes and sleep disturbances (E6:2-4). The physician acknowledges the impact on mood and quality of life (E6:5). The patient also reports pain keeping her up at night (E1:5), supporting the claim that pain affects sleep and quality of life.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Further evaluation is needed to determine the underlying cause of her symptoms and optimize her pain management plan.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5109826326370239,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.405483216047287,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3985358774662018,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3515763282775879,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35020962357521057,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to take a closer look at the chronic pain management plan and discusses options such as adjusting medication or referring to a specialist, indicating further evaluation is needed to optimize pain management.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Referral to a pain management specialist for further evaluation and treatment options.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5743644833564758,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41504621505737305,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3950100541114807,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38437944650650024,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3561387062072754,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions referring the patient to a specialist as part of discussing options for chronic pain management.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Consideration of alternative therapies such as physical therapy, acupuncture, or massage.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.606265127658844,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.298089861869812,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2828228771686554,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2763778865337372,
+          "text": "Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs? Patient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24597671627998352,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              3
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly asks about alternative therapies including physical therapy, acupuncture, or massage, and the patient indicates openness to suggestions for other therapies, supporting consideration of these alternatives.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Review and adjustment of current pain medications to address nausea and improve pain control.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5033532977104187,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4604248106479645,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4309522211551666,
+          "text": "Have you noticed any changes in your mood or sleep patterns due to the pain? Patient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep. Physician: I can understand how chronic pain can affect your mood and quality of life."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.357897013425827,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35722386837005615,
+          "text": "Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting? Patient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient reports nausea related to pain medication (E4:3), and the physician acknowledges this (E4:4). The physician also states the need to review the chronic pain management plan and discusses options including medication adjustment (E7:5-7), which supports review and adjustment of pain medications to address nausea and improve pain control.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Update overdue preventive screenings, including pap smear and influenza vaccine.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5814650058746338,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.29959172010421753,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.28587567806243896,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2587960362434387,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.19374799728393555,
+          "text": "Have you had any recent injuries or accidents that may be contributing to your pain? Patient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that they will update the pap smear and influenza vaccine, confirming these preventive screenings are overdue and will be addressed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Follow-up appointment scheduled to discuss treatment plan and monitor progress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.43863144516944885,
+          "text": "I appreciate your help. Physician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3953355550765991,
+          "text": "Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage? Patient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help. Physician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you. Patient: Thank you, Dr. Ryan."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2473476231098175,
+          "text": "Physician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately? Patient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2326878160238266,
+          "text": "Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence? Patient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication. Physician: Okay, that's important to note."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.19336096942424774,
+          "text": "Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10? Patient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention of a follow-up appointment being scheduled to discuss the treatment plan and monitor progress is found in the provided transcript spans.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Claire. It's been a while since your last appointment. How have you been feeling lately?\n\nPatient: Hi, Dr. Ryan. I've been experiencing a lot of pain, especially in my lower back and legs. It's been constant and has been getting worse over time.\n\nPhysician: I see. Can you tell me more about the pain? Is it sharp, dull, or radiating? And how would you rate it on a scale of 1 to 10?\n\nPatient: It's a dull, aching pain that feels like someone is pressing down on my back. It's hard to ignore, and it's been keeping me up at night. I'd say it's around an 8 out of 10.\n\nPhysician: I understand. Have you noticed any triggers that make the pain worse or better? For example, does it worsen with movement, standing, or sitting?\n\nPatient: Yes, the pain definitely worsens when I stand or walk for too long. It also feels like it's affecting my balance, making me a bit unsteady at times.\n\nPhysician: That's helpful information. Have you experienced any other symptoms, such as numbness, tingling, or weakness in your legs?\n\nPatient: Yes, I've noticed some numbness and tingling in my left leg, especially when I'm sitting or lying down. It's not constant, but it's definitely there.\n\nPhysician: I see. Have you had any recent changes in your bowel or bladder habits, such as constipation or incontinence?\n\nPatient: No, nothing like that. But I have been experiencing some nausea, especially when I take my pain medication.\n\nPhysician: Okay, that's important to note. Have you had any recent injuries or accidents that may be contributing to your pain?\n\nPatient: No, nothing recent. I did have a car accident a few years ago, but I didn't think it was related to my current pain.\n\nPhysician: I understand. Have you noticed any changes in your mood or sleep patterns due to the pain?\n\nPatient: Yes, definitely. I've been feeling pretty down lately and having trouble sleeping at night because of the pain. I find myself waking up frequently and having trouble getting back to sleep.\n\nPhysician: I can understand how chronic pain can affect your mood and quality of life. Have you tried any alternative therapies or treatments, such as physical therapy, acupuncture, or massage?\n\nPatient: I've tried physical therapy in the past, but it didn't seem to help much. I haven't tried anything else, but I'm open to suggestions if there's something that might help.\n\nPhysician: That's good to know. Based on what you've shared, it sounds like we need to take a closer look at your chronic pain management plan. I'd like to discuss some options with you, such as adjusting your medication or referring you to a specialist. Let's work together to find a solution that works for you.\n\nPatient: Thank you, Dr. Ryan. I appreciate your help.\n\nPhysician: Of course, Claire. We'll work on this together. I'll also make sure to update your pap smear and influenza vaccine, which are overdue. We'll discuss the plan in more detail, and I'll make sure to document everything in your chart.",
+  "note_text": "Subjective:\nClaire reports experiencing constant and worsening pain in her lower back and legs, rating it an 8 out of 10. She describes the pain as dull and aching, with numbness and tingling in her left leg. Claire also mentions experiencing nausea when taking her pain medication and difficulty sleeping due to the pain.\n\nObjective:\nClaire appears uncomfortable during the appointment, shifting in her seat frequently. She demonstrates limited range of motion in her lower back and left leg. No signs of acute distress are noted. Vital signs are within normal limits. Claire's medical history indicates a chronic pain management plan in place, with current medications including Oxycodone and Ibuprofen for pain relief.\n\nAssessment:\nClaire presents with chronic pain in her lower back and legs, accompanied by numbness and tingling in her left leg. The pain is impacting her quality of life, mood, and sleep patterns. Further evaluation is needed to determine the underlying cause of her symptoms and optimize her pain management plan.\n\nPlan:\n1. Referral to a pain management specialist for further evaluation and treatment options.\n2. Consideration of alternative therapies such as physical therapy, acupuncture, or massage.\n3. Review and adjustment of current pain medications to address nausea and improve pain control.\n4. Update overdue preventive screenings, including pap smear and influenza vaccine.\n5. Follow-up appointment scheduled to discuss treatment plan and monitor progress."
+}

@@ -1,0 +1,1036 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 2,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 51,
+    "failed_calls": 0,
+    "successful_calls": 51,
+    "total_input_tokens": 22522,
+    "total_output_tokens": 1911,
+    "total_tokens": 24433,
+    "total cost w/ GPT-4.1-mini (in $)": 0.012066400000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Vitals are stable, and no acute distress is noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4727594554424286,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.43796926736831665,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4280633330345154,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35336148738861084,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34755486249923706,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention vital signs or state that the patient is in no acute distress. While the patient denies symptoms like nausea, vomiting, chest pain, or shortness of breath, and reports manageable dizziness, these do not explicitly confirm stable vitals or absence of acute distress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals tenderness in the lower back region.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5299532413482666,
+          "text": "Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity? Patient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4260716438293457,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3637363612651825,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3233909606933594,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.31380409002304077,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains patient-reported symptoms of lower back pain but does not include any explicit mention of physical examination findings such as tenderness in the lower back region.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Encourage continued communication regarding any changes in symptoms or concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4226725101470947,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4118437170982361,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4083091914653778,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3991851806640625,
+          "text": "Have you noticed any changes in your sleep patterns or mood recently? Patient: Yes, actually. I've been having a bit of trouble falling asleep due to the discomfort, and I've been feeling a bit more irritable than usual. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3688497245311737,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly show the physician encouraging continued communication regarding any changes in symptoms or concerns. While the physician asks about symptoms and discusses management, there is no direct statement encouraging ongoing communication.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Jackie reports experiencing consistent chronic pain in her lower back for the past few weeks, with occasional radiating pain down to her legs.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6053423881530762,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5643609166145325,
+          "text": "Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity? Patient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5526939630508423,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4724377989768982,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.43451347947120667,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient reports chronic pain in the lower back for a few weeks (E1[3], E0[5,6]) and occasional radiating pain down to the legs (E1[4]).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She rates the intensity of the pain at a 7 out of 10.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5846124887466431,
+          "text": "Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity? Patient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36526089906692505,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35831061005592346,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30954742431640625,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30134594440460205,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the pain intensity as '7 out of 10' in sentence 5 of E1.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She mentions that the pain worsens with prolonged sitting or bending and improves with light exercise.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.746579647064209,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4918113946914673,
+          "text": "Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity? Patient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4194566607475281,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4103216230869293,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3686840832233429,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the pain worsens with prolonged sitting or bending and improves with light exercise, matching the claim exactly.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Jackie also notes trouble falling asleep due to discomfort and increased irritability.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5700911283493042,
+          "text": "Have you noticed any changes in your sleep patterns or mood recently? Patient: Yes, actually. I've been having a bit of trouble falling asleep due to the discomfort, and I've been feeling a bit more irritable than usual. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4350331425666809,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.42446866631507874,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.31515365839004517,
+          "text": "Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity? Patient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity. Physician: I see."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.31309300661087036,
+          "text": "Thank you, Dr. Jones. Physician: You're welcome, Jackie. I'll have the nurse come in to take your vitals and update your chart. We'll also schedule a follow-up appointment for you in a few weeks to monitor your progress."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having trouble falling asleep due to discomfort and increased irritability in E4 sentence 3.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She confirms compliance with gabapentin and ibuprofen medications, with occasional dizziness as a side effect of gabapentin.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6638609170913696,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.6619606018066406,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3779323697090149,
+          "text": "Have you noticed any changes in your sleep patterns or mood recently? Patient: Yes, actually. I've been having a bit of trouble falling asleep due to the discomfort, and I've been feeling a bit more irritable than usual. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.35839948058128357,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.34336379170417786,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient confirms taking gabapentin and ibuprofen regularly (E5:1-2) and reports occasional dizziness from gabapentin (E6:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Vitals are stable, and no acute distress is noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4727594554424286,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.43796926736831665,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4280633330345154,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35336148738861084,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.34755486249923706,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention vital signs or state that the patient is in no acute distress. While the patient denies symptoms like nausea, vomiting, chest pain, or shortness of breath, and reports manageable dizziness, these do not explicitly confirm stable vitals or absence of acute distress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals tenderness in the lower back region.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5299532413482666,
+          "text": "Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity? Patient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4260716438293457,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3637363612651825,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3233909606933594,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.31380409002304077,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains patient-reported symptoms of lower back pain but does not include any explicit mention of physical examination findings such as tenderness in the lower back region.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of neurological deficits are observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.39860400557518005,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3391167223453522,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.326903373003006,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30137625336647034,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.22578418254852295,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any numbness, tingling, or weakness in legs or feet, which are signs of neurological deficits, supporting the claim that no neurological deficits are observed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Jackie's weight and appetite remain stable.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.44884008169174194,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4265841543674469,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.40556609630584717,
+          "text": "Thank you, Dr. Jones. Physician: You're welcome, Jackie. I'll have the nurse come in to take your vitals and update your chart. We'll also schedule a follow-up appointment for you in a few weeks to monitor your progress."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3846520781517029,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2914363443851471,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states no significant changes in appetite or weight, directly supporting the claim that Jackie's weight and appetite remain stable.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "No other concerning symptoms are present.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4642757773399353,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.43941181898117065,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3840543031692505,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.33446502685546875,
+          "text": "Have you experienced any numbness, tingling, or weakness in your legs or feet? Patient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.32275253534317017,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              6
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient consistently denies any significant or concerning symptoms such as nausea, vomiting, appetite or weight changes, shortness of breath, chest pain, numbness, tingling, or weakness, supporting the claim that no other concerning symptoms are present.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Jackie continues to manage chronic pain with current medications and therapies.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6523092985153198,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.595430850982666,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5107098817825317,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4402396082878113,
+          "text": "Thank you, Dr. Jones. Physician: You're welcome, Jackie. I'll have the nurse come in to take your vitals and update your chart. We'll also schedule a follow-up appointment for you in a few weeks to monitor your progress."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.382130891084671,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the chronic pain is still being managed reasonably well with current medications and therapies, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Additional interventions such as acupuncture are being considered to enhance pain management.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.6704596281051636,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4315778315067291,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4020591080188751,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3294645845890045,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3214474022388458,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly shows consideration of acupuncture as an additional intervention for pain management, with the physician recommending it and offering referrals. The physician also mentions discussing additional options to help cope with discomfort, supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "No significant side effects or complications from current medications are reported.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5470869541168213,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5345370769500732,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.48215675354003906,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.44739851355552673,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3530835807323456,
+          "text": "Have you noticed any changes in your sleep patterns or mood recently? Patient: Yes, actually. I've been having a bit of trouble falling asleep due to the discomfort, and I've been feeling a bit more irritable than usual. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1,
+              2,
+              6
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports no significant side effects from medications, only manageable occasional dizziness from gabapentin, and denies nausea, vomiting, appetite or weight changes, shortness of breath, or chest pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Overall, Jackie's condition is stable, but further exploration of alternative therapies may be beneficial.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.528926432132721,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46785733103752136,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4189945459365845,
+          "text": "Thank you, Dr. Jones. Physician: You're welcome, Jackie. I'll have the nurse come in to take your vitals and update your chart. We'll also schedule a follow-up appointment for you in a few weeks to monitor your progress."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4141855239868164,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.30480727553367615,
+          "text": "Patient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable. Physician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting? Patient: No, not at all. Physician: Good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E9",
+            "sentences": [
+              1,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician states that Jackie's chronic pain is being managed reasonably well (E8:7) indicating stability, and suggests discussing additional options (E8:8). The physician also explicitly recommends alternative therapies like acupuncture as beneficial adjuncts (E9:1,4,5).",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Recommend exploring acupuncture as an adjunct therapy for chronic pain management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.7512756586074829,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40220940113067627,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3963783383369446,
+          "text": "Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise. Physician: That's helpful information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3605549931526184,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.313491553068161,
+          "text": "Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity? Patient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              1,
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends acupuncture as an adjunct therapy for chronic pain management and offers to provide recommendations for licensed acupuncturists.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Provide referrals to licensed acupuncturists in the area.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.546978235244751,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2684972286224365,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.2519056499004364,
+          "text": "Thank you, Dr. Jones. Physician: You're welcome, Jackie. I'll have the nurse come in to take your vitals and update your chart. We'll also schedule a follow-up appointment for you in a few weeks to monitor your progress."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.23949843645095825,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.227681964635849,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they can provide recommendations for licensed acupuncturists in the area, directly supporting the claim to provide referrals.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Schedule a follow-up appointment in a few weeks to assess the effectiveness of the new therapy and adjust treatment as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.44475680589675903,
+          "text": "Thank you, Dr. Jones. Physician: You're welcome, Jackie. I'll have the nurse come in to take your vitals and update your chart. We'll also schedule a follow-up appointment for you in a few weeks to monitor your progress."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.38425248861312866,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3240014910697937,
+          "text": "Have you been taking your medications as prescribed? Patient: Yes, I've been taking my gabapentin and ibuprofen regularly. Physician: Great. Have you experienced any side effects from the medications?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.31933271884918213,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.29194366931915283,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E10",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states scheduling a follow-up appointment in a few weeks to monitor progress, which aligns with assessing therapy effectiveness and adjusting treatment as needed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Encourage continued communication regarding any changes in symptoms or concerns.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4226725101470947,
+          "text": "Have you noticed any changes in your appetite or weight recently? Patient: No, nothing significant. Physician: Okay. Have you had any recent travel or exposure to illnesses?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4118437170982361,
+          "text": "Physician: Good morning, Jackie. It's great to see you today. How are you feeling today? Patient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss. Physician: Of course, Jackie."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4083091914653778,
+          "text": "Patient: No, nothing out of the ordinary. Physician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently? Patient: No, nothing like that. Physician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3991851806640625,
+          "text": "Have you noticed any changes in your sleep patterns or mood recently? Patient: Yes, actually. I've been having a bit of trouble falling asleep due to the discomfort, and I've been feeling a bit more irritable than usual. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3688497245311737,
+          "text": "Have you considered alternative therapies like acupuncture or physical therapy? Patient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend? Physician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed. Patient: That sounds great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly show the physician encouraging continued communication regarding any changes in symptoms or concerns. While the physician asks about symptoms and discusses management, there is no direct statement encouraging ongoing communication.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Jackie. It's great to see you today. How are you feeling today?\n\nPatient: Hi, Dr. Jones. I've been feeling alright, but I wanted to follow up on my chronic pain management. The pain level has been consistent, but I've been experiencing some discomfort that I'd like to discuss.\n\nPhysician: Of course, Jackie. Can you tell me more about the discomfort you're experiencing? When did it start, and how would you rate the intensity?\n\nPatient: Well, it's been on and off for a few weeks now. It's a dull ache in my lower back, and sometimes it radiates down to my legs. I'd say it's a 7 out of 10 in terms of intensity.\n\nPhysician: I see. Have you noticed any factors that exacerbate or relieve the pain?\n\nPatient: Yes, actually. The pain tends to worsen when I'm sitting for long periods or bending down. It does seem to improve a bit when I'm walking or engaging in light exercise.\n\nPhysician: That's helpful information. Have you experienced any numbness, tingling, or weakness in your legs or feet?\n\nPatient: No, nothing like that. Just the aching sensation and sometimes a sharp, stabbing pain.\n\nPhysician: Okay. Have you noticed any changes in your sleep patterns or mood recently?\n\nPatient: Yes, actually. I've been having a bit of trouble falling asleep due to the discomfort, and I've been feeling a bit more irritable than usual.\n\nPhysician: I understand. Have you been taking your medications as prescribed?\n\nPatient: Yes, I've been taking my gabapentin and ibuprofen regularly.\n\nPhysician: Great. Have you experienced any side effects from the medications?\n\nPatient: No, nothing significant. Just some occasional dizziness from the gabapentin, but it's manageable.\n\nPhysician: Okay. I'd like to discuss a few other things. Have you been experiencing any nausea or vomiting?\n\nPatient: No, not at all.\n\nPhysician: Good. Have you noticed any changes in your appetite or weight recently?\n\nPatient: No, nothing significant.\n\nPhysician: Okay. Have you had any recent travel or exposure to illnesses?\n\nPatient: No, nothing out of the ordinary.\n\nPhysician: Alright. Lastly, have you experienced any shortness of breath or chest pain recently?\n\nPatient: No, nothing like that.\n\nPhysician: Great. Thank you for sharing all that information, Jackie. Based on what you've shared, it sounds like your chronic pain is still being managed reasonably well with the current medications and therapies. However, we can discuss some additional options to help you cope with the discomfort. Have you considered alternative therapies like acupuncture or physical therapy?\n\nPatient: Yes, I've actually been thinking about trying acupuncture. Would that be something you'd recommend?\n\nPhysician: Absolutely. Acupuncture can be a great adjunct therapy for chronic pain management. I can provide you with some recommendations for licensed acupuncturists in the area. Additionally, we can discuss adjusting your medication dosages or exploring other medication options if needed.\n\nPatient: That sounds great. Thank you, Dr. Jones.\n\nPhysician: You're welcome, Jackie. I'll have the nurse come in to take your vitals and update your chart. We'll also schedule a follow-up appointment for you in a few weeks to monitor your progress.",
+  "note_text": "Subjective:\nJackie reports experiencing consistent chronic pain in her lower back for the past few weeks, with occasional radiating pain down to her legs. She rates the intensity of the pain at a 7 out of 10. She mentions that the pain worsens with prolonged sitting or bending and improves with light exercise. Jackie also notes trouble falling asleep due to discomfort and increased irritability. She confirms compliance with gabapentin and ibuprofen medications, with occasional dizziness as a side effect of gabapentin.\n\nObjective:\nVitals are stable, and no acute distress is noted. Physical examination reveals tenderness in the lower back region. No signs of neurological deficits are observed. Jackie's weight and appetite remain stable. No other concerning symptoms are present.\n\nAssessment:\nJackie continues to manage chronic pain with current medications and therapies. Additional interventions such as acupuncture are being considered to enhance pain management. No significant side effects or complications from current medications are reported. Overall, Jackie's condition is stable, but further exploration of alternative therapies may be beneficial.\n\nPlan:\nRecommend exploring acupuncture as an adjunct therapy for chronic pain management. Provide referrals to licensed acupuncturists in the area. Schedule a follow-up appointment in a few weeks to assess the effectiveness of the new therapy and adjust treatment as needed. Encourage continued communication regarding any changes in symptoms or concerns."
+}

@@ -1,0 +1,1209 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 8,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 8,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 1,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 49,
+    "failed_calls": 0,
+    "successful_calls": 49,
+    "total_input_tokens": 21639,
+    "total_output_tokens": 1364,
+    "total_tokens": 23003,
+    "total cost w/ GPT-4.1-mini (in $)": 0.010838
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "During the physical examination, Mr. Garza displayed tenderness upon palpation of the left ear.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6075683236122131,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.47421935200691223,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4389027953147888,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4219755530357361,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.39964932203292847,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any physical examination findings, including tenderness upon palpation of the left ear.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Otoscopic examination revealed redness and inflammation of the left tympanic membrane.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.46753907203674316,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42478275299072266,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4077223837375641,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37307584285736084,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3425939679145813,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not contain any explicit mention of an otoscopic examination or findings of redness and inflammation of the left tympanic membrane.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Mr. Garza presents with acute otitis media in his left ear, characterized by inflammation of the tympanic membrane.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6062188148498535,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.456510066986084,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40676477551460266,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3959277272224426,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.386802077293396,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Mr. Garza has acute otitis media or inflammation of the tympanic membrane. The physician plans to perform tests to assess for fluid and infection, but no diagnosis or physical exam findings confirming inflammation are provided.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "This is likely contributing to his ear pain and hearing difficulties.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4760146737098694,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.450327068567276,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44430041313171387,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's constant, but it's worse when I chew or press on my ear. It's like someone is stabbing a knife into my eardrum. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4291266202926636,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4248432517051697,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reports ear pain and hearing difficulties, but there is no explicit statement or clinical conclusion that 'this' (presumably a specific cause) is likely contributing to these symptoms. The physician plans tests to understand the cause, indicating uncertainty.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "His medical history of hypertension and diabetes may impact his overall health and treatment plan.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5829325914382935,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3095687925815582,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2770637571811676,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2718031108379364,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2686263918876648,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript confirms the patient has hypertension and diabetes and is on medications for these conditions, but it does not explicitly state or imply that these conditions impact his overall health or treatment plan.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Continue monitoring Mr. Garza's symptoms and response to treatment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.520811140537262,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46852996945381165,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.299471914768219,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27645379304885864,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2682952880859375,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention continuing to monitor Mr. Garza's symptoms or his response to treatment. While tests and assessments are planned, ongoing monitoring is not stated.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Prescribe a course of antibiotics to address the infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.2912518084049225,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2544941008090973,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.18573994934558868,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.1850181221961975,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.16527657210826874,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention of prescribing antibiotics or any antibiotic treatment plan is found in the provided transcript spans. The physician discusses ordering tests and assessments but does not state prescribing antibiotics.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Recommend over-the-counter pain relievers for pain management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.29851704835891724,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26777225732803345,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's constant, but it's worse when I chew or press on my ear. It's like someone is stabbing a knife into my eardrum. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.26488012075424194,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2426394820213318,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.19584743678569794,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not mention any recommendation for over-the-counter pain relievers or any pain management plan.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Schedule a follow-up appointment to assess treatment efficacy and conduct further tests if necessary.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3543332815170288,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33510518074035645,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25037235021591187,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2391168773174286,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23833948373794556,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment to assess treatment efficacy or conduct further tests if necessary.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate Mr. Garza on ear care practices and preventive measures to avoid future ear infections.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.49619194865226746,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49564826488494873,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4158443510532379,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.41472798585891724,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.32081660628318787,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not contain any explicit mention of educating Mr. Garza on ear care practices or preventive measures to avoid future ear infections.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T38",
+      "text": "We'll also run a culture to rule out any infections.",
+      "sent_idx": 38,
+      "prev_text": "We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss.",
+      "next_text": "Patient: Sounds good, doc.",
+      "severity": "medium"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Garza reports experiencing constant ear pain and difficulty hearing in his left ear for the past few days.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7387367486953735,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5681329369544983,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4735572934150696,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.45434969663619995,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's constant, but it's worse when I chew or press on my ear. It's like someone is stabbing a knife into my eardrum. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.44936758279800415,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports ear pain and difficulty hearing in the left ear for the past few days, with the pain described as constant.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He describes the pain as sharp and worsens when chewing or pressing on his ear.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6975076198577881,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's constant, but it's worse when I chew or press on my ear. It's like someone is stabbing a knife into my eardrum. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4220321774482727,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40166133642196655,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3954974114894867,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.357053279876709,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the pain is worse when chewing or pressing on the ear and describes it as like someone stabbing a knife into the eardrum, which implies sharp pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He denies any associated symptoms such as dizziness, nausea, or fever.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.560215950012207,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3642919063568115,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.27467867732048035,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.25610512495040894,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.24930471181869507,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies experiencing dizziness, nausea, or fever when asked directly.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Garza mentions having a cold a few weeks ago but states it did not affect his ears.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.613994300365448,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5528770685195923,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.48255467414855957,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.41778331995010376,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4114759564399719,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states he had a cold a few weeks ago but it did not affect his ears, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He also notes a gradual decline in hearing in his left ear over the past few months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6885861158370972,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46849602460861206,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4360673427581787,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.41594696044921875,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4126054048538208,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having trouble hearing out of the left ear for the past few months, with worsening in the past few days, confirming a gradual decline over months.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "During the physical examination, Mr. Garza displayed tenderness upon palpation of the left ear.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6075683236122131,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.47421935200691223,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4389027953147888,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4219755530357361,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.39964932203292847,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any physical examination findings, including tenderness upon palpation of the left ear.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Otoscopic examination revealed redness and inflammation of the left tympanic membrane.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.46753907203674316,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42478275299072266,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4077223837375641,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37307584285736084,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3425939679145813,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not contain any explicit mention of an otoscopic examination or findings of redness and inflammation of the left tympanic membrane.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No discharge or foul odor was noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5354645252227783,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.32816776633262634,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2545309066772461,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.25345128774642944,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23908549547195435,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly asks about discharge or odor, and the patient denies any such symptoms, stating 'No, nothing like that.'",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "There was minimal earwax present.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.59922856092453,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4312531650066376,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3715623617172241,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.30967774987220764,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3050220012664795,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states there is 'just a little bit of earwax,' indicating minimal earwax present.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Tympanometry and hearing tests have been ordered to further evaluate his condition.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6148067712783813,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4474676847457886,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40804600715637207,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.404548704624176,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.352243572473526,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states ordering tympanometry and a hearing test to better understand the patient's condition.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Mr. Garza presents with acute otitis media in his left ear, characterized by inflammation of the tympanic membrane.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6062188148498535,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.456510066986084,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40676477551460266,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3959277272224426,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.386802077293396,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that Mr. Garza has acute otitis media or inflammation of the tympanic membrane. The physician plans to perform tests to assess for fluid and infection, but no diagnosis or physical exam findings confirming inflammation are provided.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "This is likely contributing to his ear pain and hearing difficulties.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4760146737098694,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.450327068567276,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44430041313171387,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's constant, but it's worse when I chew or press on my ear. It's like someone is stabbing a knife into my eardrum. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4291266202926636,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4248432517051697,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient reports ear pain and hearing difficulties, but there is no explicit statement or clinical conclusion that 'this' (presumably a specific cause) is likely contributing to these symptoms. The physician plans tests to understand the cause, indicating uncertainty.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "His medical history of hypertension and diabetes may impact his overall health and treatment plan.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5829325914382935,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3095687925815582,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2770637571811676,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2718031108379364,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2686263918876648,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript confirms the patient has hypertension and diabetes and is on medications for these conditions, but it does not explicitly state or imply that these conditions impact his overall health or treatment plan.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Continue monitoring Mr. Garza's symptoms and response to treatment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.520811140537262,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46852996945381165,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.299471914768219,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.27645379304885864,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2682952880859375,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention continuing to monitor Mr. Garza's symptoms or his response to treatment. While tests and assessments are planned, ongoing monitoring is not stated.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Prescribe a course of antibiotics to address the infection.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.2912518084049225,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2544941008090973,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.18573994934558868,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.1850181221961975,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.16527657210826874,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention of prescribing antibiotics or any antibiotic treatment plan is found in the provided transcript spans. The physician discusses ordering tests and assessments but does not state prescribing antibiotics.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Recommend over-the-counter pain relievers for pain management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.29851704835891724,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26777225732803345,
+          "text": "Can you tell me more about the pain? Is it constant or does it come and go? Patient: It's constant, but it's worse when I chew or press on my ear. It's like someone is stabbing a knife into my eardrum. Physician: I understand."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.26488012075424194,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2426394820213318,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.19584743678569794,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not mention any recommendation for over-the-counter pain relievers or any pain management plan.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Schedule a follow-up appointment to assess treatment efficacy and conduct further tests if necessary.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3543332815170288,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.33510518074035645,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.25037235021591187,
+          "text": "Have you experienced any other symptoms like dizziness, nausea, or fever? Patient: No, nothing like that. Just the pain and difficulty hearing. Physician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2391168773174286,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23833948373794556,
+          "text": "Can you tell me more about your medical history? You have hypertension and diabetes, correct? Patient: Yes, that's right. I take metformin and lisinopril for those conditions. Physician: Great."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment to assess treatment efficacy or conduct further tests if necessary.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate Mr. Garza on ear care practices and preventive measures to avoid future ear infections.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.49619194865226746,
+          "text": "Have you had any previous ear infections or surgeries? Patient: No, nothing like that. Just the occasional earache when I was a kid. Physician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.49564826488494873,
+          "text": "Physician: Good morning, Mr. Garza. How are you feeling today? Patient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4158443510532379,
+          "text": "Patient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of. Physician: All right. Have you noticed any discharge or odor coming from your ear? Patient: No, nothing like that. Just a little bit of earwax, I think. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.41472798585891724,
+          "text": "Patient: Sounds good, doc. I just want to get this taken care of so I can get back to work. Physician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.32081660628318787,
+          "text": "Have you noticed any changes in your hearing or ear health before this recent episode? Patient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not contain any explicit mention of educating Mr. Garza on ear care practices or preventive measures to avoid future ear infections.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Garza. How are you feeling today?\n\nPatient: Not too bad, doc. I've been having some ear pain and difficulty hearing out of my left ear for the past few days.\n\nPhysician: I see. Can you tell me more about the pain? Is it constant or does it come and go?\n\nPatient: It's constant, but it's worse when I chew or press on my ear. It's like someone is stabbing a knife into my eardrum.\n\nPhysician: I understand. Have you experienced any other symptoms like dizziness, nausea, or fever?\n\nPatient: No, nothing like that. Just the pain and difficulty hearing.\n\nPhysician: Okay. Have you had any recent illnesses or injuries that could be contributing to this?\n\nPatient: Well, I had a cold a few weeks ago, but it didn't seem to affect my ears. And I haven't had any injuries that I can think of.\n\nPhysician: All right. Have you noticed any discharge or odor coming from your ear?\n\nPatient: No, nothing like that. Just a little bit of earwax, I think.\n\nPhysician: Okay. Can you tell me more about your medical history? You have hypertension and diabetes, correct?\n\nPatient: Yes, that's right. I take metformin and lisinopril for those conditions.\n\nPhysician: Great. Have you noticed any changes in your hearing or ear health before this recent episode?\n\nPatient: Now that you mention it, I have been having a little bit of trouble hearing out of my left ear for the past few months. But it wasn't anything too noticeable until these past few days.\n\nPhysician: I see. Have you had any previous ear infections or surgeries?\n\nPatient: No, nothing like that. Just the occasional earache when I was a kid.\n\nPhysician: All right. I'm going to take a look at your ear and see what's going on. In the meantime, I'm going to order a few tests to help us get a better understanding of what's happening. We'll do a tympanometry to check for any fluid in your middle ear, and a hearing test to assess your hearing loss. We'll also run a culture to rule out any infections.\n\nPatient: Sounds good, doc. I just want to get this taken care of so I can get back to work.\n\nPhysician: Of course, Mr. Garza. We'll do everything we can to help you get back to your normal routine as soon as possible.",
+  "note_text": "Subjective:\nMr. Garza reports experiencing constant ear pain and difficulty hearing in his left ear for the past few days. He describes the pain as sharp and worsens when chewing or pressing on his ear. He denies any associated symptoms such as dizziness, nausea, or fever. Mr. Garza mentions having a cold a few weeks ago but states it did not affect his ears. He also notes a gradual decline in hearing in his left ear over the past few months.\n\nObjective:\nDuring the physical examination, Mr. Garza displayed tenderness upon palpation of the left ear. Otoscopic examination revealed redness and inflammation of the left tympanic membrane. No discharge or foul odor was noted. There was minimal earwax present. Tympanometry and hearing tests have been ordered to further evaluate his condition.\n\nAssessment:\nMr. Garza presents with acute otitis media in his left ear, characterized by inflammation of the tympanic membrane. This is likely contributing to his ear pain and hearing difficulties. His medical history of hypertension and diabetes may impact his overall health and treatment plan.\n\nPlan:\n1. Continue monitoring Mr. Garza's symptoms and response to treatment.\n2. Prescribe a course of antibiotics to address the infection.\n3. Recommend over-the-counter pain relievers for pain management.\n4. Schedule a follow-up appointment to assess treatment efficacy and conduct further tests if necessary.\n5. Educate Mr. Garza on ear care practices and preventive measures to avoid future ear infections."
+}

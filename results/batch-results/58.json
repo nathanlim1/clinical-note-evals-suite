@@ -1,0 +1,981 @@
+{
+  "summary": {
+    "claims": 16,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 43,
+    "failed_calls": 0,
+    "successful_calls": 43,
+    "total_input_tokens": 19350,
+    "total_output_tokens": 1526,
+    "total_tokens": 20876,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0101816
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Troy appears in no acute distress during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4554404020309448,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44252994656562805,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4275486469268799,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33263370394706726,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3134835362434387,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Troy appears in no acute distress during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "He demonstrates limited range of motion in his lower back and reports tenderness upon palpation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.47472912073135376,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4668063521385193,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41835641860961914,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38780033588409424,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35137122869491577,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention limited range of motion in the lower back or tenderness upon palpation. The patient reports back pain and describes its characteristics, but no physical exam findings are provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Troy's vital signs are within normal limits, and he maintains good overall hygiene.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4272201657295227,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4201844334602356,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3534145653247833,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25290924310684204,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21959634125232697,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any information about Troy's vital signs or his hygiene status. There is no explicit mention or implication that his vital signs are within normal limits or that he maintains good overall hygiene.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Provide patient education on back pain management and self-care strategies.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4874524474143982,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.47142884135246277,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41027209162712097,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3643544912338257,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3237440884113312,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention providing patient education on back pain management or self-care strategies. The physician discusses scheduling a specialist appointment, renewing acetaminophen, and continuing physical therapy, but no direct patient education on management or self-care is documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Follow up with Troy after his appointment with the spine specialist to adjust treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6117848753929138,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4861360788345337,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4135573208332062,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38405558466911316,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3835858106613159,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows that Troy is scheduled for an appointment with a spine specialist and that current treatment includes acetaminophen and physical therapy. However, there is no explicit mention of a follow-up with Troy after the spine specialist appointment to adjust the treatment plan as needed.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Troy Robinson reports experiencing chronic back pain for the past six months.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5507349371910095,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4989830553531647,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.48938697576522827,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.42301273345947266,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3814989924430847,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the back pain started about six months ago and has been constant, and the physician refers to a history of chronic back pain, confirming the chronic nature.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He describes the pain as a constant ache with occasional sharp pains in his lower back region.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7028867602348328,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.49891626834869385,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.48427635431289673,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43663835525512695,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42891794443130493,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the pain started six months ago and has been a constant ache, with occasional sharp pains shooting through the lower back, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "The pain worsens with prolonged sitting or standing and is relieved by lying down or taking prescribed pain medication.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5673781633377075,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.40896889567375183,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.384683758020401,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37810707092285156,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3212715685367584,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the pain worsens with prolonged sitting or standing and feels better when lying down (E1:5). The patient also reports taking acetaminophen, a prescribed pain medication, for relief (E3:2).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Troy has been compliant with physical therapy exercises but notes only mild improvement in symptoms.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5837281942367554,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.520862340927124,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46123746037483215,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4362598955631256,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.39133691787719727,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient confirms compliance with physical therapy exercises and reports only mild or uncertain improvement in symptoms, indicating mild improvement.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Troy appears in no acute distress during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4554404020309448,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44252994656562805,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4275486469268799,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33263370394706726,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3134835362434387,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Troy appears in no acute distress during the examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "He demonstrates limited range of motion in his lower back and reports tenderness upon palpation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.47472912073135376,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4668063521385193,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41835641860961914,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38780033588409424,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.35137122869491577,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention limited range of motion in the lower back or tenderness upon palpation. The patient reports back pain and describes its characteristics, but no physical exam findings are provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "No signs of numbness, weakness, or tingling sensations in his legs or feet are noted.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6918925642967224,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3547024428844452,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3467912971973419,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30902403593063354,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.28105753660202026,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any numbness, weakness, or tingling sensations in the legs or feet when asked directly.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Troy's vital signs are within normal limits, and he maintains good overall hygiene.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.4272201657295227,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4201844334602356,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3534145653247833,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.25290924310684204,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.21959634125232697,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any information about Troy's vital signs or his hygiene status. There is no explicit mention or implication that his vital signs are within normal limits or that he maintains good overall hygiene.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Troy presents with chronic back pain that has been ongoing for six months.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5691488981246948,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5526959300041199,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.51848965883255,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4307664930820465,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4075438380241394,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the back pain started about six months ago and has been constant since then, confirming chronicity. The physician also refers to a history of chronic back pain.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Despite compliance with physical therapy exercises, he reports only minimal improvement in symptoms.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6134811639785767,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4581916630268097,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4422878324985504,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.33344388008117676,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.28828948736190796,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient reports only minimal improvement with physical therapy exercises, describing it as 'a little bit' and 'hard to tell' if it helps, indicating minimal symptom improvement despite compliance.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Given his concern about following a similar path as his father, who underwent spinal fusion surgery, further evaluation by a spine specialist is recommended to discuss MRI results and explore alternative treatment options.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6792232394218445,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3279811143875122,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3145018219947815,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.30049383640289307,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2801257371902466,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends scheduling an appointment with a spine specialist due to the patient's concern about following a similar path as his father who had spinal fusion surgery, and mentions discussing MRI results and exploring alternative treatment options.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "1. Schedule an appointment with a spine specialist to review MRI results and discuss alternative treatment options.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6043645143508911,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.37332355976104736,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.33353471755981445,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2961549758911133,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2940714359283447,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends scheduling an appointment with a spine specialist to review MRI results and discuss alternative treatment options.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "2. Renew prescription for acetaminophen to manage pain as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.5385257005691528,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.46348851919174194,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3218110203742981,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.2902366816997528,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2752758264541626,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will renew the prescription for acetaminophen to manage the patient's back pain.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "3. Recommend continued compliance with physical therapy exercises.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.482149213552475,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.43028196692466736,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42002397775650024,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2804899513721466,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23706009984016418,
+          "text": "Have you noticed any numbness, weakness, or tingling sensations in your legs or feet? Patient: No, nothing like that. It's just the ache and the sharp pains. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends continuing physical therapy exercises in sentence 7 of span E6.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "4. Provide patient education on back pain management and self-care strategies.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4874524474143982,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.47142884135246277,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41027209162712097,
+          "text": "Can you tell me more about your back pain? When did it start, and how would you describe the discomfort? Patient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3643544912338257,
+          "text": "Have you had any accidents or injuries that might have triggered this back pain? Patient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3237440884113312,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention providing patient education on back pain management or self-care strategies. The physician discusses scheduling a specialist appointment, renewing acetaminophen, and continuing physical therapy, but no direct patient education on management or self-care is documented.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "5. Follow up with Troy after his appointment with the spine specialist to adjust treatment plan as needed.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6117848753929138,
+          "text": "Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits? Patient: No, nothing like that. Just the back pain. Physician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises. Patient: That sounds good."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4861360788345337,
+          "text": "Thank you, Dr. Roberts. Physician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4135573208332062,
+          "text": "Physician: Good morning, Troy. How are you feeling today? Patient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately. Physician: Sorry to hear that."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38405558466911316,
+          "text": "Have you tried any treatments for your back pain? Patient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad. Physician: That's good."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3835858106613159,
+          "text": "Have you noticed any improvement with the physical therapy? Patient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows that Troy is scheduled for an appointment with a spine specialist and that current treatment includes acetaminophen and physical therapy. However, there is no explicit mention of a follow-up with Troy after the spine specialist appointment to adjust the treatment plan as needed.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Troy. How are you feeling today?\n\nPatient: Hi, Dr. Roberts. I'm doing alright, I guess. My back has been killing me lately.\n\nPhysician: Sorry to hear that. Can you tell me more about your back pain? When did it start, and how would you describe the discomfort?\n\nPatient: It started about six months ago, and it's been a constant ache ever since. Sometimes, I get sharp pains that shoot through my lower back. It's worse when I sit or stand for too long and feels a bit better when I'm lying down.\n\nPhysician: I see. Have you noticed any numbness, weakness, or tingling sensations in your legs or feet?\n\nPatient: No, nothing like that. It's just the ache and the sharp pains.\n\nPhysician: Okay. Have you tried any treatments for your back pain?\n\nPatient: Yes, I've been doing physical therapy exercises, and I've also been taking acetaminophen when the pain gets too bad.\n\nPhysician: That's good. Have you noticed any improvement with the physical therapy?\n\nPatient: A little bit, I guess. It's hard to tell. Sometimes, I feel like it's helping, and then other times, it doesn't seem to make a difference.\n\nPhysician: I understand. Have you had any accidents or injuries that might have triggered this back pain?\n\nPatient: No, nothing recent. I did hurt my back a few years ago when I fell off a ladder, but it didn't seem like a big deal at the time.\n\nPhysician: I see. Have you noticed any other symptoms, such as fever, weight loss, or change in bowel habits?\n\nPatient: No, nothing like that. Just the back pain.\n\nPhysician: Okay. Troy, given your history of chronic back pain and your concern about following a similar path as your father, who underwent spinal fusion surgery, I think it's a good idea to schedule you for an appointment with our spine specialist. We can discuss the results of your MRI and other diagnostic tests and explore alternative treatment options that may be available to you. In the meantime, I'll renew your prescription for acetaminophen and recommend that you continue with your physical therapy exercises.\n\nPatient: That sounds good. Thank you, Dr. Roberts.\n\nPhysician: You're welcome, Troy. We'll get you set up with that appointment as soon as possible.",
+  "note_text": "Subjective:\nTroy Robinson reports experiencing chronic back pain for the past six months. He describes the pain as a constant ache with occasional sharp pains in his lower back region. The pain worsens with prolonged sitting or standing and is relieved by lying down or taking prescribed pain medication. Troy has been compliant with physical therapy exercises but notes only mild improvement in symptoms.\n\nObjective:\nTroy appears in no acute distress during the examination. He demonstrates limited range of motion in his lower back and reports tenderness upon palpation. No signs of numbness, weakness, or tingling sensations in his legs or feet are noted. Troy's vital signs are within normal limits, and he maintains good overall hygiene.\n\nAssessment:\nTroy presents with chronic back pain that has been ongoing for six months. Despite compliance with physical therapy exercises, he reports only minimal improvement in symptoms. Given his concern about following a similar path as his father, who underwent spinal fusion surgery, further evaluation by a spine specialist is recommended to discuss MRI results and explore alternative treatment options.\n\nPlan:\n1. Schedule an appointment with a spine specialist to review MRI results and discuss alternative treatment options.\n2. Renew prescription for acetaminophen to manage pain as needed.\n3. Recommend continued compliance with physical therapy exercises.\n4. Provide patient education on back pain management and self-care strategies.\n5. Follow up with Troy after his appointment with the spine specialist to adjust treatment plan as needed."
+}

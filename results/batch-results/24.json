@@ -1,0 +1,1013 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 2,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 1,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 50,
+    "failed_calls": 0,
+    "successful_calls": 50,
+    "total_input_tokens": 21961,
+    "total_output_tokens": 1734,
+    "total_tokens": 23695,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0115588
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals swelling and warmth around Taylor's ankle and calf.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.662990927696228,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4724939167499542,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.40240466594696045,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37480151653289795,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3695741891860962,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only includes the patient's report of swelling and warmth around the ankle and calf, not a physical examination finding by the clinician.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Coordinate with Taylor's physical therapist to ensure continuity of care and optimize her rehabilitation progress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5054018497467041,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4576956033706665,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.44874322414398193,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4114799201488495,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.26503807306289673,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient is attending physical therapy and the physician is aware, but there is no explicit mention of coordinating with the physical therapist to ensure continuity of care or optimize rehabilitation progress.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim_id": "C7",
+      "text": "No signs of redness or significant deformity are observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.44478732347488403,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3047063946723938,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30260926485061646,
+          "text": "Have you experienced any weakness or numbness in your foot or toes? Patient: A little bit of weakness, but not too much numbness. It's mostly just pain and discomfort. Physician: Got it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22518742084503174,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.225068598985672,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports swelling and warmth, which contradicts the claim of no signs of redness or significant deformity.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Taylor Fields reports experiencing constant dull leg pain in her right leg for the past month.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5375428199768066,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.47648492455482483,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4523526728153229,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.45083364844322205,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4500126838684082,
+          "text": "Can you tell me more about it? When did it start, and is it constant or intermittent? Patient: It started about a month ago, and it's been constant ever since. It's like a dull ache that never goes away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states the leg pain started about a month ago and has been constant, described as a dull ache.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She notes swelling and warmth around her ankle and calf.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.7682158946990967,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4476037621498108,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42335233092308044,
+          "text": "Have you experienced any weakness or numbness in your foot or toes? Patient: A little bit of weakness, but not too much numbness. It's mostly just pain and discomfort. Physician: Got it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4004850387573242,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.38112133741378784,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states there is swelling and warmth, mostly around the ankle and calf, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "The pain is exacerbated when walking or standing, with some weakness noted.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5991681814193726,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5440094470977783,
+          "text": "Have you experienced any weakness or numbness in your foot or toes? Patient: A little bit of weakness, but not too much numbness. It's mostly just pain and discomfort. Physician: Got it."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4381851851940155,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4217609167098999,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3888547122478485,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the pain is worst when walking or standing (E4:2) and reports some weakness (E3:2).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Ibuprofen provides minimal relief, and she has difficulty bending her ankle or flexing her foot due to the pain.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5365729331970215,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.48797476291656494,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.42952001094818115,
+          "text": "Have you experienced any weakness or numbness in your foot or toes? Patient: A little bit of weakness, but not too much numbness. It's mostly just pain and discomfort. Physician: Got it."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.41563594341278076,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4129210114479065,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient states that ibuprofen helps a little bit but sometimes the pain is too much for the medication to handle, indicating minimal relief. The patient also reports difficulty bending the ankle or flexing the foot due to pain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Taylor mentions a history of a right tibia and fibula fracture from a car accident a year ago, which required surgery.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.587552547454834,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3185611367225647,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.30945777893066406,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3045622706413269,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.29219895601272583,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having fractured the right tibia and fibula in a car accident about a year ago and that surgery was required to fix it.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Physical examination reveals swelling and warmth around Taylor's ankle and calf.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.662990927696228,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4724939167499542,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.40240466594696045,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.37480151653289795,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3695741891860962,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript only includes the patient's report of swelling and warmth around the ankle and calf, not a physical examination finding by the clinician.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Limited range of motion is noted in ankle and foot flexion.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.6182871460914612,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.39531517028808594,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3630678951740265,
+          "text": "Have you experienced any weakness or numbness in your foot or toes? Patient: A little bit of weakness, but not too much numbness. It's mostly just pain and discomfort. Physician: Got it."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.26920127868652344,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2583293914794922,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states having trouble bending the ankle or flexing the foot, indicating limited range of motion in these areas.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "No signs of redness or significant deformity are observed.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.44478732347488403,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3047063946723938,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30260926485061646,
+          "text": "Have you experienced any weakness or numbness in your foot or toes? Patient: A little bit of weakness, but not too much numbness. It's mostly just pain and discomfort. Physician: Got it."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.22518742084503174,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.225068598985672,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Contradicted",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports swelling and warmth, which contradicts the claim of no signs of redness or significant deformity.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Taylor is currently undergoing physical therapy for her right leg injury, and her asthma is well-controlled.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.4657190442085266,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4644133150577545,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.397426038980484,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37085387110710144,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36554399132728577,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient confirms regular attendance at physical therapy for her leg, indicating ongoing treatment for her right leg injury. However, there is no mention of asthma or its control status in the provided transcript, so only the physical therapy part is supported.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Taylor presents with chronic leg pain following a previous tibia and fibula fracture.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6044062376022339,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.47716131806373596,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43201667070388794,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.396087646484375,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37890493869781494,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E0",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states a previous fracture of the right tibia and fibula about a year ago (E6:2), and currently reports significant leg pain (E0:5), indicating chronic leg pain following the fracture.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "The pain is impacting her mobility and quality of life.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4063035249710083,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.40210384130477905,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4008575975894928,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3984939455986023,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36555421352386475,
+          "text": "Can you tell me more about it? When did it start, and is it constant or intermittent? Patient: It started about a month ago, and it's been constant ever since. It's like a dull ache that never goes away. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports difficulty moving around sometimes due to pain and trouble bending the ankle or flexing the foot, indicating impact on mobility and quality of life.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Further imaging studies are warranted to assess the extent of the injury and determine the appropriate treatment plan.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4589298963546753,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3377011716365814,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3254987597465515,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31157612800598145,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.28464996814727783,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4,
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to take a closer look at the leg and orders imaging studies to better understand the injury, followed by scheduling a follow-up to discuss results and plan treatment.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Adjustments to her pain management regimen may be necessary to provide adequate relief.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4973829686641693,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.43935292959213257,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3399534523487091,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3218676745891571,
+          "text": "Can you tell me more about it? When did it start, and is it constant or intermittent? Patient: It started about a month ago, and it's been constant ever since. It's like a dull ache that never goes away. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3079244792461395,
+          "text": "Have you noticed any limitations in your mobility or range of motion? Patient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes. Physician: Okay, that's understandable."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states prescribing a different medication for pain and scheduling follow-up to adjust the plan, indicating adjustments to pain management may be necessary for adequate relief.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Order imaging studies (X-ray, MRI) to evaluate the extent of the injury.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4651210904121399,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3299552798271179,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3202681839466095,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2706534266471863,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2631387710571289,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4,
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to order imaging studies to better understand the injury and plans to follow up on the results, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Prescribe a different pain medication to address Taylor's discomfort.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.45419642329216003,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.44617176055908203,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.42472800612449646,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3946200907230377,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.30137795209884644,
+          "text": "Now, have you noticed any differences in the pain when you're walking, standing, or resting? Patient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E9:6 that they will prescribe a different medication to help with the pain, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Schedule a follow-up appointment to review imaging results and develop a comprehensive treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.46042120456695557,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3537519574165344,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.27418801188468933,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2511141896247864,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.23441973328590393,
+          "text": "Have you noticed any swelling, redness, or warmth in the affected area? Patient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf. Physician: Okay, that's helpful."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "Sentence E9[7] explicitly states scheduling a follow-up appointment to discuss imaging results and develop a plan, directly supporting the claim.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Coordinate with Taylor's physical therapist to ensure continuity of care and optimize her rehabilitation progress.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5054018497467041,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4576956033706665,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.44874322414398193,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4114799201488495,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.26503807306289673,
+          "text": "Have you had any previous injuries or surgeries on your leg? Patient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it. Physician: I see. That could definitely be contributing to your current pain."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript shows the patient is attending physical therapy and the physician is aware, but there is no explicit mention of coordinating with the physical therapist to ensure continuity of care or optimize rehabilitation progress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Monitor Taylor's progress closely and adjust the treatment plan as needed to improve her symptoms and functional status.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E10",
+          "sim": 0.4338902235031128,
+          "text": "Sound good? Patient: Yeah, that sounds great. Thank you, Dr. Payne. Physician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.42048245668411255,
+          "text": "Have you noticed any improvement since starting physical therapy? Patient: A little bit, but it's still pretty difficult to move around sometimes. Physician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3970985412597656,
+          "text": "Have you been following up with your physical therapist? Patient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility. Physician: That's great."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.38191598653793335,
+          "text": "Physician: Good morning, Taylor. How are you feeling today? Patient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately. Physician: Okay, let's start with your leg pain."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.318570613861084,
+          "text": "Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse? Patient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle. Physician: Okay, that's good information."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician states the need to take a closer look at the leg, orders imaging studies, prescribes a different medication, and schedules a follow-up appointment to discuss results and adjust the plan, which aligns with monitoring progress and adjusting treatment to improve symptoms and function.",
+        "severity": "high"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Taylor. How are you feeling today?\n\nPatient: Hi, Dr. Payne. I'm doing alright, I guess. My leg has been hurting a lot lately.\n\nPhysician: Okay, let's start with your leg pain. Can you tell me more about it? When did it start, and is it constant or intermittent?\n\nPatient: It started about a month ago, and it's been constant ever since. It's like a dull ache that never goes away.\n\nPhysician: I see. Have you noticed any swelling, redness, or warmth in the affected area?\n\nPatient: Yeah, there's definitely some swelling and warmth. It's mostly around my ankle and calf.\n\nPhysician: Okay, that's helpful. Have you experienced any weakness or numbness in your foot or toes?\n\nPatient: A little bit of weakness, but not too much numbness. It's mostly just pain and discomfort.\n\nPhysician: Got it. Now, have you noticed any differences in the pain when you're walking, standing, or resting?\n\nPatient: It hurts the most when I'm walking or standing. It's like the weight of my body is too much for my leg to handle. When I'm resting, it's still uncomfortable, but it's not as bad.\n\nPhysician: I understand. Have you tried any treatments or medications for the pain, or have you noticed anything that makes it better or worse?\n\nPatient: I've been taking ibuprofen, and it helps a little bit. But sometimes, it feels like the pain is just too much for the medication to handle.\n\nPhysician: Okay, that's good information. Have you had any previous injuries or surgeries on your leg?\n\nPatient: Yeah, I fractured my right tibia and fibula in a car accident about a year ago. I had to have surgery to fix it.\n\nPhysician: I see. That could definitely be contributing to your current pain. Have you noticed any limitations in your mobility or range of motion?\n\nPatient: Yeah, I've been having trouble bending my ankle or flexing my foot. It's like my leg just doesn't want to cooperate sometimes.\n\nPhysician: Okay, that's understandable. Have you been following up with your physical therapist?\n\nPatient: Yeah, I've been going to physical therapy regularly. They've been helping me with exercises and stretches to try and improve my mobility.\n\nPhysician: That's great. Have you noticed any improvement since starting physical therapy?\n\nPatient: A little bit, but it's still pretty difficult to move around sometimes.\n\nPhysician: I understand. Well, based on what you've told me, it sounds like we need to take a closer look at your leg and see what's going on. I'd like to order some imaging studies to get a better idea of what's happening. In the meantime, I'm going to prescribe a different medication that may help with the pain. We'll also schedule a follow-up appointment to discuss the results of the imaging studies and come up with a plan to get you feeling better. Sound good?\n\nPatient: Yeah, that sounds great. Thank you, Dr. Payne.\n\nPhysician: You're welcome, Taylor. We'll get to the bottom of this and get you back on your feet in no time.",
+  "note_text": "Subjective:\nTaylor Fields reports experiencing constant dull leg pain in her right leg for the past month. She notes swelling and warmth around her ankle and calf. The pain is exacerbated when walking or standing, with some weakness noted. Ibuprofen provides minimal relief, and she has difficulty bending her ankle or flexing her foot due to the pain. Taylor mentions a history of a right tibia and fibula fracture from a car accident a year ago, which required surgery.\n\nObjective:\nPhysical examination reveals swelling and warmth around Taylor's ankle and calf. Limited range of motion is noted in ankle and foot flexion. No signs of redness or significant deformity are observed. Taylor is currently undergoing physical therapy for her right leg injury, and her asthma is well-controlled.\n\nAssessment:\nTaylor presents with chronic leg pain following a previous tibia and fibula fracture. The pain is impacting her mobility and quality of life. Further imaging studies are warranted to assess the extent of the injury and determine the appropriate treatment plan. Adjustments to her pain management regimen may be necessary to provide adequate relief.\n\nPlan:\n1. Order imaging studies (X-ray, MRI) to evaluate the extent of the injury.\n2. Prescribe a different pain medication to address Taylor's discomfort.\n3. Schedule a follow-up appointment to review imaging results and develop a comprehensive treatment plan.\n4. Coordinate with Taylor's physical therapist to ensure continuity of care and optimize her rehabilitation progress.\n5. Monitor Taylor's progress closely and adjust the treatment plan as needed to improve her symptoms and functional status."
+}

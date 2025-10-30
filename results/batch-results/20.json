@@ -1,0 +1,1116 @@
+{
+  "summary": {
+    "claims": 18,
+    "hallucination_low_severity": 1,
+    "hallucination_medium_severity": 6,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 1,
+    "unsupported_claim_medium_severity": 6,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 48,
+    "failed_calls": 0,
+    "successful_calls": 48,
+    "total_input_tokens": 21528,
+    "total_output_tokens": 1585,
+    "total_tokens": 23113,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011147200000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "During the examination, Anita appeared comfortable but exhibited signs of discomfort when asked to perform certain movements.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.46890878677368164,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4107626974582672,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39994364976882935,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3729182183742523,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3691369593143463,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any description of Anita's comfort level during the examination or any signs of discomfort when performing movements. The dialogue focuses on history and symptoms but lacks explicit mention of physical exam findings or patient behavior during examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "There were no visible signs of injury or abnormalities on inspection.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.381876677274704,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31253114342689514,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3081199824810028,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.16942481696605682,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.16785472631454468,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or description of inspection findings, including the presence or absence of visible signs of injury or abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.33327701687812805,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2943129241466522,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2881562113761902,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2163260579109192,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.21323040127754211,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any mention or documentation of vital signs or their status.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Physical examination revealed tenderness in the lumbar region upon palpation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.456360399723053,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44281435012817383,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43472257256507874,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39362990856170654,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34433361887931824,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains patient-reported symptoms of back pain but does not include any explicit mention of physical examination findings such as tenderness in the lumbar region upon palpation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Range of motion in the lumbar spine was limited, particularly with forward bending.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.2905160188674927,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2715086042881012,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27107858657836914,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2632080018520355,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24133963882923126,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention any assessment or findings related to range of motion in the lumbar spine or forward bending limitations.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Advise Anita to incorporate regular breaks and gentle stretching exercises into her daily routine to alleviate back pain associated with prolonged sitting.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5389679670333862,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.507095456123352,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4359987676143646,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3979976177215576,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39389434456825256,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention advising Anita to incorporate regular breaks or gentle stretching exercises into her daily routine to alleviate back pain associated with prolonged sitting.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate Anita on proper ergonomics and posture to prevent exacerbation of back pain at work.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5078904032707214,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4988674521446228,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.376358300447464,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3675388693809509,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36665305495262146,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Anita on proper ergonomics and posture to prevent exacerbation of back pain at work. While the physician acknowledges the new desk job as a possible factor and plans further evaluation and treatment, no education on ergonomics or posture is documented.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T17",
+      "text": "I did have a car accident about two years ago, but I didn't have any back pain until a few months ago.",
+      "sent_idx": 17,
+      "prev_text": "Patient: No, nothing recent.",
+      "next_text": "Physician: I see.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Anita Fowler reports experiencing persistent back pain since November of last year.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6297166347503662,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5248372554779053,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.48773202300071716,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4644301235675812,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4372078776359558,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states experiencing back pain that started last November and has been persistent since then.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes the pain as a dull ache in her lower back that worsens with prolonged standing or walking.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7367743849754333,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5050387382507324,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46747809648513794,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45943665504455566,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4395793378353119,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly describes the pain as a dull ache in the lower back (E1:3) and states it worsens with prolonged standing or walking (E1:4, E5:4).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "She denies any weakness, numbness, or tingling in her legs or feet.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6296792030334473,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3572293817996979,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2928721606731415,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.287541002035141,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.27522653341293335,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any weakness, numbness, or tingling sensations in her legs or feet when directly asked.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Anita has been taking ibuprofen and acetaminophen for pain relief, with minimal improvement.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6213170289993286,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.47107192873954773,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43936651945114136,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4291616976261139,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.37102144956588745,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states taking ibuprofen and acetaminophen as needed with only minimal relief ('they only help a little bit').",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "She attributes the onset of pain to her sedentary job, which involves prolonged sitting at a desk.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5724019408226013,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4116267263889313,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4045834541320801,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3914737105369568,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.38771817088127136,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she started a new job involving sitting at a desk all day and suggests that this may be making the pain worse, directly attributing the onset or worsening of pain to her sedentary job.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "During the examination, Anita appeared comfortable but exhibited signs of discomfort when asked to perform certain movements.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.46890878677368164,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4107626974582672,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39994364976882935,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3729182183742523,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3691369593143463,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any description of Anita's comfort level during the examination or any signs of discomfort when performing movements. The dialogue focuses on history and symptoms but lacks explicit mention of physical exam findings or patient behavior during examination.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "There were no visible signs of injury or abnormalities on inspection.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.381876677274704,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.31253114342689514,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3081199824810028,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.16942481696605682,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.16785472631454468,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or description of inspection findings, including the presence or absence of visible signs of injury or abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs were within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.33327701687812805,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2943129241466522,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2881562113761902,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2163260579109192,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.21323040127754211,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any mention or documentation of vital signs or their status.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Physical examination revealed tenderness in the lumbar region upon palpation.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.456360399723053,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44281435012817383,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43472257256507874,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39362990856170654,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34433361887931824,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript contains patient-reported symptoms of back pain but does not include any explicit mention of physical examination findings such as tenderness in the lumbar region upon palpation.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Range of motion in the lumbar spine was limited, particularly with forward bending.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.2905160188674927,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2715086042881012,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.27107858657836914,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2632080018520355,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.24133963882923126,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention any assessment or findings related to range of motion in the lumbar spine or forward bending limitations.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Anita Fowler presents with chronic back pain of unknown etiology, likely exacerbated by prolonged sitting at her desk job.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.583080530166626,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5453794002532959,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4619048237800598,
+          "text": "Have you had any recent injuries or accidents that could have triggered this pain? Patient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44814544916152954,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4337468147277832,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E6",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient reports persistent back pain starting several months ago (E0:4-5). She recently started a desk job involving prolonged sitting, which she suspects worsens the pain, and the physician agrees this is possible (E6:2-4). No other etiology is identified, supporting the claim of unknown cause likely exacerbated by sitting.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "The pain management specialist referral is warranted to further evaluate and manage her condition.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5889160633087158,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.434415340423584,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3963823914527893,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.37176674604415894,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36910367012023926,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to refer the patient to a pain management specialist for a thorough evaluation, supporting the claim that the referral is warranted to further evaluate and manage her condition.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Muscle relaxants may provide additional relief, and a follow-up appointment in two weeks will allow for monitoring of her progress.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5634483098983765,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3621618151664734,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.33831316232681274,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3078731894493103,
+          "text": "Have you noticed any weakness, numbness, or tingling sensations in your legs or feet? Patient: No, nothing like that. Just the pain in my back. Physician: Alright."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.298714816570282,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states prescribing a muscle relaxant for pain relief and scheduling a follow-up appointment in two weeks to monitor progress.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "1. Refer Anita to a pain management specialist for further evaluation and treatment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5567817091941833,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5096530914306641,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4460236430168152,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4119804799556732,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3979702889919281,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to refer the patient to a pain management specialist for a thorough evaluation in sentence 6 of E6.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "2. Prescribe a muscle relaxant to help alleviate back pain.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5575900077819824,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4411768913269043,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4253219962120056,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.40493151545524597,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3823792338371277,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states in E6[7] that they will prescribe a muscle relaxant to help with the pain, directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "3. Schedule a follow-up appointment in two weeks to assess response to treatment and make any necessary adjustments.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3828513026237488,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2995484471321106,
+          "text": "Does that sound good to you? Patient: Yes, that sounds great. Thank you, Dr. Alexander. Physician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.23367711901664734,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21661393344402313,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.196954146027565,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states scheduling a follow-up appointment in two weeks to check on the patient's progress, which aligns with assessing response to treatment and making adjustments as needed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "4. Advise Anita to incorporate regular breaks and gentle stretching exercises into her daily routine to alleviate back pain associated with prolonged sitting.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5389679670333862,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.507095456123352,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4359987676143646,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3979976177215576,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39389434456825256,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention advising Anita to incorporate regular breaks or gentle stretching exercises into her daily routine to alleviate back pain associated with prolonged sitting.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "5. Educate Anita on proper ergonomics and posture to prevent exacerbation of back pain at work.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5078904032707214,
+          "text": "Have you had any recent changes in your work or home life that could be contributing to the pain? Patient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse? Physician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4988674521446228,
+          "text": "Physician: Good morning, Anita. How are you feeling today? Patient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.376358300447464,
+          "text": "Patient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit. Physician: Alright. Have you noticed any factors that exacerbate or relieve the pain? Patient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3675388693809509,
+          "text": "Have you been experiencing any other symptoms, such as fever, chills, or weight loss? Patient: No, nothing like that. Just the back pain. Physician: Okay. Have you tried any treatments or medications for the pain?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36665305495262146,
+          "text": "Can you describe the pain for me? Is it sharp, dull, or throbbing? Patient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention educating Anita on proper ergonomics and posture to prevent exacerbation of back pain at work. While the physician acknowledges the new desk job as a possible factor and plans further evaluation and treatment, no education on ergonomics or posture is documented.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Anita. How are you feeling today?\n\nPatient: Hi, Dr. Alexander. I've been experiencing a lot of back pain lately. It started last November, and it's been persistent ever since.\n\nPhysician: I see. Can you describe the pain for me? Is it sharp, dull, or throbbing?\n\nPatient: It's a dull ache that feels like someone is pressing down on my lower back. It's worse when I stand or walk for too long.\n\nPhysician: Okay. Have you noticed any weakness, numbness, or tingling sensations in your legs or feet?\n\nPatient: No, nothing like that. Just the pain in my back.\n\nPhysician: Alright. Have you had any recent injuries or accidents that could have triggered this pain?\n\nPatient: No, nothing recent. I did have a car accident about two years ago, but I didn't have any back pain until a few months ago.\n\nPhysician: I see. Have you been experiencing any other symptoms, such as fever, chills, or weight loss?\n\nPatient: No, nothing like that. Just the back pain.\n\nPhysician: Okay. Have you tried any treatments or medications for the pain?\n\nPatient: Yes, I've been taking ibuprofen and acetaminophen as needed, but they only help a little bit.\n\nPhysician: Alright. Have you noticed any factors that exacerbate or relieve the pain?\n\nPatient: Yes, like I mentioned earlier, standing or walking for too long makes it worse. Resting and lying down seems to help a bit.\n\nPhysician: Okay. Have you had any recent changes in your work or home life that could be contributing to the pain?\n\nPatient: Well, I started a new job a few months ago, and I've been sitting at a desk all day. Maybe that's been making it worse?\n\nPhysician: That's definitely possible. We'll need to look into that further. In the meantime, I'd like to refer you to a pain management specialist for a thorough evaluation. In the meantime, I'll prescribe you a muscle relaxant to help with the pain. We'll also schedule you for a follow-up appointment in two weeks to check in and see how you're doing. Does that sound good to you?\n\nPatient: Yes, that sounds great. Thank you, Dr. Alexander.\n\nPhysician: You're welcome, Anita. We'll get to the bottom of this and figure out the best course of treatment for you.",
+  "note_text": "Subjective:\nAnita Fowler reports experiencing persistent back pain since November of last year. She describes the pain as a dull ache in her lower back that worsens with prolonged standing or walking. She denies any weakness, numbness, or tingling in her legs or feet. Anita has been taking ibuprofen and acetaminophen for pain relief, with minimal improvement. She attributes the onset of pain to her sedentary job, which involves prolonged sitting at a desk.\n\nObjective:\nDuring the examination, Anita appeared comfortable but exhibited signs of discomfort when asked to perform certain movements. There were no visible signs of injury or abnormalities on inspection. Vital signs were within normal limits. Physical examination revealed tenderness in the lumbar region upon palpation. Range of motion in the lumbar spine was limited, particularly with forward bending.\n\nAssessment:\nAnita Fowler presents with chronic back pain of unknown etiology, likely exacerbated by prolonged sitting at her desk job. The pain management specialist referral is warranted to further evaluate and manage her condition. Muscle relaxants may provide additional relief, and a follow-up appointment in two weeks will allow for monitoring of her progress.\n\nPlan:\n1. Refer Anita to a pain management specialist for further evaluation and treatment.\n2. Prescribe a muscle relaxant to help alleviate back pain.\n3. Schedule a follow-up appointment in two weeks to assess response to treatment and make any necessary adjustments.\n4. Advise Anita to incorporate regular breaks and gentle stretching exercises into her daily routine to alleviate back pain associated with prolonged sitting.\n5. Educate Anita on proper ergonomics and posture to prevent exacerbation of back pain at work."
+}

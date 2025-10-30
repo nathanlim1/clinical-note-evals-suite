@@ -1,0 +1,1430 @@
+{
+  "summary": {
+    "claims": 21,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 8,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 8,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 51,
+    "failed_calls": 0,
+    "successful_calls": 51,
+    "total_input_tokens": 23753,
+    "total_output_tokens": 1851,
+    "total_tokens": 25604,
+    "total cost w/ GPT-4.1-mini (in $)": 0.012462800000000001
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C6",
+      "text": "His eyes appear normal without redness or discharge.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4673095643520355,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45215919613838196,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38954538106918335,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3587186336517334,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.337413489818573,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the patient's eyes appear normal without redness or discharge. There is no direct observation or description of the eyes' appearance regarding redness or discharge.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Visual acuity is 20/20 with correction.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4186909794807434,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.40357527136802673,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.391399621963501,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35627755522727966,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3402344882488251,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state the patient's visual acuity or that it is 20/20 with correction. There is mention of glasses helping somewhat, but no specific visual acuity measurement is provided.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Pupils are equal, round, and reactive to light.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.31994903087615967,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31139031052589417,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30610597133636475,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.29853737354278564,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2840094566345215,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention the pupils being equal, round, or reactive to light.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Extraocular movements are intact.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4014545977115631,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38742926716804504,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3721875548362732,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.36374926567077637,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3392123281955719,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that extraocular movements are intact. There is no direct assessment or mention of extraocular movements in the provided evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "No signs of eye muscle weakness or nystagmus.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5174534916877747,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.474082887172699,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4625973701477051,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4118938744068146,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.32957902550697327,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any examination findings or statements confirming the absence of eye muscle weakness or nystagmus.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Fundoscopic exam reveals clear optic discs with sharp margins.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4146619141101837,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3986886739730835,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3844769597053528,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3726654648780823,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3661656677722931,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or description of a fundoscopic exam or findings related to optic discs or their margins.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "No evidence of retinal abnormalities or hemorrhages.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4604000449180603,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4535548985004425,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42169439792633057,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3425750136375427,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31052571535110474,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any examination findings regarding retinal abnormalities or hemorrhages. The physician plans to refer the patient to an ophthalmologist for a detailed assessment, indicating that no definitive statement about retinal health has been made yet.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "No significant findings on physical examination to suggest underlying eye pathology.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5256757736206055,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4974542260169983,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.44643980264663696,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4415644705295563,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34588542580604553,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the physical examination revealed no significant findings to suggest underlying eye pathology. The physician mentions taking a closer look and scheduling a follow-up with an ophthalmologist, implying that the examination findings are not fully concluded or explicitly normal.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "2. Educate Mr. Pearson on eye exercises and proper screen ergonomics to reduce eye strain.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6855348944664001,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5315782427787781,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4478064775466919,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.44362586736679077,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.442370742559433,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion about eye strain and consideration of eye exercises and screen adjustments, but there is no explicit mention of educating Mr. Pearson on eye exercises or proper screen ergonomics to reduce eye strain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "3. Encourage regular breaks from screen time to rest his eyes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4549258053302765,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4341903626918793,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3684290051460266,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29204225540161133,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2683449685573578,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or imply encouraging regular breaks from screen time to rest the eyes.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "4. Follow up with the ophthalmologist's recommendations for further management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5495781898498535,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41145241260528564,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4086965322494507,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3582504987716675,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34337496757507324,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes a plan to schedule a follow-up appointment with an ophthalmologist for a detailed assessment (E6[6]), but there is no explicit mention of following up with the ophthalmologist's recommendations for further management.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "5. Schedule routine eye exams to monitor any changes in vision.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5172315239906311,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38266313076019287,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3470534682273865,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3345499336719513,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3248463273048401,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes a plan to schedule a follow-up appointment with an ophthalmologist for a detailed assessment (E6[6]), but there is no explicit mention of scheduling routine eye exams to monitor changes in vision.",
+        "severity": "low"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Pearson reports experiencing intermittent blurry vision, especially when reading or looking at objects far away.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.6433087587356567,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.599756121635437,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.573140025138855,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5627748966217041,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5017358660697937,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that the blurry vision is intermittent ('coming and going', 'not all the time') and occurs especially when reading or looking at something far away.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He denies double vision, eye pain, headaches, or recent head injuries/illnesses.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.7233344316482544,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5484169721603394,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5450332164764404,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4371635913848877,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.43585339188575745,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies double vision and eye pain (E2:1-2), denies recent head injuries or illnesses (E3:1), and denies headaches (E4:3).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He mentions a history of a cold a few weeks ago but states it did not affect his vision.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.6448794007301331,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4821644425392151,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43759775161743164,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.42681267857551575,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4209119379520416,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states he had a cold a few weeks ago but it did not affect his vision, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Pearson works as a computer programmer and notes some eye strain due to prolonged screen time.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.8335731029510498,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4929715394973755,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4529654085636139,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4513532817363739,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.42776355147361755,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states he is a computer programmer who spends a lot of time looking at screens (E5:2) and reports experiencing some eye strain (E4:2).",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He got new glasses a few months ago, which provided some relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5791780352592468,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4468781054019928,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.44516414403915405,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.44005340337753296,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4047737717628479,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that he got a new pair of glasses a few months ago and that it seemed to help a bit, which aligns with the claim that the new glasses provided some relief.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Mr. Pearson presents with no signs of eye pain or double vision during the examination.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5901190042495728,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5810925960540771,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5657070875167847,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5480455756187439,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5341808199882507,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies any double vision or eye pain when asked directly during the examination.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "His eyes appear normal without redness or discharge.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4673095643520355,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.45215919613838196,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.38954538106918335,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3587186336517334,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.337413489818573,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the patient's eyes appear normal without redness or discharge. There is no direct observation or description of the eyes' appearance regarding redness or discharge.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Visual acuity is 20/20 with correction.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4186909794807434,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.40357527136802673,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.391399621963501,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.35627755522727966,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3402344882488251,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state the patient's visual acuity or that it is 20/20 with correction. There is mention of glasses helping somewhat, but no specific visual acuity measurement is provided.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Pupils are equal, round, and reactive to light.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.31994903087615967,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31139031052589417,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.30610597133636475,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.29853737354278564,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2840094566345215,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention the pupils being equal, round, or reactive to light.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Extraocular movements are intact.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.4014545977115631,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38742926716804504,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3721875548362732,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.36374926567077637,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3392123281955719,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that extraocular movements are intact. There is no direct assessment or mention of extraocular movements in the provided evidence.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "No signs of eye muscle weakness or nystagmus.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5174534916877747,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.474082887172699,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4625973701477051,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4118938744068146,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.32957902550697327,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any examination findings or statements confirming the absence of eye muscle weakness or nystagmus.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Fundoscopic exam reveals clear optic discs with sharp margins.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4146619141101837,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3986886739730835,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3844769597053528,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3726654648780823,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3661656677722931,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or description of a fundoscopic exam or findings related to optic discs or their margins.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "No evidence of retinal abnormalities or hemorrhages.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4604000449180603,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4535548985004425,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.42169439792633057,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3425750136375427,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.31052571535110474,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention any examination findings regarding retinal abnormalities or hemorrhages. The physician plans to refer the patient to an ophthalmologist for a detailed assessment, indicating that no definitive statement about retinal health has been made yet.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Mr. Pearson is experiencing intermittent blurry vision, likely related to eye strain from prolonged screen time as a computer programmer.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.7660471200942993,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5454919338226318,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.518338143825531,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5100208520889282,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4883781671524048,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports intermittent blurry vision (E1:3, E2:2-3) and states he is a computer programmer spending a lot of time looking at screens (E5:2). The physician acknowledges that this could contribute to eye strain (E5:4), supporting the claim that the blurry vision is likely related to eye strain from prolonged screen time.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "No significant findings on physical examination to suggest underlying eye pathology.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.5256757736206055,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4974542260169983,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.44643980264663696,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4415644705295563,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.34588542580604553,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that the physical examination revealed no significant findings to suggest underlying eye pathology. The physician mentions taking a closer look and scheduling a follow-up with an ophthalmologist, implying that the examination findings are not fully concluded or explicitly normal.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Referral to an ophthalmologist for further evaluation and management of his vision issues.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5886788368225098,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.48941195011138916,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.44652608036994934,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.43442171812057495,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41198205947875977,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to schedule a follow-up appointment with an ophthalmologist for a more detailed assessment of the patient's vision, which supports the claim of referral for further evaluation and management.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "1. Schedule a follow-up appointment with an ophthalmologist for a detailed assessment of Mr. Pearson's vision.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6003149747848511,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5583035349845886,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5357921123504639,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.48441648483276367,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.45104527473449707,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the intention to schedule a follow-up appointment with an ophthalmologist for a detailed assessment of the patient's vision.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "2. Educate Mr. Pearson on eye exercises and proper screen ergonomics to reduce eye strain.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6855348944664001,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5315782427787781,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4478064775466919,
+          "text": "Physician: Good morning, Mr. Pearson. How are you feeling today? Patient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.44362586736679077,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.442370742559433,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes discussion about eye strain and consideration of eye exercises and screen adjustments, but there is no explicit mention of educating Mr. Pearson on eye exercises or proper screen ergonomics to reduce eye strain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "3. Encourage regular breaks from screen time to rest his eyes.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.4549258053302765,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4341903626918793,
+          "text": "Can you tell me what you do for work, Mr. Pearson? Patient: I'm a computer programmer, so I spend a lot of time looking at screens. Physician: I see. That could definitely contribute to eye strain."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3684290051460266,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.29204225540161133,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2683449685573578,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or imply encouraging regular breaks from screen time to rest the eyes.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "4. Follow up with the ophthalmologist's recommendations for further management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5495781898498535,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.41145241260528564,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4086965322494507,
+          "text": "Sound good? Patient: Sounds good to me. Thank you, Dr. Andrews. Physician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3582504987716675,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.34337496757507324,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes a plan to schedule a follow-up appointment with an ophthalmologist for a detailed assessment (E6[6]), but there is no explicit mention of following up with the ophthalmologist's recommendations for further management.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "5. Schedule routine eye exams to monitor any changes in vision.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5172315239906311,
+          "text": "Have you tried any eye exercises or adjusting the display settings on your computer to help with that? Patient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit. Physician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.38266313076019287,
+          "text": "Have you noticed any other symptoms, like eye strain or headaches? Patient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of. Physician: Alright. Let's take a closer look."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3470534682273865,
+          "text": "Patient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision. Physician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions? Patient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either. Physician: Okay, that's good to know."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3345499336719513,
+          "text": "Can you tell me more about that? What kind of problems are you having with your vision? Patient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly. Physician: Okay, that sounds like it could be a few different things."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3248463273048401,
+          "text": "Have you noticed any double vision or eye pain? Patient: No, it's just the blurriness. And it's not all the time, just sometimes. Physician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes a plan to schedule a follow-up appointment with an ophthalmologist for a detailed assessment (E6[6]), but there is no explicit mention of scheduling routine eye exams to monitor changes in vision.",
+        "severity": "low"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Mr. Pearson. How are you feeling today?\n\nPatient: Good morning, Dr. Andrews. I'm doing alright, but I've been experiencing some issues with my vision lately.\n\nPhysician: I see. Can you tell me more about that? What kind of problems are you having with your vision?\n\nPatient: Well, it's been coming and going, but sometimes things look blurry, especially when I'm reading or looking at something far away. It's like my eyes can't focus properly.\n\nPhysician: Okay, that sounds like it could be a few different things. Have you noticed any double vision or eye pain?\n\nPatient: No, it's just the blurriness. And it's not all the time, just sometimes.\n\nPhysician: Alright. Have you had any recent head injuries or illnesses that could be contributing to this?\n\nPatient: No, nothing like that. I did have a cold a few weeks ago, but it didn't seem to affect my vision.\n\nPhysician: I see. Have you had any eye problems in the past, or does anyone in your family have any eye conditions?\n\nPatient: No, I've never had any eye problems before. And as far as I know, no one in my family has any eye conditions either.\n\nPhysician: Okay, that's good to know. Have you noticed any other symptoms, like eye strain or headaches?\n\nPatient: A little bit of eye strain, but nothing too severe. And no headaches that I can think of.\n\nPhysician: Alright. Let's take a closer look. Can you tell me what you do for work, Mr. Pearson?\n\nPatient: I'm a computer programmer, so I spend a lot of time looking at screens.\n\nPhysician: I see. That could definitely contribute to eye strain. Have you tried any eye exercises or adjusting the display settings on your computer to help with that?\n\nPatient: No, I haven't. But I did get a new pair of glasses a few months ago, and that seemed to help a bit.\n\nPhysician: That's good to hear. We'll definitely want to take a closer look at your eyes and see if there's anything else we can do to help you. In the meantime, I'd like to schedule you for a follow-up appointment with an ophthalmologist to get a more detailed assessment of your vision. Sound good?\n\nPatient: Sounds good to me. Thank you, Dr. Andrews.\n\nPhysician: Of course, Mr. Pearson. We'll get to the bottom of this and make sure you're seeing clearly in no time.",
+  "note_text": "Subjective:\nMr. Pearson reports experiencing intermittent blurry vision, especially when reading or looking at objects far away. He denies double vision, eye pain, headaches, or recent head injuries/illnesses. He mentions a history of a cold a few weeks ago but states it did not affect his vision. Mr. Pearson works as a computer programmer and notes some eye strain due to prolonged screen time. He got new glasses a few months ago, which provided some relief.\n\nObjective:\nMr. Pearson presents with no signs of eye pain or double vision during the examination. His eyes appear normal without redness or discharge. Visual acuity is 20/20 with correction. Pupils are equal, round, and reactive to light. Extraocular movements are intact. No signs of eye muscle weakness or nystagmus. Fundoscopic exam reveals clear optic discs with sharp margins. No evidence of retinal abnormalities or hemorrhages.\n\nAssessment:\nMr. Pearson is experiencing intermittent blurry vision, likely related to eye strain from prolonged screen time as a computer programmer. No significant findings on physical examination to suggest underlying eye pathology. Referral to an ophthalmologist for further evaluation and management of his vision issues.\n\nPlan:\n1. Schedule a follow-up appointment with an ophthalmologist for a detailed assessment of Mr. Pearson's vision.\n2. Educate Mr. Pearson on eye exercises and proper screen ergonomics to reduce eye strain.\n3. Encourage regular breaks from screen time to rest his eyes.\n4. Follow up with the ophthalmologist's recommendations for further management.\n5. Schedule routine eye exams to monitor any changes in vision."
+}

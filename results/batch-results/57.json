@@ -1,0 +1,1310 @@
+{
+  "summary": {
+    "claims": 24,
+    "hallucination_low_severity": 0,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 0,
+    "unsupported_claim_low_severity": 0,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 0,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 58,
+    "failed_calls": 0,
+    "successful_calls": 58,
+    "total_input_tokens": 30395,
+    "total_output_tokens": 2479,
+    "total_tokens": 32874,
+    "total cost w/ GPT-4.1-mini (in $)": 0.0161244
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.38797837495803833,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3591859042644501,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3493235409259796,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3098830282688141,
+          "text": "Patient: Alright, doctor. Thank you for your help. Physician: You're welcome, Mr. Sims. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3075638711452484,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that the patient's vital signs are within normal limits. Although the physician performs an assessment of vital signs, no specific findings or conclusions about their normality are provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Allergies are denied.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.18574771285057068,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1790248155593872,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.17822955548763275,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.16533853113651276,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.158046156167984,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or deny allergies; no direct statement about allergies is present in any provided span.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C23",
+      "text": "6. Coordinate with orthopedic surgeon and physical therapist for further evaluation and treatment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.45967453718185425,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.41764092445373535,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40319880843162537,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37185370922088623,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3256336450576782,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention coordinating with an orthopedic surgeon or physical therapist for further evaluation and treatment. The physician discusses ordering X-rays, prescribing medication, and scheduling follow-up appointments, but no mention of coordination with specialists is made.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Sims reports experiencing significant pain in his right wrist and left ankle, which started a few weeks ago and has been worsening.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6958320140838623,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.6867300271987915,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.6310453414916992,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5952066779136658,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.45773857831954956,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports significant pain in the right wrist and left ankle that started a few weeks ago and has been worsening (E0:7-8). The patient also describes a fall a few weeks ago resulting in injury to the left ankle and right wrist (E4:2,4), supporting the timing and location of the pain.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He notes swelling, bruising, numbness in his fingers, and tingling sensations in his toes.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7797640562057495,
+          "text": "I also noticed some swelling and bruising in both areas. Physician: I see. Have you experienced any numbness or tingling sensations in your fingers or toes? Patient: Yes, doctor. My fingers feel numb most of the time, and I've had some tingling sensations in my toes. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5696442127227783,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5426491498947144,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4878760576248169,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.42782872915267944,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              1,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports swelling and bruising (E1:1), numbness in fingers (E1:4-5), and tingling sensations in toes (E1:5).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "He mentions difficulty with daily activities like dressing, grooming, and walking, along with weakness and fatigue in his muscles.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6491672992706299,
+          "text": "Have you had any difficulty performing daily activities, such as dressing, grooming, or walking? Patient: Well, doctor, I've had to modify my routine a bit. I've been having trouble buttoning my shirt and tying my shoes. Walking has been a bit of a challenge too, especially upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.6127432584762573,
+          "text": "Have you noticed any weakness or fatigue in your muscles? Patient: Yes, doctor. My right hand feels weak, and I get tired easily when I'm doing simple tasks like carrying groceries or doing the dishes."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4006437063217163,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.38488009572029114,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3703692555427551,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly mentions difficulty with daily activities such as dressing (buttoning shirt), grooming (tying shoes), and walking (especially upstairs), as well as muscle weakness and fatigue (right hand weakness and tiredness during simple tasks).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "Mr. Sims attributes these symptoms to a fall he had a few weeks ago.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6766014099121094,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5000852346420288,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.4885031580924988,
+          "text": "Patient: Alright, doctor. Thank you for your help. Physician: You're welcome, Mr. Sims. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.47188568115234375,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4372689127922058,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states he had a fall a few weeks ago, which supports the claim that he attributes his symptoms to that fall.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "He denies signs of infection, fever, chills, or night sweats.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.4795858860015869,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.46967145800590515,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.2980174422264099,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.29219940304756165,
+          "text": "I also noticed some swelling and bruising in both areas. Physician: I see. Have you experienced any numbness or tingling sensations in your fingers or toes? Patient: Yes, doctor. My fingers feel numb most of the time, and I've had some tingling sensations in my toes. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25645166635513306,
+          "text": "Have you noticed any weakness or fatigue in your muscles? Patient: Yes, doctor. My right hand feels weak, and I get tired easily when I'm doing simple tasks like carrying groceries or doing the dishes."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies signs of infection (redness, warmth, pus) and systemic symptoms such as fever, chills, or night sweats in the provided transcript spans.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "He has been taking acetaminophen 500mg as needed for pain relief.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.696792721748352,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4673905670642853,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3577941954135895,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3319208323955536,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.30924350023269653,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states in E6[3] that he has been taking acetaminophen 500mg as needed for pain relief.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Physical examination reveals swelling and bruising in the right wrist and left ankle, consistent with sprains.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.6342164278030396,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5784050226211548,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5242764353752136,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4765574634075165,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46951135993003845,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that the swelling and bruising in the right wrist and left ankle are consistent with sprains, confirming the physical examination findings.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Numbness and tingling sensations are noted in the fingers and toes.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.7223355174064636,
+          "text": "I also noticed some swelling and bruising in both areas. Physician: I see. Have you experienced any numbness or tingling sensations in your fingers or toes? Patient: Yes, doctor. My fingers feel numb most of the time, and I've had some tingling sensations in my toes. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.39648139476776123,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3945409059524536,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.389373242855072,
+          "text": "Have you noticed any weakness or fatigue in your muscles? Patient: Yes, doctor. My right hand feels weak, and I get tired easily when I'm doing simple tasks like carrying groceries or doing the dishes."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.36087605357170105,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports numbness and tingling in fingers and toes (E1:3-5), and the physician notes these symptoms as suggestive of nerve damage (E8:4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.38797837495803833,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3591859042644501,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3493235409259796,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.3098830282688141,
+          "text": "Patient: Alright, doctor. Thank you for your help. Physician: You're welcome, Mr. Sims. We'll get you feeling better in no time."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3075638711452484,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that the patient's vital signs are within normal limits. Although the physician performs an assessment of vital signs, no specific findings or conclusions about their normality are provided.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Medical history includes hypertension, hyperlipidemia, and previous injuries.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5783138871192932,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.431643009185791,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3757786154747009,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3373182415962219,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30623477697372437,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              2,
+              7
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly mentions a history of hypertension and hyperlipidemia (E9:2) and previous injuries from a fall affecting the left ankle and right wrist (E4:1-4).",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "No signs of infection are present.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5313184857368469,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34977084398269653,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26852259039878845,
+          "text": "I also noticed some swelling and bruising in both areas. Physician: I see. Have you experienced any numbness or tingling sensations in your fingers or toes? Patient: Yes, doctor. My fingers feel numb most of the time, and I've had some tingling sensations in my toes. Physician: Okay."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.24883756041526794,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.21826094388961792,
+          "text": "Patient: Alright, doctor. Thank you for your help. Physician: You're welcome, Mr. Sims. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              1,
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly denies signs of infection such as redness, warmth, pus, fever, chills, or night sweats, indicating no signs of infection are present.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Medication list includes amlodipine 5mg, atorvastatin 20mg, and acetaminophen 500mg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.48825424909591675,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4654178023338318,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.283840537071228,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.25794410705566406,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.23062440752983093,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The transcript explicitly states the patient is taking acetaminophen 500mg as needed. Although amlodipine 5mg and atorvastatin 20mg are not explicitly mentioned, the physician references the patient's history of hypertension and hyperlipidemia, conditions typically treated with these medications, implying their inclusion in the medication list.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "Allergies are denied.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.18574771285057068,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1790248155593872,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.17822955548763275,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.16533853113651276,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.158046156167984,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention or deny allergies; no direct statement about allergies is present in any provided span.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Mr. Sims likely has sprains in his right wrist and left ankle, with possible nerve damage.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6446521282196045,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.6277456283569336,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5477450489997864,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5286167860031128,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E10",
+          "sim": 0.42758381366729736,
+          "text": "Patient: Alright, doctor. Thank you for your help. Physician: You're welcome, Mr. Sims. We'll get you feeling better in no time."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that Mr. Sims has injuries to the right wrist and left ankle with swelling and bruising consistent with sprains, and numbness and tingling suggesting possible nerve damage. The patient's history of falling and landing on these areas supports this assessment.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Further testing, including X-rays, is needed to confirm the extent of the injuries.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5227064490318298,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3744780123233795,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.32913288474082947,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3220527768135071,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2965084910392761,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need for further testing to confirm the extent of injuries and orders X-rays for the wrist and ankle to assess for fractures or dislocations.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "Blood pressure and lipid levels need monitoring due to his medical history.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5619567036628723,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.319846510887146,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3074018061161041,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2717628479003906,
+          "text": "I also noticed some swelling and bruising in both areas. Physician: I see. Have you experienced any numbness or tingling sensations in your fingers or toes? Patient: Yes, doctor. My fingers feel numb most of the time, and I've had some tingling sensations in my toes. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.26490041613578796,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to monitor blood pressure and lipid levels due to the patient's history of hypertension and hyperlipidemia.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "Pain and inflammation management will be initiated with medication.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5333232283592224,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.46155041456222534,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3446728587150574,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3284243643283844,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3023456335067749,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states that medication will be prescribed to manage pain and inflammation, starting with a low dose and adjusting as needed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "Activity restriction and follow-up appointments are recommended for proper healing and monitoring.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4848243296146393,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.30662089586257935,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.299080491065979,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.28693732619285583,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.26472464203834534,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends avoiding heavy lifting, bending, or strenuous activities to allow proper healing and schedules a follow-up appointment to monitor progress and adjust treatment.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "1. Order X-rays for right wrist and left ankle.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.5718875527381897,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.503208339214325,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.418062686920166,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4049784541130066,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3725871443748474,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E8",
+            "sentences": [
+              3,
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the patient has injuries to the right wrist and left ankle and orders X-rays for the wrist and ankle to assess for fractures or dislocations.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "2. Monitor blood pressure and lipid levels.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5185813903808594,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2804607152938843,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.2696881592273712,
+          "text": "I also noticed some swelling and bruising in both areas. Physician: I see. Have you experienced any numbness or tingling sensations in your fingers or toes? Patient: Yes, doctor. My fingers feel numb most of the time, and I've had some tingling sensations in my toes. Physician: Okay."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2599298655986786,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.23627591133117676,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states the need to monitor blood pressure and lipid levels due to the patient's history of hypertension and hyperlipidemia.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C20",
+      "text": "3. Prescribe pain and inflammation medication.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.5443914532661438,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4965946078300476,
+          "text": "Have you been taking any medications for the pain? Patient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists. Physician: I understand."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3617885112762451,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.36142268776893616,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.32538902759552,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will prescribe medication to manage pain and inflammation, starting with a low dose and adjusting as needed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C21",
+      "text": "4. Advise activity restriction and follow-up appointment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4571911692619324,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.3337455987930298,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31581759452819824,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3002697825431824,
+          "text": "Have you had any difficulty performing daily activities, such as dressing, grooming, or walking? Patient: Well, doctor, I've had to modify my routine a bit. I've been having trouble buttoning my shirt and tying my shoes. Walking has been a bit of a challenge too, especially upstairs. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.29054710268974304,
+          "text": "Have you noticed any signs of infection, such as redness, warmth, or pus? Patient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises avoiding heavy lifting, bending, or strenuous activities (activity restriction) and schedules a follow-up appointment to monitor progress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C22",
+      "text": "5. Educate on injury management and self-care.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.4321216940879822,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36706775426864624,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.343208372592926,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3265601396560669,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30389973521232605,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E9",
+            "sentences": [
+              7,
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly advises the patient to avoid heavy lifting, bending, or strenuous activities to allow injuries to heal, which constitutes education on injury management and self-care. Additionally, scheduling a follow-up to monitor progress supports ongoing self-care education.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C23",
+      "text": "6. Coordinate with orthopedic surgeon and physical therapist for further evaluation and treatment.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E8",
+          "sim": 0.45967453718185425,
+          "text": "I'll be back in a moment. (The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.) Physician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage. Patient: Oh, I see. What does that mean? Physician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.41764092445373535,
+          "text": "Patient: Okay. Physician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control. Patient: Sure, doctor. Physician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed. Patient: Okay. Physician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.40319880843162537,
+          "text": "Have you noticed any other symptoms, such as fever, chills, or night sweats? Patient: No, doctor. Just the pain and swelling in my wrist and ankle. Physician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments. Patient: Sounds good, doctor. Thank you. Physician: Of course."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37185370922088623,
+          "text": "Physician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms? Patient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist. Physician: I see."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3256336450576782,
+          "text": "Physician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening? Patient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans explicitly mention coordinating with an orthopedic surgeon or physical therapist for further evaluation and treatment. The physician discusses ordering X-rays, prescribing medication, and scheduling follow-up appointments, but no mention of coordination with specialists is made.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good afternoon, Mr. Sims. It's a pleasure to meet you. I'm Dr. Washington, your primary care physician. I understand you've been experiencing some discomfort and injuries lately. Can you tell me more about what's been happening?\n\nPatient: Yes, doctor. I've been having a lot of pain in my right wrist and left ankle. It started a few weeks ago, and it's been getting worse ever since. I also noticed some swelling and bruising in both areas.\n\nPhysician: I see. Have you experienced any numbness or tingling sensations in your fingers or toes?\n\nPatient: Yes, doctor. My fingers feel numb most of the time, and I've had some tingling sensations in my toes.\n\nPhysician: Okay. Have you had any difficulty performing daily activities, such as dressing, grooming, or walking?\n\nPatient: Well, doctor, I've had to modify my routine a bit. I've been having trouble buttoning my shirt and tying my shoes. Walking has been a bit of a challenge too, especially upstairs.\n\nPhysician: I understand. Have you noticed any weakness or fatigue in your muscles?\n\nPatient: Yes, doctor. My right hand feels weak, and I get tired easily when I'm doing simple tasks like carrying groceries or doing the dishes.\n\nPhysician: Mr. Sims, have you experienced any previous injuries or conditions that may be related to your current symptoms?\n\nPatient: Well, doctor, I had a fall a few weeks ago. I was walking down the stairs and missed a step. I landed pretty hard on my left ankle and right wrist.\n\nPhysician: I see. Have you noticed any signs of infection, such as redness, warmth, or pus?\n\nPatient: No, doctor. I don't think it's infected. It just hurts a lot, especially when I move my wrist or ankle.\n\nPhysician: Okay. Have you been taking any medications for the pain?\n\nPatient: Yes, doctor. I've been taking acetaminophen 500mg as needed. It helps a bit, but the pain still persists.\n\nPhysician: I understand. Have you noticed any other symptoms, such as fever, chills, or night sweats?\n\nPatient: No, doctor. Just the pain and swelling in my wrist and ankle.\n\nPhysician: Okay, Mr. Sims. I'm going to examine your wrist and ankle, and we'll discuss the results of my examination and any necessary further testing or treatments.\n\nPatient: Sounds good, doctor. Thank you.\n\nPhysician: Of course. I'll be back in a moment.\n\n(The physician performs a thorough physical examination, including an assessment of the patient's vital signs, musculoskeletal system, and neurological function. The physician also reviews the patient's medical history, medication list, and allergies.)\n\nPhysician: Mr. Sims, based on your symptoms and physical examination, it appears that you have sustained injuries to your right wrist and left ankle. The swelling and bruising are consistent with sprains, and the numbness and tingling sensations suggest possible nerve damage.\n\nPatient: Oh, I see. What does that mean?\n\nPhysician: We'll need to do some further testing to confirm the extent of the injuries and rule out any other potential causes. I'm going to order an X-ray for your wrist and ankle to assess for any fractures or dislocations.\n\nPatient: Okay.\n\nPhysician: Additionally, given your history of hypertension and hyperlipidemia, we'll need to monitor your blood pressure and lipid levels closely to ensure that they're under control.\n\nPatient: Sure, doctor.\n\nPhysician: I'll also prescribe a medication to help manage your pain and inflammation. We'll start with a low dose and adjust as needed.\n\nPatient: Okay.\n\nPhysician: Finally, I recommend that you avoid heavy lifting, bending, or strenuous activities for the next few weeks to allow your injuries to heal properly. We'll also schedule a follow-up appointment to monitor your progress and adjust your treatment plan as needed.\n\nPatient: Alright, doctor. Thank you for your help.\n\nPhysician: You're welcome, Mr. Sims. We'll get you feeling better in no time.",
+  "note_text": "Subjective:\nMr. Sims reports experiencing significant pain in his right wrist and left ankle, which started a few weeks ago and has been worsening. He notes swelling, bruising, numbness in his fingers, and tingling sensations in his toes. He mentions difficulty with daily activities like dressing, grooming, and walking, along with weakness and fatigue in his muscles. Mr. Sims attributes these symptoms to a fall he had a few weeks ago. He denies signs of infection, fever, chills, or night sweats. He has been taking acetaminophen 500mg as needed for pain relief.\n\nObjective:\nPhysical examination reveals swelling and bruising in the right wrist and left ankle, consistent with sprains. Numbness and tingling sensations are noted in the fingers and toes. Vital signs are within normal limits. Medical history includes hypertension, hyperlipidemia, and previous injuries. No signs of infection are present. Medication list includes amlodipine 5mg, atorvastatin 20mg, and acetaminophen 500mg. Allergies are denied.\n\nAssessment:\nMr. Sims likely has sprains in his right wrist and left ankle, with possible nerve damage. Further testing, including X-rays, is needed to confirm the extent of the injuries. Blood pressure and lipid levels need monitoring due to his medical history. Pain and inflammation management will be initiated with medication. Activity restriction and follow-up appointments are recommended for proper healing and monitoring.\n\nPlan:\n1. Order X-rays for right wrist and left ankle.\n2. Monitor blood pressure and lipid levels.\n3. Prescribe pain and inflammation medication.\n4. Advise activity restriction and follow-up appointment.\n5. Educate on injury management and self-care.\n6. Coordinate with orthopedic surgeon and physical therapist for further evaluation and treatment."
+}

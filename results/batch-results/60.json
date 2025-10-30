@@ -1,0 +1,1260 @@
+{
+  "summary": {
+    "claims": 20,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 3,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 3,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 1,
+    "missing_critical_low_severity": 1,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 65,
+    "failed_calls": 0,
+    "successful_calls": 65,
+    "total_input_tokens": 32229,
+    "total_output_tokens": 2062,
+    "total_tokens": 34291,
+    "total cost w/ GPT-4.1-mini (in $)": 0.016190799999999998
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C5",
+      "text": "Avery presents as a 52-year-old female with a history of anxiety disorder and depression.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5843707323074341,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4714774489402771,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4522499740123749,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4487531781196594,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3523689806461334,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state Avery's age or confirm a formal history of anxiety disorder and depression, only current symptoms and struggles are mentioned.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "She appears fatigued but is cooperative and engaged during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.43460145592689514,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4154890477657318,
+          "text": "Have you noticed any changes in your appetite or energy levels? Patient: Yes, my appetite has decreased quite a bit. I used to love cooking and trying new recipes, but lately, I just don't have the motivation or interest. And my energy levels are pretty low, too. I get winded easily, even when I'm just doing simple tasks around the house. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3948614299297333,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3502408266067505,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34168878197669983,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient has low energy and decreased motivation, but there is no explicit mention that she appears fatigued or that she is cooperative and engaged during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3122655153274536,
+          "text": "Have you noticed any changes in your appetite or energy levels? Patient: Yes, my appetite has decreased quite a bit. I used to love cooking and trying new recipes, but lately, I just don't have the motivation or interest. And my energy levels are pretty low, too. I get winded easily, even when I'm just doing simple tasks around the house. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2941124439239502,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2778691053390503,
+          "text": "Have you experienced any physical symptoms like headaches, stomachaches, or muscle tension? Patient: Yes, I've had some headaches and stomachaches, especially when I'm feeling anxious. And my shoulders and back have been feeling tense all the time. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2742476761341095,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2517266571521759,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their status is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Avery's husband has expressed concerns about her withdrawal and decreased engagement in family activities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5245987176895142,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.38462719321250916,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3811073899269104,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.37630099058151245,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3471257984638214,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Avery herself reports withdrawing from family and friends (E0[7]) and mentions arguments with her husband (E5[4]), but there is no explicit statement that Avery's husband has expressed concerns about her withdrawal or decreased engagement in family activities.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "She is compliant with her medications, including Sertraline and Lorazepam.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3821866512298584,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3404274880886078,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31886714696884155,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3163999915122986,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2917894124984741,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the patient's compliance with medications, nor does it specify that she is taking Sertraline and Lorazepam. Medication adherence and specific medications are not discussed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Avery's last influenza vaccine was administered on 09/01/2022.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.38064950704574585,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3164089620113373,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.267734169960022,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.20916269719600677,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1593431830406189,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention Avery's influenza vaccine or any vaccination date, including 09/01/2022.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "5. Schedule a follow-up appointment to monitor Avery's progress and make any necessary adjustments to her treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.44185560941696167,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.44081932306289673,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35752999782562256,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.32074761390686035,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.26675817370414734,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment to monitor Avery's progress or adjust her treatment plan. While ongoing support and adjustments are implied, no specific plan for a follow-up appointment is stated.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [
+    {
+      "sent_id": "T19",
+      "text": "I get winded easily, even when I'm just doing simple tasks around the house.",
+      "sent_idx": 19,
+      "prev_text": "And my energy levels are pretty low, too.",
+      "next_text": "Physician: I understand.",
+      "severity": "low"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Avery reports feeling increasingly down and experiencing heightened symptoms of anxiety and depression over the past month.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.6805421113967896,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5521730780601501,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5038594007492065,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.47008180618286133,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4290046691894531,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              5,
+              6
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling 'pretty down' and experiencing 'increased anxiety and depression symptoms over the past month,' directly supporting the claim.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "She describes difficulty sleeping, with 5-6 hours of poor-quality sleep each night.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.641047477722168,
+          "text": "Can you tell me more about your sleep difficulties? How many hours of sleep are you getting each night, and do you wake up feeling rested? Patient: I've been getting about 5-6 hours of sleep each night, but it's not quality sleep. I wake up feeling groggy and tired, like I haven't slept at all. And it's hard to fall asleep in the first place. My mind races with thoughts, and I can't seem to shut it off. Physician: That sounds challenging."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.36229953169822693,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.30774426460266113,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.2866608798503876,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2696859538555145,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states she has been getting about 5-6 hours of sleep each night, but it is not quality sleep, indicating difficulty sleeping with poor-quality sleep.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Avery notes decreased appetite, low energy levels, headaches, stomachaches, and muscle tension.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.527782142162323,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5268529057502747,
+          "text": "Have you experienced any physical symptoms like headaches, stomachaches, or muscle tension? Patient: Yes, I've had some headaches and stomachaches, especially when I'm feeling anxious. And my shoulders and back have been feeling tense all the time. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4847632050514221,
+          "text": "Have you noticed any changes in your appetite or energy levels? Patient: Yes, my appetite has decreased quite a bit. I used to love cooking and trying new recipes, but lately, I just don't have the motivation or interest. And my energy levels are pretty low, too. I get winded easily, even when I'm just doing simple tasks around the house. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4340956211090088,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.43340378999710083,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              2,
+              4
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports decreased appetite and low energy levels (E2:2,4), as well as headaches, stomachaches, and muscle tension (E3:2,3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "She also mentions feeling irritable, frustrated, and hopeless, with triggers including work stress and marital arguments.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6358266472816467,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.551846981048584,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.41981834173202515,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.40733301639556885,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.40102827548980713,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states feeling irritable and frustrated (E4:3-4) and describes feelings of failure and hopelessness (E4:5). Triggers mentioned include work stress (E5:2) and marital arguments (E5:4).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Avery acknowledges attending therapy sessions with social worker Emily Davis, finding them helpful but challenging to implement changes.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.646814227104187,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.487869530916214,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4790404438972473,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4728180766105652,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4249323606491089,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states therapy sessions with Emily Davis have been helpful but acknowledges difficulty implementing changes discussed due to feeling overwhelmed.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Avery presents as a 52-year-old female with a history of anxiety disorder and depression.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5843707323074341,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4714774489402771,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4522499740123749,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4487531781196594,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3523689806461334,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state Avery's age or confirm a formal history of anxiety disorder and depression, only current symptoms and struggles are mentioned.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "She appears fatigued but is cooperative and engaged during the appointment.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.43460145592689514,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.4154890477657318,
+          "text": "Have you noticed any changes in your appetite or energy levels? Patient: Yes, my appetite has decreased quite a bit. I used to love cooking and trying new recipes, but lately, I just don't have the motivation or interest. And my energy levels are pretty low, too. I get winded easily, even when I'm just doing simple tasks around the house. Physician: I understand."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3948614299297333,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.3502408266067505,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.34168878197669983,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates the patient has low energy and decreased motivation, but there is no explicit mention that she appears fatigued or that she is cooperative and engaged during the appointment.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Vital signs are within normal limits.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.3122655153274536,
+          "text": "Have you noticed any changes in your appetite or energy levels? Patient: Yes, my appetite has decreased quite a bit. I used to love cooking and trying new recipes, but lately, I just don't have the motivation or interest. And my energy levels are pretty low, too. I get winded easily, even when I'm just doing simple tasks around the house. Physician: I understand."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2941124439239502,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2778691053390503,
+          "text": "Have you experienced any physical symptoms like headaches, stomachaches, or muscle tension? Patient: Yes, I've had some headaches and stomachaches, especially when I'm feeling anxious. And my shoulders and back have been feeling tense all the time. Physician: Okay, that's helpful to know."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2742476761341095,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.2517266571521759,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "No explicit mention or documentation of vital signs or their status is present in the provided transcript spans.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Avery's husband has expressed concerns about her withdrawal and decreased engagement in family activities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.5245987176895142,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.38462719321250916,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3811073899269104,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.37630099058151245,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3471257984638214,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript indicates Avery herself reports withdrawing from family and friends (E0[7]) and mentions arguments with her husband (E5[4]), but there is no explicit statement that Avery's husband has expressed concerns about her withdrawal or decreased engagement in family activities.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "She is compliant with her medications, including Sertraline and Lorazepam.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.3821866512298584,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3404274880886078,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.31886714696884155,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3163999915122986,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.2917894124984741,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention the patient's compliance with medications, nor does it specify that she is taking Sertraline and Lorazepam. Medication adherence and specific medications are not discussed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Avery's last influenza vaccine was administered on 09/01/2022.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.38064950704574585,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3164089620113373,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.267734169960022,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.20916269719600677,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.1593431830406189,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention Avery's influenza vaccine or any vaccination date, including 09/01/2022.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "Avery is struggling with worsening symptoms of anxiety and depression, impacting her sleep, appetite, energy levels, and mood.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.665692925453186,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5640538334846497,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5633827447891235,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.5050289034843445,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43811920285224915,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              6,
+              7
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly reports worsening anxiety and depression symptoms, difficulty sleeping, and mood disturbances including irritability and feelings of failure. The physician acknowledges the patient's struggle and plans to support symptom management. Appetite and energy levels are implied by the patient's overall distress and withdrawal but not explicitly mentioned, yet the impact on mood and sleep is clearly stated.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "She is facing stressors at work and home, contributing to her emotional distress.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.5923550128936768,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.39902687072753906,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.34575778245925903,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.3115779757499695,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.30625197291374207,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              2,
+              3,
+              4,
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that her job has been stressful and that she has been arguing more at home, which the physician acknowledges as contributing factors to her symptoms, indicating that stressors at work and home are contributing to her emotional distress.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Therapy sessions with Emily Davis have been beneficial, but Avery finds it challenging to apply the strategies discussed.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.7072399258613586,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.4412320554256439,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.40893790125846863,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4084411859512329,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.39835867285728455,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              3,
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states therapy sessions with Emily Davis have been helpful and that Emily has helped identify negative thought patterns, but also mentions difficulty applying the discussed strategies when feeling overwhelmed.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "Adjustments to her medication regimen and additional therapy options may be necessary to address her current symptoms effectively.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5042499303817749,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.41980379819869995,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.37945714592933655,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.3656630516052246,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.3643317222595215,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will consider adjusting medication and discuss additional therapy options to manage the patient's symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "1. Adjust medication regimen as needed to address Avery's worsening symptoms.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5371288061141968,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4762312173843384,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.46850210428237915,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.37943047285079956,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.32106566429138184,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will consider adjusting Avery's medication to manage worsening symptoms, directly supporting the claim to adjust medication as needed.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "2. Explore additional therapy options, such as cognitive behavioral therapy, to help Avery manage negative thought patterns and behaviors.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.5607091188430786,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.47600817680358887,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.4559442102909088,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.45013585686683655,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.43733763694763184,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              6
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions discussing additional therapy options and cognitive behavioral therapy strategies to help Avery manage negative thought patterns and behaviors.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "3. Develop a consistent routine incorporating self-care activities, relaxation techniques, and exercise to improve Avery's overall well-being.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E9",
+          "sim": 0.539930522441864,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E7",
+          "sim": 0.5207408666610718,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.5178781747817993,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.428193062543869,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.3635161519050598,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E7",
+            "sentences": [
+              7
+            ]
+          },
+          {
+            "span_id": "E8",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly mentions working on establishing a consistent routine including self-care activities, relaxation techniques, and exercise to support Avery's well-being.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "4. Discuss stress management strategies and coping mechanisms to address triggers contributing to Avery's anxiety and depression.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.597082793712616,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5092534422874451,
+          "text": "Have you noticed any triggers that make your symptoms worse, such as stressors at work or home? Patient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart. Physician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5025750398635864,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.4592459797859192,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4587887227535248,
+          "text": "How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness? Patient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time. Physician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              1,
+              7,
+              8
+            ]
+          },
+          {
+            "span_id": "E7",
+            "sentences": [
+              4,
+              5,
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly acknowledges stressors as triggers (E5:1,7,8) and discusses stress management strategies including relaxation techniques and lifestyle changes (E7:4,5,7) to address anxiety and depression.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C19",
+      "text": "5. Schedule a follow-up appointment to monitor Avery's progress and make any necessary adjustments to her treatment plan.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E7",
+          "sim": 0.44185560941696167,
+          "text": "We'll definitely want to continue that and see how we can support you further. Patient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do. Physician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?"
+        },
+        {
+          "span_id": "E9",
+          "sim": 0.44081932306289673,
+          "text": "Patient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time. Physician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.35752999782562256,
+          "text": "Physician: Good morning, Avery. It's great to see you today. How have you been feeling lately? Patient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.32074761390686035,
+          "text": "Can you tell me more about your therapy sessions with Emily Davis? How have those been going? Patient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time. Physician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly."
+        },
+        {
+          "span_id": "E8",
+          "sim": 0.26675817370414734,
+          "text": "Patient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle. Physician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly mention scheduling a follow-up appointment to monitor Avery's progress or adjust her treatment plan. While ongoing support and adjustments are implied, no specific plan for a follow-up appointment is stated.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\n\nPhysician: Good morning, Avery. It's great to see you today. How have you been feeling lately?\n\nPatient: Hi, Dr. Fernandez. I've been feeling pretty down, to be honest. I've been experiencing increased anxiety and depression symptoms over the past month. It's been hard to sleep at night, and I've noticed that I've been withdrawing from my family and friends more.\n\nPhysician: I see. Can you tell me more about your sleep difficulties? How many hours of sleep are you getting each night, and do you wake up feeling rested?\n\nPatient: I've been getting about 5-6 hours of sleep each night, but it's not quality sleep. I wake up feeling groggy and tired, like I haven't slept at all. And it's hard to fall asleep in the first place. My mind races with thoughts, and I can't seem to shut it off.\n\nPhysician: That sounds challenging. Have you noticed any changes in your appetite or energy levels?\n\nPatient: Yes, my appetite has decreased quite a bit. I used to love cooking and trying new recipes, but lately, I just don't have the motivation or interest. And my energy levels are pretty low, too. I get winded easily, even when I'm just doing simple tasks around the house.\n\nPhysician: I understand. Have you experienced any physical symptoms like headaches, stomachaches, or muscle tension?\n\nPatient: Yes, I've had some headaches and stomachaches, especially when I'm feeling anxious. And my shoulders and back have been feeling tense all the time.\n\nPhysician: Okay, that's helpful to know. How has your mood been? Have you been experiencing any irritability, mood swings, or feelings of hopelessness?\n\nPatient: Yes, definitely. I've been feeling irritable and frustrated with myself and others. And sometimes, I just feel like I can't do anything right, like I'm a failure. It's hard to explain, but it's like there's this dark cloud hanging over me all the time.\n\nPhysician: I'm so sorry to hear that, Avery. It sounds like you're struggling with a lot right now. Have you noticed any triggers that make your symptoms worse, such as stressors at work or home?\n\nPatient: Well, my job has been pretty stressful lately. I'm a graphic designer, and there have been some big projects that have been challenging to meet the deadlines for. And at home, my husband and I have been arguing a bit more often. It's just hard to feel like I'm doing everything right when everything else in my life feels like it's falling apart.\n\nPhysician: That makes sense. It sounds like there are several factors that could be contributing to your symptoms. I'm glad you mentioned the stressors at work and home, as we can talk more about stress management techniques later. Can you tell me more about your therapy sessions with Emily Davis? How have those been going?\n\nPatient: They've been helpful, I think. Emily is great to talk to, and she's helped me identify some negative thought patterns and behaviors that I can work on changing. But it's hard to put into practice what we talk about when I'm feeling so overwhelmed all the time.\n\nPhysician: That's completely understandable. It can be tough to implement changes when we're feeling stressed and anxious. But it's great that you've been attending therapy regularly. We'll definitely want to continue that and see how we can support you further.\n\nPatient: Yeah, I appreciate that. I just feel like I'm running out of options and don't know what else to do.\n\nPhysician: Avery, it sounds like you're feeling really overwhelmed and struggling to cope with your symptoms. I want you to know that we're here to support you, and we'll work together to find ways to manage your anxiety and depression. We'll consider adjusting your medication and discuss additional therapy options. And we'll also talk about some lifestyle changes that might help, such as exercise, relaxation techniques, and sleep hygiene. Can you tell me a bit more about your current exercise routine and daily habits?\n\nPatient: Sure. I used to enjoy going for walks and doing yoga, but lately, I just haven't had the motivation. And my daily habits have been pretty inconsistent. I've been staying up too late, watching TV or scrolling through my phone, and then I'll just lie in bed in the morning, feeling guilty for not getting up earlier. It's just a vicious cycle.\n\nPhysician: Okay, that's helpful to know. We'll definitely want to work on establishing a more consistent routine for you, one that includes self-care activities and relaxation techniques. And we'll also discuss some cognitive behavioral therapy strategies that you can use to challenge those negative thought patterns and behaviors.\n\nPatient: That sounds good. I just want to feel like myself again, you know? I want to enjoy life and not feel like I'm drowning all the time.\n\nPhysician: Absolutely, Avery. That's exactly what we're going to work towards. We'll develop a plan that's tailored to your needs and goals, and we'll work together to help you achieve them. You're not alone in this, and we'll be here to support you every step of the way.",
+  "note_text": "Subjective:\nAvery reports feeling increasingly down and experiencing heightened symptoms of anxiety and depression over the past month. She describes difficulty sleeping, with 5-6 hours of poor-quality sleep each night. Avery notes decreased appetite, low energy levels, headaches, stomachaches, and muscle tension. She also mentions feeling irritable, frustrated, and hopeless, with triggers including work stress and marital arguments. Avery acknowledges attending therapy sessions with social worker Emily Davis, finding them helpful but challenging to implement changes.\n\nObjective:\nAvery presents as a 52-year-old female with a history of anxiety disorder and depression. She appears fatigued but is cooperative and engaged during the appointment. Vital signs are within normal limits. Avery's husband has expressed concerns about her withdrawal and decreased engagement in family activities. She is compliant with her medications, including Sertraline and Lorazepam. Avery's last influenza vaccine was administered on 09/01/2022.\n\nAssessment:\nAvery is struggling with worsening symptoms of anxiety and depression, impacting her sleep, appetite, energy levels, and mood. She is facing stressors at work and home, contributing to her emotional distress. Therapy sessions with Emily Davis have been beneficial, but Avery finds it challenging to apply the strategies discussed. Adjustments to her medication regimen and additional therapy options may be necessary to address her current symptoms effectively.\n\nPlan:\n1. Adjust medication regimen as needed to address Avery's worsening symptoms.\n2. Explore additional therapy options, such as cognitive behavioral therapy, to help Avery manage negative thought patterns and behaviors.\n3. Develop a consistent routine incorporating self-care activities, relaxation techniques, and exercise to improve Avery's overall well-being.\n4. Discuss stress management strategies and coping mechanisms to address triggers contributing to Avery's anxiety and depression.\n5. Schedule a follow-up appointment to monitor Avery's progress and make any necessary adjustments to her treatment plan."
+}

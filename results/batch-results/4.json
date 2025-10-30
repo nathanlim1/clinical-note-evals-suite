@@ -1,0 +1,1217 @@
+{
+  "summary": {
+    "claims": 19,
+    "hallucination_low_severity": 2,
+    "hallucination_medium_severity": 4,
+    "hallucination_high_severity": 2,
+    "unsupported_claim_low_severity": 2,
+    "unsupported_claim_medium_severity": 4,
+    "unsupported_claim_high_severity": 2,
+    "contradicted_claim_low_severity": 0,
+    "contradicted_claim_medium_severity": 0,
+    "contradicted_claim_high_severity": 0,
+    "missing_critical_count": 0,
+    "missing_critical_low_severity": 0,
+    "missing_critical_medium_severity": 0,
+    "missing_critical_high_severity": 0
+  },
+  "token_usage": {
+    "total_calls": 42,
+    "failed_calls": 0,
+    "successful_calls": 42,
+    "total_input_tokens": 21718,
+    "total_output_tokens": 1741,
+    "total_tokens": 23459,
+    "total cost w/ GPT-4.1-mini (in $)": 0.011472800000000002
+  },
+  "hallucinated": [
+    {
+      "claim_id": "C4",
+      "text": "Mr. Kelly presents with no signs of acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.42191189527511597,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4134770929813385,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3925580680370331,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31557711958885193,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1896277666091919,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mr. Kelly presents with no signs of acute distress. There is no mention of his general appearance or distress level during the encounter.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Visual acuity testing reveals decreased near vision.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5939886569976807,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4210200905799866,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36922991275787354,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36554816365242004,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3157847821712494,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported symptoms of near vision difficulty and eye strain but does not explicitly document results from visual acuity testing or confirm decreased near vision through formal testing.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Pupils are equal, round, and reactive to light.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.2884299159049988,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2786634862422943,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2643560767173767,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25511467456817627,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2536916434764862,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or assessment of pupil size, shape, or reactivity to light. Therefore, the claim cannot be verified as supported or contradicted based on the given evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Eye exam shows mild dryness and no other abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.49265867471694946,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42140769958496094,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41476285457611084,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41256481409072876,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3842449486255646,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported mild dryness and symptoms related to eye strain and blurry vision, but there is no explicit documentation of an eye exam showing mild dryness or stating no other abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Blood pressure is within normal limits at 120/80 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.26629331707954407,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.250479131937027,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23471024632453918,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.22392022609710693,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21495547890663147,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention or provide information about the patient's blood pressure or specific values such as 120/80 mmHg.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Weight is stable at 185 lbs.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.14513063430786133,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.14484873414039612,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.13473793864250183,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.11601526290178299,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.11210817843675613,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention the patient's weight or any information about weight stability or specific weight values.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "No significant underlying conditions are suspected at this time.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3103821575641632,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26504215598106384,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23346565663814545,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2149089276790619,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21217826008796692,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that no significant underlying conditions are suspected; rather, the physician plans to refer the patient to an ophthalmologist to rule out any underlying conditions, indicating that the presence of such conditions is still being investigated.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "4. Follow up with Mr. Kelly after the ophthalmology appointment to discuss findings and treatment options.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6711543798446655,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5118367075920105,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5010027885437012,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43331918120384216,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32605791091918945,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes a referral to an ophthalmologist for consultation (E6[1]) but does not explicitly mention a follow-up with Mr. Kelly after the ophthalmology appointment to discuss findings and treatment options.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "contradicted": [],
+  "missing_critical": [],
+  "claims": [
+    {
+      "claim_id": "C0",
+      "text": "Mr. Kelly reports experiencing blurry vision, especially when reading or working on the computer.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.7063011527061462,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.6833148002624512,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.6252167224884033,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.5314586162567139,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5209032297134399,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states experiencing blurry vision, especially when reading or working on the computer, in E0 sentences 4 and 5.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C1",
+      "text": "He also mentions occasional headaches and dryness in his eyes.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.5612137317657471,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5572307705879211,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.45243680477142334,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4433026909828186,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.41737833619117737,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E1",
+            "sentences": [
+              3
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly mentions occasional headaches in E1[3] and dryness in his eyes in E3[2].",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C2",
+      "text": "Symptoms are more pronounced with near vision tasks, such as reading texts and emails.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.6611443161964417,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.569137454032898,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4829760193824768,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.4686278700828552,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.4673770070075989,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E2",
+            "sentences": [
+              3,
+              4
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that near vision is mostly affected and has trouble reading texts and emails, indicating symptoms are more pronounced with near vision tasks.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C3",
+      "text": "He started a new job a few months ago and has been working longer hours.",
+      "section": "S",
+      "type": "subjective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.4446932077407837,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3919699192047119,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2819960117340088,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.24271979928016663,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.20428091287612915,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E3",
+            "sentences": [
+              5
+            ]
+          }
+        ],
+        "rationale": "The patient explicitly states that he started a new job a few months ago and has been working longer hours, directly supporting the claim.",
+        "severity": "none"
+      }
+    },
+    {
+      "claim_id": "C4",
+      "text": "Mr. Kelly presents with no signs of acute distress.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.42191189527511597,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.4134770929813385,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3925580680370331,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.31557711958885193,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.1896277666091919,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state or imply that Mr. Kelly presents with no signs of acute distress. There is no mention of his general appearance or distress level during the encounter.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C5",
+      "text": "Visual acuity testing reveals decreased near vision.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.5939886569976807,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4210200905799866,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.36922991275787354,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.36554816365242004,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3157847821712494,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported symptoms of near vision difficulty and eye strain but does not explicitly document results from visual acuity testing or confirm decreased near vision through formal testing.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C6",
+      "text": "Pupils are equal, round, and reactive to light.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E2",
+          "sim": 0.2884299159049988,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.2786634862422943,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.2643560767173767,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.25511467456817627,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.2536916434764862,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not include any explicit mention or assessment of pupil size, shape, or reactivity to light. Therefore, the claim cannot be verified as supported or contradicted based on the given evidence.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C7",
+      "text": "Eye exam shows mild dryness and no other abnormalities.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E3",
+          "sim": 0.49265867471694946,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42140769958496094,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.41476285457611084,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.41256481409072876,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.3842449486255646,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes patient-reported mild dryness and symptoms related to eye strain and blurry vision, but there is no explicit documentation of an eye exam showing mild dryness or stating no other abnormalities.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C8",
+      "text": "Blood pressure is within normal limits at 120/80 mmHg.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E1",
+          "sim": 0.26629331707954407,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.250479131937027,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.23471024632453918,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.22392022609710693,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21495547890663147,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "None of the provided transcript spans mention or provide information about the patient's blood pressure or specific values such as 120/80 mmHg.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C9",
+      "text": "Weight is stable at 185 lbs.",
+      "section": "O",
+      "type": "objective",
+      "retrieval": [
+        {
+          "span_id": "E0",
+          "sim": 0.14513063430786133,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.14484873414039612,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.13473793864250183,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.11601526290178299,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.11210817843675613,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The provided transcript spans do not mention the patient's weight or any information about weight stability or specific weight values.",
+        "severity": "low"
+      }
+    },
+    {
+      "claim_id": "C10",
+      "text": "Mr. Kelly is experiencing blurry vision and eye strain, likely due to prolonged screen time at work.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6992980241775513,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.6561468243598938,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.6375882029533386,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5807514786720276,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5180960297584534,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E0",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              5
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              4,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports blurry vision and eye strain, especially when working on the computer (E0:4-5, E5:4-5). He also notes eye dryness after prolonged computer use and longer work hours due to a new job (E3:2,5). The physician acknowledges that longer work hours could lead to eye strain (E4:2-3).",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C11",
+      "text": "His symptoms are consistent with digital eye strain.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6118897199630737,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.5190983414649963,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.5113869905471802,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5079220533370972,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.42003998160362244,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              4,
+              5,
+              8
+            ]
+          },
+          {
+            "span_id": "E3",
+            "sentences": [
+              2,
+              5
+            ]
+          },
+          {
+            "span_id": "E4",
+            "sentences": [
+              2,
+              3
+            ]
+          }
+        ],
+        "rationale": "The patient reports symptoms worsening with computer use, including eye strain and dryness, which the physician acknowledges could be related to longer work hours and digital screen exposure, consistent with digital eye strain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C12",
+      "text": "No significant underlying conditions are suspected at this time.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.3103821575641632,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.26504215598106384,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.23346565663814545,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.2149089276790619,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.21217826008796692,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript does not explicitly state that no significant underlying conditions are suspected; rather, the physician plans to refer the patient to an ophthalmologist to rule out any underlying conditions, indicating that the presence of such conditions is still being investigated.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C13",
+      "text": "Referral to an ophthalmologist is recommended for further evaluation and management.",
+      "section": "A",
+      "type": "assessment",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.5597163438796997,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.37308621406555176,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.35791581869125366,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.3452334403991699,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.3398891091346741,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states a referral to an ophthalmologist for consultation to rule out underlying conditions contributing to symptoms.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C14",
+      "text": "1. Perform a comprehensive eye exam to assess visual acuity and eye health.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.45305609703063965,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.4270465075969696,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.37762391567230225,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3762853145599365,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        },
+        {
+          "span_id": "E2",
+          "sim": 0.36902040243148804,
+          "text": "Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close? Patient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly. Physician: I understand."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              7
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will perform a thorough eye exam to assess vision and determine the cause of symptoms, which aligns with performing a comprehensive eye exam to assess visual acuity and eye health.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C15",
+      "text": "2. Recommend regular breaks and eye exercises to reduce eye strain at work.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E4",
+          "sim": 0.6466512680053711,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.5897393822669983,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.4636196196079254,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.37023603916168213,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E1",
+          "sim": 0.3509361445903778,
+          "text": "Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain? Patient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable. Physician: Okay."
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E4",
+            "sentences": [
+              4
+            ]
+          },
+          {
+            "span_id": "E5",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends taking regular breaks at work to rest the eyes and avoid prolonged screen exposure (E5:8) and inquires about eye exercises or resting eyes during breaks (E4:4), supporting the recommendation for breaks and eye exercises to reduce eye strain.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C16",
+      "text": "3. Refer Mr. Kelly to an ophthalmologist for a consultation and further management.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.724817156791687,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5171992182731628,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5108588933944702,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.46228474378585815,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.36390841007232666,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E6",
+            "sentences": [
+              1
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly states they will refer Mr. Kelly to an ophthalmologist for consultation to rule out underlying conditions contributing to symptoms.",
+        "severity": "high"
+      }
+    },
+    {
+      "claim_id": "C17",
+      "text": "4. Follow up with Mr. Kelly after the ophthalmology appointment to discuss findings and treatment options.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E6",
+          "sim": 0.6711543798446655,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5118367075920105,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.5010027885437012,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E5",
+          "sim": 0.43331918120384216,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.32605791091918945,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Unsupported",
+        "citations": [],
+        "rationale": "The transcript includes a referral to an ophthalmologist for consultation (E6[1]) but does not explicitly mention a follow-up with Mr. Kelly after the ophthalmology appointment to discuss findings and treatment options.",
+        "severity": "medium"
+      }
+    },
+    {
+      "claim_id": "C18",
+      "text": "5. Educate Mr. Kelly on the importance of eye health and preventive measures to reduce digital eye strain.",
+      "section": "P",
+      "type": "plan",
+      "retrieval": [
+        {
+          "span_id": "E5",
+          "sim": 0.6180284023284912,
+          "text": "Patient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then. Physician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper? Patient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while. Physician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens."
+        },
+        {
+          "span_id": "E3",
+          "sim": 0.587022066116333,
+          "text": "Have you experienced any eye discomfort or dryness? Patient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time. Physician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule? Patient: Well, I did start a new job a few months ago, and I've been working longer hours."
+        },
+        {
+          "span_id": "E6",
+          "sim": 0.5522169470787048,
+          "text": "I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms. Patient: That sounds good, doctor. Thank you for your help. Physician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you."
+        },
+        {
+          "span_id": "E0",
+          "sim": 0.5306655168533325,
+          "text": "Physician: Good morning, Mr. Kelly. How are you feeling today? Patient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer. Physician: I see."
+        },
+        {
+          "span_id": "E4",
+          "sim": 0.4833624064922333,
+          "text": "Could that be a factor? Physician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?"
+        }
+      ],
+      "judge": {
+        "label": "Supported",
+        "citations": [
+          {
+            "span_id": "E5",
+            "sentences": [
+              8
+            ]
+          }
+        ],
+        "rationale": "The physician explicitly recommends taking regular breaks at work to rest eyes and avoid prolonged digital screen exposure, which is a preventive measure to reduce digital eye strain, aligning with educating the patient on eye health and prevention.",
+        "severity": "medium"
+      }
+    }
+  ],
+  "transcript_text": "\nPhysician: Good morning, Mr. Kelly. How are you feeling today?\n\nPatient: Good morning, doctor. I've been experiencing some issues with my vision lately. It's been a bit blurry, especially when I'm reading or working on the computer.\n\nPhysician: I see. Can you tell me more about what you're experiencing? Is it just blurry vision, or are there any other symptoms like double vision or eye strain?\n\nPatient: It's mostly blurry vision, but I do get some headaches occasionally. They're not too severe, but they're definitely noticeable.\n\nPhysician: Okay. Have you noticed any differences in your vision between distance and near objects? For example, do you have trouble seeing things far away or up close?\n\nPatient: It's mostly my near vision that's affected. I have trouble reading texts and emails, and I've been having to hold books and documents closer to my face to see them clearly.\n\nPhysician: I understand. Have you experienced any eye discomfort or dryness?\n\nPatient: Yes, my eyes do feel a bit dry sometimes, especially after working on the computer for a long time.\n\nPhysician: Mr. Kelly, have you had any recent changes in your environment or routine that could be contributing to your symptoms? For example, have you started a new job or changed your work schedule?\n\nPatient: Well, I did start a new job a few months ago, and I've been working longer hours. Could that be a factor?\n\nPhysician: It's possible. Longer work hours could potentially lead to eye strain. Have you tried any eye exercises or resting your eyes during breaks at work?\n\nPatient: I haven't tried anything like that, but I do take breaks to look away from the screen and focus on something else every now and then.\n\nPhysician: That's good. Have you noticed any differences in your vision when you're working on the computer versus reading a book or newspaper?\n\nPatient: It's definitely worse when I'm working on the computer. I have to lean in closer to see the text, and my eyes feel more strained after a while.\n\nPhysician: I see. Mr. Kelly, I'm going to perform a thorough eye exam to assess your vision and determine the cause of your symptoms. In the meantime, I recommend that you take regular breaks at work to rest your eyes and avoid prolonged exposure to digital screens. I'll also refer you to an ophthalmologist for a consultation to rule out any underlying conditions that may be contributing to your symptoms.\n\nPatient: That sounds good, doctor. Thank you for your help.\n\nPhysician: Of course, Mr. Kelly. We'll do our best to get to the bottom of this and find a solution that works for you.",
+  "note_text": "Subjective:\nMr. Kelly reports experiencing blurry vision, especially when reading or working on the computer. He also mentions occasional headaches and dryness in his eyes. Symptoms are more pronounced with near vision tasks, such as reading texts and emails. He started a new job a few months ago and has been working longer hours.\n\nObjective:\nMr. Kelly presents with no signs of acute distress. Visual acuity testing reveals decreased near vision. Pupils are equal, round, and reactive to light. Eye exam shows mild dryness and no other abnormalities. Blood pressure is within normal limits at 120/80 mmHg. Weight is stable at 185 lbs.\n\nAssessment:\nMr. Kelly is experiencing blurry vision and eye strain, likely due to prolonged screen time at work. His symptoms are consistent with digital eye strain. No significant underlying conditions are suspected at this time. Referral to an ophthalmologist is recommended for further evaluation and management.\n\nPlan:\n1. Perform a comprehensive eye exam to assess visual acuity and eye health.\n2. Recommend regular breaks and eye exercises to reduce eye strain at work.\n3. Refer Mr. Kelly to an ophthalmologist for a consultation and further management.\n4. Follow up with Mr. Kelly after the ophthalmology appointment to discuss findings and treatment options.\n5. Educate Mr. Kelly on the importance of eye health and preventive measures to reduce digital eye strain."
+}
